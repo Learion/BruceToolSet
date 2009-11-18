@@ -1,0 +1,61 @@
+﻿body { font-family: Calibri; font-size: 100%; margin:20px }
+
+.mc_outer { width: 1000px; margin-left: auto; margin-right: auto; }
+.round_ctr { margin-bottom:10px;}
+.PannelWrapper { padding: 10px;} 
+.hd h1 { font-size:197%; font-style:italic; font-weight:bold; color:#990000; margin:-10px 10px; }
+
+.Legend h2 { font-size:116%; font-weight:bold; color: #337140; margin:10px 10px 0px;}
+
+.Column p { margin:15px;}
+
+.Note-Important  { padding:10px 10px 5px 10px; border: 1px solid #a4a142; margin:15px; font-size:93%; font-style:italic;background:#fbf9ec; }
+.Note-Important  p { margin: 8px;}
+.Note-Important  h2 { margin: 5px; color: red; font-weight:bold; color:#990000; }
+
+
+
+.ImageSetup { background:url(Assets/InstallImage.gif) no-repeat; width:189px; height:259px; margin:0 auto; } 
+
+li.InstallGraphPane { width:200px;  }
+
+ul.DividerStructure li.Column { float: left; margin-right: 10px;}
+
+li.MainColumn { width: 772px; }
+
+.resalted { text-decoration:underline; font-weight:bold; color: #990000;}
+.DoClear { clear:both;}
+
+a.LinkButton { padding: 5px 10px; display:block; text-decoration:none; background:#2f80aa; color:#fff; }
+a.LinkButton.DisabledButton { background:#ccc;}
+
+
+.Notification p { text-align:center; color:Green}
+
+.Notification p span.Error { color: Red !important;}
+
+.Column ul  { margin-left:20px;  }
+.Column ul li { list-style-position:outside; list-style-type:disc; margin-left:10px; }
+
+.FormCSS { padding:10px; border: 1px solid #acacac; margin:10px 20px; }
+
+.Field span.label, .Field select, .Field input { display:block; float: left; line-height:25px; height:25px; }
+.Field div.Hint { float: none; clear:both; padding:5px 5px; font-style:italic; font-size:83%; margin-left:250px;}
+
+.Field span.label { font-size:83%; width:250px;}
+.Field { clear:both; border-top: 1px solid #ccc; padding:5px;}
+.Field.First { border-top:none;}
+
+li.CbxItem { list-style-type:none; margin-left:0px !important; }
+.CbxDropDownWrapper ul { margin-left:0px;}
+
+.Toolbar { padding:5px 20px;  margin:0px auto; }
+.Toolbar ul { margin-left:0px;}
+.Toolbar ul li { float: left; margin-left:5px; list-style-position:outside; list-style-type:none;  }
+.Toolbar a { margin:0px;text-align:center;}
+
+span.LoadingIco { background:url(Assets/loading.gif) no-repeat; width:16px; height:22px; display:block; float:left; }
+
+.Notification.Loading { width:400px; margin:0px auto;}
+
+/*.Field .CbxContainer { float:left; }*/

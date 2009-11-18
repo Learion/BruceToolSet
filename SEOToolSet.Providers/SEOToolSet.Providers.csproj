@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A83B9B00-D6FF-4230-B0B6-FA151D3E98AC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SEOToolSet.Providers</RootNamespace>
+    <AssemblyName>SEOToolSet.Providers</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NHibernate, Version=2.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountManager.cs" />
+    <Compile Include="AccountProviderBase.cs" />
+    <Compile Include="AccountProviderCollection.cs" />
+    <Compile Include="AccountProviderConfiguration.cs" />
+    <Compile Include="AccountTypeEnum.cs" />
+    <Compile Include="ConfigHelper.cs" />
+    <Compile Include="DuplicatedEntityException.cs" />
+    <Compile Include="Exceptions\ProjectRoleNameMustExistException.cs" />
+    <Compile Include="PermissionMode.cs" />
+    <Compile Include="ProjectManager.cs" />
+    <Compile Include="ProjectProviderBase.cs" />
+    <Compile Include="ProjectProviderCollection.cs" />
+    <Compile Include="ProjectProviderConfiguration.cs" />
+    <Compile Include="ProjectUserProfile.cs" />
+    <Compile Include="ProjectUserProfileCollection.cs" />
+    <Compile Include="ProjectUserProfileProviderCollection.cs" />
+    <Compile Include="ProjectUserProfileProviderConfiguration.cs" />
+    <Compile Include="ProjectUserProfileManager.cs" />
+    <Compile Include="ProjectUserProfileProviderBase.cs" />
+    <Compile Include="PromoCodeManager.cs" />
+    <Compile Include="PromoCodeProviderBase.cs" />
+    <Compile Include="PromoCodeProviderCollection.cs" />
+    <Compile Include="PromoCodeProviderConfiguration.cs" />
+    <Compile Include="PromoCodeStatus.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RankingMonitorManager.cs" />
+    <Compile Include="RankingMonitorProviderBase.cs" />
+    <Compile Include="RankingMonitorProviderCollection.cs" />
+    <Compile Include="RankingMonitorProviderConfiguration.cs" />
+    <Compile Include="RoleType.cs" />
+    <Compile Include="RecurringBillingManager.cs" />
+    <Compile Include="RecurringBillingProviderBase.cs" />
+    <Compile Include="RecurringBillingProviderCollection.cs" />
+    <Compile Include="RecurringBillingProviderConfiguration.cs" />
+    <Compile Include="SEOMembershipManager.cs" />
+    <Compile Include="SEOMembershipProviderBase.cs" />
+    <Compile Include="SEOMembershipProviderCollection.cs" />
+    <Compile Include="SEOMembershipProviderConfiguration.cs" />
+    <Compile Include="SEORoleProviderBase.cs" />
+    <Compile Include="SEORoleProviderCollection.cs" />
+    <Compile Include="SEORoleProviderConfiguration.cs" />
+    <Compile Include="SEORolesManager.cs" />
+    <Compile Include="StatusCodeEnum.cs" />
+    <Compile Include="SubscriptionManager.cs" />
+    <Compile Include="SubscriptionProviderBase.cs" />
+    <Compile Include="SubscriptionProviderCollection.cs" />
+    <Compile Include="SubscriptionProviderConfiguration.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{C40FE234-C111-45AF-B6AE-08B341E69D17}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{2E263402-DD3D-496C-BBC6-2A267D007BC1}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NHibernateDataStore\NHibernateDataStore.csproj">
+      <Project>{3342C92B-E60F-440F-93DC-B6915FDA1739}</Project>
+      <Name>NHibernateDataStore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ViewEntities\ViewEntities.csproj">
+      <Project>{6E4C5D23-430A-4029-BDFD-B3D292894053}</Project>
+      <Name>ViewEntities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

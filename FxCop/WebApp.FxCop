@@ -1,0 +1,2767 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FxCopProject Version="1.36" Name="My FxCop Project">
+ <ProjectOptions>
+  <SharedProject>True</SharedProject>
+  <Stylesheet Apply="True">c:\program files\microsoft fxcop 1.36\Xml\FxCopReport.xsl</Stylesheet>
+  <SaveMessages>
+   <Project Status="Active, Excluded" NewOnly="False" />
+   <Report Status="Active" NewOnly="False" />
+  </SaveMessages>
+  <ProjectFile Compress="True" DefaultTargetCheck="True" DefaultRuleCheck="True" SaveByRuleGroup="" Deterministic="True" />
+  <EnableMultithreadedLoad>True</EnableMultithreadedLoad>
+  <EnableMultithreadedAnalysis>True</EnableMultithreadedAnalysis>
+  <SourceLookup>True</SourceLookup>
+  <AnalysisExceptionsThreshold>10</AnalysisExceptionsThreshold>
+  <RuleExceptionsThreshold>1</RuleExceptionsThreshold>
+  <Spelling Locale="en-US" />
+  <OverrideRuleVisibilities>False</OverrideRuleVisibilities>
+  <CustomDictionaries SearchFxCopDir="True" SearchUserProfile="True" SearchProjectDir="True" />
+  <SearchGlobalAssemblyCache>True</SearchGlobalAssemblyCache>
+  <DeadlockDetectionTimeout>120</DeadlockDetectionTimeout>
+  <IgnoreGeneratedCode>False</IgnoreGeneratedCode>
+ </ProjectOptions>
+ <Targets>
+  <Target Name="$(ProjectDir)/../Common/bin/Debug/SEOToolSet.Common.dll" Analyze="True" AnalyzeAllChildren="True" />
+  <Target Name="$(ProjectDir)/../Entities/bin/Debug/SEOToolSet.Entities.dll" Analyze="True" AnalyzeAllChildren="True" />
+  <Target Name="$(ProjectDir)/../References/ObjectXMLSerializer.dll" Analyze="True" AnalyzeAllChildren="True" />
+  <Target Name="$(ProjectDir)/../ReportServices/bin/SEOToolSet.ReportServices.dll" Analyze="True" AnalyzeAllChildren="True" />
+  <Target Name="$(ProjectDir)/../ReportServices/bin/SEOToolSet.ReportsFacade.dll" Analyze="True" AnalyzeAllChildren="True" />
+  <Target Name="$(ProjectDir)/../SEOToolSetProviders/bin/Debug/SEOToolSet.Providers.dll" Analyze="True" AnalyzeAllChildren="True" />
+  <Target Name="$(ProjectDir)/../WebApp/bin/LoggerFacade.dll" Analyze="False" AnalyzeAllChildren="False" />
+  <Target Name="$(ProjectDir)/../WebApp/bin/SEOToolSet.TempFileManagerFSProvider.dll" Analyze="True" AnalyzeAllChildren="False">
+   <Modules AnalyzeAllChildren="False">
+    <Module Name="seotoolset.tempfilemanagerfsprovider.dll" Analyze="True" AnalyzeAllChildren="False">
+     <Namespaces AnalyzeAllChildren="False">
+      <Namespace Name="" Analyze="True" AnalyzeAllChildren="True" />
+      <Namespace Name="SEOToolSet.TempFileManagerFSProvider" Analyze="True" AnalyzeAllChildren="False">
+       <Types AnalyzeAllChildren="False">
+        <Type Name="FileDeleteException" Analyze="True" AnalyzeAllChildren="False">
+         <Members AnalyzeAllChildren="False">
+          <Member Name="#.ctor(System.String)" Analyze="True" />
+          <Member Name="#.ctor(System.String,System.Exception)" Analyze="True" />
+         </Members>
+        </Type>
+        <Type Name="FileGetException" Analyze="True" AnalyzeAllChildren="False">
+         <Members AnalyzeAllChildren="False">
+          <Member Name="#.ctor(System.String)" Analyze="True" />
+          <Member Name="#.ctor(System.String,System.Exception)" Analyze="True" />
+         </Members>
+        </Type>
+        <Type Name="FileSaveException" Analyze="True" AnalyzeAllChildren="False">
+         <Members AnalyzeAllChildren="False">
+          <Member Name="#.ctor(System.String)" Analyze="True" />
+          <Member Name="#.ctor(System.String,System.Exception)" Analyze="True" />
+         </Members>
+        </Type>
+        <Type Name="FileSystemProvider" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="UploadFolderEmptyException" Analyze="True" AnalyzeAllChildren="False">
+         <Members AnalyzeAllChildren="False">
+          <Member Name="#.ctor()" Analyze="True" />
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+     <Resources AnalyzeAllChildren="True" />
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="$(ProjectDir)/../WebApp/bin/SEOToolSet.TempFileManagerProvider.dll" Analyze="True" AnalyzeAllChildren="False">
+   <Modules AnalyzeAllChildren="False">
+    <Module Name="seotoolset.tempfilemanagerprovider.dll" Analyze="True" AnalyzeAllChildren="False">
+     <Namespaces AnalyzeAllChildren="False">
+      <Namespace Name="" Analyze="True" AnalyzeAllChildren="True" />
+      <Namespace Name="SEOToolSet.TempFileManagerProvider" Analyze="True" AnalyzeAllChildren="False">
+       <Types AnalyzeAllChildren="False">
+        <Type Name="ProviderCannotStartThePeriodicPurgeTaskException" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="ProviderHasNotReadWritePermissionException" Analyze="True" AnalyzeAllChildren="False">
+         <Members AnalyzeAllChildren="False">
+          <Member Name="#.ctor()" Analyze="True" />
+          <Member Name="#.ctor(System.String)" Analyze="True" />
+          <Member Name="#.ctor(System.String,System.Exception)" Analyze="True" />
+         </Members>
+        </Type>
+        <Type Name="ProviderHelper" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="TempFileManager" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="TempFileManagerException" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="TempFileManagerProviderBase" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="TempFileManagerProviderCollection" Analyze="True" AnalyzeAllChildren="True" />
+        <Type Name="TempFileManagerProviderConfiguration" Analyze="True" AnalyzeAllChildren="True" />
+       </Types>
+      </Namespace>
+     </Namespaces>
+     <Resources AnalyzeAllChildren="True" />
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="$(ProjectDir)/../WebApp/bin/SEOToolSet.WebApp.dll" Analyze="True" AnalyzeAllChildren="True" />
+ </Targets>
+ <Rules>
+  <RuleFiles>
+   <RuleFile Name="$(FxCopDir)\Rules\DesignRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\GlobalizationRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\InteroperabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\MobilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\NamingRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PerformanceRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PortabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\SecurityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\UsageRules.dll" Enabled="True" AllRulesEnabled="True" />
+  </RuleFiles>
+  <Groups />
+  <Settings />
+ </Rules>
+ <FxCopReport Version="1.36">
+  <Namespaces>
+   <Namespace Name="SEOToolSet.Common">
+    <Messages>
+     <Message Id="ToolSet" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Created="2008-10-23 22:47:49Z">
+      <Issue Name="NamespaceShouldBeDiscreteTerm">
+       <Item>ToolSet</Item>
+       <Item>SEOToolSet.Common</Item>
+       <Item>Toolset</Item>
+      </Issue>
+     </Message>
+     <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-10-23 22:47:49Z">
+      <Issue Name="Namespace">
+       <Item>SEO</Item>
+       <Item>SEOToolSet.Common</Item>
+       <Item>Seo</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="SEOToolSet.Common.Handler">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2008-10-23 22:47:49Z">
+      <Issue>
+       <Item>SEOToolSet.Common.Handler</Item>
+      </Issue>
+     </Message>
+     <Message Id="ToolSet" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Excluded" Created="2008-10-10 21:54:49Z">
+      <Issue Name="NamespaceShouldBeDiscreteTerm">
+       <Item>ToolSet</Item>
+       <Item>SEOToolSet.Common.Handler</Item>
+       <Item>Toolset</Item>
+      </Issue>
+      <Notes>
+       <User Name="pcarrasco">
+        <Note Id="31" />
+       </User>
+      </Notes>
+     </Message>
+     <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2008-10-10 21:54:49Z">
+      <Issue Name="Namespace">
+       <Item>SEO</Item>
+       <Item>SEOToolSet.Common.Handler</Item>
+       <Item>Seo</Item>
+      </Issue>
+      <Notes>
+       <User Name="pcarrasco">
+        <Note Id="32" />
+       </User>
+      </Notes>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="SEOToolSet.Entities">
+    <Messages>
+     <Message Id="ToolSet" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Created="2008-10-23 22:47:49Z">
+      <Issue Name="NamespaceShouldBeDiscreteTerm">
+       <Item>ToolSet</Item>
+       <Item>SEOToolSet.Entities</Item>
+       <Item>Toolset</Item>
+      </Issue>
+     </Message>
+     <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-10-23 22:47:49Z">
+      <Issue Name="Namespace">
+       <Item>SEO</Item>
+       <Item>SEOToolSet.Entities</Item>
+       <Item>Seo</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="SEOToolSet.Providers">
+    <Messages>
+     <Message Id="ToolSet" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Created="2008-10-23 22:58:01Z">
+      <Issue Name="NamespaceShouldBeDiscreteTerm">
+       <Item>ToolSet</Item>
+       <Item>SEOToolSet.Providers</Item>
+       <Item>Toolset</Item>
+      </Issue>
+     </Message>
+     <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-10-23 22:58:01Z">
+      <Issue Name="Namespace">
+       <Item>SEO</Item>
+       <Item>SEOToolSet.Providers</Item>
+       <Item>Seo</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="SEOToolSet.ReportsFacade">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2008-09-12 17:13:10Z">
+      <Issue>
+       <Item>SEOToolSet.ReportsFacade</Item>
+      </Issue>
+     </Message>
+     <Message Id="ToolSet" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Excluded" Created="2008-09-12 17:13:10Z">
+      <Issue Name="NamespaceShouldBeDiscreteTerm">
+       <Item>ToolSet</Item>
+       <Item>SEOToolSet.ReportsFacade</Item>
+       <Item>Toolset</Item>
+      </Issue>
+      <Notes>
+       <User Name="pcarrasco">
+        <Note Id="10" />
+       </User>
+      </Notes>
+     </Message>
+     <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2008-09-12 17:13:10Z">
+      <Issue Name="Namespace">
+       <Item>SEO</Item>
+       <Item>SEOToolSet.ReportsFacade</Item>
+       <Item>Seo</Item>
+      </Issue>
+      <Notes>
+       <User Name="pcarrasco">
+        <Note Id="15" />
+       </User>
+      </Notes>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="SEOToolSet.ReportsFacade.Entities">
+    <Messages>
+     <Message Id="ToolSet" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Excluded" Created="2008-09-12 17:13:10Z">
+      <Issue Name="NamespaceShouldBeDiscreteTerm">
+       <Item>ToolSet</Item>
+       <Item>SEOToolSet.ReportsFacade.Entities</Item>
+       <Item>Toolset</Item>
+      </Issue>
+      <Notes>
+       <User Name="pcarrasco">
+        <Note Id="10" />
+       </User>
+      </Notes>
+     </Message>
+     <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2008-09-12 17:13:10Z">
+      <Issue Name="Namespace">
+       <Item>SEO</Item>
+       <Item>SEOToolSet.ReportsFacade.Entities</Item>
+       <Item>Seo</Item>
+      </Issue>
+      <Notes>
+       <User Name="pcarrasco">
+        <Note Id="17" />
+       </User>
+      </Notes>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="SEOToolSet.TempFileManagerFSProvider">
+    <Messages>
+     <Message Id="ToolSet" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Excluded" Created="2008-09-12 17:13:10Z">
+      <Issue Name="NamespaceShouldBeDiscreteTerm">
+       <Item>ToolSet</Item>
+       <Item>SEOToolSet.TempFileManagerFSProvider</Item>
+       <Item>Toolset</Item>
+      </Issue>
+      <Notes>
+       <User Name="pcarrasco">
+        <Note Id="10" />
+       </User>
+      </Notes>
+     </Message>
+     <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2008-09-12 17:13:10Z">
+      <Issue Name="Namespace">
+       <Item>SEO</Item>
+       <Item>SEOToolSet.TempFileManagerFSProvider</Item>
+       <Item>Seo</Item>
+      </Issue>
+      <Notes>
+       <User Name="pcarrasco">
+        <Note Id="18" />
+       </User>
+      </Notes>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="SEOToolSet.TempFileManagerProvider">
+    <Messages>
+     <Message Id="ToolSet" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Excluded" Created="2008-09-12 17:13:10Z">
+      <Issue Name="NamespaceShouldBeDiscreteTerm">
+       <Item>ToolSet</Item>
+       <Item>SEOToolSet.TempFileManagerProvider</Item>
+       <Item>Toolset</Item>
+      </Issue>
+      <Notes>
+       <User Name="pcarrasco">
+        <Note Id="11" />
+       </User>
+      </Notes>
+     </Message>
+     <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2008-09-12 17:13:10Z">
+      <Issue Name="Namespace">
+       <Item>SEO</Item>
+       <Item>SEOToolSet.TempFileManagerProvider</Item>
+       <Item>Seo</Item>
+      </Issue>
+      <Notes>
+       <User Name="pcarrasco">
+        <Note Id="18" />
+       </User>
+      </Notes>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="SEOToolSet.WebApp">
+    <Messages>
+     <Message Id="ToolSet" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Excluded" Created="2008-08-19 18:50:15Z">
+      <Issue Name="NamespaceShouldBeDiscreteTerm">
+       <Item>ToolSet</Item>
+       <Item>SEOToolSet.WebApp</Item>
+       <Item>Toolset</Item>
+      </Issue>
+      <Notes>
+       <User Name="pcarrasco">
+        <Note Id="14" />
+       </User>
+      </Notes>
+     </Message>
+     <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2008-08-19 18:50:15Z">
+      <Issue Name="Namespace">
+       <Item>SEO</Item>
+       <Item>SEOToolSet.WebApp</Item>
+       <Item>Seo</Item>
+      </Issue>
+      <Notes>
+       <User Name="pcarrasco">
+        <Note Id="15" />
+       </User>
+      </Notes>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="SEOToolSet.WebApp.Controls">
+    <Messages>
+     <Message Id="ToolSet" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Excluded" Created="2008-08-19 18:50:15Z">
+      <Issue Name="NamespaceShouldBeDiscreteTerm">
+       <Item>ToolSet</Item>
+       <Item>SEOToolSet.WebApp.Controls</Item>
+       <Item>Toolset</Item>
+      </Issue>
+      <Notes>
+       <User Name="pcarrasco">
+        <Note Id="8" />
+       </User>
+      </Notes>
+     </Message>
+     <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2008-08-19 18:50:15Z">
+      <Issue Name="Namespace">
+       <Item>SEO</Item>
+       <Item>SEOToolSet.WebApp.Controls</Item>
+       <Item>Seo</Item>
+      </Issue>
+      <Notes>
+       <User Name="pcarrasco">
+        <Note Id="17" />
+       </User>
+      </Notes>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="SEOToolSet.WebApp.Handler">
+    <Messages>
+     <Message Id="ToolSet" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Excluded" Created="2008-08-19 18:50:15Z">
+      <Issue Name="NamespaceShouldBeDiscreteTerm">
+       <Item>ToolSet</Item>
+       <Item>SEOToolSet.WebApp.Handler</Item>
+       <Item>Toolset</Item>
+      </Issue>
+      <Notes>
+       <User Name="pcarrasco">
+        <Note Id="7" />
+       </User>
+      </Notes>
+     </Message>
+     <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2008-08-19 18:50:15Z">
+      <Issue Name="Namespace">
+       <Item>SEO</Item>
+       <Item>SEOToolSet.WebApp.Handler</Item>
+       <Item>Seo</Item>
+      </Issue>
+      <Notes>
+       <User Name="pcarrasco">
+        <Note Id="17" />
+       </User>
+      </Notes>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="SEOToolSet.WebApp.Test">
+    <Messages>
+     <Message TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020" Created="2008-08-19 18:50:15Z">
+      <Issue>
+       <Item>SEOToolSet.WebApp.Test</Item>
+      </Issue>
+     </Message>
+     <Message Id="ToolSet" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Excluded" Created="2008-08-19 18:50:15Z">
+      <Issue Name="NamespaceShouldBeDiscreteTerm">
+       <Item>ToolSet</Item>
+       <Item>SEOToolSet.WebApp.Test</Item>
+       <Item>Toolset</Item>
+      </Issue>
+      <Notes>
+       <User Name="pcarrasco">
+        <Note Id="12" />
+       </User>
+      </Notes>
+     </Message>
+     <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2008-08-19 18:50:15Z">
+      <Issue Name="Namespace">
+       <Item>SEO</Item>
+       <Item>SEOToolSet.WebApp.Test</Item>
+       <Item>Seo</Item>
+      </Issue>
+      <Notes>
+       <User Name="pcarrasco">
+        <Note Id="15" />
+       </User>
+      </Notes>
+     </Message>
+    </Messages>
+   </Namespace>
+  </Namespaces>
+  <Targets>
+   <Target Name="$(ProjectDir)/../Common/bin/Debug/SEOToolSet.Common.dll">
+    <Modules>
+     <Module Name="seotoolset.common.dll">
+      <Messages>
+       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Created="2008-10-23 22:55:54Z">
+        <Issue Name="NoStrongName">
+         <Item>'SEOToolSet.Common.dll'</Item>
+        </Issue>
+       </Message>
+       <Message Id="ToolSet" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Created="2008-10-23 22:55:54Z">
+        <Issue Name="AssemblyShouldBeDiscreteTerm">
+         <Item>ToolSet</Item>
+         <Item>'SEOToolSet.Common.dll'</Item>
+         <Item>Toolset</Item>
+        </Issue>
+       </Message>
+       <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-10-23 22:55:54Z">
+        <Issue Name="Assembly">
+         <Item>SEO</Item>
+         <Item>'SEOToolSet.Common.dll'</Item>
+         <Item>Seo</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Created="2008-10-23 22:55:54Z">
+        <Issue>
+         <Item>'SEOToolSet.Common.dll'</Item>
+        </Issue>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="SEOToolSet.Common">
+        <Types>
+         <Type Name="ArrayRendererType">
+          <Messages>
+           <Message Id="Renderer" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-10-23 22:55:54Z">
+            <Issue Name="Type">
+             <Item>Renderer</Item>
+             <Item>'ArrayRendererType'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="Constants">
+          <Members>
+           <Member Name="#JsonCallbackParameter">
+            <Messages>
+             <Message Id="Json" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-10-23 22:55:54Z">
+              <Issue Name="Member">
+               <Item>Json</Item>
+               <Item>'Constants.JsonCallbackParameter'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="GeneralReport">
+          <Members>
+           <Member Name="#ToolSetKeywords">
+            <Messages>
+             <Message Id="ToolSet" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Created="2008-10-23 22:55:54Z">
+              <Issue Name="MemberShouldBeDiscreteTerm">
+               <Item>ToolSet</Item>
+               <Item>'GeneralReport.ToolSetKeywords'</Item>
+               <Item>Toolset</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+   <Target Name="$(ProjectDir)/../Entities/bin/Debug/SEOToolSet.Entities.dll">
+    <Modules>
+     <Module Name="seotoolset.entities.dll">
+      <Messages>
+       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Created="2008-10-23 22:47:49Z">
+        <Issue Name="NoStrongName">
+         <Item>'SEOToolSet.Entities.dll'</Item>
+        </Issue>
+       </Message>
+       <Message Id="ToolSet" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Created="2008-10-23 22:47:49Z">
+        <Issue Name="AssemblyShouldBeDiscreteTerm">
+         <Item>ToolSet</Item>
+         <Item>'SEOToolSet.Entities.dll'</Item>
+         <Item>Toolset</Item>
+        </Issue>
+       </Message>
+       <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-10-23 22:47:49Z">
+        <Issue Name="Assembly">
+         <Item>SEO</Item>
+         <Item>'SEOToolSet.Entities.dll'</Item>
+         <Item>Seo</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Created="2008-10-23 22:47:49Z">
+        <Issue>
+         <Item>'SEOToolSet.Entities.dll'</Item>
+        </Issue>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="SEOToolSet.Entities">
+        <Types>
+         <Type Name="Account">
+          <Members>
+           <Member Name="#Projects">
+            <Messages>
+             <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Created="2008-10-23 22:47:49Z">
+              <Issue>
+               <Item>'Account.Projects'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Users">
+            <Messages>
+             <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Created="2008-10-23 22:47:49Z">
+              <Issue>
+               <Item>'Account.Users'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="KeywordList">
+          <Members>
+           <Member Name="#Keywords">
+            <Messages>
+             <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Created="2008-10-23 22:47:49Z">
+              <Issue>
+               <Item>'KeywordList.Keywords'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="Project">
+          <Members>
+           <Member Name="#KeywordLists">
+            <Messages>
+             <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Created="2008-10-23 22:47:49Z">
+              <Issue>
+               <Item>'Project.KeywordLists'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SEOUser">
+          <Messages>
+           <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-10-23 22:47:49Z">
+            <Issue Name="Type">
+             <Item>SEO</Item>
+             <Item>'SEOUser'</Item>
+             <Item>Seo</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#LastLoginDate">
+            <Messages>
+             <Message Id="Login" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Created="2008-10-23 22:47:49Z">
+              <Issue Name="Member">
+               <Item>Login</Item>
+               <Item>'SEOUser.LastLoginDate'</Item>
+               <Item>LogOn</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#LockedOutDate">
+            <Messages>
+             <Message Id="OutDate" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Created="2008-10-23 22:47:49Z">
+              <Issue Name="MemberShouldBeDiscreteTerm">
+               <Item>OutDate</Item>
+               <Item>'SEOUser.LockedOutDate'</Item>
+               <Item>Outdate</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Login">
+            <Messages>
+             <Message Id="Login" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Created="2008-10-23 22:47:49Z">
+              <Issue Name="Member">
+               <Item>Login</Item>
+               <Item>'SEOUser.Login'</Item>
+               <Item>LogOn</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Projects">
+            <Messages>
+             <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Created="2008-10-23 22:47:49Z">
+              <Issue>
+               <Item>'SEOUser.Projects'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+   <Target Name="$(ProjectDir)/../References/ObjectXMLSerializer.dll">
+    <Modules>
+     <Module Name="objectxmlserializer.dll">
+      <Namespaces>
+       <Namespace Name="Serializer">
+        <Types>
+         <Type Name="ObjectXmlSerializer">
+          <Members>
+           <Member Name="#Load`1(System.String,!!0&amp;)">
+            <Messages>
+             <Message Id="1#" TypeName="AvoidOutParameters" Category="Microsoft.Design" CheckId="CA1021" Status="Excluded" Created="2008-09-12 17:07:53Z">
+              <Issue>
+               <Item>'serializableObject'</Item>
+              </Issue>
+              <Notes>
+               <User Name="pcarrasco">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Load`1(System.String,Serializer.SerializedFormat,!!0&amp;)">
+            <Messages>
+             <Message Id="2#" TypeName="AvoidOutParameters" Category="Microsoft.Design" CheckId="CA1021" Status="Excluded" Created="2008-09-12 17:07:53Z">
+              <Issue>
+               <Item>'serializableObject'</Item>
+              </Issue>
+              <Notes>
+               <User Name="pcarrasco">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Load`1(System.String,System.IO.IsolatedStorage.IsolatedStorageFile,!!0&amp;)">
+            <Messages>
+             <Message Id="2#" TypeName="AvoidOutParameters" Category="Microsoft.Design" CheckId="CA1021" Status="Excluded" Created="2008-09-12 17:07:53Z">
+              <Issue>
+               <Item>'serializableObject'</Item>
+              </Issue>
+              <Notes>
+               <User Name="pcarrasco">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Load`1(System.String,System.IO.IsolatedStorage.IsolatedStorageFile,System.Type[],!!0&amp;)">
+            <Messages>
+             <Message Id="3#" TypeName="AvoidOutParameters" Category="Microsoft.Design" CheckId="CA1021" Status="Excluded" Created="2008-09-12 17:07:53Z">
+              <Issue>
+               <Item>'serializableObject'</Item>
+              </Issue>
+              <Notes>
+               <User Name="pcarrasco">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Load`1(System.String,System.Type[],!!0&amp;)">
+            <Messages>
+             <Message Id="2#" TypeName="AvoidOutParameters" Category="Microsoft.Design" CheckId="CA1021" Status="Excluded" Created="2008-09-12 17:07:53Z">
+              <Issue>
+               <Item>'serializableObject'</Item>
+              </Issue>
+              <Notes>
+               <User Name="pcarrasco">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#LoadFromString`1(System.String,!!0&amp;)">
+            <Messages>
+             <Message Id="1#" TypeName="AvoidOutParameters" Category="Microsoft.Design" CheckId="CA1021" Status="Excluded" Created="2008-09-12 17:07:53Z">
+              <Issue>
+               <Item>'serializableObject'</Item>
+              </Issue>
+              <Notes>
+               <User Name="pcarrasco">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#LoadFromString`1(System.String,System.Type[],!!0&amp;)">
+            <Messages>
+             <Message Id="2#" TypeName="AvoidOutParameters" Category="Microsoft.Design" CheckId="CA1021" Status="Excluded" Created="2008-09-12 17:07:53Z">
+              <Issue>
+               <Item>'serializableObject'</Item>
+              </Issue>
+              <Notes>
+               <User Name="pcarrasco">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+   <Target Name="$(ProjectDir)/../ReportServices/bin/SEOToolSet.ReportServices.dll">
+    <Modules>
+     <Module Name="seotoolset.reportservices.dll">
+      <Messages>
+       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Created="2008-09-12 17:13:10Z">
+        <Issue Name="NoStrongName">
+         <Item>'SEOToolSet.ReportServices.dll'</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Created="2008-09-12 17:13:10Z">
+        <Issue>
+         <Item>'SEOToolSet.ReportServices.dll'</Item>
+        </Issue>
+       </Message>
+       <Message Id="ToolSet" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Excluded" Created="2008-09-12 17:13:10Z">
+        <Issue Name="AssemblyShouldBeDiscreteTerm">
+         <Item>ToolSet</Item>
+         <Item>'SEOToolSet.ReportServices.dll'</Item>
+         <Item>Toolset</Item>
+        </Issue>
+        <Notes>
+         <User Name="pcarrasco">
+          <Note Id="7" />
+         </User>
+        </Notes>
+       </Message>
+       <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2008-09-12 17:13:10Z">
+        <Issue Name="Assembly">
+         <Item>SEO</Item>
+         <Item>'SEOToolSet.ReportServices.dll'</Item>
+         <Item>Seo</Item>
+        </Issue>
+        <Notes>
+         <User Name="pcarrasco">
+          <Note Id="15" />
+         </User>
+        </Notes>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="SEOToolSet.Common">
+        <Types>
+         <Type Name="Global">
+          <Members>
+           <Member Name="#Application_Error(System.Object,System.EventArgs)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-10-23 22:47:49Z">
+              <Issue>
+               <Item>'Global.Application_Error(object, EventArgs)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="ReviewVisibleEventHandlers" Category="Microsoft.Security" CheckId="CA2109" Created="2008-10-23 22:47:49Z">
+              <Issue>
+               <Item>'Global.Application_Error(object, EventArgs)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+   <Target Name="$(ProjectDir)/../ReportServices/bin/SEOToolSet.ReportsFacade.dll">
+    <Modules>
+     <Module Name="seotoolset.reportsfacade.dll">
+      <Messages>
+       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Created="2008-09-12 17:13:10Z">
+        <Issue Name="NoStrongName">
+         <Item>'SEOToolSet.ReportsFacade.dll'</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Created="2008-09-12 17:13:10Z">
+        <Issue>
+         <Item>'SEOToolSet.ReportsFacade.dll'</Item>
+        </Issue>
+       </Message>
+       <Message Id="ToolSet" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Excluded" Created="2008-09-12 17:13:10Z">
+        <Issue Name="AssemblyShouldBeDiscreteTerm">
+         <Item>ToolSet</Item>
+         <Item>'SEOToolSet.ReportsFacade.dll'</Item>
+         <Item>Toolset</Item>
+        </Issue>
+        <Notes>
+         <User Name="pcarrasco">
+          <Note Id="9" />
+         </User>
+        </Notes>
+       </Message>
+       <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2008-09-12 17:13:10Z">
+        <Issue Name="Assembly">
+         <Item>SEO</Item>
+         <Item>'SEOToolSet.ReportsFacade.dll'</Item>
+         <Item>Seo</Item>
+        </Issue>
+        <Notes>
+         <User Name="pcarrasco">
+          <Note Id="18" />
+         </User>
+        </Notes>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="SEOToolSet.ReportsFacade">
+        <Types>
+         <Type Name="ServiceCaller">
+          <Members>
+           <Member Name="#GetCloakCheckInfo(System.Uri)">
+            <Messages>
+             <Message Id="uriRequested" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Created="2008-09-12 17:13:10Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'uriRequested'</Item>
+               <Item>'ServiceCaller.GetCloakCheckInfo(Uri)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetHeaderInfo(System.Uri)">
+            <Messages>
+             <Message Id="uriRequested" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Created="2008-09-12 17:13:10Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'uriRequested'</Item>
+               <Item>'ServiceCaller.GetHeaderInfo(Uri)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetLinearKeywordDistributionReport(System.Uri)">
+            <Messages>
+             <Message Id="uriRequested" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Created="2008-09-12 17:13:10Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'uriRequested'</Item>
+               <Item>'ServiceCaller.GetLinearKeywordDistributionReport(Uri)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetLinkTextReport(System.Uri)">
+            <Messages>
+             <Message Id="uriRequested" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Created="2008-09-12 17:13:10Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'uriRequested'</Item>
+               <Item>'ServiceCaller.GetLinkTextReport(Uri)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetOptimizedKeywordsReport(System.Uri)">
+            <Messages>
+             <Message Id="uriRequested" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Created="2008-09-12 17:13:10Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'uriRequested'</Item>
+               <Item>'ServiceCaller.GetOptimizedKeywordsReport(Uri)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetSiteInfo(System.Uri)">
+            <Messages>
+             <Message Id="uriRequested" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Created="2008-09-12 17:13:10Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'uriRequested'</Item>
+               <Item>'ServiceCaller.GetSiteInfo(Uri)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetTagInformation(System.Uri)">
+            <Messages>
+             <Message Id="uriRequested" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Created="2008-09-12 17:13:10Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'uriRequested'</Item>
+               <Item>'ServiceCaller.GetTagInformation(Uri)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetToolSetKeywords(System.Uri)">
+            <Messages>
+             <Message Id="uriRequested" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Created="2008-09-12 17:13:10Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'uriRequested'</Item>
+               <Item>'ServiceCaller.GetToolSetKeywords(Uri)'</Item>
+              </Issue>
+             </Message>
+             <Message Id="ToolSet" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Excluded" Created="2008-09-12 17:13:10Z">
+              <Issue Name="MemberShouldBeDiscreteTerm">
+               <Item>ToolSet</Item>
+               <Item>'ServiceCaller.GetToolSetKeywords(Uri)'</Item>
+               <Item>Toolset</Item>
+              </Issue>
+              <Notes>
+               <User Name="pcarrasco">
+                <Note Id="10" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetWordMetrics(System.Uri)">
+            <Messages>
+             <Message Id="uriRequested" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Created="2008-09-12 17:13:10Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'uriRequested'</Item>
+               <Item>'ServiceCaller.GetWordMetrics(Uri)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetWordPhrases(System.Uri)">
+            <Messages>
+             <Message TypeName="AvoidExcessiveLocals" Category="Microsoft.Performance" CheckId="CA1809" Created="2008-10-01 20:36:35Z">
+              <Issue Name="Compiler">
+               <Item>'ServiceCaller.GetWordPhrases(Uri)'</Item>
+               <Item>156</Item>
+               <Item>1</Item>
+              </Issue>
+             </Message>
+             <Message Id="uriRequested" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Created="2008-09-12 17:13:10Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'uriRequested'</Item>
+               <Item>'ServiceCaller.GetWordPhrases(Uri)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="SEOToolSet.ReportsFacade.Entities">
+        <Types>
+         <Type Name="LinearKeywordDistributionReport">
+          <Members>
+           <Member Name="#Keywords">
+            <Messages>
+             <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Created="2008-09-26 17:00:53Z">
+              <Issue>
+               <Item>'LinearKeywordDistributionReport.Keywords'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="LinearKeywordDistributionReport+Keyword">
+          <Messages>
+           <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Excluded" Created="2008-09-12 17:13:10Z">
+            <Issue>
+             <Item>'LinearKeywordDistributionReport.Keyword'</Item>
+            </Issue>
+            <Notes>
+             <User Name="pcarrasco">
+              <Note Id="3" />
+             </User>
+            </Notes>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#SrcImage">
+            <Messages>
+             <Message Id="Src" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-09-12 17:13:10Z">
+              <Issue Name="Member">
+               <Item>Src</Item>
+               <Item>'LinearKeywordDistributionReport.Keyword.SrcImage'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="LinkTextReport">
+          <Members>
+           <Member Name="#Links">
+            <Messages>
+             <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Created="2008-09-26 17:00:53Z">
+              <Issue>
+               <Item>'LinkTextReport.Links'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="LinkTextReport+Link">
+          <Messages>
+           <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Excluded" Created="2008-09-12 17:13:10Z">
+            <Issue>
+             <Item>'LinkTextReport.Link'</Item>
+            </Issue>
+            <Notes>
+             <User Name="pcarrasco">
+              <Note Id="3" />
+             </User>
+            </Notes>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#Rel">
+            <Messages>
+             <Message Id="Rel" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-09-12 17:13:10Z">
+              <Issue Name="Member">
+               <Item>Rel</Item>
+               <Item>'LinkTextReport.Link.Rel'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="LinkTextReport+Summary">
+          <Messages>
+           <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Excluded" Created="2008-09-12 17:13:10Z">
+            <Issue>
+             <Item>'LinkTextReport.Summary'</Item>
+            </Issue>
+            <Notes>
+             <User Name="pcarrasco">
+              <Note Id="3" />
+             </User>
+            </Notes>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="OptimizedKeywordsReport">
+          <Members>
+           <Member Name="#Keywords">
+            <Messages>
+             <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Created="2008-09-26 17:00:53Z">
+              <Issue>
+               <Item>'OptimizedKeywordsReport.Keywords'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="OptimizedKeywordsReport+Keyword">
+          <Messages>
+           <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Excluded" Created="2008-09-12 17:13:10Z">
+            <Issue>
+             <Item>'OptimizedKeywordsReport.Keyword'</Item>
+            </Issue>
+            <Notes>
+             <User Name="pcarrasco">
+              <Note Id="3" />
+             </User>
+            </Notes>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="SiteCheckerReport">
+          <Members>
+           <Member Name="#Criteria">
+            <Messages>
+             <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Created="2008-09-26 17:00:53Z">
+              <Issue>
+               <Item>'SiteCheckerReport.Criteria'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SiteCheckerReport+SiteCheckerCriterion">
+          <Messages>
+           <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Excluded" Created="2008-09-12 17:13:10Z">
+            <Issue>
+             <Item>'SiteCheckerReport.SiteCheckerCriterion'</Item>
+            </Issue>
+            <Notes>
+             <User Name="pcarrasco">
+              <Note Id="3" />
+             </User>
+            </Notes>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="TagInformationReport">
+          <Members>
+           <Member Name="#Tags">
+            <Messages>
+             <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Created="2008-09-26 17:00:53Z">
+              <Issue>
+               <Item>'TagInformationReport.Tags'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="TagInformationReport+Tag">
+          <Messages>
+           <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Excluded" Created="2008-09-12 17:13:10Z">
+            <Issue>
+             <Item>'TagInformationReport.Tag'</Item>
+            </Issue>
+            <Notes>
+             <User Name="pcarrasco">
+              <Note Id="3" />
+             </User>
+            </Notes>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="TagInformationReport+Tag+DataColumn">
+          <Messages>
+           <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Excluded" Created="2008-09-12 17:13:10Z">
+            <Issue>
+             <Item>'TagInformationReport.Tag.DataColumn'</Item>
+            </Issue>
+            <Notes>
+             <User Name="pcarrasco">
+              <Note Id="3" />
+             </User>
+            </Notes>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="ToolSetKeywordsReport">
+          <Messages>
+           <Message Id="ToolSet" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Excluded" Created="2008-09-12 17:13:10Z">
+            <Issue Name="TypeShouldBeDiscreteTerm">
+             <Item>ToolSet</Item>
+             <Item>'ToolSetKeywordsReport'</Item>
+             <Item>Toolset</Item>
+            </Issue>
+            <Notes>
+             <User Name="pcarrasco">
+              <Note Id="10" />
+             </User>
+            </Notes>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#Keywords">
+            <Messages>
+             <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Created="2008-09-26 17:00:53Z">
+              <Issue>
+               <Item>'ToolSetKeywordsReport.Keywords'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="ToolSetKeywordsReport+Keyword">
+          <Messages>
+           <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Excluded" Created="2008-09-12 17:13:10Z">
+            <Issue>
+             <Item>'ToolSetKeywordsReport.Keyword'</Item>
+            </Issue>
+            <Notes>
+             <User Name="pcarrasco">
+              <Note Id="3" />
+             </User>
+            </Notes>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="WordMetricsReport">
+          <Members>
+           <Member Name="#WordMetrics">
+            <Messages>
+             <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Created="2008-09-26 17:00:53Z">
+              <Issue>
+               <Item>'WordMetricsReport.WordMetrics'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="WordMetricsReport+SummaryUsedWords">
+          <Messages>
+           <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Excluded" Created="2008-09-12 17:13:10Z">
+            <Issue>
+             <Item>'WordMetricsReport.SummaryUsedWords'</Item>
+            </Issue>
+            <Notes>
+             <User Name="pcarrasco">
+              <Note Id="3" />
+             </User>
+            </Notes>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="WordMetricsReport+WordMetric">
+          <Messages>
+           <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Excluded" Created="2008-09-12 17:13:10Z">
+            <Issue>
+             <Item>'WordMetricsReport.WordMetric'</Item>
+            </Issue>
+            <Notes>
+             <User Name="pcarrasco">
+              <Note Id="3" />
+             </User>
+            </Notes>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="WordPhrasesReport">
+          <Members>
+           <Member Name="#Phrases">
+            <Messages>
+             <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Created="2008-09-26 17:00:53Z">
+              <Issue>
+               <Item>'WordPhrasesReport.Phrases'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="WordPhrasesReport+Keyword">
+          <Messages>
+           <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Excluded" Created="2008-09-12 17:13:10Z">
+            <Issue>
+             <Item>'WordPhrasesReport.Keyword'</Item>
+            </Issue>
+            <Notes>
+             <User Name="pcarrasco">
+              <Note Id="3" />
+             </User>
+            </Notes>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#MetaDesc">
+            <Messages>
+             <Message Id="Desc" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-09-12 17:13:10Z">
+              <Issue Name="Member">
+               <Item>Desc</Item>
+               <Item>'WordPhrasesReport.Keyword.MetaDesc'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="WordPhrasesReport+KeywordItem">
+          <Messages>
+           <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Created="2008-10-01 20:36:35Z">
+            <Issue>
+             <Item>'WordPhrasesReport.KeywordItem'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="WordPhrasesReport+Phrase">
+          <Messages>
+           <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Excluded" Created="2008-09-12 17:13:10Z">
+            <Issue>
+             <Item>'WordPhrasesReport.Phrase'</Item>
+            </Issue>
+            <Notes>
+             <User Name="pcarrasco">
+              <Note Id="3" />
+             </User>
+            </Notes>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#Keywords">
+            <Messages>
+             <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Created="2008-09-26 17:00:53Z">
+              <Issue>
+               <Item>'WordPhrasesReport.Phrase.Keywords'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+   <Target Name="$(ProjectDir)/../SEOToolSetProviders/bin/Debug/SEOToolSet.Providers.dll">
+    <Modules>
+     <Module Name="seotoolset.providers.dll">
+      <Messages>
+       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Created="2008-10-23 22:58:01Z">
+        <Issue Name="NoStrongName">
+         <Item>'SEOToolSet.Providers.dll'</Item>
+        </Issue>
+       </Message>
+       <Message Id="ToolSet" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Created="2008-10-23 22:58:01Z">
+        <Issue Name="AssemblyShouldBeDiscreteTerm">
+         <Item>ToolSet</Item>
+         <Item>'SEOToolSet.Providers.dll'</Item>
+         <Item>Toolset</Item>
+        </Issue>
+       </Message>
+       <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-10-23 22:58:01Z">
+        <Issue Name="Assembly">
+         <Item>SEO</Item>
+         <Item>'SEOToolSet.Providers.dll'</Item>
+         <Item>Seo</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Created="2008-10-23 22:58:01Z">
+        <Issue>
+         <Item>'SEOToolSet.Providers.dll'</Item>
+        </Issue>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="SEOToolSet.Providers">
+        <Types>
+         <Type Name="AccountProviderBase">
+          <Members>
+           <Member Name="#CreateAccount(System.String,System.Int32,System.Int32,System.Int32,System.DateTime,SEOToolSet.Entities.Account,System.String,System.String,System.String,System.String,System.String,System.DateTime,System.String,System.String,System.String,System.String,System.Boolean)">
+            <Messages>
+             <Message Id="Account" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-10-23 22:58:01Z">
+              <Issue Name="MemberParameter">
+               <Item>'AccountProviderBase.CreateAccount(string, int, int, int, DateTime, Account, string, string, string, string, string, DateTime, string, string, string, string, bool)'</Item>
+               <Item>Account</Item>
+               <Item>'AccountExpirationDate'</Item>
+               <Item>account</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetAccounts()">
+            <Messages>
+             <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Created="2008-10-23 22:58:01Z">
+              <Issue Certainty="50">
+               <Item>'AccountProviderBase.GetAccounts()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetAccountsFromAccount(SEOToolSet.Entities.Account)">
+            <Messages>
+             <Message Id="acount" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-10-23 22:58:01Z">
+              <Issue Name="MemberParameter">
+               <Item>'AccountProviderBase.GetAccountsFromAccount(Account)'</Item>
+               <Item>acount</Item>
+               <Item>'acount'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="AccountProviderCollection">
+          <Messages>
+           <Message TypeName="CollectionsShouldImplementGenericInterface" Category="Microsoft.Design" CheckId="CA1010" Created="2008-10-23 22:58:01Z">
+            <Issue>
+             <Item>'AccountProviderCollection'</Item>
+             <Item>ICollection</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="ProjectProviderBase">
+          <Members>
+           <Member Name="#AssociateUserToProject(System.Int32,System.String)">
+            <Messages>
+             <Message Id="Id" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-10-23 22:58:01Z">
+              <Issue Name="MemberParameterAbbreviation">
+               <Item>'ProjectProviderBase.AssociateUserToProject(int, string)'</Item>
+               <Item>Id</Item>
+               <Item>'IdProject'</Item>
+               <Item>id</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#CreateKeywordList(System.String)">
+            <Messages>
+             <Message Id="Keyword" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-10-23 22:58:01Z">
+              <Issue Name="MemberParameter">
+               <Item>'ProjectProviderBase.CreateKeywordList(string)'</Item>
+               <Item>Keyword</Item>
+               <Item>'KeywordListName'</Item>
+               <Item>keyword</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#CreateProject(System.String,System.String,System.String,System.String,SEOToolSet.Entities.Account,System.String)">
+            <Messages>
+             <Message Id="Contact" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-10-23 22:58:01Z">
+              <Issue Name="MemberParameter">
+               <Item>'ProjectProviderBase.CreateProject(string, string, string, string, Account, string)'</Item>
+               <Item>Contact</Item>
+               <Item>'ContactName'</Item>
+               <Item>contact</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetKeywordById(System.Int32,System.Nullable`1&lt;System.Boolean&gt;)">
+            <Messages>
+             <Message Id="Id" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-10-23 22:58:01Z">
+              <Issue Name="MemberParameterAbbreviation">
+               <Item>'ProjectProviderBase.GetKeywordById(int, bool?)'</Item>
+               <Item>Id</Item>
+               <Item>'IdKeyword'</Item>
+               <Item>id</Item>
+              </Issue>
+             </Message>
+             <Message Id="Include" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-10-23 22:58:01Z">
+              <Issue Name="MemberParameter">
+               <Item>'ProjectProviderBase.GetKeywordById(int, bool?)'</Item>
+               <Item>Include</Item>
+               <Item>'IncludeInactive'</Item>
+               <Item>include</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetKeywordsInList(SEOToolSet.Entities.Project,System.String)">
+            <Messages>
+             <Message Id="Keyword" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-10-23 22:58:01Z">
+              <Issue Name="MemberParameter">
+               <Item>'ProjectProviderBase.GetKeywordsInList(Project, string)'</Item>
+               <Item>Keyword</Item>
+               <Item>'KeywordListName'</Item>
+               <Item>keyword</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetKeywordsInList(System.Int32)">
+            <Messages>
+             <Message Id="Id" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-10-23 22:58:01Z">
+              <Issue Name="MemberParameterAbbreviation">
+               <Item>'ProjectProviderBase.GetKeywordsInList(int)'</Item>
+               <Item>Id</Item>
+               <Item>'IdKeywordList'</Item>
+               <Item>id</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#UpdateKeyword(System.Int32,System.String)">
+            <Messages>
+             <Message Id="Idkeyword" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-10-23 22:58:01Z">
+              <Issue Name="MemberParameter">
+               <Item>'ProjectProviderBase.UpdateKeyword(int, string)'</Item>
+               <Item>Idkeyword</Item>
+               <Item>'Idkeyword'</Item>
+               <Item>idkeyword</Item>
+              </Issue>
+             </Message>
+             <Message Id="Idkeyword" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-10-23 22:58:01Z">
+              <Issue Name="MemberParameter">
+               <Item>'ProjectProviderBase.UpdateKeyword(int, string)'</Item>
+               <Item>Idkeyword</Item>
+               <Item>'Idkeyword'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="ProjectProviderCollection">
+          <Messages>
+           <Message TypeName="CollectionsShouldImplementGenericInterface" Category="Microsoft.Design" CheckId="CA1010" Created="2008-10-23 22:58:01Z">
+            <Issue>
+             <Item>'ProjectProviderCollection'</Item>
+             <Item>ICollection</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="SEOMembershipProviderBase">
+          <Messages>
+           <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-10-23 22:58:01Z">
+            <Issue Name="Type">
+             <Item>SEO</Item>
+             <Item>'SEOMembershipProviderBase'</Item>
+             <Item>Seo</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#CreateSEOUser()">
+            <Messages>
+             <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-10-23 22:58:01Z">
+              <Issue Name="Member">
+               <Item>SEO</Item>
+               <Item>'SEOMembershipProviderBase.CreateSEOUser()'</Item>
+               <Item>Seo</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#CreateSEOUser(System.String,System.String,System.String,SEOToolSet.Entities.Country,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.DateTime,System.DateTime,System.DateTime,System.DateTime,SEOToolSet.Entities.Account,System.Boolean)">
+            <Messages>
+             <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-10-23 22:58:01Z">
+              <Issue Name="Member">
+               <Item>SEO</Item>
+               <Item>'SEOMembershipProviderBase.CreateSEOUser(string, string, string, Country, string, string, string, string, string, string, string, string, string, string, DateTime, DateTime, DateTime, DateTime, Account, bool)'</Item>
+               <Item>Seo</Item>
+              </Issue>
+             </Message>
+             <Message Id="contry" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-10-23 22:58:01Z">
+              <Issue Name="MemberParameter">
+               <Item>'SEOMembershipProviderBase.CreateSEOUser(string, string, string, Country, string, string, string, string, string, string, string, string, string, string, DateTime, DateTime, DateTime, DateTime, Account, bool)'</Item>
+               <Item>contry</Item>
+               <Item>'contryOrigin'</Item>
+              </Issue>
+             </Message>
+             <Message Id="Login" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Created="2008-10-23 22:58:01Z">
+              <Issue Name="MemberParameter">
+               <Item>'SEOMembershipProviderBase.CreateSEOUser(string, string, string, Country, string, string, string, string, string, string, string, string, string, string, DateTime, DateTime, DateTime, DateTime, Account, bool)'</Item>
+               <Item>Login</Item>
+               <Item>'lastLoginDate'</Item>
+               <Item>LogOn</Item>
+              </Issue>
+             </Message>
+             <Message Id="login" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Created="2008-10-23 22:58:01Z">
+              <Issue Name="MemberParameter">
+               <Item>'SEOMembershipProviderBase.CreateSEOUser(string, string, string, Country, string, string, string, string, string, string, string, string, string, string, DateTime, DateTime, DateTime, DateTime, Account, bool)'</Item>
+               <Item>login</Item>
+               <Item>'login'</Item>
+               <Item>logOn</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetSEOUser(System.String)">
+            <Messages>
+             <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-10-23 22:58:01Z">
+              <Issue Name="Member">
+               <Item>SEO</Item>
+               <Item>'SEOMembershipProviderBase.GetSEOUser(string)'</Item>
+               <Item>Seo</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetSEOUserById(System.Int32)">
+            <Messages>
+             <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-10-23 22:58:01Z">
+              <Issue Name="Member">
+               <Item>SEO</Item>
+               <Item>'SEOMembershipProviderBase.GetSEOUserById(int)'</Item>
+               <Item>Seo</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetSEOUsersFromAccount(SEOToolSet.Entities.Account)">
+            <Messages>
+             <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-10-23 22:58:01Z">
+              <Issue Name="Member">
+               <Item>SEO</Item>
+               <Item>'SEOMembershipProviderBase.GetSEOUsersFromAccount(Account)'</Item>
+               <Item>Seo</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetSEOUsersFromAccount(System.String,System.Nullable`1&lt;System.Boolean&gt;)">
+            <Messages>
+             <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-10-23 22:58:01Z">
+              <Issue Name="Member">
+               <Item>SEO</Item>
+               <Item>'SEOMembershipProviderBase.GetSEOUsersFromAccount(string, bool?)'</Item>
+               <Item>Seo</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#UpdateSEOUser(SEOToolSet.Entities.SEOUser)">
+            <Messages>
+             <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-10-23 22:58:01Z">
+              <Issue Name="Member">
+               <Item>SEO</Item>
+               <Item>'SEOMembershipProviderBase.UpdateSEOUser(SEOUser)'</Item>
+               <Item>Seo</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SEOMembershipProviderCollection">
+          <Messages>
+           <Message TypeName="CollectionsShouldImplementGenericInterface" Category="Microsoft.Design" CheckId="CA1010" Created="2008-10-23 22:58:01Z">
+            <Issue>
+             <Item>'SEOMembershipProviderCollection'</Item>
+             <Item>ICollection</Item>
+            </Issue>
+           </Message>
+           <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-10-23 22:58:01Z">
+            <Issue Name="Type">
+             <Item>SEO</Item>
+             <Item>'SEOMembershipProviderCollection'</Item>
+             <Item>Seo</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="SEOMembershipProviderConfiguration">
+          <Messages>
+           <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-10-23 22:58:01Z">
+            <Issue Name="Type">
+             <Item>SEO</Item>
+             <Item>'SEOMembershipProviderConfiguration'</Item>
+             <Item>Seo</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+   <Target Name="$(ProjectDir)/../WebApp/bin/SEOToolSet.TempFileManagerFSProvider.dll">
+    <Modules>
+     <Module Name="seotoolset.tempfilemanagerfsprovider.dll">
+      <Messages>
+       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Created="2008-09-12 17:13:10Z">
+        <Issue Name="NoStrongName">
+         <Item>'SEOToolSet.TempFileManagerFSProvider.dll'</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Created="2008-09-12 17:13:10Z">
+        <Issue>
+         <Item>'SEOToolSet.TempFileManagerFSProvider.dll'</Item>
+        </Issue>
+       </Message>
+       <Message Id="ToolSet" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Excluded" Created="2008-09-12 17:13:10Z">
+        <Issue Name="AssemblyShouldBeDiscreteTerm">
+         <Item>ToolSet</Item>
+         <Item>'SEOToolSet.TempFileManagerFSProvider.dll'</Item>
+         <Item>Toolset</Item>
+        </Issue>
+        <Notes>
+         <User Name="pcarrasco">
+          <Note Id="12" />
+         </User>
+        </Notes>
+       </Message>
+       <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2008-09-12 17:13:10Z">
+        <Issue Name="Assembly">
+         <Item>SEO</Item>
+         <Item>'SEOToolSet.TempFileManagerFSProvider.dll'</Item>
+         <Item>Seo</Item>
+        </Issue>
+        <Notes>
+         <User Name="pcarrasco">
+          <Note Id="16" />
+         </User>
+        </Notes>
+       </Message>
+      </Messages>
+     </Module>
+    </Modules>
+   </Target>
+   <Target Name="$(ProjectDir)/../WebApp/bin/SEOToolSet.TempFileManagerProvider.dll">
+    <Modules>
+     <Module Name="seotoolset.tempfilemanagerprovider.dll">
+      <Messages>
+       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Created="2008-09-12 17:13:10Z">
+        <Issue Name="NoStrongName">
+         <Item>'SEOToolSet.TempFileManagerProvider.dll'</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Created="2008-09-12 17:13:10Z">
+        <Issue>
+         <Item>'SEOToolSet.TempFileManagerProvider.dll'</Item>
+        </Issue>
+       </Message>
+       <Message Id="ToolSet" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Excluded" Created="2008-09-12 17:13:10Z">
+        <Issue Name="AssemblyShouldBeDiscreteTerm">
+         <Item>ToolSet</Item>
+         <Item>'SEOToolSet.TempFileManagerProvider.dll'</Item>
+         <Item>Toolset</Item>
+        </Issue>
+        <Notes>
+         <User Name="pcarrasco">
+          <Note Id="10" />
+         </User>
+        </Notes>
+       </Message>
+       <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2008-09-12 17:13:10Z">
+        <Issue Name="Assembly">
+         <Item>SEO</Item>
+         <Item>'SEOToolSet.TempFileManagerProvider.dll'</Item>
+         <Item>Seo</Item>
+        </Issue>
+        <Notes>
+         <User Name="pcarrasco">
+          <Note Id="15" />
+         </User>
+        </Notes>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="SEOToolSet.TempFileManagerProvider">
+        <Types>
+         <Type Name="ProviderHelper">
+          <Members>
+           <Member Name="#ExtractConfigValue`1(System.Collections.Specialized.NameValueCollection,System.String,!!0)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Excluded" Created="2008-09-12 17:13:10Z">
+              <Issue>
+               <Item>'ProviderHelper.ExtractConfigValue&lt;T&gt;(NameValueCollection, string, T)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+              <Notes>
+               <User Name="pcarrasco">
+                <Note Id="1" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="TempFileManager">
+          <Members>
+           <Member Name="#.cctor()">
+            <Messages>
+             <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Created="2008-09-12 17:13:10Z" FixCategory="NonBreaking">
+              <Issue Name="NoAllowedExceptions" Level="Error">
+               <Item>'TempFileManager.TempFileManager()'</Item>
+               <Item>'ConfigurationErrorsException'</Item>
+              </Issue>
+              <Issue Name="NoAllowedExceptions" Level="Error">
+               <Item>'TempFileManager.TempFileManager()'</Item>
+               <Item>'ProviderCannotStartThePeriodicPurgeTaskException'</Item>
+              </Issue>
+              <Issue Name="NoAllowedExceptions" Level="Error">
+               <Item>'TempFileManager.TempFileManager()'</Item>
+               <Item>'ProviderException'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="InitializeReferenceTypeStaticFieldsInline" Category="Microsoft.Performance" CheckId="CA1810" Status="Excluded" Created="2008-09-12 17:13:10Z">
+              <Issue>
+               <Item>'TempFileManager'</Item>
+              </Issue>
+              <Notes>
+               <User Name="pcarrasco">
+                <Note Id="4" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="TempFileManagerProviderCollection">
+          <Messages>
+           <Message TypeName="CollectionsShouldImplementGenericInterface" Category="Microsoft.Design" CheckId="CA1010" Status="Excluded" Created="2008-09-12 17:13:10Z">
+            <Issue>
+             <Item>'TempFileManagerProviderCollection'</Item>
+             <Item>ICollection</Item>
+            </Issue>
+            <Notes>
+             <User Name="pcarrasco">
+              <Note Id="2" />
+             </User>
+            </Notes>
+           </Message>
+          </Messages>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+   <Target Name="$(ProjectDir)/../WebApp/bin/SEOToolSet.WebApp.dll">
+    <Modules>
+     <Module Name="seotoolset.webapp.dll">
+      <Messages>
+       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Created="2008-08-19 18:50:15Z">
+        <Issue Name="NoStrongName">
+         <Item>'SEOToolSet.WebApp.dll'</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Created="2008-08-19 18:50:15Z">
+        <Issue>
+         <Item>'SEOToolSet.WebApp.dll'</Item>
+        </Issue>
+       </Message>
+       <Message Id="ToolSet" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Excluded" Created="2008-08-19 18:50:15Z">
+        <Issue Name="AssemblyShouldBeDiscreteTerm">
+         <Item>ToolSet</Item>
+         <Item>'SEOToolSet.WebApp.dll'</Item>
+         <Item>Toolset</Item>
+        </Issue>
+        <Notes>
+         <User Name="rriojas">
+          <Note Id="1" />
+         </User>
+        </Notes>
+       </Message>
+       <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2008-08-19 18:50:15Z">
+        <Issue Name="Assembly">
+         <Item>SEO</Item>
+         <Item>'SEOToolSet.WebApp.dll'</Item>
+         <Item>Seo</Item>
+        </Issue>
+        <Notes>
+         <User Name="pcarrasco">
+          <Note Id="17" />
+         </User>
+        </Notes>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="">
+        <Types>
+         <Type Name="AboutDialog">
+          <Members>
+           <Member Name="#ArrayRenderer1">
+            <Messages>
+             <Message Id="Renderer" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2008-09-11 20:10:58Z">
+              <Issue Name="Member">
+               <Item>Renderer</Item>
+               <Item>'AboutDialog.ArrayRenderer1'</Item>
+              </Issue>
+              <Notes>
+               <User Name="pcarrasco">
+                <Note Id="24" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#PopUp1">
+            <Messages>
+             <Message Id="PopUp" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Created="2008-09-11 20:10:58Z">
+              <Issue Name="MemberShouldBeDiscreteTerm">
+               <Item>PopUp</Item>
+               <Item>'AboutDialog.PopUp1'</Item>
+               <Item>Popup</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="SEOToolSet.WebApp">
+        <Types>
+         <Type Name="BC">
+          <Members>
+           <Member Name="#VariablesSetted">
+            <Messages>
+             <Message Id="Setted" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-08-19 18:50:15Z">
+              <Issue Name="Member">
+               <Item>Setted</Item>
+               <Item>'BC.VariablesSetted'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="Global">
+          <Members>
+           <Member Name="#Application_BeginRequest(System.Object,System.EventArgs)">
+            <Messages>
+             <Message TypeName="ReviewVisibleEventHandlers" Category="Microsoft.Security" CheckId="CA2109" Created="2008-08-19 18:50:15Z">
+              <Issue>
+               <Item>'Global.Application_BeginRequest(object, EventArgs)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Application_End(System.Object,System.EventArgs)">
+            <Messages>
+             <Message TypeName="ReviewVisibleEventHandlers" Category="Microsoft.Security" CheckId="CA2109" Created="2008-08-19 18:50:15Z">
+              <Issue>
+               <Item>'Global.Application_End(object, EventArgs)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Application_Error(System.Object,System.EventArgs)">
+            <Messages>
+             <Message TypeName="ReviewVisibleEventHandlers" Category="Microsoft.Security" CheckId="CA2109" Created="2008-08-19 18:50:15Z">
+              <Issue>
+               <Item>'Global.Application_Error(object, EventArgs)'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Excluded" Created="2008-08-19 18:50:15Z">
+              <Issue>
+               <Item>'Global.Application_Error(object, EventArgs)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+              <Notes>
+               <User Name="pcarrasco">
+                <Note Id="1" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="Header">
+          <Members>
+           <Member Name="#LoginView1">
+            <Messages>
+             <Message Id="Login" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Created="2008-10-23 22:47:49Z">
+              <Issue Name="Member">
+               <Item>Login</Item>
+               <Item>'Header.LoginView1'</Item>
+               <Item>LogOn</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#LoginView2">
+            <Messages>
+             <Message Id="Login" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Created="2008-10-23 22:47:49Z">
+              <Issue Name="Member">
+               <Item>Login</Item>
+               <Item>'Header.LoginView2'</Item>
+               <Item>LogOn</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ucMainMenu">
+            <Messages>
+             <Message Id="uc" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-08-20 19:38:32Z">
+              <Issue Name="Member">
+               <Item>uc</Item>
+               <Item>'Header.ucMainMenu'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ucSubMenu">
+            <Messages>
+             <Message Id="SubMenu" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Created="2008-08-20 19:38:32Z">
+              <Issue Name="MemberShouldBeDiscreteTerm">
+               <Item>SubMenu</Item>
+               <Item>'Header.ucSubMenu'</Item>
+               <Item>Submenu</Item>
+              </Issue>
+             </Message>
+             <Message Id="uc" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-08-20 19:38:32Z">
+              <Issue Name="Member">
+               <Item>uc</Item>
+               <Item>'Header.ucSubMenu'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="MainMenu">
+          <Members>
+           <Member Name="#lnkAnalyze">
+            <Messages>
+             <Message Id="lnk" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-08-19 18:50:15Z">
+              <Issue Name="Member">
+               <Item>lnk</Item>
+               <Item>'MainMenu.lnkAnalyze'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#lnkCompetitors">
+            <Messages>
+             <Message Id="lnk" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-08-19 18:50:15Z">
+              <Issue Name="Member">
+               <Item>lnk</Item>
+               <Item>'MainMenu.lnkCompetitors'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#lnkHome">
+            <Messages>
+             <Message Id="lnk" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-08-19 18:50:15Z">
+              <Issue Name="Member">
+               <Item>lnk</Item>
+               <Item>'MainMenu.lnkHome'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#lnkKeywords">
+            <Messages>
+             <Message Id="lnk" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-08-19 18:50:15Z">
+              <Issue Name="Member">
+               <Item>lnk</Item>
+               <Item>'MainMenu.lnkKeywords'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#lnkLinks">
+            <Messages>
+             <Message Id="lnk" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-08-19 18:50:15Z">
+              <Issue Name="Member">
+               <Item>lnk</Item>
+               <Item>'MainMenu.lnkLinks'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#lnkMonitor">
+            <Messages>
+             <Message Id="lnk" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-08-19 18:50:15Z">
+              <Issue Name="Member">
+               <Item>lnk</Item>
+               <Item>'MainMenu.lnkMonitor'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#lnkSubmit">
+            <Messages>
+             <Message Id="lnk" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-08-19 18:50:15Z">
+              <Issue Name="Member">
+               <Item>lnk</Item>
+               <Item>'MainMenu.lnkSubmit'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#lnkTools">
+            <Messages>
+             <Message Id="lnk" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-08-19 18:50:15Z">
+              <Issue Name="Member">
+               <Item>lnk</Item>
+               <Item>'MainMenu.lnkTools'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="PageTitle">
+          <Members>
+           <Member Name="#hlnkDocumentation">
+            <Messages>
+             <Message Id="hlnk" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-08-20 19:38:32Z">
+              <Issue Name="Member">
+               <Item>hlnk</Item>
+               <Item>'PageTitle.hlnkDocumentation'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="ReportPageConfigurator">
+          <Messages>
+           <Message Id="Configurator" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2008-09-11 20:10:58Z">
+            <Issue Name="Type">
+             <Item>Configurator</Item>
+             <Item>'ReportPageConfigurator'</Item>
+            </Issue>
+            <Notes>
+             <User Name="pcarrasco">
+              <Note Id="30" />
+             </User>
+            </Notes>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="SignUp">
+          <Messages>
+           <Message Id="SignUp" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Created="2008-10-23 22:47:49Z">
+            <Issue Name="TypeShouldBeDiscreteTerm">
+             <Item>SignUp</Item>
+             <Item>'SignUp'</Item>
+             <Item>Signup</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="SinglePageKda">
+          <Messages>
+           <Message Id="Kda" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2008-09-15 16:11:27Z">
+            <Issue Name="Type">
+             <Item>Kda</Item>
+             <Item>'SinglePageKda'</Item>
+            </Issue>
+            <Notes>
+             <User Name="pcarrasco">
+              <Note Id="27" />
+             </User>
+            </Notes>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#PopUp1">
+            <Messages>
+             <Message Id="PopUp" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Created="2008-09-15 16:11:27Z">
+              <Issue Name="MemberShouldBeDiscreteTerm">
+               <Item>PopUp</Item>
+               <Item>'SinglePageKda.PopUp1'</Item>
+               <Item>Popup</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ReportPageConfigurator1">
+            <Messages>
+             <Message Id="Configurator" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2008-09-15 16:11:27Z">
+              <Issue Name="Member">
+               <Item>Configurator</Item>
+               <Item>'SinglePageKda.ReportPageConfigurator1'</Item>
+              </Issue>
+              <Notes>
+               <User Name="pcarrasco">
+                <Note Id="29" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SiteChecker">
+          <Members>
+           <Member Name="#PopUp1">
+            <Messages>
+             <Message Id="PopUp" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Created="2008-08-20 19:38:32Z">
+              <Issue Name="MemberShouldBeDiscreteTerm">
+               <Item>PopUp</Item>
+               <Item>'SiteChecker.PopUp1'</Item>
+               <Item>Popup</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ReportPageConfigurator1">
+            <Messages>
+             <Message Id="Configurator" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2008-09-11 20:10:58Z">
+              <Issue Name="Member">
+               <Item>Configurator</Item>
+               <Item>'SiteChecker.ReportPageConfigurator1'</Item>
+              </Issue>
+              <Notes>
+               <User Name="pcarrasco">
+                <Note Id="28" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SubMenu">
+          <Messages>
+           <Message Id="SubMenu" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Created="2008-08-20 19:38:32Z">
+            <Issue Name="TypeShouldBeDiscreteTerm">
+             <Item>SubMenu</Item>
+             <Item>'SubMenu'</Item>
+             <Item>Submenu</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#multiPageKdaLink">
+            <Messages>
+             <Message Id="multi" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-09-11 20:10:58Z">
+              <Issue Name="Member">
+               <Item>multi</Item>
+               <Item>'SubMenu.multiPageKdaLink'</Item>
+              </Issue>
+             </Message>
+             <Message Id="Kda" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2008-09-11 20:10:58Z">
+              <Issue Name="Member">
+               <Item>Kda</Item>
+               <Item>'SubMenu.multiPageKdaLink'</Item>
+              </Issue>
+              <Notes>
+               <User Name="pcarrasco">
+                <Note Id="20" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#optimizedPagesSubMenu">
+            <Messages>
+             <Message Id="SubMenu" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Created="2008-09-11 20:10:58Z">
+              <Issue Name="MemberShouldBeDiscreteTerm">
+               <Item>SubMenu</Item>
+               <Item>'SubMenu.optimizedPagesSubMenu'</Item>
+               <Item>Submenu</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#pageInformationToolSubMenu">
+            <Messages>
+             <Message Id="SubMenu" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Created="2008-09-11 20:10:58Z">
+              <Issue Name="MemberShouldBeDiscreteTerm">
+               <Item>SubMenu</Item>
+               <Item>'SubMenu.pageInformationToolSubMenu'</Item>
+               <Item>Submenu</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#quickStatsSubMenu">
+            <Messages>
+             <Message Id="SubMenu" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Created="2008-09-11 20:10:58Z">
+              <Issue Name="MemberShouldBeDiscreteTerm">
+               <Item>SubMenu</Item>
+               <Item>'SubMenu.quickStatsSubMenu'</Item>
+               <Item>Submenu</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#SinglePageKdaLink">
+            <Messages>
+             <Message Id="Kda" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2008-09-15 17:06:32Z">
+              <Issue Name="Member">
+               <Item>Kda</Item>
+               <Item>'SubMenu.SinglePageKdaLink'</Item>
+              </Issue>
+              <Notes>
+               <User Name="pcarrasco">
+                <Note Id="26" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#siteCheckerSubMenu">
+            <Messages>
+             <Message Id="SubMenu" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Created="2008-09-11 20:10:58Z">
+              <Issue Name="MemberShouldBeDiscreteTerm">
+               <Item>SubMenu</Item>
+               <Item>'SubMenu.siteCheckerSubMenu'</Item>
+               <Item>Submenu</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#siteInformationSubMenu">
+            <Messages>
+             <Message Id="SubMenu" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Created="2008-09-11 20:10:58Z">
+              <Issue Name="MemberShouldBeDiscreteTerm">
+               <Item>SubMenu</Item>
+               <Item>'SubMenu.siteInformationSubMenu'</Item>
+               <Item>Submenu</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SubReportHeader">
+          <Members>
+           <Member Name="#lblSubReportTitle">
+            <Messages>
+             <Message Id="lbl" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-10-10 21:54:49Z">
+              <Issue Name="Member">
+               <Item>lbl</Item>
+               <Item>'SubReportHeader.lblSubReportTitle'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="SEOToolSet.WebApp.Controls">
+        <Types>
+         <Type Name="ArrayRenderer">
+          <Messages>
+           <Message Id="Renderer" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2008-09-11 20:10:58Z">
+            <Issue Name="Type">
+             <Item>Renderer</Item>
+             <Item>'ArrayRenderer'</Item>
+            </Issue>
+            <Notes>
+             <User Name="pcarrasco">
+              <Note Id="21" />
+             </User>
+            </Notes>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#HeaderTemplatePlaceHolder">
+            <Messages>
+             <Message Id="PlaceHolder" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Created="2008-08-19 18:50:15Z">
+              <Issue Name="MemberShouldBeDiscreteTerm">
+               <Item>PlaceHolder</Item>
+               <Item>'ArrayRenderer.HeaderTemplatePlaceHolder'</Item>
+               <Item>Placeholder</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ItemTemplatePlaceHolder">
+            <Messages>
+             <Message Id="PlaceHolder" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Created="2008-08-19 18:50:15Z">
+              <Issue Name="MemberShouldBeDiscreteTerm">
+               <Item>PlaceHolder</Item>
+               <Item>'ArrayRenderer.ItemTemplatePlaceHolder'</Item>
+               <Item>Placeholder</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#TypeOfRenderer">
+            <Messages>
+             <Message Id="Renderer" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2008-09-11 20:10:58Z">
+              <Issue Name="Member">
+               <Item>Renderer</Item>
+               <Item>'ArrayRenderer.TypeOfRenderer'</Item>
+              </Issue>
+              <Notes>
+               <User Name="pcarrasco">
+                <Note Id="23" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="AsyncReport">
+          <Members>
+           <Member Name="#ItemTemplatePlaceHolder">
+            <Messages>
+             <Message Id="PlaceHolder" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Created="2008-08-19 18:50:15Z">
+              <Issue Name="MemberShouldBeDiscreteTerm">
+               <Item>PlaceHolder</Item>
+               <Item>'AsyncReport.ItemTemplatePlaceHolder'</Item>
+               <Item>Placeholder</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="EditUrlDialog">
+          <Members>
+           <Member Name="#lnkOkDialog">
+            <Messages>
+             <Message Id="lnk" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-08-19 18:50:15Z">
+              <Issue Name="Member">
+               <Item>lnk</Item>
+               <Item>'EditUrlDialog.lnkOkDialog'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="FileSelector">
+          <Members>
+           <Member Name="#lnkEditUrl">
+            <Messages>
+             <Message Id="lnk" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-08-19 18:50:15Z">
+              <Issue Name="Member">
+               <Item>lnk</Item>
+               <Item>'FileSelector.lnkEditUrl'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#lnkUploadFile">
+            <Messages>
+             <Message Id="lnk" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-08-19 18:50:15Z">
+              <Issue Name="Member">
+               <Item>lnk</Item>
+               <Item>'FileSelector.lnkUploadFile'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ltl">
+            <Messages>
+             <Message Id="ltl" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-09-26 17:00:53Z">
+              <Issue Name="Member">
+               <Item>ltl</Item>
+               <Item>'FileSelector.ltl'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#tdLnk">
+            <Messages>
+             <Message Id="Lnk" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-08-19 18:50:15Z">
+              <Issue Name="Member">
+               <Item>Lnk</Item>
+               <Item>'FileSelector.tdLnk'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="FileType">
+          <Members>
+           <Member Name="#Javascript">
+            <Messages>
+             <Message Id="Javascript" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Created="2008-08-19 18:50:15Z">
+              <Issue Name="MemberShouldBeCompoundWord">
+               <Item>Javascript</Item>
+               <Item>'FileType.Javascript'</Item>
+               <Item>JavaScript</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="WordPhrases">
+          <Members>
+           <Member Name="#ArrayRenderer9">
+            <Messages>
+             <Message Id="Renderer" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2008-09-11 20:10:58Z">
+              <Issue Name="Member">
+               <Item>Renderer</Item>
+               <Item>'WordPhrases.ArrayRenderer9'</Item>
+              </Issue>
+              <Notes>
+               <User Name="pcarrasco">
+                <Note Id="25" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="SEOToolSet.WebApp.Handler">
+        <Types>
+         <Type Name="RetrieveFile">
+          <Members>
+           <Member Name="#FileId">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2008-10-23 22:47:49Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'RetrieveFile.FileId'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ProcessRequest(System.Web.HttpContext)">
+            <Messages>
+             <Message TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201" Created="2008-10-23 22:47:49Z">
+              <Issue Name="TooGeneric">
+               <Item>'RetrieveFile.ProcessRequest(HttpContext)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+              <Issue Name="TooGeneric">
+               <Item>'RetrieveFile.ProcessRequest(HttpContext)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-10-23 22:47:49Z">
+              <Issue>
+               <Item>'string.Format(string, object)'</Item>
+               <Item>'RetrieveFile.ProcessRequest(HttpContext)'</Item>
+               <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="Upload">
+          <Members>
+           <Member Name="#ProcessRequest(System.Web.HttpContext)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Excluded" Created="2008-09-15 19:12:42Z">
+              <Issue>
+               <Item>'Upload.ProcessRequest(HttpContext)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+              <Notes>
+               <User Name="pcarrasco">
+                <Note Id="19" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="VersionHelper">
+          <Members>
+           <Member Name="#ApplicationVersionInformation">
+            <Accessors>
+             <Accessor Name="#get_ApplicationVersionInformation()">
+              <Messages>
+               <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Excluded" Created="2008-09-15 19:12:42Z">
+                <Issue>
+                 <Item>'VersionHelper.ApplicationVersionInformation.get()'</Item>
+                 <Item>'Exception'</Item>
+                </Issue>
+                <Notes>
+                 <User Name="pcarrasco">
+                  <Note Id="19" />
+                 </User>
+                </Notes>
+               </Message>
+              </Messages>
+             </Accessor>
+            </Accessors>
+           </Member>
+           <Member Name="#ReportServicesVersion">
+            <Accessors>
+             <Accessor Name="#get_ReportServicesVersion()">
+              <Messages>
+               <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Excluded" Created="2008-09-15 19:12:42Z">
+                <Issue>
+                 <Item>'VersionHelper.ReportServicesVersion.get()'</Item>
+                 <Item>'Exception'</Item>
+                </Issue>
+                <Notes>
+                 <User Name="pcarrasco">
+                  <Note Id="19" />
+                 </User>
+                </Notes>
+               </Message>
+              </Messages>
+             </Accessor>
+            </Accessors>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="VersionHelperContainer">
+          <Members>
+           <Member Name="#SEOToolSetWebAppVersion">
+            <Messages>
+             <Message Id="ToolSet" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Excluded" Created="2008-09-11 20:10:58Z">
+              <Issue Name="MemberShouldBeDiscreteTerm">
+               <Item>ToolSet</Item>
+               <Item>'VersionHelperContainer.SEOToolSetWebAppVersion'</Item>
+               <Item>Toolset</Item>
+              </Issue>
+              <Notes>
+               <User Name="pcarrasco">
+                <Note Id="13" />
+               </User>
+              </Notes>
+             </Message>
+             <Message Id="SEO" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Excluded" Created="2008-09-11 20:10:58Z">
+              <Issue Name="Member">
+               <Item>SEO</Item>
+               <Item>'VersionHelperContainer.SEOToolSetWebAppVersion'</Item>
+               <Item>Seo</Item>
+              </Issue>
+              <Notes>
+               <User Name="pcarrasco">
+                <Note Id="15" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+  </Targets>
+  <Notes>
+   <User Name="pcarrasco">
+    <Note Id="0" Modified="2008-09-12 17:10:52Z">Inevitable because the presence of Generics in those methods, So, to avoid break another rule, we have decided to use output parameters.</Note>
+    <Note Id="1" Modified="2008-09-15 16:18:09Z">These methods need to catch general Exception because if they don't catch them, either no one can catch them or they have to send a default value</Note>
+    <Note Id="2" Modified="2008-09-15 16:31:30Z">This class inherits from System.Configuration.Provider.ProviderCollection, which neither it's a generic collection, nor there's a generic version.</Note>
+    <Note Id="3" Modified="2008-09-15 16:35:34Z">They are types for public access for the tokenizer (when they are rendered in page)</Note>
+    <Note Id="4" Modified="2008-09-15 17:23:21Z">it's needed initializing some of these fields at the static constructor (just once in the application)</Note>
+    <Note Id="7" Modified="2008-09-15 18:46:38Z">SEOToolSet is the name of the Website so this rule should be ignored</Note>
+    <Note Id="8" Modified="2008-09-15 18:47:10Z">SEOToolSet is the name of the Website so this rule should be ignored</Note>
+    <Note Id="9" Modified="2008-09-15 18:47:26Z">SEOToolSet is the name of the Website so this rule should be ignored</Note>
+    <Note Id="10" Modified="2008-09-15 18:48:22Z">SEOToolSet is the name of the Website so this rule should be ignored</Note>
+    <Note Id="11" Modified="2008-09-15 18:48:33Z">SEOToolSet is the name of the Website so this rule should be ignored</Note>
+    <Note Id="12" Modified="2008-09-15 18:48:44Z">SEOToolSet is the name of the Website so this rule should be ignored</Note>
+    <Note Id="13" Modified="2008-09-15 18:48:55Z">SEOToolSet is the name of the Website so this rule should be ignored</Note>
+    <Note Id="14" Modified="2008-09-15 18:49:02Z">SEOToolSet is the name of the Website so this rule should be ignored</Note>
+    <Note Id="15" Modified="2008-09-15 18:50:33Z">SEO is the acronym for "Search engine optimization"</Note>
+    <Note Id="16" Modified="2008-09-15 18:54:10Z">SEO is the acronym for "Search engine optimization"</Note>
+    <Note Id="17" Modified="2008-09-15 18:54:32Z">SEO is the acronym for "Search engine optimization"</Note>
+    <Note Id="18" Modified="2008-09-15 18:58:22Z">SEO is the acronym for "Search engine optimization"</Note>
+    <Note Id="19" Modified="2008-09-15 19:13:41Z">These methods need to catch general Exception because if they don't catch them, either no one can catch them or they have to send a default value</Note>
+    <Note Id="20" Modified="2008-09-15 19:39:28Z">KDA si the acronym for Keywords density analyzsis</Note>
+    <Note Id="21" Modified="2008-09-15 19:41:48Z">Renderer is a helper for rendering the reports</Note>
+    <Note Id="23" Modified="2008-09-15 19:42:31Z">Renderer is a helper for rendering the reports</Note>
+    <Note Id="24" Modified="2008-09-15 19:42:37Z">Renderer is a helper for rendering the reports</Note>
+    <Note Id="25" Modified="2008-09-15 19:42:43Z">Renderer is a helper for rendering the reports</Note>
+    <Note Id="26" Modified="2008-09-15 19:43:03Z">KDA is the acronym for Keywords density analysis</Note>
+    <Note Id="27" Modified="2008-09-15 19:43:27Z">KDA is the acronym for Keywords density analysis</Note>
+    <Note Id="28" Modified="2008-09-15 19:45:02Z">ReportPageConfigurator is a helper for setup the page of report</Note>
+    <Note Id="29" Modified="2008-09-15 19:45:12Z">ReportPageConfigurator is a helper for setup the page of report</Note>
+    <Note Id="30" Modified="2008-09-15 19:45:22Z">ReportPageConfigurator is a helper for setup the page of report</Note>
+    <Note Id="31" Modified="2008-10-10 21:55:43Z">SEOToolSet is the name of the Website so this rule should be ignored</Note>
+    <Note Id="32" Modified="2008-10-10 21:55:51Z">SEOToolSet is the name of the Website so this rule should be ignored</Note>
+   </User>
+   <User Name="rriojas">
+    <Note Id="1" Modified="2008-09-15 18:47:16Z">SEOToolSet is the name of the Website so this rule should be ignored</Note>
+   </User>
+  </Notes>
+  <Rules>
+   <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+    <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   </Rule>
+   <Rule TypeName="AvoidExcessiveLocals" Category="Microsoft.Performance" CheckId="CA1809">
+    <Resolution Name="Compiler">{0} has {1} local variables, {2} of which were generated by the compiler. Refactor {0} so that it uses fewer than 64 local variables.</Resolution>
+   </Rule>
+   <Rule TypeName="AvoidNamespacesWithFewTypes" Category="Microsoft.Design" CheckId="CA1020">
+    <Resolution Name="Default">Consider merging the types defined in '{0}' with another namespace.</Resolution>
+   </Rule>
+   <Rule TypeName="AvoidOutParameters" Category="Microsoft.Design" CheckId="CA1021">
+    <Resolution Name="Default">Consider a design that does not require that {0} be an out parameter.</Resolution>
+   </Rule>
+   <Rule TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227">
+    <Resolution Name="Default">Change {0} to be read-only by removing the property setter.</Resolution>
+   </Rule>
+   <Rule TypeName="CollectionsShouldImplementGenericInterface" Category="Microsoft.Design" CheckId="CA1010">
+    <Resolution Name="Default">{0} appears to be a non-generic, strongly typed collection. Add an implementation to the instance of {1}&lt;T&gt; where T is the underlying element type of {0}.</Resolution>
+   </Rule>
+   <Rule TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702">
+    <Resolution Name="AssemblyShouldBeDiscreteTerm">The compound word '{0}' in assembly name {1} exists as a discrete term. If your usage is intended to be single word, case it as '{2}'.</Resolution>
+    <Resolution Name="MemberShouldBeCompoundWord">The discrete term '{0}' in member name {1} should be expressed as a compound word, '{2}'.</Resolution>
+    <Resolution Name="MemberShouldBeDiscreteTerm">The compound word '{0}' in member name {1} exists as a discrete term. If your usage is intended to be single word, case it as '{2}' or strip the first token entirely if it represents any sort of Hungarian notation.</Resolution>
+    <Resolution Name="NamespaceShouldBeDiscreteTerm">The compound word '{0}' in namespace name '{1}' exists as a discrete term. If your usage is intended to be single word, case it as '{2}'.</Resolution>
+    <Resolution Name="TypeShouldBeDiscreteTerm">The compound word '{0}' in type name {1} exists as a discrete term. If your usage is intended to be single word, case it as '{2}'.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031">
+    <Resolution Name="Default">Modify {0} to catch a more specific exception than {1} or rethrow the exception.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065">
+    <Resolution Name="NoAllowedExceptions">{0} creates an exception of type {1}. Exceptions should not be raised in this type of method. If this exception instance might be raised, change this method's logic so it no longer raises an exception.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201">
+    <Resolution Name="TooGeneric">{0} creates an exception of type {1}, an exception type that is not sufficiently specific and should never be raised by user code. If this exception instance might be thrown, use a different exception type.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+    <Resolution Name="Assembly">Correct the casing of '{0}' in assembly name {1} by changing it to '{2}'.</Resolution>
+    <Resolution Name="Member">Correct the casing of '{0}' in member name {1} by changing it to '{2}'.</Resolution>
+    <Resolution Name="MemberParameter">In member {0}, correct the casing of '{1}' in parameter name {2} by changing it to '{3}'.</Resolution>
+    <Resolution Name="MemberParameterAbbreviation">In member {0}, correct the casing of '{1}' in parameter name {2} by changing it to '{3}'. '{3}' is an abbreviation and therefore is not subject to acronym casing guidelines.</Resolution>
+    <Resolution Name="Namespace">Correct the casing of '{0}' in namespace name '{1}' by changing it to '{2}'.</Resolution>
+    <Resolution Name="Type">Correct the casing of '{0}' in type name {1} by changing it to '{2}'.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+    <Resolution Name="Member">Correct the spelling of '{0}' in member name {1} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+    <Resolution Name="MemberParameter">In method {0}, correct the spelling of '{1}' in parameter name {2} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+    <Resolution Name="Type">Correct the spelling of '{0}' in type name {1}.</Resolution>
+   </Rule>
+   <Rule TypeName="InitializeReferenceTypeStaticFieldsInline" Category="Microsoft.Performance" CheckId="CA1810">
+    <Resolution Name="Default">Initialize all static fields in {0} when those fields are declared and remove the explicit static constructor.</Resolution>
+   </Rule>
+   <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+    <Resolution Name="Default">Mark {0} with CLSCompliant(true) because it exposes externally visible types.</Resolution>
+   </Rule>
+   <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+    <Resolution Name="Default">The 'this' parameter (or 'Me' in Visual Basic) of {0} is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Resolution>
+   </Rule>
+   <Rule TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034">
+    <Resolution Name="Default">Do not nest type {0}. Alternatively, change its accessibility so that it is not externally visible.</Resolution>
+   </Rule>
+   <Rule TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801">
+    <Resolution Name="Default">Parameter {0} of {1} is never used. Remove the parameter or use it in the method body.</Resolution>
+   </Rule>
+   <Rule TypeName="ReviewVisibleEventHandlers" Category="Microsoft.Security" CheckId="CA2109">
+    <Resolution Name="Default">Consider making {0} not externally visible.</Resolution>
+   </Rule>
+   <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+    <Resolution Name="Default">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Resolution>
+   </Rule>
+   <Rule TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726">
+    <Resolution Name="Member">Replace the term '{0}' in member name {1} with the preferred alternate '{2}'.</Resolution>
+    <Resolution Name="MemberParameter">In member {0}, replace the term '{1}' in parameter name {2} with the preferred alternate '{3}'.</Resolution>
+   </Rule>
+   <Rule TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024">
+    <Resolution Name="Default">Change {0} to a property if appropriate.</Resolution>
+   </Rule>
+  </Rules>
+ </FxCopReport>
+</FxCopProject>

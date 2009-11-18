@@ -1,0 +1,15 @@
+﻿.CbxContainer { cursor: pointer !important; border: 1px solid #B5D0E5; background: #fff; overflow: hidden; padding: 3px; }
+.CbxContainer.over { background: #DEEDF9 }
+.CbxValueContainer { overflow: hidden; position: relative;  }
+.CbxValueContent { overflow: hidden; float: left; position: absolute; cursor: pointer !important; top: 0px; }
+.CbxDropDownButton { width: 16px; height: 18px; background-image: url(trigger.gif); cursor: pointer !important; background-repeat: no-repeat; float: right; background-position: 0px 0px;  }
+.CbxDropDownWrapper { display:none;margin: 0px; position: absolute; z-index: 20000; top: 18px;  overflow: auto; overflow-y:auto !important; overflow-x:hidden !important; }
+.CbxDropDownContainer { list-style-type: none; margin:0px; padding-top: 0px; border: 1px solid #B5D0E5; background: #fff;  padding: 3px; overflow: hidden; z-index:1000 }
+li.CbxItem { background: #fff; color: #446689; font-weight: normal !important; font-style: normal; display: block !important; cursor: pointer !important; padding: 5px; float: none !important; }
+li.CbxItem.selected, li.CbxItem.selected.over { background: #6B99BF; color:White; } 
+li.CbxItem.over { background-color: #DEEDF9;  }
+
+.shadow { background:#000;position:absolute; z-index:10000  }
+
+.CbxContainer ul { float:none; margin:0;}
+

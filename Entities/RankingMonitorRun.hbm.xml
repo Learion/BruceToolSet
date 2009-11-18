@@ -1,0 +1,30 @@
+﻿<hibernate-mapping default-cascade="none" xmlns="urn:nhibernate-mapping-2.2">
+    <class name="SEOToolSet.Entities.RankingMonitorRun, SEOToolSet.Entities" table="RankingMonitorRun">
+        <id name="Id" type="System.Int32" column="Id" unsaved-value="0">
+            <generator class="native" />
+        </id>
+        <property name="User" type="System.String" column="User" not-null="true" length="100" />
+        <property name="AnalysisType" type="System.String" column="AnalysisType" not-null="true" />
+        <property name="ExecutionDate" type="System.DateTime" column="ExecutionDate" not-null="true" />
+        <property name="EndDate" type="System.DateTime" column="EndDate" not-null="false" />
+        <bag name="KeywordAnalysis" inverse="true" lazy="true" cascade="none">
+            <key>
+                <column name="IdRankingMonitorRun" not-null="true" />
+            </key>
+            <one-to-many class="SEOToolSet.Entities.KeywordAnalysis, SEOToolSet.Entities" />
+        </bag>
+        <many-to-one name="Project" class="SEOToolSet.Entities.Project, SEOToolSet.Entities" fetch="join">
+            <column name="IdProject" not-null="true" />
+        </many-to-one>
+        <bag name="RankingMonitorDeepRun" inverse="true" lazy="true" cascade="none">
+            <key>
+                <column name="IdRankingMonitorRun" not-null="true" />
+            </key>
+            <one-to-many class="SEOToolSet.Entities.RankingMonitorDeepRun, SEOToolSet.Entities" />
+        </bag>
+        <many-to-one name="Status" class="SEOToolSet.Entities.Status, SEOToolSet.Entities" fetch="select">
+            <column name="Status" not-null="false" />
+        </many-to-one>
+        <property name="StatusReason" type="System.String" column="StatusReason" not-null="false" length="1000" />
+    </class>
+</hibernate-mapping>

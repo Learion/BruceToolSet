@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="anchorTextLinkTextHeading.Text" xml:space="preserve">
+    <value>アンカーテキスト</value>
+  </data>
+  <data name="CountTagInformationHeading.Text" xml:space="preserve">
+    <value>カウント</value>
+  </data>
+  <data name="DataTagInformationHeading.Text" xml:space="preserve">
+    <value>ディスクリプション</value>
+  </data>
+  <data name="descriptionWordMetricsHeading.Text" xml:space="preserve">
+    <value>ディスクリプション</value>
+  </data>
+  <data name="errorLinkTextHeading.Text" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="keywordOptimizedKeywordsHeading.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="KeywordReport.CheckName" xml:space="preserve">
+    <value>キーワードリスト</value>
+  </data>
+  <data name="KeywordReport.ReportTitle" xml:space="preserve">
+    <value>ツールセットキーワード</value>
+  </data>
+  <data name="KeywordReport.ReportToolTip" xml:space="preserve">
+    <value>ページ上に見つかった各ToolSetキーワードの数をブレークダウン</value>
+  </data>
+  <data name="keywordToolSetKeywordsHeading.Text" xml:space="preserve">
+    <value>キーワードリスト</value>
+  </data>
+  <data name="LengthTagInformationHeading.Text" xml:space="preserve">
+    <value>長さ</value>
+  </data>
+  <data name="LinearKeywordDistributionReport.CheckName" xml:space="preserve">
+    <value>キーワード分布</value>
+  </data>
+  <data name="LinearKeywordDistributionReport.ReportTitle" xml:space="preserve">
+    <value>リニアキーワード分布</value>
+  </data>
+  <data name="LinearKeywordDistributionReport.ReportToolTip" xml:space="preserve">
+    <value>ページ上の候補単語の分布チャートを表示</value>
+  </data>
+  <data name="LinkTextReport.CheckName" xml:space="preserve">
+    <value>リンクテキスト</value>
+  </data>
+  <data name="LinkTextReport.ReportTitle" xml:space="preserve">
+    <value>リンクテキスト</value>
+  </data>
+  <data name="LinkTextReport.ReportToolTip" xml:space="preserve">
+    <value>ページリンクの詳細レポートを表示</value>
+  </data>
+  <data name="NameWordMetricsHeading.Text" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="OptimizedKeywordsReport.CheckName" xml:space="preserve">
+    <value>ページキーワード</value>
+  </data>
+  <data name="OptimizedKeywordsReport.ReportTitle" xml:space="preserve">
+    <value>オプティマイズキーワード</value>
+  </data>
+  <data name="OptimizedKeywordsReport.ReportToolTip" xml:space="preserve">
+    <value>ページ上に見つかった各オプティマイズド・キーワードの数をブレークダウン</value>
+  </data>
+  <data name="orderByKeywordCommand.Text" xml:space="preserve">
+    <value>以下で並び替え</value>
+  </data>
+  <data name="PageHeading.PageDescription" xml:space="preserve">
+    <value>Webページでのキーワード使用の分析</value>
+  </data>
+  <data name="PageHeading.PageTitleText" xml:space="preserve">
+    <value>シングル-ページKDA</value>
+  </data>
+  <data name="PageResource.Title" xml:space="preserve">
+    <value>シングル-ページKDA</value>
+  </data>
+  <data name="relNoFollowLinkTextHeading.Text" xml:space="preserve">
+    <value>rel no follow</value>
+  </data>
+  <data name="SinglePageReportsHeader.TitleText" xml:space="preserve">
+    <value>ページレポート</value>
+  </data>
+  <data name="StopWordsTagInformationHeading.Text" xml:space="preserve">
+    <value>ストップワード</value>
+  </data>
+  <data name="TagInformationReport.CheckName" xml:space="preserve">
+    <value>タグ情報</value>
+  </data>
+  <data name="TagInformationReport.ReportTitle" xml:space="preserve">
+    <value>タグ情報</value>
+  </data>
+  <data name="TagInformationReport.ReportToolTip" xml:space="preserve">
+    <value>ページ上のHTMLタグ情報の表示</value>
+  </data>
+  <data name="TagTagInformationHeading.Text" xml:space="preserve">
+    <value>タグ情報</value>
+  </data>
+  <data name="totalWordsUsedItem.Text" xml:space="preserve">
+    <value>トータル{Total}ワード使用</value>
+  </data>
+  <data name="TypeLinkTextHeading.Text" xml:space="preserve">
+    <value>タイプ</value>
+  </data>
+  <data name="urlLinkedToLinkTextHeading.Text" xml:space="preserve">
+    <value>URL Linked To &lt;span class="SummarizedData"&gt;(Total: [Total], Unique Targets: [UniqueTargets])&lt;/span&gt;</value>
+  </data>
+  <data name="usedOptimizedKeywordsHeading" xml:space="preserve">
+    <value />
+  </data>
+  <data name="usedToolSetKeywordsHeading.Text" xml:space="preserve">
+    <value>使用済み</value>
+  </data>
+  <data name="UsedWordsTagInformationHeading.Text" xml:space="preserve">
+    <value>使用済みワード</value>
+  </data>
+  <data name="valueWordMetricsHeading.Text" xml:space="preserve">
+    <value>値</value>
+  </data>
+  <data name="WordMetricsReport.CheckName" xml:space="preserve">
+    <value>ワードメトリックス</value>
+  </data>
+  <data name="WordMetricsReport.ReportTitle" xml:space="preserve">
+    <value>ワードメトリックス</value>
+  </data>
+  <data name="WordMetricsReport.ReportToolTip" xml:space="preserve">
+    <value>ページの判読度とスパイダーされるテキストの情報の表示</value>
+  </data>
+  <data name="WordPhrasesReport.CheckName" xml:space="preserve">
+    <value>ワード・フレーズ</value>
+  </data>
+  <data name="WordPhrasesReport.ReportTitle" xml:space="preserve">
+    <value>ワード・フレーズ</value>
+  </data>
+  <data name="WordPhrasesReport.ReportToolTip" xml:space="preserve">
+    <value>ページ上に出現するキーワードの詳細ブレークダウンの表示</value>
+  </data>
+</root>

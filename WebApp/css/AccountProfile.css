@@ -1,0 +1,12 @@
+﻿.AccountAtAGlance  p label{ color: #0060AE; width: 110px;  float: left; text-align:right; display:block; }
+.AccountAtAGlance  p span { float:left;margin-left:10px; }
+.AccountAtAGlance  p  {clear:both;}
+.AccountAtAGlance  p.UserName {line-height:26px;margin-bottom:10px;margin-top:-10px;}
+.AccountAtAGlance { width: 300px; float: right; }
+.AccountInformationPanel { width:inherit; margin-right: 320px;} 
+div.FormCSS .Field { clear:none !important; }
+div.FormCSS .Field.OneLine label { text-align:right; }
+div.FirstFormSection { width:380px; float:left; }
+.Blue { color: #0090B0; }
+#feedbackMsg.green { background-color: #F2F2F2; border: 1px solid #D4E8C4; color: #339900; font-weight: bold; margin: 0px auto; padding: 15px 5px; text-align: center; width: 250px; position: relative; }
+.References { text-align: right; }

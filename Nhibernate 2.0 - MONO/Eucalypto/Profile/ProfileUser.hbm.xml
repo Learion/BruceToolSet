@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Eucalypto.Profile.ProfileUser, Eucalypto" table="ProfileUser">
+    <id name="Id" column="Id" type="String" length="32" >
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+
+    <property name="Name" type="String">
+      <column name="Name" unique-key="NameApplicationName" not-null="true" length="100"/>
+    </property>
+    <property name="ApplicationName" type="String">
+      <column name="ApplicationName" unique-key="NameApplicationName" not-null="true" length="100"/>
+    </property>
+
+    <property name="InsertDate" column="InsertDate" type="DateTime" not-null="true" />
+    <property name="UpdateDate" column="UpdateDate" type="DateTime" not-null="true" />
+
+    <property name="ProfileType" column="ProfileType" not-null="true" />
+    <property name="LastActivityDate" column="LastActivityDate" type="DateTime" not-null="true" />
+    <property name="LastPropertyChangedDate" column="LastPropertyChangedDate" type="DateTime" not-null="true" />
+
+    <!-- The collection is used to automatically add, delete children entities. Note the cascade property set to all. -->
+    <bag name="Properties" inverse="true" lazy="true" cascade="all">
+      <key column="IdUser"/>
+      <one-to-many class="Eucalypto.Profile.ProfileProperty, Eucalypto"/>
+    </bag>
+
+  </class>
+</hibernate-mapping>

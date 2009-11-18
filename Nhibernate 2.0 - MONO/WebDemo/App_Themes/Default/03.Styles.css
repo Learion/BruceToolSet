@@ -1,0 +1,64 @@
+﻿body{font-family:Verdana, Tahoma, Arial;font-size:10pt;background-color:#FFF;}
+h1{font-size:16pt;font-weight:700;}
+h2{font-size:12pt;font-style:italic;font-weight:700;}
+h3{font-size:10pt;font-weight:700;}
+img{border:0;}
+label{font-weight:700;color:#690;}
+pre{font-family:"Courier New" , Courier, mono;background-color:silver;border:#000 thin solid;}
+code{color:#b22222;font-family:"Courier New" , Courier, mono;}
+a.rss{background:url(res/feed.png) no-repeat left center;padding:8px 0 8px 20px;}
+a.newitem{background:url(res/document_new.png) no-repeat left center;padding:8px 0 8px 20px;}
+a.edititem{background:url(res/edit.png) no-repeat left center;padding:8px 0 8px 20px;}
+a.printitem{background:url(res/print.png) no-repeat left center;padding:8px 0 8px 20px;}
+a.deleteitem{background:url(res/delete.png) no-repeat left center;padding:8px 0 8px 20px;}
+a.search{background:url(res/search.png) no-repeat left center;padding:11px 0 11px 22px;}
+a.mailreply{background:url(res/mail_reply.png) no-repeat left center;padding:8px 0 8px 20px;}
+a.user{background:url(res/card.png) no-repeat left center;padding:8px 0 8px 20px;}
+a.next{background:url(res/move_next.png) no-repeat right center;padding:8px 20px 8px 0;}
+a.previous{background:url(res/move_previous.png) no-repeat left center;padding:8px 0 8px 20px;}
+a.urlitem{background:url(res/world.png) no-repeat left center;padding:8px 0 8px 20px;}
+.formtable tr td{vertical-align:top;}
+.datatable{border:1px solid #690;border-collapse:collapse;color:#000;}
+.datatable thead{text-align:center;background:#d6eab0;color:#690;font-size:100%!important;font-weight:700;}
+p.errorBox{background:url(res/error.png) no-repeat;color:red;font-weight:700;padding:0 0 0 20px;}
+.message{border:1px solid #690;color:#555;margin-top:2px;margin-bottom:8px;}
+.messageHeader{background:#FCFDFE;padding:0;}
+.messageSubject{font-size:10pt;font-weight:700;margin:0;}
+.messageBody{border-top:1px solid #690;border-bottom:1px solid #690;padding:4px;}
+.messageActions{padding:3px;}
+.plainText{white-space:pre-wrap;}
+.pageNavigation{border:1px solid #690;background:#d6eab0;margin-bottom:10px;padding:2px;}
+.searchBox{margin-bottom:10px;}
+.searchTitle{margin:0;}
+.searchFooter{color:#2e8b57;}
+.box{margin-bottom:4px;margin-top:4px;border:#690 1px solid;padding:0;}
+.boxTitle{font-size:10pt;color:#FFF;background-color:#690;font-weight:700;margin:0;padding:0;}
+.boxContent{color:#690;background-color:#FCFDFE;padding:2px;}
+.articleProperties{border:#696969 1px solid;font-size:smaller;background-color:#dcdcdc;padding:2px;}
+.newsitemActions{padding-top:5px;}
+.newsBoxTitle{font-size:8pt;font-weight:700;}
+.newsBoxContent{padding:2px;}
+.newsBoxDescription{font-size:8pt;}
+#navigationMenu{ width:100%;}
+#navigationMenu ul{list-style:none;border:none;margin:0;padding:0;}
+#navigationMenu li{border-bottom:1px solid #690;margin:0;}
+#navigationMenu li a{display:block;background-color:#d6eab0;color:#690;text-decoration:none;font-weight:700;padding:5px 5px 5px .5em;}
+#navigationMenu li a:hover{background-color:#690;color:#d6eab0;}
+#header{text-align:center;background:url(res/logo.png) no-repeat;height:80px;font-size:18pt;font-weight:700;text-decoration:none;}
+#footer{text-align:center;font-size:8pt;border:#696969 1px solid;background-color:#f5f5f5;padding:2px;}
+#pageContent{padding:4px;}
+a:link,a:visited{color:#009;}
+input,textarea{font-size:10pt;font-family:Verdana, Tahoma, Arial;}
+a.downloaditem,a.attachment{background:url(res/attachment.png) no-repeat left center;padding:8px 0 8px 20px;}
+.datatable thead tr th,.datatable tbody tr td{border:1px solid #690;padding:3px;}
+.messageAuthor,.messageDate{font-size:smaller;}
+.articleTitle,.newsitemTitle{font-weight:700;}
+
+.AspNet-FormView-Data {  }
+div.AspNet-FormView label { display:block; margin-bottom:5px; }
+
+div.AspNet-FormView label span { width: 120px; display:block; float:left; }
+
+.ClearIt { clear:left; }
+.Toolbar ul li { float: left; margin:3px; }
+.Toolbar a.LinkButton { display:block; padding:5px; background:#669900; color:White; width:100px; text-align:center; }

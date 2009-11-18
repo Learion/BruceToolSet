@@ -1,0 +1,13 @@
+﻿<hibernate-mapping default-cascade="none" xmlns="urn:nhibernate-mapping-2.2">
+    <class name="SEOToolSet.Entities.KeywordDeepAnalysis, SEOToolSet.Entities" table="KeywordDeepAnalysis">
+        <id name="Id" type="System.Int32" column="Id" unsaved-value="0">
+            <generator class="native" />
+        </id>
+        <property name="Keyword" type="System.String" column="Keyword" not-null="true" length="300" />
+        <property name="Pages" type="System.Int32" column="Pages" not-null="false" />
+        <property name="Status" type="System.String" column="Status" not-null="true" />
+        <many-to-one name="RankingMonitorDeepRun" class="SEOToolSet.Entities.RankingMonitorDeepRun, SEOToolSet.Entities" fetch="select">
+            <column name="IdRankingMonitorDeepRun" not-null="true" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

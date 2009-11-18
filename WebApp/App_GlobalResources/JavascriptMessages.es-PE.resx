@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AbortReportsLoadingQuestion" xml:space="preserve">
+    <value>¿Desea cancelar los reportes que se están cargando?</value>
+  </data>
+  <data name="AboutTitle" xml:space="preserve">
+    <value>Sobre SEOToolSet</value>
+  </data>
+  <data name="AccountNameNotUnique" xml:space="preserve">
+    <value>Elija otro nombre para la cuenta. El que usted elijió se encuentra usado por otra cuenta.</value>
+  </data>
+  <data name="AddNewProject" xml:space="preserve">
+    <value>Agregar Nuevo Proyecto</value>
+  </data>
+  <data name="AreSureQuestion" xml:space="preserve">
+    <value>¿Está seguro?</value>
+  </data>
+  <data name="AssistanceMessage" xml:space="preserve">
+    <value>Si Usted desea asistencia, por favor, &lt;br /&gt;&lt;a target='_blank' href='http://www.seotoolset.com/support/help.html'&gt;contacte al Soporte Técnico de SEOToolSet&amp;#174;&lt;/a&gt;</value>
+  </data>
+  <data name="AsyncRequestFailed" xml:space="preserve">
+    <value>Oopss, el pedido asíncrono ha fallado, por favor refresque la página e intente nuevamente</value>
+  </data>
+  <data name="AtLeastOneProjectSelected" xml:space="preserve">
+    <value>No ha seleccionado ningún Proyecto. Debe elegir al menos uno para ejecutar esta acción</value>
+  </data>
+  <data name="BrokenLink" xml:space="preserve">
+    <value>Vínculo roto</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="CancelConfirmation" xml:space="preserve">
+    <value>¿Está seguro de descartar los cambios realizados a la página?</value>
+  </data>
+  <data name="CheckAll" xml:space="preserve">
+    <value>[ Marcar Todos ]</value>
+  </data>
+  <data name="CheckNone" xml:space="preserve">
+    <value>[ Desmarcar Todos ]</value>
+  </data>
+  <data name="CloseCommand" xml:space="preserve">
+    <value>Cerrar</value>
+  </data>
+  <data name="DecimalSeparator" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="DeleteConfirmationQuestion" xml:space="preserve">
+    <value>Desea borrar los registros seleccionados?</value>
+  </data>
+  <data name="DeleteConfirmationQuestionKeywordList" xml:space="preserve">
+    <value>Desea borrar la lista entera? Esta acción no se puede deshacer.</value>
+  </data>
+  <data name="DiscardChanges" xml:space="preserve">
+    <value>Descartar Cambios</value>
+  </data>
+  <data name="EditURL" xml:space="preserve">
+    <value>Editar URL</value>
+  </data>
+  <data name="EmailNotUnique" xml:space="preserve">
+    <value>La dirección de correo se encuentra en uso. Ingrese una nueva.</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Falla</value>
+  </data>
+  <data name="ErrorFound" xml:space="preserve">
+    <value>Se encontraron errores</value>
+  </data>
+  <data name="ErrorInLine" xml:space="preserve">
+    <value>Se encontró un error al traer los datos</value>
+  </data>
+  <data name="FrequencyMonth" xml:space="preserve">
+    <value>Cada mes</value>
+  </data>
+  <data name="FrequencyTwoWeeks" xml:space="preserve">
+    <value>Cada dos semanas</value>
+  </data>
+  <data name="FrequencyWeek" xml:space="preserve">
+    <value>Semanalmente</value>
+  </data>
+  <data name="HideCommand" xml:space="preserve">
+    <value>[ Ocultar ]</value>
+  </data>
+  <data name="InputRequired" xml:space="preserve">
+    <value>Ingreso obligatorio</value>
+  </data>
+  <data name="Item" xml:space="preserve">
+    <value>Elemento</value>
+  </data>
+  <data name="ItemsSelected" xml:space="preserve">
+    <value>{0} seleccionado(s)</value>
+  </data>
+  <data name="KeywordList" xml:space="preserve">
+    <value>Lista de Palabras Claves</value>
+  </data>
+  <data name="KeywordListCannotBeDeleted" xml:space="preserve">
+    <value>Oopss, La lista de Palabras Clave no se puede borrar, pruebe borrando las Palabras Clave que tiene dentro de la lista</value>
+  </data>
+  <data name="LoginNameNotUnique" xml:space="preserve">
+    <value>El nombre de usuario ya está tomado. Ingrese un nuevo nombre de usuario</value>
+  </data>
+  <data name="ManageKeywords" xml:space="preserve">
+    <value>Administrar Palabras Claves</value>
+  </data>
+  <data name="NoIssuesFound" xml:space="preserve">
+    <value>Sin problema</value>
+  </data>
+  <data name="NoItemSelected" xml:space="preserve">
+    <value>Por favor seleccione al menos un {0}</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>Ninguno(a)</value>
+  </data>
+  <data name="NoReportSelected" xml:space="preserve">
+    <value>Por favor, seleccione al menos un reporte</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="PageReloading" xml:space="preserve">
+    <value>Por favor, espere. La página se encuentra cargando.</value>
+  </data>
+  <data name="PleaseConfirm" xml:space="preserve">
+    <value>Por Favor, Confirme</value>
+  </data>
+  <data name="ProjectCouldNotBeChanged" xml:space="preserve">
+    <value>El proyecto no pudo ser cambiado</value>
+  </data>
+  <data name="ProjectDeletionError" xml:space="preserve">
+    <value>El proyecto no puede ser borrado. Hubo un problema en la operación.</value>
+  </data>
+  <data name="RetrievingData" xml:space="preserve">
+    <value>Recuperando datos</value>
+  </data>
+  <data name="Run" xml:space="preserve">
+    <value>Correr</value>
+  </data>
+  <data name="RunReportsFirst" xml:space="preserve">
+    <value>Ejecute los reportes primero!!</value>
+  </data>
+  <data name="SaveChangesAccountingInformationQuestion" xml:space="preserve">
+    <value>Guardar los cambios en la Sección de Información de la Cuenta?</value>
+  </data>
+  <data name="SaveChangesBillingInformationQuestion" xml:space="preserve">
+    <value>Guardar los cambios en la Sección de Información de Pago de la Cuenta?</value>
+  </data>
+  <data name="SearchEngine" xml:space="preserve">
+    <value>Buscador</value>
+  </data>
+  <data name="Totals" xml:space="preserve">
+    <value>Totales</value>
+  </data>
+  <data name="UriNotValid" xml:space="preserve">
+    <value>La entrada no es válida. Por favor, intente de nuevo</value>
+  </data>
+  <data name="UrlNotEntered" xml:space="preserve">
+    <value>Por favor, ingrese un URL o seleccione un archivo</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Atención</value>
+  </data>
+</root>

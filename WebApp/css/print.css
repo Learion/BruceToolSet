@@ -1,0 +1,31 @@
+﻿html { background: #fff transparent; }
+.mc_outer { width: 100%; margin-left: 20px; margin-right: 20px; }
+#mc_container { background: white; width: 100%; min-width: 960px; }
+#hd, #ft { display: none; }
+.Header { display: none; }
+
+body { background: white; font-size: 10pt; }
+h1 { font-size:200% !important;font-weight:bold !important; margin:20px; }
+
+.xTable table { width: 100%; }
+
+.xTable table tr.RowHeader th { background-color: Gray; }
+.xTable table tr.RowHeader { }
+
+.xTable table thead { display: table-header-group; width: 100%; }
+
+.xTable tr.CountHeader { background: url(Assets/2577_Word_Phrase_Subheader_Bar.png) repeat-x; }
+.xTable tr.CountHeader td.Countable { background: url(Assets/2577_Counter_Header_Bar.png) center center repeat-x; font-weight: bold; }
+
+.xTable tr.RowItem { background: #e7ebff; color: black; }
+.xTable tr.RowItem:hover { background: #f0f1fc !important; }
+tr { page-break-inside: avoid; }
+
+.xTable tr.AlternatingRowItem { background: #fff; color: black; }
+.xTable tr.AlternatingRowItem:hover { background: #F9FAFF !important; }
+.xTable tr.RowHeader th, .xTable tr.RowHeader td { padding: 5px; text-align: center; font-weight: bold; border: none; border-bottom: 3px solid gray /*1px solid #84828c;**/; }
+.xTable td { padding: 6px; text-align: center; border-bottom: 1px solid gray; }
+.xTable td td { padding: 0px; text-align: left; }
+.xTable td.Left { text-align: left; }
+.xTable td.Right { text-align: right; }
+

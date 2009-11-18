@@ -1,0 +1,22 @@
+﻿.CbxContainer.Languages {  padding:0px;border: none !important; margin-left: 5px; }
+.CbxContainer.ProjectCbx { padding:0px;border: none !important; height:30px; }
+.CbxContainer.ProjectCbx  .CbxValueContainer { height:30px; line-height:30px; background: url(Assets/cbx-bg-gray.gif) repeat-x; color:White; border: 1px solid #464646;  }
+.CbxContainer.ProjectCbx  .CbxValueContainer .CbxValueContent { *position:relative; }
+.CbxContainer.ProjectCbx .CbxDropDownButton { height:30px; width:30px; background: url(Assets/cbx-trigger-white.gif) }
+
+.CbxContainer.ProjectCbx  li.CbxItem { padding-right: 12px; border-bottom: 1px solid #ccc; margin-bottom:0px; }
+.CbxContainer.ProjectCbx  li.CbxItem:last-child { border:none; }
+
+.CbxContainer.ProjectCbx  li.CbxItem.over { background:#eee; }
+
+.CbxContainer.ProjectCbx li.CbxItem.selected, 
+.CbxContainer.ProjectCbx li.CbxItem.selected.over { background: url(Assets/cbx-item-bg-over.gif); color: #446689 }
+
+.DomainSelectionTool { position:absolute; top: 0px; right: 2px; z-index: 100; width:300px;}
+/*\*/ html .DomainSelectionTool { top: 47px; }
+/**//* IE6  */
+
+.DomainSelectionTool label { font-weight:bold;}
+
+.DomainSelectionTool ul li { display:block; text-align:right; margin-bottom:5px; }
+.CbxContainer.ProjectCbx.Disabled .CbxValueContainer { background:#ccc !important; border: 1px solid #999; border-bottom:1px solid #eee; border-right: 1px solid #eee;  }

@@ -1,0 +1,80 @@
+div.PopupPanel { }
+div.PopupPanel .p_hd { position:relative; }
+
+.p_hd_lt { float:left; width:10px; height:20px; background:url(topleft.png) no-repeat; }
+.p_hd_rt { float:right; width:10px; height:20px; background:url(topright.png) no-repeat; }
+
+/*\*/ * html .p_hd_lt { overflow:hidden; float:none; position:absolute; left:-10px; } /**/ /* IE6 */
+/*\*/ * html .p_hd_rt { overflow:hidden; float:none; position:absolute; right: 0px;} /**/ /* IE6 */
+
+.p_hd_c { margin-left:10px; height:20px; margin-right:10px; background:#006699; }
+.p_hd_c p { line-height:20px; }
+
+
+div.PopupPanel .p_hd  p { color : white; }
+div.PopupPanel .p_hd  a  {  position: absolute; top : 5px;  right:6px; color:#FFFFFF; background:url(close-btn.gif) no-repeat; display:block; width:12px; height:12px; }
+div.PopupPanel .p_hd  a  span { display:none; }
+
+div.PopupPanel .p_bd { position:relative;}
+
+div.PopupPanel .Ico { float:left; width:35px; height:35px;  background-repeat:no-repeat !important; background-position:bottom right !important; } 
+
+div.PopupPanel .Ico.Alert { background:url(alert.png) }
+div.PopupPanel .Ico.Info { background:url(info.png) }
+div.PopupPanel .Ico.Confirm { background:url(question.ico.jpg) }
+div.PopupPanel .Ico.Warning { background:url(warm.png) }
+div.PopupPanel .Ico.Error { background:url(Error.png) }
+div.PopupPanel .Ico.Wait { background:url(kalarm.png) }
+
+div.PopupPanel .Ico .dlg-extra { display:None; width:35px; height:35px; }
+div.PopupPanel .Ico .dlg-extra-title { display:none; }  
+
+div.DialogCommands { padding:20px 5px 0px 5px; }
+div.DialogCommands ul li { float:right; margin-right: 5px;  }
+div.DialogCommands ul li a.button { margin-right: 0px;}
+
+.dlg-content { position:relative; padding:1px 5px 5px 5px;}
+.dlg-dragHandler { cursor: move !important; }
+.dlg-message { margin-left: 48px; padding-top:10px;}
+.dlg-message-inner { margin-right:15px;}
+.dlg-doClear { clear:both;}
+
+
+div.InlineErrorMessage { padding: 10px; position:relative;}
+div.InlineErrorMessage .InlineWrapper { background-color:white; border:1px dashed #990000;  }
+div.InlineErrorMessage p { font-size: 122%; line-height:36px; color: #990000; text-align:center; }
+a.CloseInlineMessage { cursor:pointer; color:#990000;font-size:93%;text-decoration:none; position:absolute; top: 23px; right:25px; }
+a.CloseInlineMessage span { padding:2px; }
+a.CloseInlineMessage:hover { background:#d2e1e3; color:black;}
+
+div.PopupPanel.BigDialogs .p_hd_lt { width:7px !important; height:6px !important; background:url(hd_tl.gif) no-repeat; }
+div.PopupPanel.BigDialogs .p_hd_rt { width:7px !important; height:6px !important; background:url(hd_tr.gif) no-repeat; }
+div.PopupPanel.BigDialogs .p_hd_c { margin-left:7px !important; height:6px !important; margin-right:7px !important; background: url(hd.gif) repeat-x ; }
+
+div.PopupPanel.BigDialogs .p_hd  p { display:none;}
+
+
+div.PopupPanel.BigDialogs .Ico { float:none; width:100%; height:40px; background-repeat: repeat-x !important; padding: 2px 0px; margin-left:-5px; width:380px; }
+
+div.PopupPanel.BigDialogs .Ico.Info { background : url(icon-bg-info.jpg) repeat-x;  }
+div.PopupPanel.BigDialogs .Ico.Warning { background : url(icon-bg-warning.jpg) repeat-x; }
+div.PopupPanel.BigDialogs .Ico.Error { background : url(icon-bg-error.jpg) repeat-x; }
+
+div.PopupPanel.BigDialogs .Ico .dlg-extra, 
+div.PopupPanel.BigDialogs .Ico .dlg-extra-title { display:block; }
+div.PopupPanel.BigDialogs .Ico .dlg-extra { float:left; }
+
+div.PopupPanel.BigDialogs .Ico .dlg-extra { width: 36px; height: 36px; background-repeat:no-repeat !important; background-position:bottom right !important; }
+
+div.PopupPanel.BigDialogs .Ico.Info .dlg-extra { background:url(info.png) no-repeat;  }
+div.PopupPanel.BigDialogs .Ico.Warning .dlg-extra  { background:url(warm.png) no-repeat; }
+div.PopupPanel.BigDialogs .Ico.Error .dlg-extra  { background:url(Error.png) no-repeat; }
+
+div.PopupPanel.BigDialogs h2.dlg-extra-title { font-size: 18px; margin-left:40px; color:#fff  }
+
+div.PopupPanel.BigDialogs .dlg-message { margin-left:0px; text-align:center; }
+div.PopupPanel.BigDialogs div.DialogCommands { padding:0px; margin:0px auto; margin-top:20px; }
+/*div.PopupPanel.BigDialogs div.DialogCommands ul li { display:inline; float:none; }*/
+div.PopupPanel.BigDialogs .dlg-message p { margin: 5px 10px; }
+div.PopupPanel.BigDialogs .dlg-message a {color : #0060AE; }
+

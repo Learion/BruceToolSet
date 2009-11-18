@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddEngine.Text" xml:space="preserve">
+    <value>Add Engine</value>
+  </data>
+  <data name="CbxProxyFilterTooltip" xml:space="preserve">
+    <value>Select proxy server data to show in the Report Detail table, from the proxy server locations used for the Ranking Monitor report(s)</value>
+  </data>
+  <data name="CbxSearchEngineFilterTooltip" xml:space="preserve">
+    <value>Select the search engines to show in the Report Detail table, from the search engine data gathered in the Ranking Monitor(s)</value>
+  </data>
+  <data name="ExportToCSV.Text" xml:space="preserve">
+    <value>Export to CSV</value>
+  </data>
+  <data name="ExportToCSV.ToolTip" xml:space="preserve">
+    <value>Export the data to a comma-separated value (.CSV) file that can be opened with any report tool such as Microsoft Excel, Crystal Reports, etc. Choose Full Data to export all data gathered by the Ranking Monitor, or choose Current View to export only the data columns currently showing in the Report Detail table</value>
+  </data>
+  <data name="LocalizeCurrentView.Text" xml:space="preserve">
+    <value>Current View</value>
+  </data>
+  <data name="LocalizeFullData.Text" xml:space="preserve">
+    <value>Full Data</value>
+  </data>
+  <data name="LocalizeReportDetail.Text" xml:space="preserve">
+    <value>Report Detail</value>
+  </data>
+  <data name="LocalizeReportSelection.Text" xml:space="preserve">
+    <value>Report Selection</value>
+  </data>
+  <data name="LocalizeReportToCompare.Text" xml:space="preserve">
+    <value>Report to Compare (optional)</value>
+  </data>
+  <data name="LocalizeReportToView.Text" xml:space="preserve">
+    <value>Report to View:</value>
+  </data>
+  <data name="LocalizeSearchEnginesToDisplay.Text" xml:space="preserve">
+    <value>Search Engines to Display</value>
+  </data>
+  <data name="LocalizeSearchEngineToAdd.Text" xml:space="preserve">
+    <value>Search Engine To Add</value>
+  </data>
+  <data name="PrintReport.Text" xml:space="preserve">
+    <value>Print Report</value>
+  </data>
+  <data name="PrintReport.ToolTip" xml:space="preserve">
+    <value>Print the Report Detail table using your printer</value>
+  </data>
+  <data name="PrintToPDF.Text" xml:space="preserve">
+    <value>Print to PDF</value>
+  </data>
+  <data name="PrintToPDF.ToolTip" xml:space="preserve">
+    <value>Create a PDF file of the current Report Detail table that can be saved</value>
+  </data>
+  <data name="ViewReportButton.Text" xml:space="preserve">
+    <value>View Report</value>
+  </data>
+  <data name="ActivityColumnTooltip" xml:space="preserve">
+    <value>Approximate number of daily searches and search results for the keyword</value>
+  </data>
+  <data name="AllEngines" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="AllInTitleColumnTooltip" xml:space="preserve">
+    <value>Number of Web pages that contain all the words of the keyword phrase in their Title tags (per Google)</value>
+  </data>
+  <data name="AllProxies" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="CPCColumnTooltip" xml:space="preserve">
+    <value>Average cost per click for the keyword</value>
+  </data>
+  <data name="ExportedComparisonReportString" xml:space="preserve">
+    <value>Comparison Ranking Monitor Date</value>
+  </data>
+  <data name="ExportedDateString" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="ExportedPrimaryReportString" xml:space="preserve">
+    <value>Primary Ranking Monitor Date</value>
+  </data>
+  <data name="ExportedReportTitle" xml:space="preserve">
+    <value>Ranking Monitor Report</value>
+  </data>
+  <data name="ExportedReportTitleFor" xml:space="preserve">
+    <value>Ranking Monitor Report for</value>
+  </data>
+  <data name="ExportedTitleString" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="ExportedTypeString" xml:space="preserve">
+    <value>Export Type</value>
+  </data>
+  <data name="ExportTypeComparison" xml:space="preserve">
+    <value>Comparison</value>
+  </data>
+  <data name="ExportTypeSingle" xml:space="preserve">
+    <value>Single</value>
+  </data>
+  <data name="GoogleResultsColumnTooltip" xml:space="preserve">
+    <value>Total number of search results returned by Google for the keyword</value>
+  </data>
+  <data name="KeywordColumnTooltip" xml:space="preserve">
+    <value>Keywords selected from the project</value>
+  </data>
+  <data name="LocalizeDetailedReportLegend.Text" xml:space="preserve">
+    <value>NR = Not ranked in the top 50 search results. Dash = No data. Red keywords = Search query failed</value>
+  </data>
+  <data name="NoneSelected" xml:space="preserve">
+    <value>None Selected</value>
+  </data>
+  <data name="NoProxy" xml:space="preserve">
+    <value>No Proxy</value>
+  </data>
+  <data name="PageTitle1.PageDescription" xml:space="preserve">
+    <value>View the data from a Ranking Monitor, or compare two Ranking Monitor reports from different dates</value>
+  </data>
+  <data name="PageTitle1.PageTitleText" xml:space="preserve">
+    <value>View Ranking Monitor Reports</value>
+  </data>
+  <data name="ReportSummaryTitle" xml:space="preserve">
+    <value>Report Summary for</value>
+  </data>
+  <data name="ExportToExcel.Text" xml:space="preserve">
+    <value>Export to CSV for Excel</value>
+  </data>
+  <data name="ExportToExcel.ToolTip" xml:space="preserve">
+    <value>Export the data to a comma-separated value (.CSV) file that can be opened with any report tool such as Microsoft Excel, Crystal Reports, etc. Choose Full Data to export all data gathered by the Ranking Monitor, or choose Current View to export only the data columns currently showing in the Report Detail table</value>
+  </data>
+</root>

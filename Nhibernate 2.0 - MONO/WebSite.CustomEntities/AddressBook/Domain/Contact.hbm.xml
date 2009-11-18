@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="WebSite.CustomEntities.AddressBook.Domain.Contact, WebSite.CustomEntities" table="CustomEntitiesContact">
+    <id name="Id" column="Id" type="String" length="32" >
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+    <property name="DisplayName" type="String">
+      <column name="DisplayName" unique-key="KeyDisplayName" not-null="true" length="100"/>
+    </property>
+    
+    <property name="FirstName" column="FirstName" type="String" length="300" />
+    <property name="LastName" column="LastName" type="String" length="300" />
+    <property name="Telephone1" column="Telephone1" type="String" length="300" />
+    <property name="Telephone2" column="Telephone2" type="String" length="300" />
+    <property name="Address" column="Address" type="String" length="300" />
+    <property name="Note" column="Note" type="String" length="1073741823" />
+  </class>
+</hibernate-mapping>

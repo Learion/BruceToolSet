@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SEOToolSet.Entities.Wrappers.AccountWrapper">
+    <Position X="4.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>gAACUCABACAAAMAIAAImACQgAGAAASQABkQBABIAEAE=</HashCode>
+      <FileName>Wrappers\AccountWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEOToolSet.Entities.Wrappers.StatusWrapper">
+    <Position X="6.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAEAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wrappers\StatusWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEOToolSet.Entities.Wrappers.CountryWrapper" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAIAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wrappers\CountryWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEOToolSet.Entities.Wrappers.FrequencyWrapper" Collapsed="true">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAgAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wrappers\FrequencyWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEOToolSet.Entities.Wrappers.KeywordAnalysisWrapper">
+    <Position X="11.25" Y="4.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAQAAAAACACAABAQAAEQAAAAAAABA=</HashCode>
+      <FileName>Wrappers\KeywordAnalysisWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEOToolSet.Entities.Wrappers.KeywordListWrapper" Collapsed="true">
+    <Position X="7.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAACAAAAQAAAAAAQAAAEAAAAAAAAA=</HashCode>
+      <FileName>Wrappers\KeywordListWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEOToolSet.Entities.Wrappers.KeywordWrapper" Collapsed="true">
+    <Position X="9" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAEAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wrappers\KeywordWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEOToolSet.Entities.Wrappers.MonitorKeywordListWrapper" Collapsed="true">
+    <Position X="10.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAACAAAAAACQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wrappers\MonitorKeywordListWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEOToolSet.Entities.Wrappers.MonitorProxyServerWrapper" Collapsed="true">
+    <Position X="12.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Wrappers\MonitorProxyServerWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEOToolSet.Entities.Wrappers.MonitorSearchEngineCountryWrapper" Collapsed="true">
+    <Position X="7.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAABAICAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wrappers\MonitorSearchEngineCountryWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEOToolSet.Entities.Wrappers.ProjectWrapper">
+    <Position X="9.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGEAAAAAAAAIAAAAggAAQAAgAABAAAQgAAAAIAAEE=</HashCode>
+      <FileName>Wrappers\ProjectWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEOToolSet.Entities.Wrappers.ProxyServerWrapper" Collapsed="true">
+    <Position X="10.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAIAAAAAAAIAAIAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Wrappers\ProxyServerWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEOToolSet.Entities.Wrappers.RankingMonitorConfigurationWrapper" Collapsed="true">
+    <Position X="12.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAgAAAAAAAAAAAAAAAAAAAIAAAAAARCAgAAAAAAA=</HashCode>
+      <FileName>Wrappers\RankingMonitorConfigurationWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEOToolSet.Entities.Wrappers.RankingMonitorRunWrapper">
+    <Position X="7" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAEAAAAAAAAAAAICAAAAAAAAAAEAACAAAAAACA=</HashCode>
+      <FileName>Wrappers\RankingMonitorRunWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEOToolSet.Entities.Wrappers.SearchEngineCountryWrapper" Collapsed="true">
+    <Position X="9" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACEAAAAAAAAAAAAAAAAAAAAAIAAgAACAAAAAAAAAA=</HashCode>
+      <FileName>Wrappers\SearchEngineCountryWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SEOToolSet.Entities.Wrappers.SearchEngineWrapper" Collapsed="true">
+    <Position X="10.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAoAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wrappers\SearchEngineWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

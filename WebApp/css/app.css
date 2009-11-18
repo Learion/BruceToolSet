@@ -1,0 +1,391 @@
+/****************************************************/
+/* Basic Structure styles Header, Content and Footer*/
+/****************************************************/
+html { }
+body { }
+* + html body,/*\*/* html body { letter-spacing: -0.03em; } /**/
+.mc_outer { width: 100%; margin-left: auto; margin-right: auto; }
+#mc_container { background: white; width: 100%; min-width: 960px; }
+#hd, #ft {  z-index: 950; }
+#hd { position:relative; font-size: 100%; }
+#ft { background: url(Assets/footer-bg.gif) repeat-x; height: 80px; font-size:85%; display:none;  }
+#bd { position: relative; z-index: 10; min-height: 400px; font-size:100%;}
+/*\*/* html #bd { height: 650px; }  /**//* IE6 */
+.Header { background: url(Assets/hd-bg.gif) 0px -2px repeat-x;  }
+/*\*/* html .Header { height: 1%; }/**//* IE6 */
+.Logo { width: 400px; height: 65px; background: url(Assets/header_logo.gif) 10px 3px no-repeat; }
+.Logo span { display: none; }
+.strong { font-weight:bold; }
+.clickable { cursor:pointer; } 
+.Invisible { display:none;}
+h1.Logo { margin: 0px;}
+
+.MainMenu { height: 40px; overflow: hidden; }
+.Header .SubMenu { background: url(Assets/subnav_bg.gif) repeat-x; height: 34px; }
+
+#ft .wrapper { padding: 5px; padding-top: 25px; }
+#footerLinks, #footerLinks a { color: White; text-decoration: none; }
+#footerLinks a:hover { background: #333; }
+#footerLinks { padding-top: 10px; }
+#footerLinks li { padding: 0; border: 0; display: block; float: left; margin: 0px 3px; }
+#disclaimer { color: White; float: right; text-align: right; margin-right: 10px; width: 600px; }
+#bd a, #bd p, #bd label, #bd th, #bd select, #bd input { font-size: 100%;  }
+#bd h1 { /*26px via YUI Fonts CSS foundation*/ font-size: 197%; }
+#bd h2 { /*22px via YUI Fonts CSS foundation*/ font-size: 167%; }
+#bd h3 { /*16px via YUI Fonts CSS foundation*/ font-size: 108%; }
+#bd h1, h2, h3 { /* top & bottom margin based on font size */ margin: 0.5em 0; }
+#bd h1,#bd h2,#bd h3,#bd h4,#bd h5,#bd h6,#bd strong { /*bringing boldness back to headers and the strong element*/ font-weight: bold; }
+
+.DoClear { clear: both; font-size: 0px; height: 0px; }
+
+/****************************************************/
+/* HEADER STYLES ************************************/
+/****************************************************/
+.MainMenu { padding-left:10px; }
+.MainMenu li { display: block; float: left; z-index: 5; margin-left:2px; }
+.MainMenu ul { }
+.MainMenu li a { min-width:89px;}
+
+.QuickLinks { padding: 0px; height: 30px; border-top: none; position: absolute; top: 0px; right: 5px; margin-right: 0px; z-index: 100; }
+/*\*/* html .QuickLinks { height: 25px; }/**//* IE6  */
+
+.QuickLinks ul { float: right; margin-right: 10px; margin-top: 5px; }
+.QuickLinks li { margin: 0; padding: 0; border: 0; display: block; float: left; position: relative; z-index: 5; color: #003366; font-weight: bold; }
+.QuickLinks li select { margin: 0px 7px; }
+.QuickLinks ul li a { text-decoration: none; margin: 0px 7px; text-align: center; color: #003366; background: transparent; }
+
+ul.MainPanel li .comboboxContainer { margin-left: 5px; }
+ul.MainPanel li span.SpanFirst { margin-right: 7px; }
+.QuickLinks ul li a:hover { color: #990000; }
+.QuickLinks .PanelRounded { padding: 2px; }
+
+div.Legend h2 { font-weight: bold; color: #0060AE; margin-top: -5px; font-size:107%; }
+
+/****************************************************/
+/* FORM CSS 										*/
+/****************************************************/
+div.FormCSS { padding: 5px; }
+div.FormCSS .Field { clear: both; padding:0px; }
+div.FormCSS .Field label { display: block; color: #0C69B3; font-weight:bold; margin: 5px 5px 5px; }
+div.FormCSS hr {background-color:#E6F0F1;border:0 none;color:#E6F0F1;height:1px;width:80%;}
+div.FormCSS div.FormGroup { border: 1px solid #ccc; padding:10px;}
+div.FormCSS .Field input.FormText { width: 200px; }
+div.FormCSS .Field input.FormText:focus { border: 1px solid #61A1DF; }
+div.Separator { border-bottom: 2px solid #E6F0F1; height: 10px; margin-bottom: 20px; margin-top: 5px; }
+div.FormCSS .Field span { /*font-size: 14px;*/ }
+div.FormCSS span.NotificationMessage { /*font-size: 16px;*/ font-style: italic; color: black; }
+div.FormCSS span.NotificationMessage.Error { color: red; }
+div.FormCSS .Field.OneLine { min-height:22px; }
+div.FormCSS .Field.OneLine label { float: left; width: 130px; margin-top: 1px; margin-bottom: 1px; white-space:nowrap;   }
+div.FormCSS .Field.OneLine label.ShortLabel { width: 30px !important; margin-left: 5px; }
+div.FormCSS .Field.OneLine input { float: left; }
+div.FormCSS .Field.OneLine select { float: left; }
+div.FormCSS .Field.OneLine span { float: left; }
+div.FormCSS span.Validator { display:block; margin:2px;margin-left: 140px; width:100%; color:#990000 !important;font-size:83%;font-weight:normal;letter-spacing:0;  }
+
+/****************************************************/
+
+
+
+.LabelTD { color: #3399CC; font-weight: bold; }
+.LabelTD.Red { color: #990000; }
+
+#bd .wrapper { padding: 10px 20px }
+
+.PageTitle { position: relative; z-index: 20; }
+/*\*/* html .PageTitle { height: 1%; }
+/**//* IE6 */
+
+.PageTitle h2 { color: #990000; /*font-size: 1.5em;*/ }
+.PanelRounded { padding: 10px; }
+
+.HelpSection { position: absolute; top: 5px; right: 0px; }
+
+.HelpSection a { display: block; text-decoration: none; color: #003366; background: url(Assets/help-ico.gif) right no-repeat; height: 26px;}
+.HelpSection a:hover span { background: #DEEDF9; }
+.HelpSection a span { line-height: 26px; padding: 2px 4px; margin-right:30px; }
+
+#PageSelector { margin-left: auto; margin-right: auto; width: 550px; height:56px; }
+a.LinkCommandRound { cursor: pointer; display: block; width: 100px; height: 25px !important; background: url(Assets/ButtonBlue.gif) no-repeat; color: #FFFFFF; text-decoration: none; text-align: center; }
+a.LinkCommandRound.Little { width: 80px; height: 20px !important; background: url(Assets/ButtonBlueLittle.gif) no-repeat; color: #FFFFFF; text-decoration: none; text-align: center; font-size: 85% }
+a.LinkCommandRound.DisabledButton { background: url(Assets/ButtonLightBlue.gif) no-repeat; }
+/*a.LinkCommandRound span { line-height: 25px; }*/
+a.LinkCommandRound.Little span { line-height: 20px; }
+
+a.LinkCommandRound span {line-height:189%;/*25px*/  }
+
+#SubReportSelector a.LinkCommandRound.Big { height: 25px; display:none; }
+
+#SubReportSelector a.LinkCommandRound.Big span { line-height: 25px; font-size: 123.1%; }
+
+input.FormText { border: 1px solid #D2E1E3; height: 19px; line-height: 19px; }
+select.FormText { border: 1px solid #D2E1E3; height: 19px; line-height: 19px; }
+textarea.FormText { border: 1px solid #D2E1E3;  }
+
+.Required { background-color:#FEF3BA; }
+#SubReportSelector { position: relative; margin: 10px 0px 0px 0px; padding: 1px; height:55px; }
+
+
+
+/*\*/* html #SubReportSelector { height: 1%; }
+/**//* IE6 */
+
+#SubReports { width: 90%; }
+/*\*/* html #SubReports { height: 1%; }
+/**//* IE6 */
+
+#SubReports li { margin: 0; padding: 0; border: 0; display: block; float: left; position: relative; z-index: 5; margin-right: 5px; }
+#SubReports li label { margin-left: 5px; cursor: pointer; }
+#SubReports li span { margin-left: 20px; color: #0c5eac; }
+#SubReports li input { position: absolute; margin-top: 1px; }
+* + html #SubReports li input { margin-top: -2px; }
+/*\*/* html #SubReports li input { margin-top: -2px; }
+/*\*/
+
+
+/*Tables Format*/
+
+
+.xTable table { width: 100%; }
+
+.xTable tr.RowHeader { background: url(Assets/2576_Table_Header.png) repeat-x; color: black; }
+
+.xTable tr.CountHeader { background: url(Assets/2577_Word_Phrase_Subheader_Bar.png) repeat-x; }
+.xTable tr.CountHeader td.Countable { background: url(Assets/2577_Counter_Header_Bar.png) center center repeat-x; font-weight: bold; }
+
+.xTable .RowItem { background: #e7ebff; color: black; }
+.xTable tr.RowItem:hover { background: #f0f1fc !important; }
+.xTable tr.AlternatingRowItem { background: #fff; color: black; }
+.xTable tr.AlternatingRowItem:hover { background: #F9FAFF !important; }
+.xTable tr.Selected { background: #87a0be !important; color: white !important; }
+.xTable tr.Selected:hover { background: #57809e !important; }
+.xTable tr.RowHeader th, .xTable tr.RowHeader td { padding: 4px; text-align: center; font-weight: bold; border: none; /*1px solid #84828c;**/ }
+.xTable td { padding: 6px; text-align: center; }
+.xTable tr > td, .xTable tr > th, .xTable tr.RowHeader > th  { border-right: 1px solid #c2d2e5; }
+.xTable tr > td.NoBorder, .xTable tr > th.NoBorder, .xTable tr.RowHeader > th.NoBorder { border-right: none; }
+
+
+.xTable td td { padding: 0px; text-align: left; border:none; }
+.xTable th th { border:none; }
+
+.xTable td.Left { text-align: left; }
+.xTable td.Right { text-align: right; }
+.xTable table { border-bottom: 1px solid #c2d2e5; border-left:1px solid #c2d2e5; }
+.xTable table table { border:none; }
+
+#ReportsSection h1.title { color: #990000; /*font-size: 2em;*/ margin-bottom: 10px; }
+#ReportsSection h2.title { color: #990000; margin-bottom: 10px; }
+.Report { position: relative; margin-bottom: 10px; }
+.ReportHeader { position: relative; padding: 5px; }
+/*\*/* html .ReportHeader { height: 1%; }
+/**//* IE6 */
+
+
+.ReportHeader a.ReportCollapseTrigger { background: url(Assets/arrow-report-collapsed.png) no-repeat; display: block; width: 16px; height: 15px; top: 5px; right: 5px; position: absolute; }
+.ReportHeader a.ReportCollapseTrigger span { display: none; }
+.Report .PanelRounded { padding: 0px 5px; }
+
+.Report.Highlight .PanelRounded .ReportHeader { background-color: #eee; }
+
+.Report.Error .PanelRounded .ReportHeader, .InputError { background-color: #f5a09a; }
+.Report.Error.Highlight .PanelRounded .ReportHeader { background-color: #f7bbb7; }
+
+
+
+.ReportHeader h2 { /*font-size: 1.4em;*/ font-weight: bold; color: #3e86c1; margin:0px; font-size:108% !important; }
+.ReportHeader span.NotifyMessage { position: absolute; top: 5px; right: 30px; color: red; }
+
+.Report.Error .ReportHeader h2 { color: #fff; }
+.Report.Error .ReportHeader span.NotifyMessage { font-weight: bold; color: #fff; }
+
+.Report.UnCollapsed .ReportHeader a.ReportCollapseTrigger { background: url(Assets/arrow-report-unCollapsed.gif) no-repeat; }
+
+.DialogButtons { padding: 10px 0px; }
+.DialogButtons ul li { margin-left: 5px; padding: 0; border: 0; display: block; float: right; }
+
+.LoadingMark { background: url(Assets/loading-01.gif) 78px 0px no-repeat; width: 121px; height: 20px; }
+.TableArea { padding: 5px; display: none; }
+
+.ResultSuccess { color: Green; }
+.ResultError { color: Red !important; }
+.Keyword { color: #0c5eac; }
+.OptimizedWord { color: Green; font-weight: bold; }
+
+div.xLinearDistribution { padding: 10px; }
+div.xLinearContainer { padding: 5px; background: #fff; border: 1px solid #D2E1E3; margin: 0px 10px 10px 0px; float: left; width: 435px; }
+/*\*/* html div.xLinearContainer { width: 400px; }
+/*\*/
+div.xLinearContainer { }
+div.xLinearContainer h2, .xTable.Phrases h2 { color: #0c5eac; /*font-size: 16px;*/ font-weight: bold; }
+div.xLinearContainer h3, .xTable.Phrases h3 { color: #0c5eac; /*font-size: 16px;*/ font-weight: bold; font-size:108%; }
+.xTable.Phrases h2 { /*font-size: 14px;*/ margin: 10px 0px; font-size:108%; }
+
+.xTable.Phrases { margin-bottom: 10px; width: auto; }
+
+
+.LinkImageClass { background: url(Assets/agt_action_success.png) no-repeat; width: 16px; height: 16px; margin-left: auto; margin-right: auto; }
+
+.ToolBar { margin-bottom: 5px; }
+/*\*/* html .ToolBar { height: 1%; }
+/**//* IE6 */
+.ToolBarItem { float: left; margin-right: 5px; padding: 5px; }
+.ToolBarItem.Right { float: right; }
+
+.ToolBarItem .input { position: absolute; }
+
+a.MiniCommand { /*font-size: 12px;*/ color: #797979; text-decoration: none; }
+a.MiniCommand span { padding: 2px; }
+a.MiniCommand:hover { background: #d2e1e3; color: Black; }
+
+.MiniCommandText { color: #797979; }
+
+#SubReportSelector div.ToolBar { margin-right: 130px; }
+
+div.FileSelector table { margin-left: auto; margin-right: auto; }
+.PageHeader { margin-bottom: 10px; }
+
+
+th.Sortable.Over { background: url(Assets/hd-bg-grid-over.jpg) repeat-x; }
+.SortIndicator { background: url(Assets/tool-sprites.gif) no-repeat; overflow: hidden; width: 15px; height: 15px; display: none; float: right; }
+.Sortable.ASC .SortIndicator { background-position: 0 -60px; display: block; }
+
+.Sortable.DESC .SortIndicator { background-position: 0 -75px; display: block; }
+
+.ButtonDiv { width: 135px; padding: 5px; background: url(Assets/2576_Table_Header.png) repeat-x; margin-bottom: 10px; }
+
+.ButtonDiv.Over { background: url(Assets/hd-bg-grid-over.jpg) repeat-x; }
+
+.divAboutSpacer { padding: 10px; }
+
+.divAboutSpacer h1.Logo { background: url(Assets/SEO-logo-about.gif) no-repeat; width: 300px; height: 51px; margin-left: auto; margin-right: auto; }
+.divAboutSpacer h1.Logo span { display: none; }
+div.AboutDivTable { padding: 5px; font-size:93%; }
+
+div.AboutDivTable .RowItem { background: #e7ebff; color: black; }
+div.AboutDivTable .AlternatingRowItem { background: #fff; color: black; }
+div.AboutDivTable td { padding: 3px; }
+
+.VersionTD { text-align: right; }
+
+#languageSelector.collapsed a:hover { text-decoration: underline; }
+
+.LabelItem { font-weight: bold; color: #990000; }
+div.FormSelector label { float: left; width: 125px; line-height: 22px; }
+div.FormSelector input { float: left; width: 200px; }
+div.FormSelector { float: left; }
+
+div.ButtonSelector { float: left; margin-left: 10px; }
+
+div.ButtonSelector span.Item { float: left; margin: 0px 2px; line-height: 25px; }
+
+.High { color: #0c5eac; /* #2A9310; */ }
+.Low { color: #980F0F; }
+td.High, td.Low { font-weight: bold; }
+tr.CountHeader td.High {background-image:url(Assets/2577_Word_Phrase_Subheader_Bar_High.png); }
+tr.CountHeader td.Low { font-weight: bold; background-image:url(Assets/2577_Word_Phrase_Subheader_Bar_Low.png); }
+tr.High { background-color: #EAFFCB !important; }
+tr.Low { background-color: #F6DFDF !important; }
+
+tr.High td { font-weight: bold !important; }
+tr.Low td { font-weight: bold !important; }
+
+tr.Low td.Keyword, tr.Low .OptimizedWord { color: #BB5151 !important; }
+
+tr.High td.Keyword, tr.High .OptimizedWord { color: #349903 !important; }
+
+.WizardStep { color: #3399CC; margin-right: auto; margin-left: auto; }
+.WizardStep fieldset div { float: left; margin: 5px; }
+.WizardWrapper h2.SectionTitle { /*font-size: 18px;*/ font-weight: bold; color: #000000; margin-bottom: 1em; text-align: right; }
+.WizardWrapper { margin-right: auto; margin-left: auto; }
+
+.Cell { float: left; padding: 5px; }
+.TabBlock { border: solid 1px #A0A0A8; width: 90%; margin-left: 20px; margin-right: auto; }
+.TabHeading.Active { border-top: solid 2px #E0EBEC; border-bottom: solid 2px #FFF; }
+.TabHeading { border-left: solid 1px #E0EBEC; border-right: solid 1px #E0EBEC; border-top: solid 1px #E0EBEC; display: inline; padding: 0 5px; }
+.TabHeading:hover { border-top: solid 2px #0060AE; background: #DEEDF9; }
+.TabHeading a { color: #3399CC; text-decoration: none; }
+.Instructions { color: #3399CC; }
+h2.SectionHeading { /*font-size: 20px;*/ color: #3e86c1; }
+#InvitationEmail { text-align: center; padding: 5px; }
+.FieldSet fieldSet { margin: 15px; }
+#InvitationEmailSection { margin: 15px auto 0 auto; width: 365px; text-align: center; }
+
+a.InternalLink { color: #61A1DF; }
+
+div.FormPanel { position: relative; }
+div.FormPanel div.Actions { position: absolute; top: 0px; right: 0px; }
+div.FormPanel div.Actions ul li { margin-bottom: 5px; }
+div.FormPanel div.WizardActions { margin-left: auto; margin-right: auto; }
+div.FormPanel div.WizardActions ul li { margin-bottom: 5px; margin-top: 5px; float: left; padding-right: 5px; }
+.Disabled { background: #F0F0F0; }
+
+.round_ctr { margin-bottom: 10px; }
+
+div.GridView { padding: 5px; }
+
+.ToolbarCenter ul li { float: left; margin-left: 10px; }
+
+.ToolbarCenter { margin-left: auto; margin-right: auto; padding: 10px 5px 5px 5px; width: 230px; }
+#divFontSettings .ToolbarCenter { width:100%; }
+
+#divFontSettings div.FormCSS { padding-bottom:0px;}
+
+
+div.CenterWrapper { margin-left: auto; margin-right: auto; display:none; overflow:hidden; padding:1px; }
+
+div.CenterWrapper ul li { float:left; margin-right:5px; }
+
+a.LinkLabel { color: #3399CC; font-weight: bold; /*font-size:16px; */ text-decoration: none; }
+.Resalted { color: #3399CC; }
+
+.wrapper-popUp { padding: 10px 10px 0px; }
+
+p.EmptyMessage { padding: 5px; font-style: italic; background-color: #FFE859; border: 1px solid red; }
+
+
+.DialogBody h3 { margin:1px; color: #990000; }
+
+#UsersSection a.LinkLabel,  #ProjectsSection a.LinkLabel { font-size:122%; }
+
+/*.ModeIndicators span { font-size: 93% }
+.ModeIndicators span.MessageIndicator, .ModeIndicators span { color:Gray;  }
+.ModeIndicators span.MessageIndicator.selected { color:red; background:#FFECB3;  }*/
+
+.ModeIndicators { margin-left: 214px;}
+
+span.label.disabled { color: #E6E6E6; }
+a.LinkUpload span.label.disabled { font-size:14px; text-decoration:none; background:#fff; }
+a.LinkUpload {display:block;text-align:center;width:100px;}
+
+.PrimaryToken { color: #4775A3;}
+.ComparisonToken { color: #73A437;}
+.Increase { color: Black;}
+.Decrease { color : Red; }
+
+.CSVOnly { display:none !important;}
+
+.DivForDialog { display:none; } /*Every Div used for a popup dialog should be initially hidden*/
+
+#divFontSettings div.FormCSS .Field.OneLine label { width:220px; }
+#divFontSettings div.FormCSS .Field.OneLine { padding: 5px; border-bottom: 1px solid #eee;}
+
+#divFontSettings div.FormCSS .Field.OneLine span.Hint { display:block; font-size:83%; margin-left:220px; color:#888; float:none; }
+
+#divFontSettings .FormPanel { margin-bottom:20px;}
+
+#BulkLoader div.FormCSS .Field { border-bottom: 1px solid #ccc; padding-bottom:4px;}
+#BulkLoader div.FormCSS .Field input.FormText { width: 180px;}
+#BulkLoader .wrapper-popUp { padding-bottom:0px;}
+#BulkLoader .Field span.Hint { float: none; clear:both; display:block; margin: 5px; font-size:83%; color: #555;}
+#BulkLoader  .Field textarea.FormText { width: 319px}
+#bulkLoad.MiniCommand { float:right; line-height:25px; margin-top:10px}
+
+tr.Selectable, tr th.Sortable { cursor: pointer; }
+.ConversionControl { width:300px;height:90px; background:#F5F9FC; padding:10px; border: 1px solid #C7DAED; color:#2c6f95; }
+.ConversionControl p { margin:5px;}
+.ddl-currencies { width:150px;color:#000; }
+.ConvertionResult { height: 40px; }
+.ConversionControl .ConvertionResult p { font-size:12px !important;}
+.ConversionControl .ConvertionResult p.Result { font-size:15px !important;}
+.ConversionControl p { font-size: 11px !important; text-align:center; }
+.ConvertionResult {display:none;}

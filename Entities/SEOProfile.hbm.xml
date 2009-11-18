@@ -1,0 +1,28 @@
+﻿<hibernate-mapping default-cascade="none" xmlns="urn:nhibernate-mapping-2.2">
+    <class name="SEOToolSet.Entities.SEOProfile, SEOToolSet.Entities" table="SEOProfile">
+        <id name="Id" type="System.Int32" column="Id" unsaved-value="0">
+            <generator class="native" />
+        </id>
+
+        <property name="Name" type="String">
+            <column name="Name" unique-key="NameApplicationName" not-null="true" length="100"/>
+        </property>
+        <property name="ApplicationName" type="String">
+            <column name="ApplicationName" unique-key="NameApplicationName" not-null="true" length="100"/>
+        </property>
+
+        <property name="InsertDate" column="CreatedDate" type="DateTime" not-null="true" />
+        <property name="UpdateDate" column="UpdatedDate" type="DateTime" not-null="true" />
+
+        <property name="ProfileType" column="ProfileType" not-null="true" />
+        <property name="LastActivityDate" column="LastActivityDate" type="DateTime" not-null="true" />
+        <property name="LastPropertyChangedDate" column="LastPropertyChangedDate" type="DateTime" not-null="true" />
+
+        <!-- The collection is used to automatically add, delete children entities. Note the cascade property set to all. -->
+        <bag name="Properties" inverse="true" lazy="true" cascade="all">
+            <key column="IdUser"/>
+            <one-to-many class="SEOToolSet.Entities.ProfileProperty, SEOToolSet.Entities"/>
+        </bag>
+
+    </class>
+</hibernate-mapping>

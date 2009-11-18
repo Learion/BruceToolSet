@@ -1,0 +1,22 @@
+body { font-family: Calibri, "Trebuchet MS", Verdana; }
+#mc { }
+div.spacer { padding:5px; }
+#hd { height: 34px; background: url(assets/hd-bg.gif) repeat-x; }
+#hd h1 { font-size: 16px; color: #fff;}
+#ct { position:relative;  background:url(assets/form-bg.gif);}
+
+#testSuiteSection { float:left; width: 300px;   height:600px; border:1px solid #99bbe8; }
+
+div.GroupPanel { padding: 2px; background:#d6e3f2; margin-bottom: 5px; }
+div.GHeader { padding:0px; height: 24px; background: url(assets/panel-hd.gif) repeat-x; border:1px solid #99bbe8  }
+div.GHeader.MainHD { background:none;}
+div.GHeader h2 { line-height: 24px; margin-left: 5px; font-size:14px; font-weight:bold;  }
+div.GBody { border: 1px solid #99bbe8; border-top:none; }
+div.GBody > div.spacer{ background:#fff; padding:10px; }
+div.GBody.MainHD > div.spacer { height: 540px; overflow:auto; }
+
+div.Clear { clear : both;}
+
+#RunSection { border:1px solid #99bbe8; border-left:none; height:600px; margin-left:300px;}
+
+button { background: url(assets/panel-hd.gif); border: 1px solid #426799; height:24px; font-size: 12px; font-weight:bold; cursor:pointer; }

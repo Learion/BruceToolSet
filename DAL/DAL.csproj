@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{92768A66-9264-4D1B-9212-F62E8292540A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SEOToolSet.DAL</RootNamespace>
+    <AssemblyName>SEOToolSet.DAL</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=5.2.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=2.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DSCreditCardType.cs" />
+    <Compile Include="DSAccount.cs" />
+    <Compile Include="DSCompetitor.cs" />
+    <Compile Include="DSCountry.cs" />
+    <Compile Include="DSEnginesPerProxyResultView.cs" />
+    <Compile Include="DSFrequency.cs" />
+    <Compile Include="DSKeyword.cs" />
+    <Compile Include="DSKeywordAnalysis.cs" />
+    <Compile Include="DSKeywordDeepAnalysis.cs" />
+    <Compile Include="DSKeywordList.cs" />
+    <Compile Include="DSMonitorKeywordList.cs" />
+    <Compile Include="DSMonitorProxyServer.cs" />
+    <Compile Include="DSMonitorSearchEngineCountry.cs" />
+    <Compile Include="DSMySqlCompetitor.cs" />
+    <Compile Include="DSMySqlKeywordList.cs" />
+    <Compile Include="DSMySqlProject.cs" />
+    <Compile Include="DSPermission.cs" />
+    <Compile Include="DSPermissionRole.cs" />
+    <Compile Include="DSProject.cs" />
+    <Compile Include="DSProjectUser.cs" />
+    <Compile Include="DSPromoCode.cs" />
+    <Compile Include="DSProxyServer.cs" />
+    <Compile Include="DSRankingMonitorDeepRun.cs" />
+    <Compile Include="DSRankingMonitorRun.cs" />
+    <Compile Include="DSRole.cs" />
+    <Compile Include="DSSearchEngine.cs" />
+    <Compile Include="DSSearchEngineCountry.cs" />
+    <Compile Include="DSSEOToolsetUser.cs" />
+    <Compile Include="DSStatus.cs" />
+    <Compile Include="DSProfileProperty.cs" />
+    <Compile Include="DSSubscriptionDetail.cs" />
+    <Compile Include="DSSubscriptionLevel.cs" />
+    <Compile Include="DSSubscriptionProperty.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DSSEOProfile.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{2E263402-DD3D-496C-BBC6-2A267D007BC1}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MySqlDataStore\MySqlDataStore.csproj">
+      <Project>{2359124F-EC68-4DC3-8766-81D211558213}</Project>
+      <Name>MySqlDataStore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NHibernateDataStore\NHibernateDataStore.csproj">
+      <Project>{3342C92B-E60F-440F-93DC-B6915FDA1739}</Project>
+      <Name>NHibernateDataStore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ViewEntities\ViewEntities.csproj">
+      <Project>{6E4C5D23-430A-4029-BDFD-B3D292894053}</Project>
+      <Name>ViewEntities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

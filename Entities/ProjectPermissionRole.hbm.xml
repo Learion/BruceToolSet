@@ -1,0 +1,13 @@
+﻿<hibernate-mapping default-cascade="none" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SEOToolSet.Entities.ProjectPermissionRole, SEOToolSet.Entities" table="ProjectPermissionRole">
+    <id name="Id" type="System.Int32" column="Id" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <many-to-one name="ProjectPermission" class="SEOToolSet.Entities.ProjectPermission, SEOToolSet.Entities" fetch="select">
+      <column name="IdProjectPermission" not-null="true" />
+    </many-to-one>
+    <many-to-one name="ProjectRole" class="SEOToolSet.Entities.ProjectRole, SEOToolSet.Entities" fetch="select">
+      <column name="IdProjectRole" not-null="true" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

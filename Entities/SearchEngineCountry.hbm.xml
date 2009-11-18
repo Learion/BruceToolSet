@@ -1,0 +1,26 @@
+﻿<hibernate-mapping default-cascade="none" xmlns="urn:nhibernate-mapping-2.2">
+    <class name="SEOToolSet.Entities.SearchEngineCountry, SEOToolSet.Entities" table="SearchEngineCountry">
+        <id name="Id" type="System.Int32" column="Id" unsaved-value="0">
+            <generator class="native" />
+        </id>
+        <property name="Url" type="System.String" column="Url" not-null="false" length="166" />
+        <bag name="RankingMonitorDeepRun" inverse="true" lazy="true" cascade="none">
+            <key>
+                <column name="IdSearchEngineCountry" not-null="true" />
+            </key>
+            <one-to-many class="SEOToolSet.Entities.RankingMonitorDeepRun, SEOToolSet.Entities" />
+        </bag>
+        <many-to-one name="SearchEngine" class="SEOToolSet.Entities.SearchEngine, SEOToolSet.Entities" fetch="select">
+            <column name="IdSearchEngine" not-null="true" />
+        </many-to-one>
+        <many-to-one name="Country" class="SEOToolSet.Entities.Country, SEOToolSet.Entities" fetch="select">
+            <column name="IdCountry" not-null="true" />
+        </many-to-one>
+        <bag name="MonitorSearchEngineCountry" inverse="true" lazy="true" cascade="none">
+            <key>
+                <column name="IdSearchEngineCountry" not-null="true" />
+            </key>
+            <one-to-many class="SEOToolSet.Entities.MonitorSearchEngineCountry, SEOToolSet.Entities" />
+        </bag>
+    </class>
+</hibernate-mapping>

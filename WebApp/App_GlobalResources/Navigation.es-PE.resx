@@ -1,0 +1,876 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Accounting_Description" xml:space="preserve">
+    <value>TODO: Contabilidad Description</value>
+  </data>
+  <data name="Accounting_MenuLabel" xml:space="preserve">
+    <value>Contabilidad</value>
+  </data>
+  <data name="Accounting_Title" xml:space="preserve">
+    <value>Contabilidad</value>
+  </data>
+  <data name="AccountingStatus_Description" xml:space="preserve">
+    <value>TODO: Estado de Contabilidad Description</value>
+  </data>
+  <data name="AccountingStatus_MenuLabel" xml:space="preserve">
+    <value>Estado de Contabilidad</value>
+  </data>
+  <data name="AccountingStatus_Title" xml:space="preserve">
+    <value>Estado de Contabilidad</value>
+  </data>
+  <data name="AccountingToolsOverview_Description" xml:space="preserve">
+    <value>TODO: Herramientas de Información general Description</value>
+  </data>
+  <data name="AccountingToolsOverview_MenuLabel" xml:space="preserve">
+    <value>Herramientas de Información general</value>
+  </data>
+  <data name="AccountingToolsOverview_Title" xml:space="preserve">
+    <value>Herramientas de Información general</value>
+  </data>
+  <data name="AccountingUsage_Description" xml:space="preserve">
+    <value>TODO: Contabilidad de uso Description</value>
+  </data>
+  <data name="AccountingUsage_MenuLabel" xml:space="preserve">
+    <value>Contabilidad de uso</value>
+  </data>
+  <data name="AccountingUsage_Title" xml:space="preserve">
+    <value>Contabilidad de uso</value>
+  </data>
+  <data name="AccountProfile_Description" xml:space="preserve">
+    <value>TODO: Perfil de cuenta Description</value>
+  </data>
+  <data name="AccountProfile_MenuLabel" xml:space="preserve">
+    <value>Perfil de cuenta</value>
+  </data>
+  <data name="AccountProfile_Title" xml:space="preserve">
+    <value>Perfil de cuenta</value>
+  </data>
+  <data name="Administration_Description" xml:space="preserve">
+    <value>TODO: Administración Description</value>
+  </data>
+  <data name="Administration_MenuLabel" xml:space="preserve">
+    <value>Administración</value>
+  </data>
+  <data name="Administration_Title" xml:space="preserve">
+    <value>Administración</value>
+  </data>
+  <data name="AdministrationTools_Description" xml:space="preserve">
+    <value>TODO: Herramientas de administración Description</value>
+  </data>
+  <data name="AdministrationTools_MenuLabel" xml:space="preserve">
+    <value>Herramientas de administración</value>
+  </data>
+  <data name="AdministrationTools_Title" xml:space="preserve">
+    <value>Herramientas de administración</value>
+  </data>
+  <data name="AdministrationToolsOverview_Description" xml:space="preserve">
+    <value>TODO: Descripción de herramientas de administración Description</value>
+  </data>
+  <data name="AdministrationToolsOverview_MenuLabel" xml:space="preserve">
+    <value>Descripción de herramientas de administración</value>
+  </data>
+  <data name="AdministrationToolsOverview_Title" xml:space="preserve">
+    <value>Descripción de herramientas de administración</value>
+  </data>
+  <data name="Analyze_Description" xml:space="preserve">
+    <value>TODO: Analizar Description</value>
+  </data>
+  <data name="Analyze_MenuLabel" xml:space="preserve">
+    <value>Analizar</value>
+  </data>
+  <data name="Analyze_Title" xml:space="preserve">
+    <value>Analizar</value>
+  </data>
+  <data name="AnalyzeOverview_Description" xml:space="preserve">
+    <value>TODO: Analizar Descripción Description</value>
+  </data>
+  <data name="AnalyzeOverview_MenuLabel" xml:space="preserve">
+    <value>Analizar Descripción</value>
+  </data>
+  <data name="AnalyzeOverview_Title" xml:space="preserve">
+    <value>Analizar Descripción</value>
+  </data>
+  <data name="Campaigns_Description" xml:space="preserve">
+    <value>TODO: Campañas Description</value>
+  </data>
+  <data name="Campaigns_MenuLabel" xml:space="preserve">
+    <value>Campañas</value>
+  </data>
+  <data name="Campaigns_Title" xml:space="preserve">
+    <value>Campañas</value>
+  </data>
+  <data name="ComparisonReport_Description" xml:space="preserve">
+    <value>TODO: Informe de Comparación Description</value>
+  </data>
+  <data name="ComparisonReport_MenuLabel" xml:space="preserve">
+    <value>Informe de Comparación</value>
+  </data>
+  <data name="ComparisonReport_Title" xml:space="preserve">
+    <value>Informe de Comparación</value>
+  </data>
+  <data name="Competitors_Description" xml:space="preserve">
+    <value>TODO: Competidores Description</value>
+  </data>
+  <data name="Competitors_MenuLabel" xml:space="preserve">
+    <value>Competidores</value>
+  </data>
+  <data name="Competitors_Title" xml:space="preserve">
+    <value>Competidores</value>
+  </data>
+  <data name="CompetitorsOverview_Description" xml:space="preserve">
+    <value>TODO: Descripción competidores Description</value>
+  </data>
+  <data name="CompetitorsOverview_MenuLabel" xml:space="preserve">
+    <value>Descripción competidores</value>
+  </data>
+  <data name="CompetitorsOverview_Title" xml:space="preserve">
+    <value>Descripción competidores</value>
+  </data>
+  <data name="Default_Description" xml:space="preserve">
+    <value>TODO: Predeterminado Description</value>
+  </data>
+  <data name="Default_MenuLabel" xml:space="preserve">
+    <value>Predeterminado</value>
+  </data>
+  <data name="Default_Title" xml:space="preserve">
+    <value>Predeterminado</value>
+  </data>
+  <data name="Demographics_Description" xml:space="preserve">
+    <value>TODO: Demografía Description</value>
+  </data>
+  <data name="Demographics_MenuLabel" xml:space="preserve">
+    <value>Demografía</value>
+  </data>
+  <data name="Demographics_Title" xml:space="preserve">
+    <value>Demografía</value>
+  </data>
+  <data name="DSM_Description" xml:space="preserve">
+    <value>TODO: DSM Description</value>
+  </data>
+  <data name="DSM_MenuLabel" xml:space="preserve">
+    <value>DSM</value>
+  </data>
+  <data name="DSM_Title" xml:space="preserve">
+    <value>DSM</value>
+  </data>
+  <data name="DSMAdministration_Description" xml:space="preserve">
+    <value>TODO: DSM Administración Description</value>
+  </data>
+  <data name="DSMAdministration_MenuLabel" xml:space="preserve">
+    <value>DSM Administración</value>
+  </data>
+  <data name="DSMAdministration_Title" xml:space="preserve">
+    <value>DSM Administración</value>
+  </data>
+  <data name="DSMOverview_Description" xml:space="preserve">
+    <value>TODO: DSM Descripción Description</value>
+  </data>
+  <data name="DSMOverview_MenuLabel" xml:space="preserve">
+    <value>DSM Descripción</value>
+  </data>
+  <data name="DSMOverview_Title" xml:space="preserve">
+    <value>DSM Descripción</value>
+  </data>
+  <data name="DSMReport_Description" xml:space="preserve">
+    <value>TODO: DSM Informe Description</value>
+  </data>
+  <data name="DSMReport_MenuLabel" xml:space="preserve">
+    <value>DSM Informe</value>
+  </data>
+  <data name="DSMReport_Title" xml:space="preserve">
+    <value>DSM Informe</value>
+  </data>
+  <data name="EmployeeLogs_Description" xml:space="preserve">
+    <value>TODO: Registros empleado Description</value>
+  </data>
+  <data name="EmployeeLogs_MenuLabel" xml:space="preserve">
+    <value>Registros empleado</value>
+  </data>
+  <data name="EmployeeLogs_Title" xml:space="preserve">
+    <value>Registros empleado</value>
+  </data>
+  <data name="ErrorLogs_Description" xml:space="preserve">
+    <value>TODO: Registros de error Description</value>
+  </data>
+  <data name="ErrorLogs_MenuLabel" xml:space="preserve">
+    <value>Registros de error</value>
+  </data>
+  <data name="ErrorLogs_Title" xml:space="preserve">
+    <value>Registros de error</value>
+  </data>
+  <data name="Home_Description" xml:space="preserve">
+    <value>TODO: Inicio Description</value>
+  </data>
+  <data name="Home_MenuLabel" xml:space="preserve">
+    <value>Inicio</value>
+  </data>
+  <data name="Home_Title" xml:space="preserve">
+    <value>Inicio</value>
+  </data>
+  <data name="HTMLSitemap_Description" xml:space="preserve">
+    <value>TODO: Mapa del sitio HTML  Description</value>
+  </data>
+  <data name="HTMLSitemap_MenuLabel" xml:space="preserve">
+    <value>Mapa del sitio HTML </value>
+  </data>
+  <data name="HTMLSitemap_Title" xml:space="preserve">
+    <value>Mapa del sitio HTML </value>
+  </data>
+  <data name="IntelligenceReport_Description" xml:space="preserve">
+    <value>TODO: Informe de Inteligencia Description</value>
+  </data>
+  <data name="IntelligenceReport_MenuLabel" xml:space="preserve">
+    <value>Informe de Inteligencia</value>
+  </data>
+  <data name="IntelligenceReport_Title" xml:space="preserve">
+    <value>Informe de Inteligencia</value>
+  </data>
+  <data name="Keywords_Description" xml:space="preserve">
+    <value>TODO: Palabras clave Description</value>
+  </data>
+  <data name="Keywords_MenuLabel" xml:space="preserve">
+    <value>Palabras clave</value>
+  </data>
+  <data name="Keywords_Title" xml:space="preserve">
+    <value>Palabras clave</value>
+  </data>
+  <data name="KeywordsOverview_Description" xml:space="preserve">
+    <value>TODO: Palabras clave Descripción Description</value>
+  </data>
+  <data name="KeywordsOverview_MenuLabel" xml:space="preserve">
+    <value>Palabras clave Descripción</value>
+  </data>
+  <data name="KeywordsOverview_Title" xml:space="preserve">
+    <value>Palabras clave Descripción</value>
+  </data>
+  <data name="LinkAnalysis_Description" xml:space="preserve">
+    <value>TODO: Análisis de Enlace Description</value>
+  </data>
+  <data name="LinkAnalysis_MenuLabel" xml:space="preserve">
+    <value>Análisis de Enlace</value>
+  </data>
+  <data name="LinkAnalysis_Title" xml:space="preserve">
+    <value>Análisis de Enlace</value>
+  </data>
+  <data name="LinkAnalysisOverview_Description" xml:space="preserve">
+    <value>TODO: Descripción Análisis de Enlace Description</value>
+  </data>
+  <data name="LinkAnalysisOverview_MenuLabel" xml:space="preserve">
+    <value>Descripción Análisis de Enlace</value>
+  </data>
+  <data name="LinkAnalysisOverview_Title" xml:space="preserve">
+    <value>Descripción Análisis de Enlace</value>
+  </data>
+  <data name="LinkAnalysisReport_Description" xml:space="preserve">
+    <value>TODO: Enlace Informe Análisis Description</value>
+  </data>
+  <data name="LinkAnalysisReport_MenuLabel" xml:space="preserve">
+    <value>Enlace Informe Análisis</value>
+  </data>
+  <data name="LinkAnalysisReport_Title" xml:space="preserve">
+    <value>Enlace Informe Análisis</value>
+  </data>
+  <data name="LinkMaps_Description" xml:space="preserve">
+    <value>TODO: Enlace Mapas Description</value>
+  </data>
+  <data name="LinkMaps_MenuLabel" xml:space="preserve">
+    <value>Enlace Mapas</value>
+  </data>
+  <data name="LinkMaps_Title" xml:space="preserve">
+    <value>Enlace Mapas</value>
+  </data>
+  <data name="LinkMapsOverview_Description" xml:space="preserve">
+    <value>TODO: Mapas Descripción Enlace Description</value>
+  </data>
+  <data name="LinkMapsOverview_MenuLabel" xml:space="preserve">
+    <value>Mapas Descripción Enlace</value>
+  </data>
+  <data name="LinkMapsOverview_Title" xml:space="preserve">
+    <value>Mapas Descripción Enlace</value>
+  </data>
+  <data name="LinkReport_Description" xml:space="preserve">
+    <value>TODO: Link Report Description</value>
+  </data>
+  <data name="LinkReport_MenuLabel" xml:space="preserve">
+    <value>Link Report</value>
+  </data>
+  <data name="LinkReport_Title" xml:space="preserve">
+    <value>Link Report</value>
+  </data>
+  <data name="Links_Description" xml:space="preserve">
+    <value>TODO: Enlaces Description</value>
+  </data>
+  <data name="Links_MenuLabel" xml:space="preserve">
+    <value>Enlaces</value>
+  </data>
+  <data name="Links_Title" xml:space="preserve">
+    <value>Enlaces</value>
+  </data>
+  <data name="LinksOverview_Description" xml:space="preserve">
+    <value>TODO: Links Vista general Description</value>
+  </data>
+  <data name="LinksOverview_MenuLabel" xml:space="preserve">
+    <value>Links Vista general</value>
+  </data>
+  <data name="LinksOverview_Title" xml:space="preserve">
+    <value>Links Vista general</value>
+  </data>
+  <data name="LoginPage_Description" xml:space="preserve">
+    <value>TODO: En la página de registro Description</value>
+  </data>
+  <data name="LoginPage_MenuLabel" xml:space="preserve">
+    <value>En la página de registro</value>
+  </data>
+  <data name="LoginPage_Title" xml:space="preserve">
+    <value>En la página de registro</value>
+  </data>
+  <data name="ManageEmployees_Description" xml:space="preserve">
+    <value>TODO: Gestión de los empleados Description</value>
+  </data>
+  <data name="ManageEmployees_MenuLabel" xml:space="preserve">
+    <value>Gestión de los empleados</value>
+  </data>
+  <data name="ManageEmployees_Title" xml:space="preserve">
+    <value>Gestión de los empleados</value>
+  </data>
+  <data name="ManageProjects_Description" xml:space="preserve">
+    <value>TODO: Gestionar proyectos Description</value>
+  </data>
+  <data name="ManageProjects_MenuLabel" xml:space="preserve">
+    <value>Gestionar proyectos</value>
+  </data>
+  <data name="ManageProjects_Title" xml:space="preserve">
+    <value>Gestionar proyectos</value>
+  </data>
+  <data name="Monitor_Description" xml:space="preserve">
+    <value>TODO: Monitor de Description</value>
+  </data>
+  <data name="Monitor_MenuLabel" xml:space="preserve">
+    <value>Monitor</value>
+  </data>
+  <data name="Monitor_Title" xml:space="preserve">
+    <value>Monitor</value>
+  </data>
+  <data name="MultiPageKda_Description" xml:space="preserve">
+    <value>TODO: Múltiples Page KDa Description</value>
+  </data>
+  <data name="MultiPageKda_MenuLabel" xml:space="preserve">
+    <value>Múltiples Page KDa</value>
+  </data>
+  <data name="MultiPageKda_Title" xml:space="preserve">
+    <value>Múltiples Page KDa</value>
+  </data>
+  <data name="OptimizedPages_Description" xml:space="preserve">
+    <value>TODO: Optimizado Páginas Description</value>
+  </data>
+  <data name="OptimizedPages_MenuLabel" xml:space="preserve">
+    <value>Optimizado Páginas</value>
+  </data>
+  <data name="OptimizedPages_Title" xml:space="preserve">
+    <value>Optimizado Páginas</value>
+  </data>
+  <data name="PartnerTools_Description" xml:space="preserve">
+    <value>TODO: Herramientas para socios Description</value>
+  </data>
+  <data name="PartnerTools_MenuLabel" xml:space="preserve">
+    <value>Herramientas para socios</value>
+  </data>
+  <data name="PartnerTools_Title" xml:space="preserve">
+    <value>Herramientas para socios</value>
+  </data>
+  <data name="PartnerToolsOverview_Description" xml:space="preserve">
+    <value>TODO: Herramientas para socios Información general Description</value>
+  </data>
+  <data name="PartnerToolsOverview_MenuLabel" xml:space="preserve">
+    <value>Herramientas para socios Información general</value>
+  </data>
+  <data name="PartnerToolsOverview_Title" xml:space="preserve">
+    <value>Herramientas para socios Información general</value>
+  </data>
+  <data name="Pathmaps_Description" xml:space="preserve">
+    <value>TODO: Pathmaps Description</value>
+  </data>
+  <data name="Pathmaps_MenuLabel" xml:space="preserve">
+    <value>Pathmaps</value>
+  </data>
+  <data name="Pathmaps_Title" xml:space="preserve">
+    <value>Pathmaps</value>
+  </data>
+  <data name="PathMapsOverview_Description" xml:space="preserve">
+    <value>TODO: Mapas de ruta Descripción Description</value>
+  </data>
+  <data name="PathMapsOverview_MenuLabel" xml:space="preserve">
+    <value>Mapas de ruta Descripción</value>
+  </data>
+  <data name="PathMapsOverview_Title" xml:space="preserve">
+    <value>Mapas de ruta Descripción</value>
+  </data>
+  <data name="PathMapsReport_Description" xml:space="preserve">
+    <value>TODO: Mapas de ruta Informe Description</value>
+  </data>
+  <data name="PathMapsReport_MenuLabel" xml:space="preserve">
+    <value>Mapas de ruta Informe</value>
+  </data>
+  <data name="PathMapsReport_Title" xml:space="preserve">
+    <value>Mapas de ruta Informe</value>
+  </data>
+  <data name="PathMapsSettings_Description" xml:space="preserve">
+    <value>TODO: Mapas de ruta Configuración Description</value>
+  </data>
+  <data name="PathMapsSettings_MenuLabel" xml:space="preserve">
+    <value>Mapas de ruta Configuración</value>
+  </data>
+  <data name="PathMapsSettings_Title" xml:space="preserve">
+    <value>Mapas de ruta Configuración</value>
+  </data>
+  <data name="PotentialTraffic_Description" xml:space="preserve">
+    <value>TODO: Potencial de tráfico Description</value>
+  </data>
+  <data name="PotentialTraffic_MenuLabel" xml:space="preserve">
+    <value>Potencial de tráfico</value>
+  </data>
+  <data name="PotentialTraffic_Title" xml:space="preserve">
+    <value>Potencial de tráfico</value>
+  </data>
+  <data name="Project_Dashboard_Description" xml:space="preserve">
+    <value>TODO: Descripción del Dashboard de Proyectos</value>
+  </data>
+  <data name="Project_Dashboard_MenuLabel" xml:space="preserve">
+    <value>Dashboard de Proyectos</value>
+  </data>
+  <data name="Project_Dashboard_Title" xml:space="preserve">
+    <value>Dashboard de Proyectos</value>
+  </data>
+  <data name="Project_Description" xml:space="preserve">
+    <value>TODO: Proyecto Description</value>
+  </data>
+  <data name="Project_MenuLabel" xml:space="preserve">
+    <value>Proyecto</value>
+  </data>
+  <data name="Project_Title" xml:space="preserve">
+    <value>Proyecto</value>
+  </data>
+  <data name="RankedKeywords_Description" xml:space="preserve">
+    <value>TODO: Palabras clave destacados Description</value>
+  </data>
+  <data name="RankedKeywords_MenuLabel" xml:space="preserve">
+    <value>Palabras clave destacados</value>
+  </data>
+  <data name="RankedKeywords_Title" xml:space="preserve">
+    <value>Palabras clave destacados</value>
+  </data>
+  <data name="RankingMonitorConfiguration_Description" xml:space="preserve">
+    <value>Configure the settings for your project’s Ranking Monitor and schedule how often it automatically runs</value>
+  </data>
+  <data name="RankingMonitorConfiguration_MenuLabel" xml:space="preserve">
+    <value>Configurar Monitor</value>
+  </data>
+  <data name="RankingMonitorConfiguration_Title" xml:space="preserve">
+    <value>Configurar Monitor</value>
+  </data>
+  <data name="RankingMonitorDashboard_Description" xml:space="preserve">
+    <value>A summary of the latest Ranking Monitor run for the selected project</value>
+  </data>
+  <data name="RankingMonitorDashboard_MenuLabel" xml:space="preserve">
+    <value>Tablero del Monitor</value>
+  </data>
+  <data name="RankingMonitorDashboard_Title" xml:space="preserve">
+    <value>Tablero del Monitor</value>
+  </data>
+  <data name="RankingMonitorReports_Description" xml:space="preserve">
+    <value>View the data from a Ranking Monitor, or compare two Ranking Monitor reports from different dates</value>
+  </data>
+  <data name="RankingMonitorReports_MenuLabel" xml:space="preserve">
+    <value>Ver reportes</value>
+  </data>
+  <data name="RankingMonitorReports_Title" xml:space="preserve">
+    <value>Ver reportes</value>
+  </data>
+  <data name="RankingMonitorRun_Description" xml:space="preserve">
+    <value>Monitor your pages’ search engine rankings for your selected keywords</value>
+  </data>
+  <data name="RankingMonitorRun_MenuLabel" xml:space="preserve">
+    <value>Ejecutar Monitor</value>
+  </data>
+  <data name="RankingMonitorRun_Title" xml:space="preserve">
+    <value>Ejecutar Monitor</value>
+  </data>
+  <data name="RelationshipChart_Description" xml:space="preserve">
+    <value>TODO: Relación con el gráfico Description</value>
+  </data>
+  <data name="RelationshipChart_MenuLabel" xml:space="preserve">
+    <value>Relación con el gráfico</value>
+  </data>
+  <data name="RelationshipChart_Title" xml:space="preserve">
+    <value>Relación con el gráfico</value>
+  </data>
+  <data name="ResearchSummary_Description" xml:space="preserve">
+    <value>TODO: Resumen de Investigación Description</value>
+  </data>
+  <data name="ResearchSummary_MenuLabel" xml:space="preserve">
+    <value>Resumen de Investigación</value>
+  </data>
+  <data name="ResearchSummary_Title" xml:space="preserve">
+    <value>Resumen de Investigación</value>
+  </data>
+  <data name="ScheduleProcesses_Description" xml:space="preserve">
+    <value>TODO: Calendario de Procesos Description</value>
+  </data>
+  <data name="ScheduleProcesses_MenuLabel" xml:space="preserve">
+    <value>Calendario de Procesos</value>
+  </data>
+  <data name="ScheduleProcesses_Title" xml:space="preserve">
+    <value>Calendario de Procesos</value>
+  </data>
+  <data name="SearchUserOrAccount_Administrator_Description" xml:space="preserve">
+    <value>TODO: Búsqueda de usuario o la cuenta Description</value>
+  </data>
+  <data name="SearchUserOrAccount_Administrator_MenuLabel" xml:space="preserve">
+    <value>Búsqueda de usuario o la cuenta</value>
+  </data>
+  <data name="SearchUserOrAccount_Administrator_Title" xml:space="preserve">
+    <value>Búsqueda de usuario o la cuenta</value>
+  </data>
+  <data name="SearchUserOrAccount_Description" xml:space="preserve">
+    <value>TODO: Búsqueda de usuario o la cuenta Description</value>
+  </data>
+  <data name="SearchUserOrAccount_MenuLabel" xml:space="preserve">
+    <value>Búsqueda de usuario o la cuenta</value>
+  </data>
+  <data name="SearchUserOrAccount_Title" xml:space="preserve">
+    <value>Búsqueda de usuario o la cuenta</value>
+  </data>
+  <data name="SignUp_Description" xml:space="preserve">
+    <value>TODO: Regístrate Description</value>
+  </data>
+  <data name="SignUp_MenuLabel" xml:space="preserve">
+    <value>Regístrate</value>
+  </data>
+  <data name="SignUp_Title" xml:space="preserve">
+    <value>Regístrate</value>
+  </data>
+  <data name="SinglePageKda_Description" xml:space="preserve">
+    <value>TODO: Page único KDa Description</value>
+  </data>
+  <data name="SinglePageKda_MenuLabel" xml:space="preserve">
+    <value>Page único KDa</value>
+  </data>
+  <data name="SinglePageKda_Title" xml:space="preserve">
+    <value>Page único KDa</value>
+  </data>
+  <data name="SiteChecker_Description" xml:space="preserve">
+    <value>TODO: Comprobador del sitio Description</value>
+  </data>
+  <data name="SiteChecker_MenuLabel" xml:space="preserve">
+    <value>Comprobador del sitio</value>
+  </data>
+  <data name="SiteChecker_Title" xml:space="preserve">
+    <value>Comprobador del sitio</value>
+  </data>
+  <data name="SiteInformation_Description" xml:space="preserve">
+    <value>TODO: Información de Sitio Description</value>
+  </data>
+  <data name="SiteInformation_MenuLabel" xml:space="preserve">
+    <value>Información de Sitio</value>
+  </data>
+  <data name="SiteInformation_Title" xml:space="preserve">
+    <value>Información de Sitio</value>
+  </data>
+  <data name="SiteLinkSpider_Description" xml:space="preserve">
+    <value>TODO: Sitio Enlace Spider Description</value>
+  </data>
+  <data name="SiteLinkSpider_MenuLabel" xml:space="preserve">
+    <value>Sitio Enlace Spider</value>
+  </data>
+  <data name="SiteLinkSpider_Title" xml:space="preserve">
+    <value>Sitio Enlace Spider</value>
+  </data>
+  <data name="SitemapsXMLGenerator_Description" xml:space="preserve">
+    <value>TODO: Generador de Sitemaps XML Description</value>
+  </data>
+  <data name="SitemapsXMLGenerator_MenuLabel" xml:space="preserve">
+    <value>Generador de Sitemaps XML</value>
+  </data>
+  <data name="SitemapsXMLGenerator_Title" xml:space="preserve">
+    <value>Generador de Sitemaps XML</value>
+  </data>
+  <data name="StopwordEditor_Description" xml:space="preserve">
+    <value>TODO: Editor de parada Description</value>
+  </data>
+  <data name="StopwordEditor_MenuLabel" xml:space="preserve">
+    <value>Editor de parada</value>
+  </data>
+  <data name="StopwordEditor_Title" xml:space="preserve">
+    <value>Editor de parada</value>
+  </data>
+  <data name="SubmissionPages_Description" xml:space="preserve">
+    <value>TODO: Páginas de presentación Description</value>
+  </data>
+  <data name="SubmissionPages_MenuLabel" xml:space="preserve">
+    <value>Páginas de presentación</value>
+  </data>
+  <data name="SubmissionPages_Title" xml:space="preserve">
+    <value>Páginas de presentación</value>
+  </data>
+  <data name="Submit_Description" xml:space="preserve">
+    <value>TODO: Enviar Description</value>
+  </data>
+  <data name="Submit_MenuLabel" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="Submit_Title" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="SubmitOverview_Description" xml:space="preserve">
+    <value>TODO: Enviar Reseña Description</value>
+  </data>
+  <data name="SubmitOverview_MenuLabel" xml:space="preserve">
+    <value>Enviar Reseña</value>
+  </data>
+  <data name="SubmitOverview_Title" xml:space="preserve">
+    <value>Enviar Reseña</value>
+  </data>
+  <data name="SubscriberOrAccountList_Administrator_Description" xml:space="preserve">
+    <value>TODO: Abonado o Lista de cuentas Description</value>
+  </data>
+  <data name="SubscriberOrAccountList_Administrator_MenuLabel" xml:space="preserve">
+    <value>Abonado o Lista de cuentas</value>
+  </data>
+  <data name="SubscriberOrAccountList_Administrator_Title" xml:space="preserve">
+    <value>Abonado o Lista de cuentas</value>
+  </data>
+  <data name="SubscribersOrAccountsList_Description" xml:space="preserve">
+    <value>TODO: Lista de suscriptores o cuentas Description</value>
+  </data>
+  <data name="SubscribersOrAccountsList_MenuLabel" xml:space="preserve">
+    <value>Lista de suscriptores o cuentas</value>
+  </data>
+  <data name="SubscribersOrAccountsList_Title" xml:space="preserve">
+    <value>Lista de suscriptores o cuentas</value>
+  </data>
+  <data name="SuggestedKeywords_Description" xml:space="preserve">
+    <value>TODO: Palabras clave sugeridas Description</value>
+  </data>
+  <data name="SuggestedKeywords_MenuLabel" xml:space="preserve">
+    <value>Palabras clave sugeridas</value>
+  </data>
+  <data name="SuggestedKeywords_Title" xml:space="preserve">
+    <value>Palabras clave sugeridas</value>
+  </data>
+  <data name="SupportTools_Description" xml:space="preserve">
+    <value>TODO: Herramientas de soporte Description</value>
+  </data>
+  <data name="SupportTools_MenuLabel" xml:space="preserve">
+    <value>Herramientas de soporte</value>
+  </data>
+  <data name="SupportTools_Title" xml:space="preserve">
+    <value>Herramientas de soporte</value>
+  </data>
+  <data name="SupportToolsOverview_Description" xml:space="preserve">
+    <value>TODO: Herramientas de soporte de Vista general Description</value>
+  </data>
+  <data name="SupportToolsOverview_MenuLabel" xml:space="preserve">
+    <value>Herramientas de soporte de Vista general</value>
+  </data>
+  <data name="SupportToolsOverview_Title" xml:space="preserve">
+    <value>Herramientas de soporte de Vista general</value>
+  </data>
+  <data name="Tools_Description" xml:space="preserve">
+    <value>TODO: Herramientas Description</value>
+  </data>
+  <data name="Tools_MenuLabel" xml:space="preserve">
+    <value>Herramientas</value>
+  </data>
+  <data name="Tools_Title" xml:space="preserve">
+    <value>Herramientas</value>
+  </data>
+  <data name="TrafficChecker_Description" xml:space="preserve">
+    <value>TODO: Comprobador de tráfico Description</value>
+  </data>
+  <data name="TrafficChecker_MenuLabel" xml:space="preserve">
+    <value>Comprobador de tráfico</value>
+  </data>
+  <data name="TrafficChecker_Title" xml:space="preserve">
+    <value>Comprobador de tráfico</value>
+  </data>
+  <data name="TransferAccountData_Administrator_Description" xml:space="preserve">
+    <value>TODO: Transferencia de los datos de la cuenta Description</value>
+  </data>
+  <data name="TransferAccountData_Administrator_MenuLabel" xml:space="preserve">
+    <value>Transferencia de los datos de la cuenta</value>
+  </data>
+  <data name="TransferAccountData_Administrator_Title" xml:space="preserve">
+    <value>Transferencia de los datos de la cuenta</value>
+  </data>
+  <data name="TransferAcountData_Description" xml:space="preserve">
+    <value>TODO: Cuenta de Transferencia de Datos Description</value>
+  </data>
+  <data name="TransferAcountData_MenuLabel" xml:space="preserve">
+    <value>Cuenta de Transferencia de Datos</value>
+  </data>
+  <data name="TransferAcountData_Support_Description" xml:space="preserve">
+    <value>TODO: Cuenta de Transferencia de Datos Description</value>
+  </data>
+  <data name="TransferAcountData_Support_MenuLabel" xml:space="preserve">
+    <value>Cuenta de Transferencia de Datos</value>
+  </data>
+  <data name="TransferAcountData_Support_Title" xml:space="preserve">
+    <value>Cuenta de Transferencia de Datos</value>
+  </data>
+  <data name="TransferAcountData_Title" xml:space="preserve">
+    <value>Cuenta de Transferencia de Datos</value>
+  </data>
+  <data name="TrendingReport_Description" xml:space="preserve">
+    <value>TODO: Informe de Tendencias Description</value>
+  </data>
+  <data name="TrendingReport_MenuLabel" xml:space="preserve">
+    <value>Informe de Tendencias</value>
+  </data>
+  <data name="TrendingReport_Title" xml:space="preserve">
+    <value>Informe de Tendencias</value>
+  </data>
+  <data name="TrendingReports_Description" xml:space="preserve">
+    <value>TODO: Informes de tendencias Description</value>
+  </data>
+  <data name="TrendingReports_MenuLabel" xml:space="preserve">
+    <value>Informes de tendencias</value>
+  </data>
+  <data name="TrendingReports_Title" xml:space="preserve">
+    <value>Informes de tendencias</value>
+  </data>
+  <data name="UploadLinkList_Description" xml:space="preserve">
+    <value>TODO: Subir Lista de vínculos Description</value>
+  </data>
+  <data name="UploadLinkList_MenuLabel" xml:space="preserve">
+    <value>Subir Lista de vínculos</value>
+  </data>
+  <data name="UploadLinkList_Title" xml:space="preserve">
+    <value>Subir Lista de vínculos</value>
+  </data>
+  <data name="UserProfile_Description" xml:space="preserve">
+    <value>TODO: Perfil del usuario Description</value>
+  </data>
+  <data name="UserProfile_MenuLabel" xml:space="preserve">
+    <value>Perfil del usuario</value>
+  </data>
+  <data name="UserProfile_Title" xml:space="preserve">
+    <value>Perfil del usuario</value>
+  </data>
+</root>

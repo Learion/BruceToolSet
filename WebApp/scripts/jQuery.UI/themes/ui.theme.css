@@ -1,0 +1,669 @@
+.ui-widget {
+	FONT-SIZE: 1.1em; FONT-FAMILY: Lucida Grande, Lucida Sans, Arial, sans-serif
+}
+.ui-widget INPUT {
+	FONT-SIZE: 1em; FONT-FAMILY: Lucida Grande, Lucida Sans, Arial, sans-serif
+}
+.ui-widget SELECT {
+	FONT-SIZE: 1em; FONT-FAMILY: Lucida Grande, Lucida Sans, Arial, sans-serif
+}
+.ui-widget TEXTAREA {
+	FONT-SIZE: 1em; FONT-FAMILY: Lucida Grande, Lucida Sans, Arial, sans-serif
+}
+.ui-widget BUTTON {
+	FONT-SIZE: 1em; FONT-FAMILY: Lucida Grande, Lucida Sans, Arial, sans-serif
+}
+.ui-widget-header {
+	BORDER-RIGHT: #4297d7 1px solid; BORDER-TOP: #4297d7 1px solid; FONT-WEIGHT: bold; BACKGROUND: url(images/5c9ccc_500x100_textures_12_gloss_wave_55.png) #5c9ccc repeat-x 50% 50%; BORDER-LEFT: #4297d7 1px solid; COLOR: #ffffff; BORDER-BOTTOM: #4297d7 1px solid
+}
+.ui-widget-header A {
+	COLOR: #ffffff
+}
+.ui-widget-content {
+	BORDER-RIGHT: #a6c9e2 1px solid; BORDER-TOP: #a6c9e2 1px solid; BACKGROUND: url(images/fcfdfd_40x100_textures_06_inset_hard_100.png) #fcfdfd repeat-x 50% bottom; BORDER-LEFT: #a6c9e2 1px solid; COLOR: #222222; BORDER-BOTTOM: #a6c9e2 1px solid
+}
+.ui-widget-content A {
+	COLOR: #222222
+}
+.ui-state-default {
+	BORDER-RIGHT: #c5dbec 1px solid; BORDER-TOP: #c5dbec 1px solid; FONT-WEIGHT: bold; BACKGROUND: url(images/dfeffc_40x100_textures_02_glass_85.png) #dfeffc repeat-x 50% 50%; BORDER-LEFT: #c5dbec 1px solid; COLOR: #2e6e9e; BORDER-BOTTOM: #c5dbec 1px solid; outline: none
+}
+.ui-widget-content .ui-state-default {
+	BORDER-RIGHT: #c5dbec 1px solid; BORDER-TOP: #c5dbec 1px solid; FONT-WEIGHT: bold; BACKGROUND: url(images/dfeffc_40x100_textures_02_glass_85.png) #dfeffc repeat-x 50% 50%; BORDER-LEFT: #c5dbec 1px solid; COLOR: #2e6e9e; BORDER-BOTTOM: #c5dbec 1px solid; outline: none
+}
+.ui-state-default A {
+	COLOR: #2e6e9e; TEXT-DECORATION: none; outline: none
+}
+.ui-state-hover {
+	BORDER-RIGHT: #79b7e7 1px solid; BORDER-TOP: #79b7e7 1px solid; FONT-WEIGHT: bold; BACKGROUND: url(images/d0e5f5_40x100_textures_02_glass_75.png) #d0e5f5 repeat-x 50% 50%; BORDER-LEFT: #79b7e7 1px solid; COLOR: #1d5987; BORDER-BOTTOM: #79b7e7 1px solid; outline: none
+}
+.ui-widget-content .ui-state-hover {
+	BORDER-RIGHT: #79b7e7 1px solid; BORDER-TOP: #79b7e7 1px solid; FONT-WEIGHT: bold; BACKGROUND: url(images/d0e5f5_40x100_textures_02_glass_75.png) #d0e5f5 repeat-x 50% 50%; BORDER-LEFT: #79b7e7 1px solid; COLOR: #1d5987; BORDER-BOTTOM: #79b7e7 1px solid; outline: none
+}
+.ui-state-focus {
+	BORDER-RIGHT: #79b7e7 1px solid; BORDER-TOP: #79b7e7 1px solid; FONT-WEIGHT: bold; BACKGROUND: url(images/d0e5f5_40x100_textures_02_glass_75.png) #d0e5f5 repeat-x 50% 50%; BORDER-LEFT: #79b7e7 1px solid; COLOR: #1d5987; BORDER-BOTTOM: #79b7e7 1px solid; outline: none
+}
+.ui-widget-content .ui-state-focus {
+	BORDER-RIGHT: #79b7e7 1px solid; BORDER-TOP: #79b7e7 1px solid; FONT-WEIGHT: bold; BACKGROUND: url(images/d0e5f5_40x100_textures_02_glass_75.png) #d0e5f5 repeat-x 50% 50%; BORDER-LEFT: #79b7e7 1px solid; COLOR: #1d5987; BORDER-BOTTOM: #79b7e7 1px solid; outline: none
+}
+.ui-state-hover A {
+	COLOR: #1d5987; TEXT-DECORATION: none; outline: none
+}
+.ui-state-active {
+	BORDER-RIGHT: #79b7e7 1px solid; BORDER-TOP: #79b7e7 1px solid; FONT-WEIGHT: bold; BACKGROUND: url(images/f5f8f9_40x100_textures_06_inset_hard_100.png) #f5f8f9 repeat-x 50% 50%; BORDER-LEFT: #79b7e7 1px solid; COLOR: #e17009; BORDER-BOTTOM: #79b7e7 1px solid; outline: none
+}
+.ui-widget-content .ui-state-active {
+	BORDER-RIGHT: #79b7e7 1px solid; BORDER-TOP: #79b7e7 1px solid; FONT-WEIGHT: bold; BACKGROUND: url(images/f5f8f9_40x100_textures_06_inset_hard_100.png) #f5f8f9 repeat-x 50% 50%; BORDER-LEFT: #79b7e7 1px solid; COLOR: #e17009; BORDER-BOTTOM: #79b7e7 1px solid; outline: none
+}
+.ui-state-active A {
+	COLOR: #e17009; TEXT-DECORATION: none; outline: none
+}
+.ui-state-highlight {
+	BORDER-RIGHT: #fad42e 1px solid; BORDER-TOP: #fad42e 1px solid; BACKGROUND: url(images/fbec88_40x100_textures_01_flat_55.png) #fbec88 repeat-x 50% 50%; BORDER-LEFT: #fad42e 1px solid; COLOR: #363636; BORDER-BOTTOM: #fad42e 1px solid
+}
+.ui-widget-content .ui-state-highlight {
+	BORDER-RIGHT: #fad42e 1px solid; BORDER-TOP: #fad42e 1px solid; BACKGROUND: url(images/fbec88_40x100_textures_01_flat_55.png) #fbec88 repeat-x 50% 50%; BORDER-LEFT: #fad42e 1px solid; COLOR: #363636; BORDER-BOTTOM: #fad42e 1px solid
+}
+.ui-state-error {
+	BORDER-RIGHT: #cd0a0a 1px solid; BORDER-TOP: #cd0a0a 1px solid; BACKGROUND: url(images/fef1ec_40x100_textures_02_glass_95.png) #fef1ec repeat-x 50% 50%; BORDER-LEFT: #cd0a0a 1px solid; COLOR: #cd0a0a; BORDER-BOTTOM: #cd0a0a 1px solid
+}
+.ui-widget-content .ui-state-error {
+	BORDER-RIGHT: #cd0a0a 1px solid; BORDER-TOP: #cd0a0a 1px solid; BACKGROUND: url(images/fef1ec_40x100_textures_02_glass_95.png) #fef1ec repeat-x 50% 50%; BORDER-LEFT: #cd0a0a 1px solid; COLOR: #cd0a0a; BORDER-BOTTOM: #cd0a0a 1px solid
+}
+.ui-state-error-text {
+	COLOR: #cd0a0a
+}
+.ui-widget-content .ui-state-error-text {
+	COLOR: #cd0a0a
+}
+.ui-state-disabled {
+	FILTER: Alpha(Opacity=35); BACKGROUND-IMAGE: none; opacity: .35
+}
+.ui-widget-content .ui-state-disabled {
+	FILTER: Alpha(Opacity=35); BACKGROUND-IMAGE: none; opacity: .35
+}
+.ui-priority-primary {
+	FONT-WEIGHT: bold
+}
+.ui-widget-content .ui-priority-primary {
+	FONT-WEIGHT: bold
+}
+.ui-priority-secondary {
+	FONT-WEIGHT: normal; FILTER: Alpha(Opacity=70); opacity: .7
+}
+.ui-widget-content .ui-priority-secondary {
+	FONT-WEIGHT: normal; FILTER: Alpha(Opacity=70); opacity: .7
+}
+.ui-icon {
+	BACKGROUND-IMAGE: url(images/469bdd_256x240_icons_icons.png); WIDTH: 16px; HEIGHT: 16px
+}
+.ui-widget-content .ui-icon {
+	BACKGROUND-IMAGE: url(images/469bdd_256x240_icons_icons.png)
+}
+.ui-widget-header .ui-icon {
+	BACKGROUND-IMAGE: url(images/d8e7f3_256x240_icons_icons.png)
+}
+.ui-state-default .ui-icon {
+	BACKGROUND-IMAGE: url(images/6da8d5_256x240_icons_icons.png)
+}
+.ui-state-hover .ui-icon {
+	BACKGROUND-IMAGE: url(images/217bc0_256x240_icons_icons.png)
+}
+.ui-state-focus .ui-icon {
+	BACKGROUND-IMAGE: url(images/217bc0_256x240_icons_icons.png)
+}
+.ui-state-active .ui-icon {
+	BACKGROUND-IMAGE: url(images/f9bd01_256x240_icons_icons.png)
+}
+.ui-state-highlight .ui-icon {
+	BACKGROUND-IMAGE: url(images/2e83ff_256x240_icons_icons.png)
+}
+.ui-state-error .ui-icon {
+	BACKGROUND-IMAGE: url(images/cd0a0a_256x240_icons_icons.png)
+}
+.ui-state-error-text .ui-icon {
+	BACKGROUND-IMAGE: url(images/cd0a0a_256x240_icons_icons.png)
+}
+.ui-icon-carat-1-n {
+	BACKGROUND-POSITION: 0px 0px
+}
+.ui-icon-carat-1-ne {
+	BACKGROUND-POSITION: -16px 0px
+}
+.ui-icon-carat-1-e {
+	BACKGROUND-POSITION: -32px 0px
+}
+.ui-icon-carat-1-se {
+	BACKGROUND-POSITION: -48px 0px
+}
+.ui-icon-carat-1-s {
+	BACKGROUND-POSITION: -64px 0px
+}
+.ui-icon-carat-1-sw {
+	BACKGROUND-POSITION: -80px 0px
+}
+.ui-icon-carat-1-w {
+	BACKGROUND-POSITION: -96px 0px
+}
+.ui-icon-carat-1-nw {
+	BACKGROUND-POSITION: -112px 0px
+}
+.ui-icon-carat-2-n-s {
+	BACKGROUND-POSITION: -128px 0px
+}
+.ui-icon-carat-2-e-w {
+	BACKGROUND-POSITION: -144px 0px
+}
+.ui-icon-triangle-1-n {
+	BACKGROUND-POSITION: 0px -16px
+}
+.ui-icon-triangle-1-ne {
+	BACKGROUND-POSITION: -16px -16px
+}
+.ui-icon-triangle-1-e {
+	BACKGROUND-POSITION: -32px -16px
+}
+.ui-icon-triangle-1-se {
+	BACKGROUND-POSITION: -48px -16px
+}
+.ui-icon-triangle-1-s {
+	BACKGROUND-POSITION: -64px -16px
+}
+.ui-icon-triangle-1-sw {
+	BACKGROUND-POSITION: -80px -16px
+}
+.ui-icon-triangle-1-w {
+	BACKGROUND-POSITION: -96px -16px
+}
+.ui-icon-triangle-1-nw {
+	BACKGROUND-POSITION: -112px -16px
+}
+.ui-icon-triangle-2-n-s {
+	BACKGROUND-POSITION: -128px -16px
+}
+.ui-icon-triangle-2-e-w {
+	BACKGROUND-POSITION: -144px -16px
+}
+.ui-icon-arrow-1-n {
+	BACKGROUND-POSITION: 0px -32px
+}
+.ui-icon-arrow-1-ne {
+	BACKGROUND-POSITION: -16px -32px
+}
+.ui-icon-arrow-1-e {
+	BACKGROUND-POSITION: -32px -32px
+}
+.ui-icon-arrow-1-se {
+	BACKGROUND-POSITION: -48px -32px
+}
+.ui-icon-arrow-1-s {
+	BACKGROUND-POSITION: -64px -32px
+}
+.ui-icon-arrow-1-sw {
+	BACKGROUND-POSITION: -80px -32px
+}
+.ui-icon-arrow-1-w {
+	BACKGROUND-POSITION: -96px -32px
+}
+.ui-icon-arrow-1-nw {
+	BACKGROUND-POSITION: -112px -32px
+}
+.ui-icon-arrow-2-n-s {
+	BACKGROUND-POSITION: -128px -32px
+}
+.ui-icon-arrow-2-ne-sw {
+	BACKGROUND-POSITION: -144px -32px
+}
+.ui-icon-arrow-2-e-w {
+	BACKGROUND-POSITION: -160px -32px
+}
+.ui-icon-arrow-2-se-nw {
+	BACKGROUND-POSITION: -176px -32px
+}
+.ui-icon-arrowstop-1-n {
+	BACKGROUND-POSITION: -192px -32px
+}
+.ui-icon-arrowstop-1-e {
+	BACKGROUND-POSITION: -208px -32px
+}
+.ui-icon-arrowstop-1-s {
+	BACKGROUND-POSITION: -224px -32px
+}
+.ui-icon-arrowstop-1-w {
+	BACKGROUND-POSITION: -240px -32px
+}
+.ui-icon-arrowthick-1-n {
+	BACKGROUND-POSITION: 0px -48px
+}
+.ui-icon-arrowthick-1-ne {
+	BACKGROUND-POSITION: -16px -48px
+}
+.ui-icon-arrowthick-1-e {
+	BACKGROUND-POSITION: -32px -48px
+}
+.ui-icon-arrowthick-1-se {
+	BACKGROUND-POSITION: -48px -48px
+}
+.ui-icon-arrowthick-1-s {
+	BACKGROUND-POSITION: -64px -48px
+}
+.ui-icon-arrowthick-1-sw {
+	BACKGROUND-POSITION: -80px -48px
+}
+.ui-icon-arrowthick-1-w {
+	BACKGROUND-POSITION: -96px -48px
+}
+.ui-icon-arrowthick-1-nw {
+	BACKGROUND-POSITION: -112px -48px
+}
+.ui-icon-arrowthick-2-n-s {
+	BACKGROUND-POSITION: -128px -48px
+}
+.ui-icon-arrowthick-2-ne-sw {
+	BACKGROUND-POSITION: -144px -48px
+}
+.ui-icon-arrowthick-2-e-w {
+	BACKGROUND-POSITION: -160px -48px
+}
+.ui-icon-arrowthick-2-se-nw {
+	BACKGROUND-POSITION: -176px -48px
+}
+.ui-icon-arrowthickstop-1-n {
+	BACKGROUND-POSITION: -192px -48px
+}
+.ui-icon-arrowthickstop-1-e {
+	BACKGROUND-POSITION: -208px -48px
+}
+.ui-icon-arrowthickstop-1-s {
+	BACKGROUND-POSITION: -224px -48px
+}
+.ui-icon-arrowthickstop-1-w {
+	BACKGROUND-POSITION: -240px -48px
+}
+.ui-icon-arrowreturnthick-1-w {
+	BACKGROUND-POSITION: 0px -64px
+}
+.ui-icon-arrowreturnthick-1-n {
+	BACKGROUND-POSITION: -16px -64px
+}
+.ui-icon-arrowreturnthick-1-e {
+	BACKGROUND-POSITION: -32px -64px
+}
+.ui-icon-arrowreturnthick-1-s {
+	BACKGROUND-POSITION: -48px -64px
+}
+.ui-icon-arrowreturn-1-w {
+	BACKGROUND-POSITION: -64px -64px
+}
+.ui-icon-arrowreturn-1-n {
+	BACKGROUND-POSITION: -80px -64px
+}
+.ui-icon-arrowreturn-1-e {
+	BACKGROUND-POSITION: -96px -64px
+}
+.ui-icon-arrowreturn-1-s {
+	BACKGROUND-POSITION: -112px -64px
+}
+.ui-icon-arrowrefresh-1-w {
+	BACKGROUND-POSITION: -128px -64px
+}
+.ui-icon-arrowrefresh-1-n {
+	BACKGROUND-POSITION: -144px -64px
+}
+.ui-icon-arrowrefresh-1-e {
+	BACKGROUND-POSITION: -160px -64px
+}
+.ui-icon-arrowrefresh-1-s {
+	BACKGROUND-POSITION: -176px -64px
+}
+.ui-icon-arrow-4 {
+	BACKGROUND-POSITION: 0px -80px
+}
+.ui-icon-arrow-4-diag {
+	BACKGROUND-POSITION: -16px -80px
+}
+.ui-icon-extlink {
+	BACKGROUND-POSITION: -32px -80px
+}
+.ui-icon-newwin {
+	BACKGROUND-POSITION: -48px -80px
+}
+.ui-icon-refresh {
+	BACKGROUND-POSITION: -64px -80px
+}
+.ui-icon-shuffle {
+	BACKGROUND-POSITION: -80px -80px
+}
+.ui-icon-transfer-e-w {
+	BACKGROUND-POSITION: -96px -80px
+}
+.ui-icon-transferthick-e-w {
+	BACKGROUND-POSITION: -112px -80px
+}
+.ui-icon-folder-collapsed {
+	BACKGROUND-POSITION: 0px -96px
+}
+.ui-icon-folder-open {
+	BACKGROUND-POSITION: -16px -96px
+}
+.ui-icon-document {
+	BACKGROUND-POSITION: -32px -96px
+}
+.ui-icon-document-b {
+	BACKGROUND-POSITION: -48px -96px
+}
+.ui-icon-note {
+	BACKGROUND-POSITION: -64px -96px
+}
+.ui-icon-mail-closed {
+	BACKGROUND-POSITION: -80px -96px
+}
+.ui-icon-mail-open {
+	BACKGROUND-POSITION: -96px -96px
+}
+.ui-icon-suitcase {
+	BACKGROUND-POSITION: -112px -96px
+}
+.ui-icon-comment {
+	BACKGROUND-POSITION: -128px -96px
+}
+.ui-icon-person {
+	BACKGROUND-POSITION: -144px -96px
+}
+.ui-icon-print {
+	BACKGROUND-POSITION: -160px -96px
+}
+.ui-icon-trash {
+	BACKGROUND-POSITION: -176px -96px
+}
+.ui-icon-locked {
+	BACKGROUND-POSITION: -192px -96px
+}
+.ui-icon-unlocked {
+	BACKGROUND-POSITION: -208px -96px
+}
+.ui-icon-bookmark {
+	BACKGROUND-POSITION: -224px -96px
+}
+.ui-icon-tag {
+	BACKGROUND-POSITION: -240px -96px
+}
+.ui-icon-home {
+	BACKGROUND-POSITION: 0px -112px
+}
+.ui-icon-flag {
+	BACKGROUND-POSITION: -16px -112px
+}
+.ui-icon-calendar {
+	BACKGROUND-POSITION: -32px -112px
+}
+.ui-icon-cart {
+	BACKGROUND-POSITION: -48px -112px
+}
+.ui-icon-pencil {
+	BACKGROUND-POSITION: -64px -112px
+}
+.ui-icon-clock {
+	BACKGROUND-POSITION: -80px -112px
+}
+.ui-icon-disk {
+	BACKGROUND-POSITION: -96px -112px
+}
+.ui-icon-calculator {
+	BACKGROUND-POSITION: -112px -112px
+}
+.ui-icon-zoomin {
+	BACKGROUND-POSITION: -128px -112px
+}
+.ui-icon-zoomout {
+	BACKGROUND-POSITION: -144px -112px
+}
+.ui-icon-search {
+	BACKGROUND-POSITION: -160px -112px
+}
+.ui-icon-wrench {
+	BACKGROUND-POSITION: -176px -112px
+}
+.ui-icon-gear {
+	BACKGROUND-POSITION: -192px -112px
+}
+.ui-icon-heart {
+	BACKGROUND-POSITION: -208px -112px
+}
+.ui-icon-star {
+	BACKGROUND-POSITION: -224px -112px
+}
+.ui-icon-link {
+	BACKGROUND-POSITION: -240px -112px
+}
+.ui-icon-cancel {
+	BACKGROUND-POSITION: 0px -128px
+}
+.ui-icon-plus {
+	BACKGROUND-POSITION: -16px -128px
+}
+.ui-icon-plusthick {
+	BACKGROUND-POSITION: -32px -128px
+}
+.ui-icon-minus {
+	BACKGROUND-POSITION: -48px -128px
+}
+.ui-icon-minusthick {
+	BACKGROUND-POSITION: -64px -128px
+}
+.ui-icon-close {
+	BACKGROUND-POSITION: -80px -128px
+}
+.ui-icon-closethick {
+	BACKGROUND-POSITION: -96px -128px
+}
+.ui-icon-key {
+	BACKGROUND-POSITION: -112px -128px
+}
+.ui-icon-lightbulb {
+	BACKGROUND-POSITION: -128px -128px
+}
+.ui-icon-scissors {
+	BACKGROUND-POSITION: -144px -128px
+}
+.ui-icon-clipboard {
+	BACKGROUND-POSITION: -160px -128px
+}
+.ui-icon-copy {
+	BACKGROUND-POSITION: -176px -128px
+}
+.ui-icon-contact {
+	BACKGROUND-POSITION: -192px -128px
+}
+.ui-icon-image {
+	BACKGROUND-POSITION: -208px -128px
+}
+.ui-icon-video {
+	BACKGROUND-POSITION: -224px -128px
+}
+.ui-icon-alert {
+	BACKGROUND-POSITION: 0px -144px
+}
+.ui-icon-info {
+	BACKGROUND-POSITION: -16px -144px
+}
+.ui-icon-notice {
+	BACKGROUND-POSITION: -32px -144px
+}
+.ui-icon-help {
+	BACKGROUND-POSITION: -48px -144px
+}
+.ui-icon-check {
+	BACKGROUND-POSITION: -64px -144px
+}
+.ui-icon-bullet {
+	BACKGROUND-POSITION: -80px -144px
+}
+.ui-icon-radio-off {
+	BACKGROUND-POSITION: -96px -144px
+}
+.ui-icon-radio-on {
+	BACKGROUND-POSITION: -112px -144px
+}
+.ui-icon-play {
+	BACKGROUND-POSITION: 0px -160px
+}
+.ui-icon-pause {
+	BACKGROUND-POSITION: -16px -160px
+}
+.ui-icon-seek-next {
+	BACKGROUND-POSITION: -32px -160px
+}
+.ui-icon-seek-prev {
+	BACKGROUND-POSITION: -48px -160px
+}
+.ui-icon-seek-end {
+	BACKGROUND-POSITION: -64px -160px
+}
+.ui-icon-seek-first {
+	BACKGROUND-POSITION: -80px -160px
+}
+.ui-icon-stop {
+	BACKGROUND-POSITION: -96px -160px
+}
+.ui-icon-eject {
+	BACKGROUND-POSITION: -112px -160px
+}
+.ui-icon-volume-off {
+	BACKGROUND-POSITION: -128px -160px
+}
+.ui-icon-volume-on {
+	BACKGROUND-POSITION: -144px -160px
+}
+.ui-icon-power {
+	BACKGROUND-POSITION: 0px -176px
+}
+.ui-icon-signal-diag {
+	BACKGROUND-POSITION: -16px -176px
+}
+.ui-icon-signal {
+	BACKGROUND-POSITION: -32px -176px
+}
+.ui-icon-battery-0 {
+	BACKGROUND-POSITION: -48px -176px
+}
+.ui-icon-battery-1 {
+	BACKGROUND-POSITION: -64px -176px
+}
+.ui-icon-battery-2 {
+	BACKGROUND-POSITION: -80px -176px
+}
+.ui-icon-battery-3 {
+	BACKGROUND-POSITION: -96px -176px
+}
+.ui-icon-circle-plus {
+	BACKGROUND-POSITION: 0px -192px
+}
+.ui-icon-circle-minus {
+	BACKGROUND-POSITION: -16px -192px
+}
+.ui-icon-circle-close {
+	BACKGROUND-POSITION: -32px -192px
+}
+.ui-icon-circle-triangle-e {
+	BACKGROUND-POSITION: -48px -192px
+}
+.ui-icon-circle-triangle-s {
+	BACKGROUND-POSITION: -64px -192px
+}
+.ui-icon-circle-triangle-w {
+	BACKGROUND-POSITION: -80px -192px
+}
+.ui-icon-circle-triangle-n {
+	BACKGROUND-POSITION: -96px -192px
+}
+.ui-icon-circle-arrow-e {
+	BACKGROUND-POSITION: -112px -192px
+}
+.ui-icon-circle-arrow-s {
+	BACKGROUND-POSITION: -128px -192px
+}
+.ui-icon-circle-arrow-w {
+	BACKGROUND-POSITION: -144px -192px
+}
+.ui-icon-circle-arrow-n {
+	BACKGROUND-POSITION: -160px -192px
+}
+.ui-icon-circle-zoomin {
+	BACKGROUND-POSITION: -176px -192px
+}
+.ui-icon-circle-zoomout {
+	BACKGROUND-POSITION: -192px -192px
+}
+.ui-icon-circle-check {
+	BACKGROUND-POSITION: -208px -192px
+}
+.ui-icon-circlesmall-plus {
+	BACKGROUND-POSITION: 0px -208px
+}
+.ui-icon-circlesmall-minus {
+	BACKGROUND-POSITION: -16px -208px
+}
+.ui-icon-circlesmall-close {
+	BACKGROUND-POSITION: -32px -208px
+}
+.ui-icon-squaresmall-plus {
+	BACKGROUND-POSITION: -48px -208px
+}
+.ui-icon-squaresmall-minus {
+	BACKGROUND-POSITION: -64px -208px
+}
+.ui-icon-squaresmall-close {
+	BACKGROUND-POSITION: -80px -208px
+}
+.ui-icon-grip-dotted-vertical {
+	BACKGROUND-POSITION: 0px -224px
+}
+.ui-icon-grip-dotted-horizontal {
+	BACKGROUND-POSITION: -16px -224px
+}
+.ui-icon-grip-solid-vertical {
+	BACKGROUND-POSITION: -32px -224px
+}
+.ui-icon-grip-solid-horizontal {
+	BACKGROUND-POSITION: -48px -224px
+}
+.ui-icon-gripsmall-diagonal-se {
+	BACKGROUND-POSITION: -64px -224px
+}
+.ui-icon-grip-diagonal-se {
+	BACKGROUND-POSITION: -80px -224px
+}
+.ui-corner-tl {
+	-moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; border-top-left-radius: 5px
+}
+.ui-corner-tr {
+	-moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; border-top-right-radius: 5px
+}
+.ui-corner-bl {
+	-moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; border-bottom-left-radius: 5px
+}
+.ui-corner-br {
+	-moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; border-bottom-right-radius: 5px
+}
+.ui-corner-top {
+	-moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; border-top-left-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; border-top-right-radius: 5px
+}
+.ui-corner-bottom {
+	-moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; border-bottom-left-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; border-bottom-right-radius: 5px
+}
+.ui-corner-right {
+	-moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; border-top-right-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; border-bottom-right-radius: 5px
+}
+.ui-corner-left {
+	-moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; border-top-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; border-bottom-left-radius: 5px
+}
+.ui-corner-all {
+	-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px
+}
+.ui-widget-overlay {
+	BACKGROUND: url(images/aaaaaa_40x100_textures_01_flat_0.png) #aaaaaa repeat-x 50% 50%; FILTER: Alpha(Opacity=30); opacity: .30
+}
+.ui-widget-shadow {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; BACKGROUND: url(images/aaaaaa_40x100_textures_01_flat_0.png) #aaaaaa repeat-x 50% 50%; FILTER: Alpha(Opacity=30); PADDING-BOTTOM: 8px; MARGIN: -8px 0px 0px -8px; PADDING-TOP: 8px; opacity: .30; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px
+}

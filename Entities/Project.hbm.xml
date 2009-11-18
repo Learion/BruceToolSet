@@ -1,0 +1,73 @@
+﻿<hibernate-mapping default-cascade="none" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SEOToolSet.Entities.Project, SEOToolSet.Entities" table="Project">
+    <id name="Id" type="System.Int32" column="Id" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="Domain" type="System.String" column="Domain" not-null="false" length="1000" />
+    <property name="ClientName" type="System.String" column="ClientName" not-null="false" length="100" />
+    <property name="ContactEmail" type="System.String" column="ContactEmail" not-null="false" length="300" />
+    <property name="ContactName" type="System.String" column="ContactName" not-null="false" length="1000" />
+    <property name="ContactPhone" type="System.String" column="ContactPhone" not-null="false" length="100" />
+    <property name="CreatedDate" type="System.DateTime" column="CreatedDate" not-null="false" />
+    <property name="UpdatedDate" type="System.DateTime" column="UpdatedDate" not-null="false" />
+    <property name="CreatedBy" type="System.String" column="CreatedBy" not-null="false" length="100" />
+    <property name="UpdatedBy" type="System.String" column="UpdatedBy" not-null="false" length="100" />
+    <property name="Enabled" type="System.Boolean" column="Enabled" not-null="false" />
+
+    <property name="Name" type="System.String"  length="100" column="Name" not-null="false" />
+    <bag name="KeywordList" inverse="true" lazy="true" cascade="none">
+      <key>
+        <column name="IdProject" not-null="true" />
+      </key>
+      <one-to-many class="SEOToolSet.Entities.KeywordList, SEOToolSet.Entities" />
+    </bag>
+    <many-to-one name="Account" class="SEOToolSet.Entities.Account, SEOToolSet.Entities" fetch="select">
+      <column name="IdAccount" not-null="true" />
+    </many-to-one>
+    <bag name="Competitor" inverse="true" lazy="true" cascade="none">
+      <key>
+        <column name="IdProject" not-null="true" />
+      </key>
+      <one-to-many class="SEOToolSet.Entities.Competitor, SEOToolSet.Entities" />
+    </bag>
+    <bag name="ProjectUser" inverse="true" lazy="true" cascade="none">
+      <key>
+        <column name="IdProject" not-null="true" />
+      </key>
+      <one-to-many class="SEOToolSet.Entities.ProjectUser, SEOToolSet.Entities" />
+    </bag>
+    <bag name="RankingMonitorRun" inverse="true" lazy="true" cascade="none">
+      <key>
+        <column name="IdProject" not-null="true" />
+      </key>
+      <one-to-many class="SEOToolSet.Entities.RankingMonitorRun, SEOToolSet.Entities" />
+    </bag>
+    <component name="RankingMonitorConfiguration" class="SEOToolSet.Entities.RankingMonitorConfiguration, SEOToolSet.Entities">
+      <property name="MonitorUpdatedBy" type="System.String" column="MonitorUpdatedBy" not-null="false" length="100" />
+      <property name="MonitorUpdatedDate" type="System.DateTime" column="MonitorUpdatedDate" not-null="false" />
+      <many-to-one name="Frequency" class="SEOToolSet.Entities.Frequency, SEOToolSet.Entities" fetch="select">
+        <column name="IdMonitorFrequency" not-null="false" />
+      </many-to-one>
+      <bag name="MonitorKeywordList" inverse="true" lazy="true" cascade="none">
+        <key>
+          <column name="IdProject" not-null="true" />
+        </key>
+        <one-to-many class="SEOToolSet.Entities.MonitorKeywordList, SEOToolSet.Entities" />
+      </bag>
+      <bag name="MonitorProxyServer" inverse="true" lazy="true" cascade="none">
+        <key>
+          <column name="IdProject" not-null="true" />
+        </key>
+        <one-to-many class="SEOToolSet.Entities.MonitorProxyServer, SEOToolSet.Entities" />
+      </bag>
+      <bag name="MonitorSearchEngineCountry" inverse="true" lazy="true" cascade="none">
+        <key>
+          <column name="IdProject" not-null="true" />
+        </key>
+        <one-to-many class="SEOToolSet.Entities.MonitorSearchEngineCountry, SEOToolSet.Entities" />
+      </bag>
+    </component>
+
+
+  </class>
+</hibernate-mapping>

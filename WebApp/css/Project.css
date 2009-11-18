@@ -1,0 +1,156 @@
+﻿label.ShortLabel
+{
+	width: 150px !important;
+	margin-left: 15px !important;
+}
+
+li.CompetitorAdd
+{
+	background: url(../scripts/Controls/Tree/assets/leafcompetitor.gif) no-repeat #fff !important;
+	height: 16px;
+}
+li.CompetitorAdd span
+{
+	margin-left: -5px;
+	font-style: italic;
+}
+li input.inline-edit
+{
+	margin-left: 0px;
+	position: absolute;
+}
+
+li.KeywordListAdd
+{
+	background: url(../scripts/Controls/Tree/assets/keywordlist-add.gif) no-repeat #fff !important;
+	height: 16px;
+}
+li.KeywordAdd
+{
+	background: url(../scripts/Controls/Tree/assets/keywords-add.gif) 0 -3px no-repeat #fff !important;
+	height: 16px;
+}
+li.KeywordAdd span
+{
+	margin-left: 0px;
+	font-style: italic;
+}
+li.KeywordAdd input.inline-edit
+{
+	margin-left: 0px;
+}
+
+li.KeywordListAdd span
+{
+	margin-left: -5px;
+	font-style: italic;
+}
+li.KeywordListAdd input.inline-edit
+{
+	margin-left: 0px;
+}
+
+li.KeywordList
+{
+	min-height: 16px;
+}
+
+li.Competitor
+{
+	background: url(../scripts/Controls/Tree/assets/leafcompetitor_single.gif) 0 -1px no-repeat #fff !important;
+	height: 16px;
+}
+
+li.Competitor.doc-last
+{
+	background: url(../scripts/Controls/Tree/assets/leaf-lastcompetitor.gif) 0 -1px no-repeat #fff !important;
+	height: 16px;
+}
+
+.simpleTree .root
+{
+	background: none !important;
+}
+.simpleTree .root span.First
+{
+	display: none !important;
+}
+
+.FormCSS .TreeHolder1
+{
+	width: 240px;
+	float: left;
+	padding-left: 10px;
+	padding-bottom: 20px;
+}
+
+.FormCSS .TreeHolder
+{
+	width: 350px;
+	float: left;
+	padding-left: 10px;
+	padding-bottom: 20px;
+}
+
+.FormCSS #TreeDomainLists.TreeHolder1
+{
+	padding-left: 35px !important;
+}
+.FormCSS .TreeHolder .simpleTree,.FormCSS .TreeHolder1 .simpleTree
+{
+	overflow: auto;
+	border: 1px solid #E6F0F1;
+	height: 240px;
+	padding: 5px;
+}
+.FormCSS .TreeHolder h3,.FormCSS .TreeHolder1 h3
+{
+	color: #990000;
+	font-size: 153.9% !important;
+	margin-bottom: 5px;
+}
+.FormCSS .ToolbarCenter
+{
+	width: 100px;
+}
+.FormCSS .ToolbarCenter ul
+{
+	width: 100%;
+}
+
+a.LinkLabel
+{
+	font-weight: normal;
+	font-size: 108%;
+	background: url(../scripts/Controls/Tree/assets/ProjectUser.png) no-repeat;
+}
+a.LinkLabel span
+{
+	margin-left: 22px;
+}
+a.LinkLabel.Add
+{
+	font-style: italic;
+	background: url(../scripts/Controls/Tree/assets/ProjectUserAdd.png) no-repeat;
+}
+
+td.TdLeft
+{
+	text-align: left;
+}
+
+.Simple .AdvancedCol
+{
+	display: none;
+}
+
+.Advanced .AdvancedCol
+{
+	display: table-cell;
+}
+
+#ManageUsersTabs .Toolbar
+{
+	padding: 0px 5px 10px 5px;
+	text-align: right;
+}

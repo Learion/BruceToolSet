@@ -1,0 +1,14 @@
+﻿<hibernate-mapping default-cascade="none" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SEOToolSet.Entities.SubscriptionDetail, SEOToolSet.Entities" table="SubscriptionDetail">
+    <id name="Id" type="System.Int32" column="Id" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="PropertyValue" type="System.String" column="PropertyValue" not-null="false" length="85" />
+    <many-to-one name="SubscriptionLevel" class="SEOToolSet.Entities.SubscriptionLevel, SEOToolSet.Entities" fetch="select">
+      <column name="IdSubscriptionLevel" not-null="false" />
+    </many-to-one>
+    <many-to-one name="SubscriptionProperty" class="SEOToolSet.Entities.SubscriptionProperty, SEOToolSet.Entities" fetch="select">
+      <column name="IdSubscriptionProperty" not-null="false" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

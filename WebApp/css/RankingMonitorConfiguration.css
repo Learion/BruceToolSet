@@ -1,0 +1,43 @@
+﻿.MonitorFrequencyWrapper { margin-left: auto; margin-right: auto; width: 340px; }
+.FormLabel { color: #3399CC; margin-right: 5px; }
+.MonitorFrequencyWrapper div.FormLabel { display: block; float: left; line-height: 25px; position: relative; z-index: 0; }
+.KeywordsSection { margin-left: auto; margin-right: auto; width: 40%; }
+.KeywordsSection div.RightLabel { right: 0; float: right; }
+h2 { text-align: left; color: #0060AE; }
+.UlList { padding-left: 50px; padding-right: 50px; }
+#ProxiesList { min-height: 65px; }
+#ProxiesList li.choices { margin-bottom: 15px; }
+li.choices { display: block; min-width: 150px; float: left; margin-right: 15px; }
+li.choices > div > span { margin-left: 5px; font-size: 18px; font-weight: bold; }
+p.heading { text-align: center; }
+/*#SearchEnginesSection div.Filter { float: right; margin: 0; position: relative; right: 0; text-align: right; top: -45px; width: 100%; }
+#SearchEnginesSection div.Selected { float: left; left: 120px; position: relative; text-align: right; top: -28px; z-index: 2; min-width: 200px; }
+#SearchEnginesSection div.Selected span { margin-right: 5px; }*/
+
+#SearchEnginesSection div.Legend { float: left; }
+#SearchEnginesSection div.Selected { float: left; margin-left: 30px; }
+#SearchEnginesSection div.Filter { float: right; text-align: right; }
+
+/*
+#SearchEnginesSection ul li { float: left; margin-right:10px;}
+#SearchEnginesSection ul li.FilterContainer { float: right; margin-right:0px; text-align:right;}
+*/
+.small { color: #0060AE; text-decoration: none; margin-right: 5px; font-size: 11px !important; }
+div.ActionButton { margin: 15px auto; }
+#feedbackMsg.green { background-color: #F2F2F2; border: 1px solid #D4E8C4; color: #339900; font-weight: bold; margin: 0px auto; padding: 15px 5px; text-align: center; width: 250px; position: relative; }
+li.choices img.disabled { /* for IE */ filter: alpha(opacity=25); opacity: 0.25; }
+.HeadingDates { padding: 5px; }
+a.button { margin-right: 6px; }
+.BigFlag { position: relative; top: 5px; }
+.SearchEngineLogo { width: 15px; margin-top: 0 !important; }
+.ImgWrapper { margin-left: 5px; margin-right: 5px; margin-top: 3px; }
+
+#SearchEnginesList li { min-width: 150px; float: left; margin-right: 5px; margin-bottom: 5px; }
+#SearchEnginesList li li { float: none; height: 25px; *height:20px;line-height:25px;*line-height:20px;margin-left:14px;*margin-left:9px;margin-bottom:0px;}
+#SearchEnginesList li li img, #SearchEnginesList li li label, #SearchEnginesList li li input { float: left; margin-right: 4px; *margin-right:2px;}
+#SearchEnginesList li li label { display: block; margin-top: -5px; *margin-top:-2px}
+#SearchEnginesList li li img { *margin-top:2px;}
+#SearchEnginesList li > div { height: 30px; }
+#SearchEnginesList .Engine { width: 15px; height: 15px; }
+#SearchEnginesList .Name { font-size: 18px; font-weight: bold; padding-left: 5px; }
+

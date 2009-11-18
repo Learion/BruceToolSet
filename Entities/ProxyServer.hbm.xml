@@ -1,0 +1,24 @@
+﻿<hibernate-mapping default-cascade="none" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SEOToolSet.Entities.ProxyServer, SEOToolSet.Entities" table="ProxyServer">
+    <id name="Id" type="System.Int32" column="Id" unsaved-value="-1">
+      <generator class="native" />
+    </id>
+    <many-to-one name="Country" class="SEOToolSet.Entities.Country, SEOToolSet.Entities" fetch="select">
+      <column name="IdCountry" not-null="true" />
+    </many-to-one>
+    <property name="City" type="System.String" column="City" not-null="true" length="100" />
+    <property name="ImportanceLevel" type="System.Int32" column="ImportanceLevel" not-null="false" />
+    <bag name="MonitorProxyServer" inverse="true" lazy="true" cascade="none">
+      <key>
+        <column name="IdProxyServer" not-null="true" />
+      </key>
+      <one-to-many class="SEOToolSet.Entities.MonitorProxyServer, SEOToolSet.Entities" />
+    </bag>
+    <bag name="RankingMonitorDeepRun" inverse="true" lazy="true" cascade="none">
+      <key>
+        <column name="IdProxy" not-null="true" />
+      </key>
+      <one-to-many class="SEOToolSet.Entities.RankingMonitorDeepRun, SEOToolSet.Entities" />
+    </bag>
+  </class>
+</hibernate-mapping>

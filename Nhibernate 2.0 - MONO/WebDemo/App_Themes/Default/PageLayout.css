@@ -1,0 +1,32 @@
+﻿/* layout code, a special thanks to Alessandro Fulciniti ( http://blog.html.it/layoutgala/ )  */
+body
+{
+	margin: 4px;
+	padding: 0;
+	min-width: 630px;
+}
+
+#pageContent 
+{
+	margin-left: 200px;
+	margin-right: 150px;
+}
+
+#navigation {
+	float: left;
+	width: 200px;
+}
+
+#extra 
+{
+	float: right;
+	width: 150px;
+}
+#header
+{
+}
+#footer
+{
+	clear: both;
+}
+

@@ -1,0 +1,23 @@
+/* brTip */
+div.brTip-box {
+	background: #FFF;
+	border: 1px solid #6E92B6;
+	display: none;
+	position: absolute;
+	width: 200px;
+	z-index:1000;
+}
+div.brTip-title {
+	background: #6E92B6;
+	color: #FFF;
+	display: block;
+	margin: 0;
+	padding: 3px;
+	text-align: center;
+}
+div.brTip-content {
+	color: #333;
+	margin: 0;
+	padding: 5px;
+	text-align: justify;
+}

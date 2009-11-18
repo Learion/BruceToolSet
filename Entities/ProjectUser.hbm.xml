@@ -1,0 +1,18 @@
+﻿<hibernate-mapping default-cascade="none" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SEOToolSet.Entities.ProjectUser, SEOToolSet.Entities" table="ProjectUser">
+      <id name="Id" type="System.Int32" column="Id" unsaved-value="0">
+          <generator class="native" />
+      </id>
+    <property name="Enabled" type="System.Boolean" column="Enabled" not-null="false" />
+    <property name="MonitorEmails" type="System.Boolean" column="MonitorEmails" not-null="false" />
+    <many-to-one name="Project" class="SEOToolSet.Entities.Project, SEOToolSet.Entities" fetch="select">
+      <column name="IdProject" not-null="true" unique-key="ProjectUserUniqueKey" />
+    </many-to-one>
+    <many-to-one name="ProjectRole" class="SEOToolSet.Entities.Role, Entities" fetch="select">
+      <column name="IdProjectRole" not-null="false" />
+    </many-to-one>
+    <many-to-one name="SEOToolsetUser" class="SEOToolSet.Entities.SEOToolsetUser, SEOToolSet.Entities" fetch="select">
+      <column name="IdUser" not-null="true" unique-key="ProjectUserUniqueKey" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

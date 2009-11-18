@@ -1,0 +1,12 @@
+﻿.comboboxContainer { border: none important!; cursor: pointer !important; }
+.comboboxValueContainer { cursor: pointer !important; }
+.comboboxValueContent { padding-left: 3px; cursor: pointer !important; height: 18px; }
+.comboboxValueContent.Over { background: #DEEDF9; }
+.comboboxDropDownContainer { border: 1px solid #B5D0E5; background: #fff; overflow: hidden; padding: 3px; }
+.comboboxDropDownButton { width: 16px; height: 18px; background-image: url(trigger.gif); cursor: pointer !important; }
+.comboboxGroupItemHeader { display: block; background: #000; color: #fff; }
+.comboboxGroupItemContainer { padding-left: 0px; margin-left: 0px; }
+.comboboxItem { background: #fff; color: #446689; text-transform: lowercase; font-weight: normal !important; font-style: normal; display: block !important; cursor: pointer !important; }
+li.comboboxItem { padding: 5px; float: none; }
+.comboboxItemHover { background-color: #DEEDF9; }
+.comboboxGroupItemContainer .comboboxItem { padding-left: 20px; margin-left: 0px; }

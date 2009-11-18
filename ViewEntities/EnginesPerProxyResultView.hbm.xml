@@ -1,0 +1,25 @@
+﻿<hibernate-mapping default-cascade="none" xmlns="urn:nhibernate-mapping-2.2">
+    <class name="SEOToolSet.ViewEntities.EnginesPerProxyResultView, SEOToolSet.ViewEntities" table="EnginesPerProxyResultView">
+        <composite-id name="Id" class="SEOToolSet.ViewEntities.EnginesPerProxyResultViewKey, SEOToolSet.ViewEntities" 
+                      unsaved-value="none" 
+                      access="property">
+            <key-property name="IdProxy" type="System.Int32" column="IdProxy" />
+            <key-property name="IdSearchEngineCountry" type="System.Int32" column="IdSearchEngineCountry" />
+            <key-property name="IdRankingMonitorDeepRun" type="System.Int32" column="IdRankingMonitorDeepRun"  />
+            <key-property name="IdRankingMonitorRun" type="System.Int32" column="IdRankingMonitorRun" />
+            <key-property name="Keyword" type="System.String" column="Keyword" />
+            
+        </composite-id>
+
+        <property name="Keyword" type="System.String" column="Keyword" not-null="false" update="false" insert="false" />
+        <property name="Pages" type="System.Int32" column="Pages" not-null="false" update="false" insert="false" />
+        <property name="ProxyCity" type="System.String" column="ProxyCity" not-null="false" update="false" insert="false" />
+        <property name="ProxyCountry" type="System.String" column="ProxyCountry" not-null="false" update="false" insert="false" />
+        <property name="SearchEngineUrl" type="System.String" column="SearchEngineUrl" not-null="false" update="false" insert="false" />
+        <property name="SearchEngineName" type="System.String" column="SearchEngineName" not-null="false" update="false" insert="false" />
+        <property name="IdProxy" type="System.Int32" column="IdProxy" not-null="false" update="false" insert="false" />
+        <property name="IdSearchEngineCountry" type="System.Int32" column="IdSearchEngineCountry" not-null="false" update="false" insert="false" />
+        <property name="IdRankingMonitorDeepRun" type="System.Int32" column="IdRankingMonitorDeepRun" not-null="false" update="false" insert="false" />
+        <property name="IdRankingMonitorRun" type="System.Int32" column="IdRankingMonitorRun" not-null="false" update="false" insert="false" />
+    </class>
+</hibernate-mapping>

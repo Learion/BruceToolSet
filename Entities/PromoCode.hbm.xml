@@ -1,0 +1,21 @@
+﻿<hibernate-mapping default-cascade="none" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SEOToolSet.Entities.PromoCode, SEOToolSet.Entities" table="PromoCode">
+    <id name="Id" type="System.Int32" column="Id" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="Code" type="System.String" column="Code" not-null="true" length="32" unique-key="CodeUniqueKey"  />
+    <property name="BeginDate" type="System.DateTime" column="BeginDate" not-null="false" />
+    <property name="EndDate" type="System.DateTime" column="EndDate" not-null="false" />
+    <property name="TrialPeriod" type="System.Int32" column="Period" not-null="false" />
+    <property name="PromoAmount" type="System.Double" column="PromoAmount" not-null="false" />
+    <property name="Description" type="System.String" column="Description" not-null="false" length="250" />
+    <property name="MaxUse" type="System.Int32" column="MaxUse" not-null="false" />
+    <property name="TimesUsed" type="System.Int32" column="TimesUsed" not-null="false" />
+    <many-to-one name="PromoType" class="SEOToolSet.Entities.PromoType, SEOToolSet.Entities" fetch="select">
+      <column name="PromoType" not-null="false" />
+    </many-to-one>
+    <many-to-one name="AccountType" class="SEOToolSet.Entities.AccountType, SEOToolSet.Entities" fetch="select">
+      <column name="AccountType" not-null="false" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,19 @@
+UL.tree { padding-right: 0px; padding-left: 0px; padding-bottom: 5px; margin: 0px; padding-top: 0px; list-style-type: none; }
+UL.tree * { padding-right: 0px; padding-left: 0px; padding-bottom: 5px; margin: 0px; padding-top: 0px; list-style-type: none; }
+UL.tree IMG.arrow { border-top-width: 0px; padding-right: 0px; padding-left: 0px; border-left-width: 0px; border-bottom-width: 0px; padding-bottom: 0px; width: 20px; padding-top: 2px; border-right-width: 0px; }
+UL.tree LI { padding:0px; }
+UL.tree LI UL { padding-right: 0px; padding-left: 20px; padding-bottom: 0px; margin: 0px; padding-top: 0px; }
+UL.tree span { padding: 0px; font-weight: bold; line-height:22px;  cursor: pointer; padding-top: 2px; }
+UL.tree span.hover { color: red; }
+
+UL.tree LI .arrow { padding-right: 0px; padding-left: 0px; background: no-repeat 0px 4px; float: left; padding-bottom: 0px; margin: 0px; width: 20px; cursor: pointer; padding-top: 0px; height: 20px; }
+UL.tree LI { clear: both; }
+UL.tree LI .collapsed { background-image: url(collapsed.gif); }
+UL.tree LI .expanded { background-image: url(expanded.gif); }
+UL.tree LI .checkbox { padding-right: 0px; padding-left: 0px; background: url(check0.gif) no-repeat 0px 0px; float: left; padding-bottom: 0px; margin: 0px; width: 20px; cursor: pointer; padding-top: 0px; height: 18px; }
+UL.tree LI .checked { background-image: url(check2.gif); }
+UL.tree LI .half_checked { background-image: url(check1.gif); }
+
+ul.noCheck li { margin-left: 20px !important; }
+ul.noCheck li div.checkbox { display: none; }
+

@@ -1,0 +1,13 @@
+﻿<hibernate-mapping default-cascade="none" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SEOToolSet.Entities.UserRolPermission, SEOToolSet.Entities" table="UserRolPermission">
+    <id name="Id" type="System.Int32" column="Id" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <many-to-one name="UserPermission" class="SEOToolSet.Entities.UserPermission, SEOToolSet.Entities" fetch="select">
+      <column name="IdUserPermission" not-null="true" />
+    </many-to-one>
+    <many-to-one name="UserRole" class="SEOToolSet.Entities.UserRole, SEOToolSet.Entities" fetch="select" >
+      <column name="IdUserRole" not-null="true" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

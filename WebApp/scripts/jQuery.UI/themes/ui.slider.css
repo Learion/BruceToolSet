@@ -1,0 +1,27 @@
+.ui-slider {
+	clear: both;POSITION: relative; TEXT-ALIGN: left; top: 28px; font-family: "Segoe UI" , Frutiger, Tahoma, "Helvetica", "Helvetica Neue" , Arial, sans-serif; margin-bottom: 52px;
+}
+.ui-slider-handle {
+	Z-INDEX: 2; WIDTH: 1.2em; CURSOR: default; POSITION: absolute; HEIGHT: 1.2em
+}
+.ui-slider-range {
+	BORDER-TOP-WIDTH: 0px; DISPLAY: block; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 1%; Z-INDEX: 1; BORDER-BOTTOM-WIDTH: 0px; POSITION: absolute; BORDER-RIGHT-WIDTH: 0px
+}
+.ui-slider-horizontal {
+	HEIGHT: 0.8em
+}
+.ui-slider-horizontal .ui-slider-handle {
+	MARGIN-LEFT: -0.6em; TOP: -0.3em
+}
+.ui-slider-horizontal .ui-slider-range {
+	TOP: 0px; HEIGHT: 100%
+}
+.ui-slider-vertical {
+	WIDTH: 0.8em; HEIGHT: 100%
+}
+.ui-slider-vertical .ui-slider-handle {
+	LEFT: -0.3em; MARGIN-BOTTOM: -0.6em; MARGIN-LEFT: 0px
+}
+.ui-slider-vertical .ui-slider-range {
+	LEFT: 0px; WIDTH: 100%; HEIGHT: auto
+}

@@ -1,0 +1,8 @@
+﻿<hibernate-mapping default-cascade="none" xmlns="urn:nhibernate-mapping-2.2">
+    <class name="SEOToolSet.Entities.CreditCardType, SEOToolSet.Entities" table="CreditCardType">
+        <id name="Id" type="System.String" column="Id" unsaved-value="0">
+        </id>
+        <property name="Name" type="System.String" column="Name" not-null="false" length="300" />
+        <property name="Url" type="System.String" column="Url" not-null="false" length="300" />
+    </class>
+</hibernate-mapping>

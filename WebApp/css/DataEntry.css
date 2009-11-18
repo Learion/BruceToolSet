@@ -1,0 +1,21 @@
+﻿div.ChangePasswordCommand { margin-left:auto; margin-right:auto; text-align:center; width:350px; }
+div.WizardWrapper { width: 600px;}
+div.WizardWrapper .FormPanel { padding: 15px;}
+div.WizardWrapper .FormPanel .Legend { margin: 10px 0px 0px 0px;  }
+div.WizardWrapper .FormPanel div.Separator { clear:both; margin-top:10px; padding:0px !important;  height:1px; margin-bottom:5px !important; }
+div.WizardWrapper  span.subtitleHeading  { margin-bottom:5px; display:block; color: #990000; text-align:center; width: 350px; margin-left: auto; margin-right: auto; font-size: 123.1%; font-weight: bolder; }
+div.WizardWrapper div.FormCSS .Field { padding: 9px 0;*padding: 4px 0; }
+div.WizardWrapper div.FormCSS .Field.OneLine label { float: left; width: 120px; margin-top: 1px; text-align: right; color: #3399CC; font-weight:bold; margin-right:7px; }
+div.WizardWrapper div.FormCSS .Field.OneLine label.Featured { text-align: left; color: #000000; font-weight:bolder; }
+div.WizardWrapper div.FormCSS .Field.OneLine span.RadioButtonList { display: block; float:left; margin-left: 120px; }
+div.WizardWrapper div.FormCSS .Field.OneLine span.RadioButtonList label { text-align: left; margin: 0 5px; width: 115px; }
+div.WizardWrapper div.FormCSS .Field.OneLine div.CheckBoxClass { margin-left: 100px; }
+div.WizardWrapper div.FormCSS .Field.OneLine div.CheckBoxClass label { text-align: left; }
+div.WizardWrapper .CancelSection { margin-left: auto; width: 80px; }
+div.WizardWrapper .LinksInlineSection { padding-left:126px !important; }
+#ctl00_contentArea_CreateAccountWizard_RoundPanel4 div.FormCSS .Field.OneLine label { width: 50% !important; color:Black !important;}
+
+#ctl00_contentArea_CreateAccountWizard_RoundPanel5 div.FormCSS .Field.OneLine span, 
+#ctl00_contentArea_CreateAccountWizard_RoundPanel4 div.FormCSS .Field.OneLine span{ color: Black !important}
+
+div.WizardWrapper div.FormCSS .Field input.FormText { width:280px; }

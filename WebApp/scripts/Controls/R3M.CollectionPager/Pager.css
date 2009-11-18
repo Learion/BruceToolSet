@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+.Control-Pager table { width:inherit; border: none;}
+.Control-Pager table td { border:none;}
+.Control-Pager {  position:relative; padding:2px; background:#F0F1FC; }
+.Pager-Cell { width:16px;padding:1px; }
+.Pager-Input-Cell { padding: 0px 3px; }
+a.Pager-Btn { display:block; width:16px; text-decoration:none; height:16px; padding:0px; } 
+a.Pager-Btn span { display:none; } 
+a.Page-First{ background:url(assets/page-first.gif); } 
+a.Page-Prev{ background:url(assets/page-prev.gif); } 
+a.Page-Next{ background:url(assets/page-next.gif); } 
+a.Page-Last{ background:url(assets/page-last.gif); } 
+
+.txt_class { height:15px; }
+
+a.Page-First-Disabled{ background:url(assets/page-first-disabled.gif); cursor:default} 
+a.Page-Prev-Disabled{ background:url(assets/page-prev-disabled.gif); cursor:default} 
+a.Page-Next-Disabled{ background:url(assets/page-next-disabled.gif); cursor:default} 
+a.Page-Last-Disabled{ background:url(assets/page-last-disabled.gif); cursor:default} 
+
+.Pager-Resume { position:absolute; top: 10px; *top: 14px; right:12px;}
+
+.Pager-Input-Cell Input { text-align:right; border:1px solid #669900; }
+
+

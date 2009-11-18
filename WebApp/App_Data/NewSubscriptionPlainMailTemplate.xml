@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<template>
+  <subject>Welcome to the SEOToolSet</subject>
+  <body>
+    <![CDATA[
+Dear [FIRST_NAME] [LAST_NAME],
+
+Welcome to the SEOToolSet from Bruce Clay, Inc.! YOUR SUBSCRIPTION IS NOW ACTIVE. You will receive a copy of your receipt in a separate e-mail. For your reference, your SEOToolSet account information is shown below.
+The account information is presented next. Field labels are given in italics followed by the data that should be shown.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+YOUR ACCOUNT INFORMATION
+[ACCOUNT_NAME]
+[ADDRESS1]
+[ADDRESS2]
+[CITY], [STATE] [ZIP]
+[ACCOUNT_PHONE]
+Subscription Level: [SUBSCRIPTION_LEVEL]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+You can access the SEOToolSet anytime. Log in using the Login ID and Password you created during sign-up.
+Once in the SEOToolSet, you can set up a project for your Web site. Enter your domain, keywords, competitors, and other details. Then you can use the many tools and reports to help you improve your site's search engine optimization. We suggest that you read "Getting Started with the SEOToolSet" to help you get the most out of your new tools.
+
+We're glad to be partnering with you on your journey to Internet marketing success.
+
+Sincerely,
+
+SEOToolSet Team
+Bruce Clay, Inc.
+http://www.bruceclay.com
+    ]]>    
+  </body>
+</template>
+

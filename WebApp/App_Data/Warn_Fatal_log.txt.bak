@@ -1,0 +1,392 @@
+[090429 18:56:12 (5852) ERROR ASP.global_asax ] 
+ - Exception :: Message: Object reference not set to an instance of an object. (C:\Proyectos\SEOToolSet\WebApp\web.config line 97)
+BareMessage: Object reference not set to an instance of an object.
+Filename: C:\Proyectos\SEOToolSet\WebApp\web.config
+Line: 97
+Errors: System.Configuration.ConfigurationException[]
+Data: System.Collections.ListDictionaryInternal
+InnerException: 
+TargetSite: System.Configuration.Provider.ProviderBase InstantiateProvider(System.Configuration.ProviderSettings, System.Type)
+StackTrace:    at System.Web.Configuration.ProvidersHelper.InstantiateProvider(ProviderSettings providerSettings, Type providerType)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProviders(ProviderSettingsCollection configProviders, ProviderCollection providers, Type providerType)
+   at SEOToolSet.TempFileManagerProvider.TempFileManager..cctor() in C:\Proyectos\SEOToolSet\TempFileManagerProvider\TempFileManager.cs:line 33
+HelpLink: 
+Source: System.Web
+
+
+[090429 18:56:12 (5852) ERROR ASP.global_asax ] 
+ - Exception :: TypeName: SEOToolSet.TempFileManagerProvider.TempFileManager
+Message: The type initializer for 'SEOToolSet.TempFileManagerProvider.TempFileManager' threw an exception.
+Data: System.Collections.ListDictionaryInternal
+InnerException: System.Configuration.ConfigurationErrorsException: Object reference not set to an instance of an object. (C:\Proyectos\SEOToolSet\WebApp\web.config line 97)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProvider(ProviderSettings providerSettings, Type providerType)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProviders(ProviderSettingsCollection configProviders, ProviderCollection providers, Type providerType)
+   at SEOToolSet.TempFileManagerProvider.TempFileManager..cctor() in C:\Proyectos\SEOToolSet\TempFileManagerProvider\TempFileManager.cs:line 33
+TargetSite: Void StopTimer()
+StackTrace:    at SEOToolSet.TempFileManagerProvider.TempFileManager.StopTimer()
+   at SEOToolSet.WebApp.Global.Application_End(Object sender, EventArgs e)
+HelpLink: 
+Source: SEOToolSet.TempFileManagerProvider
+
+
+[090429 18:58:44 (5980) ERROR ASP.global_asax ] 
+ - Exception :: Message: Object reference not set to an instance of an object. (C:\Proyectos\SEOToolSet\WebApp\web.config line 97)
+BareMessage: Object reference not set to an instance of an object.
+Filename: C:\Proyectos\SEOToolSet\WebApp\web.config
+Line: 97
+Errors: System.Configuration.ConfigurationException[]
+Data: System.Collections.ListDictionaryInternal
+InnerException: 
+TargetSite: System.Configuration.Provider.ProviderBase InstantiateProvider(System.Configuration.ProviderSettings, System.Type)
+StackTrace:    at System.Web.Configuration.ProvidersHelper.InstantiateProvider(ProviderSettings providerSettings, Type providerType)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProviders(ProviderSettingsCollection configProviders, ProviderCollection providers, Type providerType)
+   at SEOToolSet.TempFileManagerProvider.TempFileManager..cctor() in C:\Proyectos\SEOToolSet\TempFileManagerProvider\TempFileManager.cs:line 33
+HelpLink: 
+Source: System.Web
+
+
+[090429 18:58:44 (5980) ERROR ASP.global_asax ] 
+ - Exception :: TypeName: SEOToolSet.TempFileManagerProvider.TempFileManager
+Message: The type initializer for 'SEOToolSet.TempFileManagerProvider.TempFileManager' threw an exception.
+Data: System.Collections.ListDictionaryInternal
+InnerException: System.Configuration.ConfigurationErrorsException: Object reference not set to an instance of an object. (C:\Proyectos\SEOToolSet\WebApp\web.config line 97)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProvider(ProviderSettings providerSettings, Type providerType)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProviders(ProviderSettingsCollection configProviders, ProviderCollection providers, Type providerType)
+   at SEOToolSet.TempFileManagerProvider.TempFileManager..cctor() in C:\Proyectos\SEOToolSet\TempFileManagerProvider\TempFileManager.cs:line 33
+TargetSite: Void StopTimer()
+StackTrace:    at SEOToolSet.TempFileManagerProvider.TempFileManager.StopTimer()
+   at SEOToolSet.WebApp.Global.Application_End(Object sender, EventArgs e) in C:\Proyectos\SEOToolSet\WebApp\Global.asax.cs:line 63
+HelpLink: 
+Source: SEOToolSet.TempFileManagerProvider
+
+
+[090429 19:19:01 (5852) ERROR ASP.global_asax ] 
+ - Exception :: Message: Object reference not set to an instance of an object. (C:\Proyectos\SEOToolSet\WebApp\web.config line 97)
+BareMessage: Object reference not set to an instance of an object.
+Filename: C:\Proyectos\SEOToolSet\WebApp\web.config
+Line: 97
+Errors: System.Configuration.ConfigurationException[]
+Data: System.Collections.ListDictionaryInternal
+InnerException: 
+TargetSite: System.Configuration.Provider.ProviderBase InstantiateProvider(System.Configuration.ProviderSettings, System.Type)
+StackTrace:    at System.Web.Configuration.ProvidersHelper.InstantiateProvider(ProviderSettings providerSettings, Type providerType)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProviders(ProviderSettingsCollection configProviders, ProviderCollection providers, Type providerType)
+   at SEOToolSet.TempFileManagerProvider.TempFileManager..cctor() in C:\Proyectos\SEOToolSet\TempFileManagerProvider\TempFileManager.cs:line 33
+HelpLink: 
+Source: System.Web
+
+
+[090429 19:19:01 (5852) ERROR ASP.global_asax ] 
+ - Exception :: TypeName: SEOToolSet.TempFileManagerProvider.TempFileManager
+Message: The type initializer for 'SEOToolSet.TempFileManagerProvider.TempFileManager' threw an exception.
+Data: System.Collections.ListDictionaryInternal
+InnerException: System.Configuration.ConfigurationErrorsException: Object reference not set to an instance of an object. (C:\Proyectos\SEOToolSet\WebApp\web.config line 97)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProvider(ProviderSettings providerSettings, Type providerType)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProviders(ProviderSettingsCollection configProviders, ProviderCollection providers, Type providerType)
+   at SEOToolSet.TempFileManagerProvider.TempFileManager..cctor() in C:\Proyectos\SEOToolSet\TempFileManagerProvider\TempFileManager.cs:line 33
+TargetSite: Void StopTimer()
+StackTrace:    at SEOToolSet.TempFileManagerProvider.TempFileManager.StopTimer()
+   at SEOToolSet.WebApp.Global.Application_End(Object sender, EventArgs e) in C:\Proyectos\SEOToolSet\WebApp\Global.asax.cs:line 63
+HelpLink: 
+Source: SEOToolSet.TempFileManagerProvider
+
+
+[090430 10:45:20 (5324) ERROR SEOToolSet.WebApp.Modules.HttpModuleCheckValidUser ] 
+ - Exception :: ExceptionState: System.Web.HttpApplication+CancelModuleException
+Message: Thread was being aborted.
+Data: System.Collections.ListDictionaryInternal
+InnerException: 
+TargetSite: Void AbortInternal()
+StackTrace:    at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.End()
+   at SEOToolSet.Common.WebHelper.RedirectToLoginPage(String extraQueryString) in C:\Proyectos\SEOToolSet\Common\WebHelper.cs:line 48
+   at SEOToolSet.Common.WebHelper.RedirectToLoginPage() in C:\Proyectos\SEOToolSet\Common\WebHelper.cs:line 34
+   at SEOToolSet.WebApp.Modules.HttpModuleCheckValidUser.CheckSecurity() in C:\Proyectos\SEOToolSet\WebApp\Modules\HttpModuleCheckValidUser.cs:line 38
+HelpLink: 
+Source: mscorlib
+
+
+[090430 10:45:24 (1088) ERROR NHibernate.Tuple.Entity.PocoEntityTuplizer ] 
+ - Getters of lazy classes cannot be final: SEOToolSet.Entities.SEOProfile.Properties
+
+[090430 10:45:24 (1088) ERROR NHibernate.Tuple.Entity.PocoEntityTuplizer ] 
+ - Setters of lazy classes cannot be final: SEOToolSet.Entities.SEOProfile.Properties
+
+[090430 10:45:29 (1088) ERROR ASP.global_asax ] 
+ - Exception :: ErrorCode: -2147467259
+Message: File does not exist.
+Data: System.Collections.ListDictionaryInternal
+InnerException: 
+TargetSite: System.IO.FileInfo GetFileInfo(System.String, System.String, System.Web.HttpResponse)
+StackTrace:    at System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   at System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   at System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+HelpLink: 
+Source: System.Web
+
+
+[090430 10:46:17 (5324) ERROR ASP.global_asax ] 
+ - Exception :: Message: Value cannot be null.
+ParamName: 
+Data: System.Collections.ListDictionaryInternal
+InnerException: 
+TargetSite: Void Enter(System.Object)
+StackTrace:    at System.Threading.Monitor.Enter(Object obj)
+   at SEOToolSet.WebApp.Handler.RankingMonitorHelper.ProcessRequest(HttpContext context) in C:\Proyectos\SEOToolSet\WebApp\Handler\RankingMonitorHelper.ashx.cs:line 147
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+HelpLink: 
+Source: mscorlib
+
+
+[090430 10:47:51 (5996) ERROR ASP.global_asax ] 
+ - Exception :: Message: Object reference not set to an instance of an object. (C:\Proyectos\SEOToolSet\WebApp\web.config line 97)
+BareMessage: Object reference not set to an instance of an object.
+Filename: C:\Proyectos\SEOToolSet\WebApp\web.config
+Line: 97
+Errors: System.Configuration.ConfigurationException[]
+Data: System.Collections.ListDictionaryInternal
+InnerException: 
+TargetSite: System.Configuration.Provider.ProviderBase InstantiateProvider(System.Configuration.ProviderSettings, System.Type)
+StackTrace:    at System.Web.Configuration.ProvidersHelper.InstantiateProvider(ProviderSettings providerSettings, Type providerType)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProviders(ProviderSettingsCollection configProviders, ProviderCollection providers, Type providerType)
+   at SEOToolSet.TempFileManagerProvider.TempFileManager..cctor() in C:\Proyectos\SEOToolSet\TempFileManagerProvider\TempFileManager.cs:line 33
+HelpLink: 
+Source: System.Web
+
+
+[090430 10:47:51 (5996) ERROR ASP.global_asax ] 
+ - Exception :: TypeName: SEOToolSet.TempFileManagerProvider.TempFileManager
+Message: The type initializer for 'SEOToolSet.TempFileManagerProvider.TempFileManager' threw an exception.
+Data: System.Collections.ListDictionaryInternal
+InnerException: System.Configuration.ConfigurationErrorsException: Object reference not set to an instance of an object. (C:\Proyectos\SEOToolSet\WebApp\web.config line 97)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProvider(ProviderSettings providerSettings, Type providerType)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProviders(ProviderSettingsCollection configProviders, ProviderCollection providers, Type providerType)
+   at SEOToolSet.TempFileManagerProvider.TempFileManager..cctor() in C:\Proyectos\SEOToolSet\TempFileManagerProvider\TempFileManager.cs:line 33
+TargetSite: Void StopTimer()
+StackTrace:    at SEOToolSet.TempFileManagerProvider.TempFileManager.StopTimer()
+   at SEOToolSet.WebApp.Global.Application_End(Object sender, EventArgs e) in C:\Proyectos\SEOToolSet\WebApp\Global.asax.cs:line 63
+HelpLink: 
+Source: SEOToolSet.TempFileManagerProvider
+
+
+[090430 10:52:24 (5324) ERROR ASP.global_asax ] 
+ - Exception :: Message: Object reference not set to an instance of an object. (C:\Proyectos\SEOToolSet\WebApp\web.config line 97)
+BareMessage: Object reference not set to an instance of an object.
+Filename: C:\Proyectos\SEOToolSet\WebApp\web.config
+Line: 97
+Errors: System.Configuration.ConfigurationException[]
+Data: System.Collections.ListDictionaryInternal
+InnerException: 
+TargetSite: System.Configuration.Provider.ProviderBase InstantiateProvider(System.Configuration.ProviderSettings, System.Type)
+StackTrace:    at System.Web.Configuration.ProvidersHelper.InstantiateProvider(ProviderSettings providerSettings, Type providerType)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProviders(ProviderSettingsCollection configProviders, ProviderCollection providers, Type providerType)
+   at SEOToolSet.TempFileManagerProvider.TempFileManager..cctor() in C:\Proyectos\SEOToolSet\TempFileManagerProvider\TempFileManager.cs:line 33
+HelpLink: 
+Source: System.Web
+
+
+[090430 10:52:24 (5324) ERROR ASP.global_asax ] 
+ - Exception :: TypeName: SEOToolSet.TempFileManagerProvider.TempFileManager
+Message: The type initializer for 'SEOToolSet.TempFileManagerProvider.TempFileManager' threw an exception.
+Data: System.Collections.ListDictionaryInternal
+InnerException: System.Configuration.ConfigurationErrorsException: Object reference not set to an instance of an object. (C:\Proyectos\SEOToolSet\WebApp\web.config line 97)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProvider(ProviderSettings providerSettings, Type providerType)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProviders(ProviderSettingsCollection configProviders, ProviderCollection providers, Type providerType)
+   at SEOToolSet.TempFileManagerProvider.TempFileManager..cctor() in C:\Proyectos\SEOToolSet\TempFileManagerProvider\TempFileManager.cs:line 33
+TargetSite: Void StopTimer()
+StackTrace:    at SEOToolSet.TempFileManagerProvider.TempFileManager.StopTimer()
+   at SEOToolSet.WebApp.Global.Application_End(Object sender, EventArgs e) in C:\Proyectos\SEOToolSet\WebApp\Global.asax.cs:line 63
+HelpLink: 
+Source: SEOToolSet.TempFileManagerProvider
+
+
+[090430 11:06:12 (5324) ERROR ASP.global_asax ] 
+ - Exception :: Message: Object reference not set to an instance of an object. (C:\Proyectos\SEOToolSet\WebApp\web.config line 97)
+BareMessage: Object reference not set to an instance of an object.
+Filename: C:\Proyectos\SEOToolSet\WebApp\web.config
+Line: 97
+Errors: System.Configuration.ConfigurationException[]
+Data: System.Collections.ListDictionaryInternal
+InnerException: 
+TargetSite: System.Configuration.Provider.ProviderBase InstantiateProvider(System.Configuration.ProviderSettings, System.Type)
+StackTrace:    at System.Web.Configuration.ProvidersHelper.InstantiateProvider(ProviderSettings providerSettings, Type providerType)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProviders(ProviderSettingsCollection configProviders, ProviderCollection providers, Type providerType)
+   at SEOToolSet.TempFileManagerProvider.TempFileManager..cctor() in C:\Proyectos\SEOToolSet\TempFileManagerProvider\TempFileManager.cs:line 33
+HelpLink: 
+Source: System.Web
+
+
+[090430 11:06:12 (5324) ERROR ASP.global_asax ] 
+ - Exception :: TypeName: SEOToolSet.TempFileManagerProvider.TempFileManager
+Message: The type initializer for 'SEOToolSet.TempFileManagerProvider.TempFileManager' threw an exception.
+Data: System.Collections.ListDictionaryInternal
+InnerException: System.Configuration.ConfigurationErrorsException: Object reference not set to an instance of an object. (C:\Proyectos\SEOToolSet\WebApp\web.config line 97)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProvider(ProviderSettings providerSettings, Type providerType)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProviders(ProviderSettingsCollection configProviders, ProviderCollection providers, Type providerType)
+   at SEOToolSet.TempFileManagerProvider.TempFileManager..cctor() in C:\Proyectos\SEOToolSet\TempFileManagerProvider\TempFileManager.cs:line 33
+TargetSite: Void StopTimer()
+StackTrace:    at SEOToolSet.TempFileManagerProvider.TempFileManager.StopTimer()
+   at SEOToolSet.WebApp.Global.Application_End(Object sender, EventArgs e)
+HelpLink: 
+Source: SEOToolSet.TempFileManagerProvider
+
+
+[090430 11:20:05 (5324) ERROR ASP.global_asax ] 
+ - Exception :: Message: Object reference not set to an instance of an object. (C:\Proyectos\SEOToolSet\WebApp\web.config line 97)
+BareMessage: Object reference not set to an instance of an object.
+Filename: C:\Proyectos\SEOToolSet\WebApp\web.config
+Line: 97
+Errors: System.Configuration.ConfigurationException[]
+Data: System.Collections.ListDictionaryInternal
+InnerException: 
+TargetSite: System.Configuration.Provider.ProviderBase InstantiateProvider(System.Configuration.ProviderSettings, System.Type)
+StackTrace:    at System.Web.Configuration.ProvidersHelper.InstantiateProvider(ProviderSettings providerSettings, Type providerType)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProviders(ProviderSettingsCollection configProviders, ProviderCollection providers, Type providerType)
+   at SEOToolSet.TempFileManagerProvider.TempFileManager..cctor() in C:\Proyectos\SEOToolSet\TempFileManagerProvider\TempFileManager.cs:line 33
+HelpLink: 
+Source: System.Web
+
+
+[090430 11:20:05 (5324) ERROR ASP.global_asax ] 
+ - Exception :: TypeName: SEOToolSet.TempFileManagerProvider.TempFileManager
+Message: The type initializer for 'SEOToolSet.TempFileManagerProvider.TempFileManager' threw an exception.
+Data: System.Collections.ListDictionaryInternal
+InnerException: System.Configuration.ConfigurationErrorsException: Object reference not set to an instance of an object. (C:\Proyectos\SEOToolSet\WebApp\web.config line 97)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProvider(ProviderSettings providerSettings, Type providerType)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProviders(ProviderSettingsCollection configProviders, ProviderCollection providers, Type providerType)
+   at SEOToolSet.TempFileManagerProvider.TempFileManager..cctor() in C:\Proyectos\SEOToolSet\TempFileManagerProvider\TempFileManager.cs:line 33
+TargetSite: Void StopTimer()
+StackTrace:    at SEOToolSet.TempFileManagerProvider.TempFileManager.StopTimer()
+   at SEOToolSet.WebApp.Global.Application_End(Object sender, EventArgs e)
+HelpLink: 
+Source: SEOToolSet.TempFileManagerProvider
+
+
+[090430 11:27:04 (5324) ERROR ASP.global_asax ] 
+ - Exception :: Message: Object reference not set to an instance of an object. (C:\Proyectos\SEOToolSet\WebApp\web.config line 97)
+BareMessage: Object reference not set to an instance of an object.
+Filename: C:\Proyectos\SEOToolSet\WebApp\web.config
+Line: 97
+Errors: System.Configuration.ConfigurationException[]
+Data: System.Collections.ListDictionaryInternal
+InnerException: 
+TargetSite: System.Configuration.Provider.ProviderBase InstantiateProvider(System.Configuration.ProviderSettings, System.Type)
+StackTrace:    at System.Web.Configuration.ProvidersHelper.InstantiateProvider(ProviderSettings providerSettings, Type providerType)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProviders(ProviderSettingsCollection configProviders, ProviderCollection providers, Type providerType)
+   at SEOToolSet.TempFileManagerProvider.TempFileManager..cctor() in C:\Proyectos\SEOToolSet\TempFileManagerProvider\TempFileManager.cs:line 33
+HelpLink: 
+Source: System.Web
+
+
+[090430 11:27:04 (5324) ERROR ASP.global_asax ] 
+ - Exception :: TypeName: SEOToolSet.TempFileManagerProvider.TempFileManager
+Message: The type initializer for 'SEOToolSet.TempFileManagerProvider.TempFileManager' threw an exception.
+Data: System.Collections.ListDictionaryInternal
+InnerException: System.Configuration.ConfigurationErrorsException: Object reference not set to an instance of an object. (C:\Proyectos\SEOToolSet\WebApp\web.config line 97)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProvider(ProviderSettings providerSettings, Type providerType)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProviders(ProviderSettingsCollection configProviders, ProviderCollection providers, Type providerType)
+   at SEOToolSet.TempFileManagerProvider.TempFileManager..cctor() in C:\Proyectos\SEOToolSet\TempFileManagerProvider\TempFileManager.cs:line 33
+TargetSite: Void StopTimer()
+StackTrace:    at SEOToolSet.TempFileManagerProvider.TempFileManager.StopTimer()
+   at SEOToolSet.WebApp.Global.Application_End(Object sender, EventArgs e)
+HelpLink: 
+Source: SEOToolSet.TempFileManagerProvider
+
+
+[090430 12:10:38 (4348) ERROR ASP.global_asax ] 
+ - Exception :: Message: Object reference not set to an instance of an object. (C:\Proyectos\SEOToolSet\WebApp\web.config line 97)
+BareMessage: Object reference not set to an instance of an object.
+Filename: C:\Proyectos\SEOToolSet\WebApp\web.config
+Line: 97
+Errors: System.Configuration.ConfigurationException[]
+Data: System.Collections.ListDictionaryInternal
+InnerException: 
+TargetSite: System.Configuration.Provider.ProviderBase InstantiateProvider(System.Configuration.ProviderSettings, System.Type)
+StackTrace:    at System.Web.Configuration.ProvidersHelper.InstantiateProvider(ProviderSettings providerSettings, Type providerType)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProviders(ProviderSettingsCollection configProviders, ProviderCollection providers, Type providerType)
+   at SEOToolSet.TempFileManagerProvider.TempFileManager..cctor() in C:\Proyectos\SEOToolSet\TempFileManagerProvider\TempFileManager.cs:line 33
+HelpLink: 
+Source: System.Web
+
+
+[090430 12:10:38 (4348) ERROR ASP.global_asax ] 
+ - Exception :: TypeName: SEOToolSet.TempFileManagerProvider.TempFileManager
+Message: The type initializer for 'SEOToolSet.TempFileManagerProvider.TempFileManager' threw an exception.
+Data: System.Collections.ListDictionaryInternal
+InnerException: System.Configuration.ConfigurationErrorsException: Object reference not set to an instance of an object. (C:\Proyectos\SEOToolSet\WebApp\web.config line 97)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProvider(ProviderSettings providerSettings, Type providerType)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProviders(ProviderSettingsCollection configProviders, ProviderCollection providers, Type providerType)
+   at SEOToolSet.TempFileManagerProvider.TempFileManager..cctor() in C:\Proyectos\SEOToolSet\TempFileManagerProvider\TempFileManager.cs:line 33
+TargetSite: Void StopTimer()
+StackTrace:    at SEOToolSet.TempFileManagerProvider.TempFileManager.StopTimer()
+   at SEOToolSet.WebApp.Global.Application_End(Object sender, EventArgs e)
+HelpLink: 
+Source: SEOToolSet.TempFileManagerProvider
+
+
+[090430 12:19:36 (5796) ERROR ASP.global_asax ] 
+ - Exception :: Message: Object reference not set to an instance of an object. (C:\Proyectos\SEOToolSet\WebApp\web.config line 97)
+BareMessage: Object reference not set to an instance of an object.
+Filename: C:\Proyectos\SEOToolSet\WebApp\web.config
+Line: 97
+Errors: System.Configuration.ConfigurationException[]
+Data: System.Collections.ListDictionaryInternal
+InnerException: 
+TargetSite: System.Configuration.Provider.ProviderBase InstantiateProvider(System.Configuration.ProviderSettings, System.Type)
+StackTrace:    at System.Web.Configuration.ProvidersHelper.InstantiateProvider(ProviderSettings providerSettings, Type providerType)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProviders(ProviderSettingsCollection configProviders, ProviderCollection providers, Type providerType)
+   at SEOToolSet.TempFileManagerProvider.TempFileManager..cctor() in C:\Proyectos\SEOToolSet\TempFileManagerProvider\TempFileManager.cs:line 33
+HelpLink: 
+Source: System.Web
+
+
+[090430 12:19:36 (5796) ERROR ASP.global_asax ] 
+ - Exception :: TypeName: SEOToolSet.TempFileManagerProvider.TempFileManager
+Message: The type initializer for 'SEOToolSet.TempFileManagerProvider.TempFileManager' threw an exception.
+Data: System.Collections.ListDictionaryInternal
+InnerException: System.Configuration.ConfigurationErrorsException: Object reference not set to an instance of an object. (C:\Proyectos\SEOToolSet\WebApp\web.config line 97)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProvider(ProviderSettings providerSettings, Type providerType)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProviders(ProviderSettingsCollection configProviders, ProviderCollection providers, Type providerType)
+   at SEOToolSet.TempFileManagerProvider.TempFileManager..cctor() in C:\Proyectos\SEOToolSet\TempFileManagerProvider\TempFileManager.cs:line 33
+TargetSite: Void StopTimer()
+StackTrace:    at SEOToolSet.TempFileManagerProvider.TempFileManager.StopTimer()
+   at SEOToolSet.WebApp.Global.Application_End(Object sender, EventArgs e) in C:\Proyectos\SEOToolSet\WebApp\Global.asax.cs:line 63
+HelpLink: 
+Source: SEOToolSet.TempFileManagerProvider
+
+
+[090430 12:27:05 (5796) ERROR ASP.global_asax ] 
+ - Exception :: Message: Object reference not set to an instance of an object. (C:\Proyectos\SEOToolSet\WebApp\web.config line 97)
+BareMessage: Object reference not set to an instance of an object.
+Filename: C:\Proyectos\SEOToolSet\WebApp\web.config
+Line: 97
+Errors: System.Configuration.ConfigurationException[]
+Data: System.Collections.ListDictionaryInternal
+InnerException: 
+TargetSite: System.Configuration.Provider.ProviderBase InstantiateProvider(System.Configuration.ProviderSettings, System.Type)
+StackTrace:    at System.Web.Configuration.ProvidersHelper.InstantiateProvider(ProviderSettings providerSettings, Type providerType)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProviders(ProviderSettingsCollection configProviders, ProviderCollection providers, Type providerType)
+   at SEOToolSet.TempFileManagerProvider.TempFileManager..cctor()
+HelpLink: 
+Source: System.Web
+
+
+[090430 12:27:05 (5796) ERROR ASP.global_asax ] 
+ - Exception :: TypeName: SEOToolSet.TempFileManagerProvider.TempFileManager
+Message: The type initializer for 'SEOToolSet.TempFileManagerProvider.TempFileManager' threw an exception.
+Data: System.Collections.ListDictionaryInternal
+InnerException: System.Configuration.ConfigurationErrorsException: Object reference not set to an instance of an object. (C:\Proyectos\SEOToolSet\WebApp\web.config line 97)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProvider(ProviderSettings providerSettings, Type providerType)
+   at System.Web.Configuration.ProvidersHelper.InstantiateProviders(ProviderSettingsCollection configProviders, ProviderCollection providers, Type providerType)
+   at SEOToolSet.TempFileManagerProvider.TempFileManager..cctor()
+TargetSite: Void StopTimer()
+StackTrace:    at SEOToolSet.TempFileManagerProvider.TempFileManager.StopTimer()
+   at SEOToolSet.WebApp.Global.Application_End(Object sender, EventArgs e)
+HelpLink: 
+Source: SEOToolSet.TempFileManagerProvider
+
+

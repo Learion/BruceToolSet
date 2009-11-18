@@ -1,0 +1,20 @@
+﻿<hibernate-mapping default-cascade="none" xmlns="urn:nhibernate-mapping-2.2">
+    <class name="SEOToolSet.Entities.KeywordAnalysis, SEOToolSet.Entities" table="KeywordAnalysis">
+        <id name="Id" type="System.Int32" column="Id" unsaved-value="0">
+            <generator class="native" />
+        </id>
+        <property name="Keyword" type="System.String" column="Keyword" not-null="true" length="300" />
+        <property name="GoogleResults" type="System.Int32" column="GoogleResults" not-null="false" />
+        <property name="AllInTitle" type="System.Int32" column="AllInTitle" not-null="false" />
+        <property name="AliasDomains" type="System.Int32" column="AliasDomains" not-null="false" />
+        <property name="CPC" type="System.Double" column="CPC" not-null="false" />
+        <property name="DailySearches" type="System.Int32" column="DailySearches" not-null="false" />
+        <property name="Results" type="System.Int32" column="Results" not-null="false" />
+        <property name="Engines" type="System.Int32" column="Engines" not-null="false" />
+        <property name="Pages" type="System.Int32" column="Pages" not-null="false" />
+        <property name="Status" type="System.String" column="Status" not-null="true" />
+        <many-to-one name="RankingMonitorRun" class="SEOToolSet.Entities.RankingMonitorRun, SEOToolSet.Entities" fetch="select">
+            <column name="IdRankingMonitorRun" not-null="true" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

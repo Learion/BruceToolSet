@@ -1,0 +1,3 @@
+﻿div.PBar-Container { display:block; border: 1px solid #d3d3d3; background: url(assets/shadowPB.jpg) repeat-x scroll; height:22px; overflow:hidden; }
+div.PBar-Bar { display:block; border: 1px solid #247698; background: #2191C0 url(assets/ui-bg_gloss-wave_75_2191c0_500x100.png) repeat-x scroll 50% 50%; height:20px; }
+span.PBar-Indicator { color:#fff; position:absolute; font-weight:bold; line-height:22px; height:22px; margin-left:5px; }

@@ -1,0 +1,602 @@
+﻿<?xml version="1.0"
+ encoding="utf-8"
+ ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0"
+ enableLocalization="true"
+ >
+  <!-- TODO: Define the convention for the Title of the pages. Something like : {APPLICATION_NAME} - {PAGE_TITLE}, check the BC.Master -->
+  <siteMapNode
+   url="Default.aspx"
+   MenuTitle="$resources:Navigation, Default_MenuLabel"
+   description="$resources:Navigation, Default_Description"
+   title="$resources:Navigation, Default_Title"
+ >
+    <siteMapNode
+    url="#noUse#000#"
+    MenuTitle="$resources:Navigation, LoginPage_MenuLabel"
+    description="$resources:Navigation, LoginPage_Description"
+    title="$resources:Navigation, LoginPage_Title"
+    MenuUrl="LoginPage.aspx"
+ >
+      <siteMapNode
+        url="~/LoginPage.aspx"
+        MenuTitle="$resources:Navigation, LoginPage_MenuLabel"
+        description="$resources:Navigation, LoginPage_Description"
+        title="$resources:Navigation, LoginPage_Title"
+       />
+      <siteMapNode
+        url="~/UserProfile.aspx" PermissionRequired="UserProfile"
+        MenuTitle="$resources:Navigation, UserProfile_MenuLabel"
+        description="$resources:Navigation, UserProfile_Description"
+        title="$resources:Navigation, UserProfile_Title"
+       
+ />
+      <siteMapNode
+        url="~/SignUp.aspx"
+        MenuTitle="$resources:Navigation, SignUp_MenuLabel"
+        description="$resources:Navigation, SignUp_Description"
+        title="$resources:Navigation, SignUp_Title"
+       />
+      <siteMapNode
+        url="~/AccountProfile.aspx" PermissionRequired="AccountProfile" SkipProjectRole="True"
+        MenuTitle="$resources:Navigation, AccountProfile_MenuLabel"
+        description="$resources:Navigation, AccountProfile_Description"
+        title="$resources:Navigation, AccountProfile_Title"
+       
+ />
+    </siteMapNode>
+    <siteMapNode
+    url="#noUse#001#"
+    nodeType="Menu"
+>
+      <siteMapNode
+       url="#noUse#002#"
+       MenuTitle="$resources:Navigation, Home_MenuLabel"
+       description="$resources:Navigation, Home_Description"
+       title="$resources:Navigation, Home_Title"
+       MenuUrl="ProjectDashboard.aspx?m"
+	>
+        <siteMapNode
+     url="#noUse#001-1#"
+     MenuUrl="ProjectDashboard.aspx?sm"
+     MenuTitle="$resources:Navigation, Home_MenuLabel"
+     description="$resources:Navigation, Home_Description"
+     title="$resources:Navigation, Home_Title"
+     
+	>
+          <siteMapNode url="~/ProjectDashboard.aspx"
+                 PermissionRequired="Home"
+                 SkipProjectRole="True"
+          MenuTitle="$resources:Navigation, Project_Dashboard_MenuLabel"
+          description="$resources:Navigation, Project_Dashboard_Description"
+          title="$resources:Navigation, Project_Dashboard_Title"
+     
+		></siteMapNode>
+          <!--<siteMapNode
+       url="#noUse#002#"
+       MenuTitle="$resources:Navigation, Home_MenuLabel"
+       description="$resources:Navigation, Home_Description"
+       title="$resources:Navigation, Home_Title"
+       MenuUrl="Home.aspx?m"
+	>-->
+          <!--<siteMapNode
+           url="#noUse#001-1#"
+           MenuUrl="Home.aspx?sm"
+           MenuTitle="$resources:Navigation, Home_MenuLabel"
+           description="$resources:Navigation, Home_Description"
+           title="$resources:Navigation, Home_Title"
+     
+	>
+          <siteMapNode url="~/Home.aspx" 
+                       PermissionRequired="Home" 
+                       SkipProjectRole="True"
+            MenuTitle="$resources:Navigation, Project_Dashboard_MenuLabel"
+            description="$resources:Navigation, Project_Dashboard_Description"
+            title="$resources:Navigation, Project_Dashboard_Title"
+     
+		/>-->
+          <siteMapNode
+             url="~/Project.aspx" PermissionRequired="Project"
+             MenuTitle="$resources:Navigation, Project_MenuLabel"
+             description="$resources:Navigation, Project_Description"
+             title="$resources:Navigation, Project_Title"
+     
+		/>
+          <siteMapNode
+               url="~/ManageAccountUsers.aspx" PermissionRequired="AccountProfile" SkipProjectRole="True"
+               MenuTitle="$resources:Navigation, ManageAccountUsers_MenuLabel"
+               description="$resources:Navigation, ManageAccountUsers_Description"
+               title="$resources:Navigation, ManageAccountUsers_Title"
+     
+		/>
+        </siteMapNode>
+        <siteMapNode
+        url="#noUse#003#" PermissionRequired="PartnerToolsOverview"
+        MenuTitle="$resources:Navigation, PartnerTools_MenuLabel"
+        description="$resources:Navigation, PartnerTools_Description"
+        title="$resources:Navigation, PartnerTools_Title"
+        MenuUrl="PartnerToolsOverview.aspx?sm"
+	>
+          <siteMapNode
+           url="~/PartnerToolsOverview.aspx" PermissionRequired="PartnerToolsOverview"
+           MenuTitle="$resources:Navigation, PartnerToolsOverview_MenuLabel"
+           description="$resources:Navigation, PartnerToolsOverview_Description"
+           title="$resources:Navigation, PartnerToolsOverview_Title"
+		 />
+          <siteMapNode
+           url="~/ManageEmployees.aspx" PermissionRequired="ManageEmployees"
+             MenuTitle="$resources:Navigation, ManageEmployees_MenuLabel"
+             description="$resources:Navigation, ManageEmployees_Description"
+             title="$resources:Navigation, ManageEmployees_Title"
+		 />
+          <siteMapNode
+           url="~/ManageProject.aspx"/> <!--PermissionRequired="ManageProjects"
+           MenuTitle="$resources:Navigation, ManageProjects_MenuLabel"
+           description="$resources:Navigation, ManageProjects_Description"
+           title="$resources:Navigation, ManageProjects_Title"-->
+		
+
+          <siteMapNode
+           url="~/XiaoLangTest.aspx"
+		 />
+          
+          <siteMapNode
+           url="~/TransferAcountData.aspx" PermissionRequired="TransferAcountData"
+           MenuTitle="$resources:Navigation, TransferAcountData_MenuLabel"
+           description="$resources:Navigation, TransferAcountData_Description"
+           title="$resources:Navigation, TransferAcountData_Title"
+		 />
+        </siteMapNode>
+        <siteMapNode
+        url="#noUse#004#" PermissionRequired="SupportToolsOverview"
+        MenuTitle="$resources:Navigation, SupportTools_MenuLabel"
+        description="$resources:Navigation, SupportTools_Description"
+        title="$resources:Navigation, SupportTools_Title"
+        MenuUrl="SupportToolsOverview.aspx?sm"
+		
+	>
+          <siteMapNode
+            url="~/SupportToolsOverview.aspx" PermissionRequired="SupportToolsOverview"
+            MenuTitle="$resources:Navigation, SupportToolsOverview_MenuLabel"
+            description="$resources:Navigation, SupportToolsOverview_Description"
+            title="$resources:Navigation, SupportToolsOverview_Title"
+			/>
+          <siteMapNode
+           url="~/SearchUserOrAccount.aspx" PermissionRequired="SearchUserOrAccount"
+           MenuTitle="$resources:Navigation, SearchUserOrAccount_MenuLabel"
+           description="$resources:Navigation, SearchUserOrAccount_Description"
+           title="$resources:Navigation, SearchUserOrAccount_Title"
+			/>
+          <siteMapNode
+           url="~/SubscribersOrAccountsList.aspx" PermissionRequired="SubscribersOrAccountsList"
+           MenuTitle="$resources:Navigation, SubscribersOrAccountsList_MenuLabel"
+           description="$resources:Navigation, SubscribersOrAccountsList_Description"
+           title="$resources:Navigation, SubscribersOrAccountsList_Title"
+			/>
+          <siteMapNode url="~/TransferAcountData.aspx?support" PermissionRequired="TransferAcountData"
+           MenuTitle="$resources:Navigation, TransferAcountData_Support_MenuLabel"
+           description="$resources:Navigation, TransferAcountData_Support_Description"
+           title="$resources:Navigation, TransferAcountData_Support_Title"
+		  />
+        </siteMapNode>
+        <siteMapNode
+        url="#noUse#0041#" PermissionRequired="AdministrationToolsOverview"
+        MenuTitle="$resources:Navigation, AdministrationTools_MenuLabel"
+        description="$resources:Navigation, AdministrationTools_Description"
+        title="$resources:Navigation, AdministrationTools_Title"
+        MenuUrl="AdministrationToolsOverview.aspx?sm"
+	>
+          <siteMapNode
+         url="~/AdministrationToolsOverview.aspx" PermissionRequired="AdministrationToolsOverview"
+         MenuTitle="$resources:Navigation, AdministrationToolsOverview_MenuLabel"
+         description="$resources:Navigation, AdministrationToolsOverview_Description"
+         title="$resources:Navigation, AdministrationToolsOverview_Title"
+	 />
+          <siteMapNode
+         url="~/SearchUserOrAccount.aspx?administrator" PermissionRequired="SearchUserOrAccount"
+         MenuTitle="$resources:Navigation, SearchUserOrAccount_Administrator_MenuLabel"
+         description="$resources:Navigation, SearchUserOrAccount_Administrator_Description"
+         title="$resources:Navigation, SearchUserOrAccount_Administrator_Title"
+	 />
+          <siteMapNode url="~/SubscriberOrAccountList.aspx?administrator" PermissionRequired="SubscriberOrAccountList"
+         MenuTitle="$resources:Navigation, SubscriberOrAccountList_Administrator_MenuLabel"
+         description="$resources:Navigation, SubscriberOrAccountList_Administrator_Description"
+         title="$resources:Navigation, SubscriberOrAccountList_Administrator_Title"
+	 />
+          <siteMapNode url="~/TransferAccountData.aspx?administrator" PermissionRequired="TransferAccountData"
+         MenuTitle="$resources:Navigation, TransferAccountData_Administrator_MenuLabel"
+         description="$resources:Navigation, TransferAccountData_Administrator_Description"
+         title="$resources:Navigation, TransferAccountData_Administrator_Title"
+	 />
+          <siteMapNode url="~/ScheduleProcesses.aspx" PermissionRequired="ScheduleProcesses"
+         MenuTitle="$resources:Navigation, ScheduleProcesses_MenuLabel"
+         description="$resources:Navigation, ScheduleProcesses_Description"
+         title="$resources:Navigation, ScheduleProcesses_Title"
+ />
+          <siteMapNode url="~/EmployeeLogs.aspx" PermissionRequired="EmployeeLogs"
+      MenuTitle="$resources:Navigation, EmployeeLogs_MenuLabel"
+      description="$resources:Navigation, EmployeeLogs_Description"
+      title="$resources:Navigation, EmployeeLogs_Title"
+ />
+          <siteMapNode url="~/ErrorLogs.aspx" PermissionRequired="ErrorLogs"
+      MenuTitle="$resources:Navigation, ErrorLogs_MenuLabel"
+      description="$resources:Navigation, ErrorLogs_Description"
+      title="$resources:Navigation, ErrorLogs_Title"
+ />
+        </siteMapNode>
+        <siteMapNode url="#noUse#005#" PermissionRequired="AccountingToolsOverview"
+        MenuTitle="$resources:Navigation, Accounting_MenuLabel"
+        description="$resources:Navigation, Accounting_Description"
+        title="$resources:Navigation, _Title"
+        MenuUrl="AccountingToolsOverview.aspx?sm"
+ >
+          <siteMapNode
+         url="~/AccountingToolsOverview.aspx" PermissionRequired="AccountingToolsOverview"
+         MenuTitle="$resources:Navigation, AccountingToolsOverview_MenuLabel"
+         description="$resources:Navigation, AccountingToolsOverview_Description"
+         title="$resources:Navigation, AccountingToolsOverview_Title"
+ />
+          <siteMapNode url="~/AccountingUsage.aspx" PermissionRequired="AccountingUsage"
+      MenuTitle="$resources:Navigation, AccountingUsage_MenuLabel"
+      description="$resources:Navigation, AccountingUsage_Description"
+      title="$resources:Navigation, AccountingUsage_Title"
+ />
+          <siteMapNode url="~/AccountingStatus.aspx" PermissionRequired="AccountingStatus"
+      MenuTitle="$resources:Navigation, AccountingStatus_MenuLabel"
+      description="$resources:Navigation, AccountingStatus_Description"
+      title="$resources:Navigation, AccountingStatus_Title"
+ />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode
+        url="#noUse#006#"
+      MenuTitle="$resources:Navigation, Keywords_MenuLabel"
+      description="$resources:Navigation, Keywords_Description"
+      title="$resources:Navigation, Keywords_Title"
+        MenuUrl="KeywordsOverview.aspx?m"
+>
+        <siteMapNode
+        url="~/KeywordsOverview.aspx"
+    MenuTitle="$resources:Navigation, KeywordsOverview_MenuLabel"
+    description="$resources:Navigation, KeywordsOverview_Description"
+    title="$resources:Navigation, KeywordsOverview_Title"
+ />
+        <siteMapNode url="~/Campaigns.aspx" PermissionRequired="Campaigns"
+     MenuTitle="$resources:Navigation, Campaigns_MenuLabel"
+     description="$resources:Navigation, Campaigns_Description"
+     title="$resources:Navigation, Campaigns_Title"
+ />
+        <siteMapNode url="~/TrafficChecker.aspx" PermissionRequired="TrafficChecker"
+     MenuTitle="$resources:Navigation, TrafficChecker_MenuLabel"
+     description="$resources:Navigation, TrafficChecker_Description"
+     title="$resources:Navigation, TrafficChecker_Title"
+ />
+        <siteMapNode url="~/SuggestedKeywords.aspx" PermissionRequired="SuggestedKeywords"
+     MenuTitle="$resources:Navigation, SuggestedKeywords_MenuLabel"
+     description="$resources:Navigation, SuggestedKeywords_Description"
+     title="$resources:Navigation, SuggestedKeywords_Title"
+ />
+        <siteMapNode url="~/TrendingReport.aspx" PermissionRequired="TrendingReport"
+     MenuTitle="$resources:Navigation, TrendingReport_MenuLabel"
+     description="$resources:Navigation, TrendingReport_Description"
+     title="$resources:Navigation, TrendingReport_Title"
+ />
+        <siteMapNode url="~/Demographics.aspx" PermissionRequired="Demographics"
+     MenuTitle="$resources:Navigation, Demographics_MenuLabel"
+     description="$resources:Navigation, Demographics_Description"
+     title="$resources:Navigation, Demographics_Title"
+ />
+        <siteMapNode url="~/PotentialTraffic.aspx" PermissionRequired="PotentialTraffic"
+     MenuTitle="$resources:Navigation, PotentialTraffic_MenuLabel"
+     description="$resources:Navigation, PotentialTraffic_Description"
+     title="$resources:Navigation, PotentialTraffic_Title"
+ />
+        <siteMapNode url="~/StopwordEditor.aspx" PermissionRequired="StopwordEditor"
+     MenuTitle="$resources:Navigation, StopwordEditor_MenuLabel"
+     description="$resources:Navigation, StopwordEditor_Description"
+     title="$resources:Navigation, StopwordEditor_Title"
+ />
+      </siteMapNode>
+      <siteMapNode
+    url="#noUse#007#"
+    MenuTitle="$resources:Navigation, Competitors_MenuLabel"
+    description="$resources:Navigation, Competitors_Description"
+    title="$resources:Navigation, Competitors_Title"
+    MenuUrl="CompetitorsOverview.aspx?m"
+>
+        <siteMapNode url="~/CompetitorsOverview.aspx" PermissionRequired="CompetitorsOverview"
+    MenuTitle="$resources:Navigation, CompetitorsOverview_MenuLabel"
+    description="$resources:Navigation, CompetitorsOverview_Description"
+    title="$resources:Navigation, CompetitorsOverview_Title"
+ />
+        <siteMapNode
+     url="~/Competitors.aspx" PermissionRequired="Competitors"
+     MenuTitle="$resources:Navigation, Competitors_MenuLabel"
+     description="$resources:Navigation, Competitors_Description"
+     title="$resources:Navigation, Competitors_Title"
+ />
+        <siteMapNode url="~/ResearchSummary.aspx" PermissionRequired="ResearchSummary"
+     MenuTitle="$resources:Navigation, ResearchSummary_MenuLabel"
+     description="$resources:Navigation, ResearchSummary_Description"
+     title="$resources:Navigation, ResearchSummary_Title"
+ />
+        <siteMapNode url="~/IntelligenceReport.aspx" PermissionRequired="IntelligenceReport"
+     MenuTitle="$resources:Navigation, IntelligenceReport_MenuLabel"
+     description="$resources:Navigation, IntelligenceReport_Description"
+     title="$resources:Navigation, IntelligenceReport_Title"
+ />
+        <siteMapNode url="~/TrendingReports.aspx" PermissionRequired="TrendingReports"
+     MenuTitle="$resources:Navigation, TrendingReports_MenuLabel"
+     description="$resources:Navigation, TrendingReports_Description"
+     title="$resources:Navigation, TrendingReports_Title"
+ />
+        <siteMapNode url="~/RankedKeywords.aspx" PermissionRequired="RankedKeywords"
+     MenuTitle="$resources:Navigation, RankedKeywords_MenuLabel"
+     description="$resources:Navigation, RankedKeywords_Description"
+     title="$resources:Navigation, RankedKeywords_Title"
+ />
+      </siteMapNode>
+      <siteMapNode
+       url="#noUse#008#"
+       MenuTitle="$resources:Navigation, Analyze_MenuLabel"
+       description="$resources:Navigation, Analyze_Description"
+       title="$resources:Navigation, Analyze_Title"
+       MenuUrl="AnalyzeOverview.aspx?m"
+       HelpPage="~/HelpPages/help01.html"
+		
+>
+        <siteMapNode url="~/AnalyzeOverview.aspx" PermissionRequired="AnalyzeOverview"
+       MenuTitle="$resources:Navigation, AnalyzeOverview_MenuLabel"
+       description="$resources:Navigation, AnalyzeOverview_Description"
+       title="$resources:Navigation, AnalyzeOverview_Title"
+		
+ />
+        <siteMapNode url="~/OptimizedPages.aspx" PermissionRequired="OptimizedPages"
+     MenuTitle="$resources:Navigation, OptimizedPages_MenuLabel"
+     description="$resources:Navigation, OptimizedPages_Description"
+     title="$resources:Navigation, OptimizedPages_Title"
+ />
+        <siteMapNode url="#noUse#009#" PermissionRequired="SinglePageKda"
+     MenuTitle="$resources:Navigation, PageAnalyzer_MenuLabel"
+     description="$resources:Navigation, PageAnalyzer_Description"
+     title="$resources:Navigation, PageAnalyzer_Title"
+     MenuUrl="SinglePageKda.aspx?sm"
+ 
+ >
+          <siteMapNode
+          url="~/SinglePageKda.aspx" PermissionRequired="SinglePageKda"
+          MenuTitle="$resources:Navigation, SinglePageKda_MenuLabel"
+          description="$resources:Navigation, SinglePageKda_Description"
+          title="$resources:Navigation, SinglePageKda_Title"
+          HelpPage="~/HelpPages/help01.html"
+		 
+/>
+          <siteMapNode
+      url="~/MultiPageKda.aspx" PermissionRequired="MultiPageKda"
+      MenuTitle="$resources:Navigation, MultiPageKda_MenuLabel"
+      description="$resources:Navigation, MultiPageKda_Description"
+      title="$resources:Navigation, MultiPageKda_Title"
+ 
+ />
+          <siteMapNode
+         url="~/ComparisonReport.aspx" PermissionRequired="ComparisonReport"
+         MenuTitle="$resources:Navigation, ComparisonReport_MenuLabel"
+         description="$resources:Navigation, ComparisonReport_Description"
+         title="$resources:Navigation, ComparisonReport_Title"
+		
+	/>
+        </siteMapNode>
+        <siteMapNode
+        url="~/SiteChecker.aspx" PermissionRequired="SiteChecker"
+        MenuTitle="$resources:Navigation, SiteChecker_MenuLabel"
+        description="$resources:Navigation, SiteChecker_Description"
+        title="$resources:Navigation, SiteChecker_Title"
+        HelpPage="~/HelpPages/help01.html"
+		
+	/>
+        <siteMapNode
+        url="~/SiteInformation.aspx" PermissionRequired="SiteInformation"
+        MenuTitle="$resources:Navigation, SiteInformation_MenuLabel"
+        description="$resources:Navigation, SiteInformation_Description"
+        title="$resources:Navigation, SiteInformation_Title"
+	/>
+      </siteMapNode>
+      <siteMapNode
+       url="#noUse#010#"
+       MenuTitle="$resources:Navigation, Submit_MenuLabel"
+       description="$resources:Navigation, Submit_Description"
+       title="$resources:Navigation, Submit_Title"
+       MenuUrl="SubmitOverview.aspx?m"
+	>
+        <siteMapNode url="~/SubmitOverview.aspx" PermissionRequired="SubmitOverview"
+     MenuTitle="$resources:Navigation, SubmitOverview_MenuLabel"
+     description="$resources:Navigation, SubmitOverview_Description"
+     title="$resources:Navigation, SubmitOverview_Title"
+ />
+        <siteMapNode url="~/SitemapsXMLGenerator.aspx" PermissionRequired="SitemapsXMLGenerator"
+     MenuTitle="$resources:Navigation, SitemapsXMLGenerator_MenuLabel"
+     description="$resources:Navigation, SitemapsXMLGenerator_Description"
+     title="$resources:Navigation, SitemapsXMLGenerator_Title"
+ />
+        <siteMapNode url="~/HTMLSitemap.aspx" PermissionRequired="HTMLSitemap"
+     MenuTitle="$resources:Navigation, HTMLSitemap_MenuLabel"
+     description="$resources:Navigation, HTMLSitemap_Description"
+     title="$resources:Navigation, HTMLSitemap_Title"
+ />
+        <siteMapNode url="~/SubmissionPages.aspx" PermissionRequired="SubmissionPages"
+     MenuTitle="$resources:Navigation, SubmissionPages_MenuLabel"
+     description="$resources:Navigation, SubmissionPages_Description"
+     title="$resources:Navigation, SubmissionPages_Title"
+ />
+        <siteMapNode
+        url="#noUse#011#" PermissionRequired="DSMOverview"
+        MenuTitle="$resources:Navigation, DSM_MenuLabel"
+        description="$resources:Navigation, DSM_Description"
+        title="$resources:Navigation, DSM_Title"
+        MenuUrl="DSMOverview.aspx?sm"
+	>
+          <siteMapNode url="~/DSMOverview.aspx" PermissionRequired="DSMOverview"
+      MenuTitle="$resources:Navigation, DSMOverview_MenuLabel"
+      description="$resources:Navigation, DSMOverview_Description"
+      title="$resources:Navigation, DSMOverview_Title"
+ />
+          <siteMapNode url="~/DSMAdministration.aspx" PermissionRequired="DSMAdministration"
+      MenuTitle="$resources:Navigation, DSMAdministration_MenuLabel"
+      description="$resources:Navigation, DSMAdministration_Description"
+      title="$resources:Navigation, DSMAdministration_Title"
+ />
+          <siteMapNode url="~/DSMReport.aspx" PermissionRequired="DSMReport"
+      MenuTitle="$resources:Navigation, DSMReport_MenuLabel"
+      description="$resources:Navigation, DSMReport_Description"
+      title="$resources:Navigation, DSMReport_Title"
+ />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode
+       url="#noUse#012#"
+       MenuTitle="$resources:Navigation, Monitor_MenuLabel"
+       description="$resources:Navigation, Monitor_Description"
+       title="$resources:Navigation, Monitor_Title"
+       MenuUrl="RankingMonitorDashboard.aspx?m"
+				
+	>
+        <siteMapNode
+          ProjectPermission="RunMonitor"
+          TypeOfValidation="Project"
+          url="~/RankingMonitorDashboard.aspx" PermissionRequired="RankingMonitorDashboard"
+          MenuTitle="$resources:Navigation, RankingMonitorDashboard_MenuLabel"
+          description="$resources:Navigation, RankingMonitorDashboard_Description"
+          title="$resources:Navigation, RankingMonitorDashboard_Title"
+						
+		/>
+        <siteMapNode
+      url="~/RankingMonitorConfiguration.aspx" PermissionRequired="RankingMonitorConfiguration"
+      MenuTitle="$resources:Navigation, RankingMonitorConfiguration_MenuLabel"
+      description="$resources:Navigation, RankingMonitorConfiguration_Description"
+      title="$resources:Navigation, RankingMonitorConfiguration_Title"
+   
+	 />
+        <siteMapNode
+        url="~/RankingMonitorRun.aspx" PermissionRequired="RankingMonitorRun"
+        MenuTitle="$resources:Navigation, RankingMonitorRun_MenuLabel"
+        description="$resources:Navigation, RankingMonitorRun_Description"
+        title="$resources:Navigation, RankingMonitorRun_Title"
+		
+	/>
+        <siteMapNode
+        url="~/RankingMonitorReports.aspx" PermissionRequired="RankingMonitorReports"
+        MenuTitle="$resources:Navigation, RankingMonitorReports_MenuLabel"
+        description="$resources:Navigation, RankingMonitorReports_Description"
+        title="$resources:Navigation, RankingMonitorReports_Title"
+		 
+	/>
+      </siteMapNode>
+      <siteMapNode
+       MenuUrl="LinksOverview.aspx?m"
+       url="#noUse#013#"
+       MenuTitle="$resources:Navigation, Links_MenuLabel"
+       description="$resources:Navigation, Links_Description"
+       title="$resources:Navigation, Links_Title"
+>
+        <siteMapNode url="~/LinksOverview.aspx" PermissionRequired="LinksOverview"
+    MenuTitle="$resources:Navigation, LinksOverview_MenuLabel"
+    description="$resources:Navigation, LinksOverview_Description"
+    title="$resources:Navigation, LinksOverview_Title"
+ />
+        <siteMapNode
+        url="#noUse#014#" PermissionRequired="LinkAnalysisOverview"
+        MenuTitle="$resources:Navigation, LinkAnalysis_MenuLabel"
+        description="$resources:Navigation, LinkAnalysis_Description"
+        title="$resources:Navigation, LinkAnalysis_Title"
+        MenuUrl="LinkAnalysisOverview.aspx?sm"
+	>
+          <siteMapNode
+         url="~/LinkAnalysisOverview.aspx" PermissionRequired="LinkAnalysisOverview"
+         MenuTitle="$resources:Navigation, LinkAnalysisOverview_MenuLabel"
+         description="$resources:Navigation, LinkAnalysisOverview_Description"
+         title="$resources:Navigation, LinkAnalysisOverview_Title"
+	 />
+          <siteMapNode url="~/LinkAnalysisReport.aspx" PermissionRequired="LinkAnalysisReport"
+      MenuTitle="$resources:Navigation, LinkAnalysisReport_MenuLabel"
+      description="$resources:Navigation, LinkAnalysisReport_Description"
+      title="$resources:Navigation, LinkAnalysisReport_Title"
+ />
+          <siteMapNode url="~/UploadLinkList.aspx" PermissionRequired="UploadLinkList"
+      MenuTitle="$resources:Navigation, UploadLinkList_MenuLabel"
+      description="$resources:Navigation, UploadLinkList_Description"
+      title="$resources:Navigation, UploadLinkList_Title"
+ />
+        </siteMapNode>
+        <siteMapNode url="#noUse#015#" PermissionRequired="LinkMapsOverview"
+     MenuTitle="$resources:Navigation, LinkMaps_MenuLabel"
+     description="$resources:Navigation, LinkMaps_Description"
+     title="$resources:Navigation, LinkMaps_Title"
+     MenuUrl="LinkMapsOverview.aspx?sm"
+ >
+          <siteMapNode url="~/LinkMapsOverview.aspx" PermissionRequired="LinkMapsOverview"
+      MenuTitle="$resources:Navigation, LinkMapsOverview_MenuLabel"
+      description="$resources:Navigation, LinkMapsOverview_Description"
+      title="$resources:Navigation, LinkMapsOverview_Title"
+ />
+          <siteMapNode url="~/Administration.aspx" PermissionRequired="Administration"
+      MenuTitle="$resources:Navigation, Administration_MenuLabel"
+      description="$resources:Navigation, Administration_Description"
+      title="$resources:Navigation, Administration_Title"
+ />
+          <siteMapNode url="~/LinkReport.aspx" PermissionRequired="LinkReport"
+      MenuTitle="$resources:Navigation, LinkReport_MenuLabel"
+      description="$resources:Navigation, LinkReport_Description"
+      title="$resources:Navigation, LinkReport_Title"
+ />
+        </siteMapNode>
+        <siteMapNode url="~/SiteLinkSpider.aspx" PermissionRequired="SiteLinkSpider"
+     MenuTitle="$resources:Navigation, SiteLinkSpider_MenuLabel"
+     description="$resources:Navigation, SiteLinkSpider_Description"
+     title="$resources:Navigation, SiteLinkSpider_Title"
+ />
+      </siteMapNode>
+      <siteMapNode
+     url="#noUse#016#"
+     MenuTitle="$resources:Navigation, Tools_MenuLabel"
+     description="$resources:Navigation, Tools_Description"
+     title="$resources:Navigation, Tools_Title"
+     MenuUrl="PathMapsOverview.aspx?m"
+>
+        <siteMapNode url="#noUse#017#" PermissionRequired="PathMapsOverview"
+         MenuTitle="$resources:Navigation, Pathmaps_MenuLabel"
+         description="$resources:Navigation, Pathmaps_Description"
+         title="$resources:Navigation, Pathmaps_Title"
+         MenuUrl="PathMapsOverview.aspx?sm"
+ >
+          <siteMapNode url="~/PathMapsOverview.aspx" PermissionRequired="PathMapsOverview"
+      MenuTitle="$resources:Navigation, PathMapsOverview_MenuLabel"
+      description="$resources:Navigation, PathMapsOverview_Description"
+      title="$resources:Navigation, PathMapsOverview_Title"
+ />
+          <siteMapNode url="~/PathMapsSettings.aspx" PermissionRequired="PathMapsSettings"
+      MenuTitle="$resources:Navigation, PathMapsSettings_MenuLabel"
+      description="$resources:Navigation, PathMapsSettings_Description"
+      title="$resources:Navigation, PathMapsSettings_Title"
+ />
+          <siteMapNode url="~/PathMapsReport.aspx" PermissionRequired="PathMapsReport"
+      MenuTitle="$resources:Navigation, PathMapsReport_MenuLabel"
+      description="$resources:Navigation, PathMapsReport_Description"
+      title="$resources:Navigation, PathMapsReport_Title"
+ />
+        </siteMapNode>
+        <siteMapNode url="~/RelationshipChart.aspx" PermissionRequired="RelationshipChart"
+     MenuTitle="$resources:Navigation, RelationshipChart_MenuLabel"
+
+     description="$resources:Navigation, RelationshipChart_Description"
+     title="$resources:Navigation, RelationshipChart_Title"
+ />
+        <siteMapNode url="~/Pixelsilk.aspx" PermissionRequired="Pixelsilk"
+     MenuTitle="$resources:Navigation, Pixelsilk_MenuLabel"
+
+     description="$resources:Navigation, Pixelsilk_Description"
+     title="$resources:Navigation, Pixelsilk_Title"
+ />
+      </siteMapNode>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

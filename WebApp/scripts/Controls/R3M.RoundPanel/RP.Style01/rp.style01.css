@@ -1,0 +1,22 @@
+﻿.round_ctr_ublock {  }
+.round_ctr_ublock .hd { /*background:transparent url(assets/t.gif) repeat-x;*/ height: 7px;}
+.round_ctr_ublock .hd.NoBackground { background: none; }
+.round_ctr_ublock .hd .tl { background: url(assets/tl.gif) no-repeat; float: left; width: 7px; height: 7px; overflow:hidden;}
+.round_ctr_ublock .hd .tr  { background: url(assets/tr.gif) no-repeat; float: right; width: 7px; height: 7px; overflow:hidden;}
+.round_ctr_ublock .hd .tc { background: transparent url(assets/t.gif) repeat-x;  height:7px; margin: 0px 7px;  }
+.round_ctr_ublock .bl { background: url(assets/bl.gif)  #FFFFFF repeat-y left; }
+/*\*/ * html .hd { overflow:hidden; } /**/ /* IE6 */
+
+
+.round_ctr_ublock .br { background: url(assets/br.gif) repeat-y right; width:100%;}
+.round_ctr_ublock .br .bd { min-height: 1%; height: auto; text-align:left;  }
+.round_ctr_ublock .ft { font:0px/0px;height: 7px; position:relative; }
+.round_ctr_ublock .ft .fl{ float: left; background: url(assets/f_left.gif) no-repeat; width: 7px; height: 7px; overflow:hidden; }
+.round_ctr_ublock .ft .fc { background: transparent url(assets/f.gif) repeat-x;  height:7px; margin: 0px 7px;  }
+.round_ctr_ublock .ft .fc.NoBackground { background: none; }
+/*\*/ * html .round_ctr_ublock .ft .fl { float:none; position:absolute; left:0px; } /**/ /* IE6 */
+/*\*/ * html .round_ctr_ublock .ft .fr { float:none; position:absolute; right:0px; } /**/ /* IE6 */
+
+.round_ctr_ublock .ft .fr{ float: right; background: url(assets/f_right.gif) no-repeat; width: 7px; height: 7px; overflow:hidden;}
+
+

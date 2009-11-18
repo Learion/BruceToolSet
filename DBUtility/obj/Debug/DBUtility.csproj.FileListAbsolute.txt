@@ -1,0 +1,5 @@
+D:\SEOToolSet\code\DBUtility\obj\Debug\ResolveAssemblyReference.cache
+D:\SEOToolSet\code\DBUtility\bin\Debug\DBUtility.dll
+D:\SEOToolSet\code\DBUtility\bin\Debug\DBUtility.pdb
+D:\SEOToolSet\code\DBUtility\obj\Debug\DBUtility.dll
+D:\SEOToolSet\code\DBUtility\obj\Debug\DBUtility.pdb

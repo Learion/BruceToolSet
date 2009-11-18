@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Eucalypto.Wiki.Article, Eucalypto" table="WikiArticle">
+    <id name="Id" column="Id" type="String" length="32" >
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+
+    <!-- fetch=join is used to load the object with the same query and without lazy initialization -->
+    <many-to-one name="Category" fetch="join">
+      <column name="IdCategory" not-null="true" />
+    </many-to-one>
+    
+    <property name="Name" type="String">
+      <column name="Name" unique-key="KeyName" not-null="true" length="100"/>
+    </property>
+
+    <property name="Version" column="Version" type="Int32" not-null="true" />
+
+    <property name="Title" column="Title" type="String" not-null="true" length="100" />
+    <property name="Owner" column="Owner" type="String" not-null="true" length="100" />
+    <property name="UpdateUser" column="UpdateUser" type="String" not-null="true" length="100" />
+
+    <property name="Description" column="Description" type="String" length="300" />
+
+    <property name="Body" column="Body" type="String" length="1073741823" />
+
+    <property name="TOC" column="TOC" type="String" length="1073741823" />
+
+    <property name="Author" column="Author" type="String" length="100" />
+
+    <property name="InsertDate" column="InsertDate" type="DateTime" not-null="true" />
+    <property name="UpdateDate" column="UpdateDate" type="DateTime" not-null="true" />
+
+    <property name="Enabled" column="Enabled" type="Boolean" not-null="true" />
+    <property name="Approved" column="Approved" type="Boolean" not-null="true" />
+
+    <property name="Tag" column="Tag" type="String" length="100" />
+
+    <!-- The collection is used to automatically add, delete children entities. Note the cascade property set to all. -->
+    <bag name="Attachments" inverse="true" lazy="true" cascade="all">
+      <key column="IdArticle"/>
+      <one-to-many class="Eucalypto.Wiki.FileAttachment, Eucalypto"/>
+    </bag>
+
+    <!-- The collection is used to automatically add, delete children entities. Note the cascade property set to all. -->
+    <bag name="Versions" inverse="true" lazy="true" cascade="all">
+      <key column="IdArticle"/>
+      <one-to-many class="Eucalypto.Wiki.VersionedArticle, Eucalypto"/>
+    </bag>
+    
+  </class>
+</hibernate-mapping>

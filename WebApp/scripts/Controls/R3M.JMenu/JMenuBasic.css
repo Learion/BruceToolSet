@@ -1,0 +1,36 @@
+.menu, .menu ul { 	margin: 0;	padding: 0;	border: 0;	list-style-type: none;	display: block; }
+.menu ul { visibility: hidden;position: absolute;z-index: 10; left: 0;	top: 0; }
+.menu li {	margin: 0;	padding: 0;	border: 0;	display: block;	float: left; position: relative; z-index: 5;}
+.menu li li { float: none;margin-top: -1px;  }
+.menu:after, .menu ul:after {content: ".";	height: 0;	display: block;	visibility: hidden;	overflow: hidden; clear: both; }/* -- float.clear -- Mozilla  force containment of floated LIs inside of UL */
+
+.menu, .menu ul { min-height: 0; }/* IE7 float clear: */	
+/*\*/ * html .menu, .menu ul {zoom: 1; } /**/ /* IE6 float.clear */ 
+
+.menu li.adxmhover { z-index: 10000;	white-space: normal; }
+.menu .adxmhoverUL {visibility: visible;} /* li:hover>ul selector */
+.menu .adxmhoverUL {top: 100%;left: 0;}/* 1st-level submenu go below their parent item */
+.menu a:hover, .menu .adxmhoverA { color: #990000; }/* li:hover>a selector */
+.menu .adxmhoverUL .adxmhoverUL {top: 5px;	left: 90%;}/* inset 2nd+ submenus, to show off overlapping */
+.menu, .menu ul li { color: #446689; background: url(../../../css/Assets/2575_subnav_bg.gif) repeat-x; }
+
+/*.menu a span.arrow { display:none;}
+.menu a span.larrow { display:none;}*/
+
+
+/*RRRM change - Remove the Arrows from the Menus and Submenus*/
+/*.menu a:hover span.arrow, .menu .adxmhoverA span.arrow { /* background:url(../../../css/Assets/arrow-bt.gif) no-repeat;   width:12px; height:11px; position:absolute; top:6px; right:6px; display:none; }*/
+/*.menu a:hover span.larrow { /*background:url(../../../css/Assets/arrow-lr.gif) no-repeat; display:none; width:10px; height:12px; top:7px; left:0px; float:left; }*/
+
+/*\*/ /* html .menu a span.larrow { /*background:url(../../../css/Assets/arrow-lr.gif) no-repeat; display:none; width:10px; height:12px; position:absolute; top:7px; left:-5px; float:left; } */
+
+
+
+.menu ul { background:red; }
+
+.menu a { text-decoration: none; color: #003366; padding: .4em 1em; display: block; font-weight:bold; line-height:22px;  }
+.menu li { border-left:2px solid #FFFFFF;border-right:1px solid #CCCCCC; height:30px;   }
+.menu li li{ border:none; }
+/* Fix for IE5/Mac \*//*/ .menu a {	float: left; } /* End Fix */
+                                            
+.menu a.selected { color: #fff; background: url(../../../css/Assets/2575_subnav_bg_selected.gif ) repeat-x; }

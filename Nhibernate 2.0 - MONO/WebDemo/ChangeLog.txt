@@ -1,0 +1,58 @@
+Change log for Eucalypto.Demo. 
+Note that the version of Eucalypto core library can be different from the version of Eucalypto Demo.
+See Eucalypto documentation for changes on the Eucalypto core library.
+
+Version 1.3 (22 May 2007)
+	-Added the htmlEncode parameter to the GetServerUrl, GetAbsoluteClientUrl and GetClientUrl methods to allow to encode the returned url so be used inside an xhtml (App_Code\Navigation.cs, many *.cs files)
+	-Minor xhtml fix for page validatation (Admin pages)
+	-Compiled with Eucalypto Library 1.3 (see documentation History section for more details) (Bin\Eucalypto.dll,Bin\Eucalypto.xml, References)
+
+Version 1.2 (2 May 2007)
+	-Fixed english grammar errors (Admin\WikiDetails.aspx)
+	-Compiled with Eucalypto Library 1.2 (see documentation History section for more details) (Bin\Eucalypto.dll,Bin\Eucalypto.xml)
+
+Version 1.1 (20 Apr 2007)
+	-Compiled with Eucalypto Library 1.1 (see documentation History section for more details) (Bin\Eucalypto.dll,Bin\Eucalypto.xml)
+	-Added an address book/contact list for an example of custom entity, used just for the demo (added Bin\WebSite.CustomEntities.dll, modified ~/site.Master, modified Web.config)
+	-Replaces the attach page using an http generic handler *.ashx file (added Forum\Attach.ashx and Wiki\Attach.ashx, removed Forum\Attach.aspx and Wiki\Attach.aspx, modified App_Code\Navigation.cs )
+	-Fixed the documentation of the permissions for the new deny feature with the prefix '!' (Admin\WikiDetails.aspx, Admin\NewsDetails.aspx, Admin\ForumDetails.aspx)
+	-Fixed bug that allow empty attachments in the articles (Wiki\EditArticle.aspx.cs)
+	-Fixed the setup page to work with the new Eucalypto library (Setup.aspx.cs)
+
+Version 1.0 (4 Apr 2007)
+	-Compiled with Eucalypto library 1.0 (see documentation History section for more details) (Bin\*.*)
+	-Compiled the demo project and documentation for the changes of the HttpModuleCheckValidUser (Web.config)
+	-Improved the forum topic list page  (Controls\TopicList.ascx, Controls\TopicList.ascx.cs)
+	-Fixed a bug demo project that can cause a script attack in the search page (Controls\SearchResult.ascx)
+
+Version 0.9 (24 Mar 2007)
+	-When adding a new article the user is redirected automatically to the edit page (Wiki\NewArticle.aspx.cs)
+	-Improved the topics list (added the latest reply date and user) (Controls\TopicList.ascx, Controls\TopicList.ascx.cs)
+	-Fixed the wiki article list to use the Author column (Controls\ArticleList.ascx)
+	-Recompiled with Eucalypto Library 0.9 (bin\Eucalypto.dll)
+
+Version 0.8.6.0 (14 Feb 2007)
+	-Recompiled with Eucalypto Library 0.8.6.0 for some bugs fixed (bin\Eucalypto.dll)
+	-Fixed the size of some images on the rss (that caused some minor problems on the link, expecially for the news) (Controls\ViewNewsItem.ascx, Styles.css)
+	-Added an image for the URL link of the news (Styles.css)
+
+Version 0.8.5.3 (2 Feb 2007)
+	-IMPORTANT: Fixed some bugs to prevent html script attacks and to correctly handle special characters for user input.
+	-Fixed the error panel to correctly show the InnerException message
+	-Set the login timeout to 365 days for the "remember me" feature (web.config)
+
+Version 0.8.5.2
+	-Added the Search link also on the category page (Forum\ViewForum.aspx, Forum\ViewForum.aspx.cs, Wiki\ViewCategory.aspx, Wiki\ViewCategory.aspx.cs)
+	-Added a comment on the Login page for informations on user name and e-mail (CreateUser.aspx)
+
+Version 0.8.5.1
+	-Fixed a bug on the RSS generator that doesn't update the Channel.LastBuildDate. (Forum\ForumRss.aspx.cs, Wiki\CategoryRSS.aspx.cs, News\CategoryRSS.aspx.cs)
+	-Changed the time to live (ttl) of the rss from 60 to 5
+	-Added the ChangeLog.txt file
+
+
+Version 0.8.5.0
+	-First public version
+
+
+

@@ -1,0 +1,11 @@
+﻿<hibernate-mapping default-cascade="none" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SEOToolSet.Entities.Keyword, SEOToolSet.Entities" table="Keyword">
+    <id name="Id" type="System.Int32" column="Id" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="Keyword" type="System.String" column="Keyword" not-null="false" length="300" />
+    <many-to-one name="KeywordList" class="SEOToolSet.Entities.KeywordList, SEOToolSet.Entities" fetch="select">
+      <column name="IdKeywordList" not-null="true" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

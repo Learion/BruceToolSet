@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2743F596-63CC-4C53-AE20-6C0F22F9B08D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UnitTests</RootNamespace>
+    <AssemblyName>UnitTests</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.4.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Test\GetReportHandlerTest.cs" />
+    <Compile Include="Test\GetVersionTest.cs" />
+    <Compile Include="Test\RetrieveResourceTest.cs" />
+    <Compile Include="Test\TestUtil.cs" />
+    <Compile Include="Test\UploadHandlerTest.cs" />
+    <Compile Include="Test\WebAppGenericTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{C40FE234-C111-45AF-B6AE-08B341E69D17}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReportServices\ReportServices.csproj">
+      <Project>{516AB2E1-384E-41E8-B63C-20EAD6026630}</Project>
+      <Name>ReportServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReportsFacade\ReportsFacade.csproj">
+      <Project>{14D2B442-BFAC-4CD9-AD6B-1EA2C87EECE0}</Project>
+      <Name>ReportsFacade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TempFileManagerFSProvider\TempFileManagerFSProvider.csproj">
+      <Project>{EF166EA2-820D-4FB0-AA20-A821C8CFB0BE}</Project>
+      <Name>TempFileManagerFSProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TempFileManagerProvider\TempFileManagerProvider.csproj">
+      <Project>{4215A157-0132-4C75-907B-1376C01F0E37}</Project>
+      <Name>TempFileManagerProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebApp\WebApp.csproj">
+      <Project>{944C24E0-49AC-4CF0-9C20-AED8CCA556BD}</Project>
+      <Name>WebApp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="upload_me_file.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

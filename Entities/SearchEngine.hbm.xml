@@ -1,0 +1,17 @@
+﻿<hibernate-mapping default-cascade="none" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SEOToolSet.Entities.SearchEngine, SEOToolSet.Entities" table="SearchEngine">
+    <id name="Id" type="System.Int32" column="Id" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="Name" type="System.String" column="Name" not-null="true" length="100" />
+    <property name="Description" type="System.String" column="Description" not-null="true" length="300" />
+    <property name="UrlLogo" type="System.String" column="UrlLogo" not-null="true" length="1000" />
+    <property name="UrlBigLogo" type="System.String" column="UrlBigLogo" not-null="true" length="1000" />
+    <bag name="SearchEngineCountry" inverse="true" lazy="true" cascade="none">
+      <key>
+        <column name="IdSearchEngine" not-null="true" />
+      </key>
+      <one-to-many class="SEOToolSet.Entities.SearchEngineCountry, SEOToolSet.Entities" />
+    </bag>
+  </class>
+</hibernate-mapping>

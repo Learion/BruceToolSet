@@ -1,0 +1,69 @@
+
+/* CSS Document */
+
+
+.round_ctr {  }
+.round_ctr .hd { /*background:transparent url(assets/hd.gif) repeat-x;*/ height: 6px;}
+.round_ctr .hd.NoBackground { background: none; }
+.round_ctr .hd .tl { background: url(assets/hd_tl.gif) no-repeat; float: left; width: 7px; height: 6px; overflow:hidden;}
+.round_ctr .hd .tr  { background: url(assets/hd_tr.gif) no-repeat; float: right; width: 7px; height: 6px; overflow:hidden;}
+.round_ctr .hd .tc { background: transparent url(assets/hd.gif) repeat-x;  height:6px; margin: 0px 7px;  }
+.round_ctr .bl { background: url(assets/bd_bl.gif)  #FFFFFF repeat-y left; }
+/*\*/ * html .hd { overflow:hidden; } /**/ /* IE6 */
+
+
+.round_ctr .br { background: url(assets/bd_br.gif) repeat-y right; width:100%;}
+.round_ctr .br .bd { min-height: 1%; height: auto; text-align:left;  }
+.round_ctr .ft { font:0px/0px;height: 6px; position:relative; }
+.round_ctr .ft .fl{ float: left; background: url(assets/ft_fl.gif) no-repeat; width: 7px; height: 6px; overflow:hidden; }
+.round_ctr .ft .fc { background: transparent url(assets/ft.gif) repeat-x;  height:6px; margin: 0px 7px;  }
+.round_ctr .ft .fc.NoBackground { background: none; }
+/*\*/ * html .round_ctr .ft .fl { float:none; position:absolute; left:0px; } /**/ /* IE6 */
+/*\*/ * html .round_ctr .ft .fr { float:none; position:absolute; right:0px; } /**/ /* IE6 */
+
+.round_ctr .ft .fr{ float: right; background: url(assets/ft_fr.gif) no-repeat; width: 7px; height: 6px; overflow:hidden;}
+
+
+
+.round_ctr.ublock {  }
+.round_ctr.ublock .hd { /*background:transparent url(assets/t.gif) repeat-x;*/ height: 7px;}
+.round_ctr.ublock .hd.NoBackground { background: none; }
+.round_ctr.ublock .hd .tl { background: url(RP.Style01/tl.gif) no-repeat; float: left; width: 7px; height: 7px; overflow:hidden;}
+.round_ctr.ublock .hd .tr  { background: url(RP.Style01/tr.gif) no-repeat; float: right; width: 7px; height: 7px; overflow:hidden;}
+.round_ctr.ublock .hd .tc { background: transparent url(RP.Style01/t.gif) repeat-x;  height:7px; margin: 0px 7px;  }
+.round_ctr.ublock .bl { background: url(RP.Style01/bl.gif)  #FFFFFF repeat-y left; }
+
+.round_ctr.ublock .br { background: url(RP.Style01/br.gif) repeat-y right; width:100%;}
+.round_ctr.ublock .br .bd { min-height: 1%; height: auto; text-align:left;  }
+.round_ctr.ublock .ft { font:0px/0px;height: 7px; position:relative; }
+.round_ctr.ublock .ft .fl{ float: left; background: url(RP.Style01/f_left.gif) no-repeat; width: 7px; height: 7px; overflow:hidden; }
+.round_ctr.ublock .ft .fc { background: transparent url(RP.Style01/f.gif) repeat-x;  height:7px; margin: 0px 7px;  }
+.round_ctr.ublock .ft .fc.NoBackground { background: none; }
+/*\*/ * html .round_ctr.ublock .ft .fl { float:none; position:absolute; left:0px; } /**/ /* IE6 */
+/*\*/ * html .round_ctr.ublock .ft .fr { float:none; position:absolute; right:0px; } /**/ /* IE6 */
+
+.round_ctr.ublock .ft .fr{ float: right; background: url(RP.Style01/f_right.gif) no-repeat; width: 7px; height: 7px; overflow:hidden;}
+
+
+.round_ctr.BlackBorders {  }
+.round_ctr.BlackBorders .hd { /*background:transparent url(RP.Style02/t.gif) repeat-x;*/ height: 7px;}
+.round_ctr.BlackBorders .hd.NoBackground { background: none; }
+.round_ctr.BlackBorders .hd .tl { background: url(RP.Style02/tl.gif) no-repeat; float: left; width: 7px; height: 7px; overflow:hidden;}
+.round_ctr.BlackBorders .hd .tr  { background: url(RP.Style02/tr.gif) no-repeat; float: right; width: 7px; height: 7px; overflow:hidden;}
+.round_ctr.BlackBorders .hd .tc { background: transparent url(RP.Style02/t.gif) repeat-x;  height:7px; margin: 0px 7px;  }
+.round_ctr.BlackBorders .bl { background: url(RP.Style02/bl.gif)  #FFFFFF repeat-y left; }
+/*\*/ * html .hd { overflow:hidden; } /**/ /* IE6 */
+
+
+.round_ctr.BlackBorders .br { background: url(RP.Style02/br.gif) repeat-y right; width:100%;}
+.round_ctr.BlackBorders .br .bd { min-height: 1%; text-align:left;  }
+.round_ctr.BlackBorders .ft { font:0px/0px;height: 7px; position:relative; }
+.round_ctr.BlackBorders .ft .fl{ float: left; background: url(RP.Style02/fl.gif) no-repeat; width: 7px; height: 7px; overflow:hidden; }
+.round_ctr.BlackBorders .ft .fc { background: transparent url(RP.Style02/f.gif) repeat-x;  height:7px; margin: 0px 7px;  }
+.round_ctr.BlackBorders .ft .fc.NoBackground { background: none; }
+/*\*/ * html .round_ctr.BlackBorders .ft .fl { float:none; position:absolute; left:0px; } /**/ /* IE6 */
+/*\*/ * html .round_ctr.BlackBorders .ft .fr { float:none; position:absolute; right:0px; } /**/ /* IE6 */
+
+.round_ctr.BlackBorders .ft .fr{ float: right; background: url(RP.Style02/fr.gif) no-repeat; width: 7px; height: 7px; overflow:hidden;}
+
+

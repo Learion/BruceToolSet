@@ -1,0 +1,36 @@
+﻿<hibernate-mapping default-cascade="none" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SEOToolSet.Entities.Role, SEOToolSet.Entities" table="Role">
+    <id name="Id" type="System.Int32" column="Id" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="Name" type="System.String" column="Name" not-null="false" length="100" />
+    <property name="Description" type="System.String" column="Description" not-null="false" length="100" />
+    <property name="Enabled" type="System.Boolean" column="Enabled" not-null="false" />
+    <property name="IdRoleType" type="System.Int32" column="IdRoleType" not-null="true" />
+    <property name="Configurable" type="System.Boolean" column="Configurable" not-null="false" />
+    <bag name="PermissionRole" inverse="true" lazy="true" cascade="none">
+      <key>
+        <column name="IdRole" not-null="true" />
+      </key>
+      <one-to-many class="SEOToolSet.Entities.PermissionRole, SEOToolSet.Entities" />
+    </bag>
+    <bag name="SEOToolsetUser" inverse="false" lazy="true" cascade="none">
+      <key>
+        <column name="IdUserRole" not-null="false" />
+      </key>
+      <one-to-many class="SEOToolSet.Entities.SEOToolsetUser, SEOToolSet.Entities" />
+    </bag>
+    <bag name="SubscriptionLevel" inverse="false" lazy="true" cascade="none">
+      <key>
+        <column name="IdAccountRole" not-null="false" />
+      </key>
+      <one-to-many class="SEOToolSet.Entities.SubscriptionLevel, SEOToolSet.Entities" />
+    </bag>
+    <bag name="ProjectUser" inverse="true" lazy="true" cascade="none">
+      <key>               
+        <column name="IdProjectRole" not-null="true" />
+      </key>
+      <one-to-many class="SEOToolSet.Entities.ProjectUser, SEOToolSet.Entities" />
+    </bag>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,328 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.content
+{
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#header
+{
+	background: url(images/header_bg.gif) repeat-x;
+	height: 106px;
+	width: 100%;
+	display: block;
+}
+
+#headerLinks
+{
+	font-size: 0.75em;
+	color: #336699;
+	font-weight: bold;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	margin: 0;
+	width: 338px;
+	height: 52px;
+}
+
+#headerLinks li
+{
+	display: inline-table;
+	margin: 0 10px 0 10px;
+}
+
+#headerLinks li a
+{
+	color: #336699;
+	text-decoration: none;
+}
+
+#headerLinks li a:hover
+{
+	color: #990000;
+}
+
+#headerLogo
+{
+	background-image: url(images/header_logo.gif);
+	background-repeat: no-repeat;
+	width: 400px;
+	height: 61px;
+	margin: 0 0 0 10px;
+}
+
+#mainNav
+{
+	width: 955px;
+	height: 36px;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0;
+	display: table;
+	margin-top: 5px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 10px;
+}
+
+#mainNav #current a
+{
+	color: #FFFFFF;
+	text-decoration: none;
+	height: 30px;
+	display: block;
+	background-image: url(images/mainnavbuttonbg_left.gif);
+	background-repeat: no-repeat;
+	background-position: left -60px;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+}
+
+
+#mainNav a
+{
+	color: #FFFFFF;
+	text-decoration: none;
+	background: url(images/mainnavbuttonbg_left.gif) top left no-repeat;
+	height: 30px;
+	display: block;
+	padding: 0 0 0 0;
+}
+
+#mainNav a:hover
+{
+	background-image: url(images/mainnavbuttonbg_left.gif);
+	background-repeat: no-repeat;
+	background-position: left -30px;
+}
+
+
+#mainNav li
+{
+	float: left;
+	display: block;
+	margin: 0 3px 0 3px;
+}
+
+#mainNav #current a span
+{
+	background: url(images/mainnavbuttonbg_right.gif) right -60px no-repeat;
+	display: block;
+	padding: 7px 12px 7px 12px;
+	text-align: center;
+}
+
+#mainNav a span
+{
+	display: block;
+	text-align: center;
+	padding-top: 7px;
+	padding-right: 13px;
+	padding-bottom: 7px;
+	padding-left: 13px;
+	background-image: url(images/mainnavbuttonbg_right.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+#mainNav a:hover span
+{
+	background-image: url(images/mainnavbuttonbg_right.gif);
+	background-repeat: no-repeat;
+	background-position: right -30px;
+}
+
+.clear
+{
+	clear: both;
+}
+
+#subNav
+{
+	background: url(images/subnav_bg.gif) repeat-x;
+}
+
+#subNav ul
+{
+	background: url(images/subnav_bg.gif) repeat-x;
+	width: 955px;
+	height: 34px;
+	margin: 5px 0 0 0;
+	padding: 0;
+	display: block;
+	list-style: none;
+}
+
+#subNav li
+{
+	display: inline-table;
+	border-left: 2px solid #FFFFFF;
+	border-right: 1px solid #CCCCCC;
+	font-size: 0.75em;
+	font-weight: bold;
+	padding: 6px 0 7px 0;
+	float: left;
+}
+
+#subNav li a
+{
+	color: #003366;
+	padding: 6px 20px 7px 20px;
+	text-decoration: none;
+	margin: 0;
+}
+
+#subNav li a:hover
+{
+	color: #FFFFFF;
+	background: url(images/subnav_over_bg.gif) top repeat-x;
+}
+
+#legal
+{
+	position: absolute;
+	right: 20px;
+	padding: 25px 0 0 0;
+	font-size: 0.8em;
+	text-align: right;
+}
+
+#legal a
+{
+	color: #C2DDF8;
+}
+
+#footerLinks
+{
+	padding: 35px 0 0 20px;
+	margin: 0;
+	width: 400px;
+	font-weight: bold;
+}
+
+#footerLinks li
+{
+	display: inline-table;
+	margin: 0 10px 0 10px;
+}
+
+#footerLinks li a
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#footerLinks li a:hover
+{
+	color: #CCCCCC;
+}
+#projectSelect
+{
+	background: #FFFFFF;
+	float: left;
+	margin-right: 10px;
+	overflow:auto;
+	zoom:1;
+}
+
+#projectSelect a.menu
+{
+	display: block;
+	text-align: right;
+	background: #FFFFFF;
+	border: #336699 1px solid;
+	padding: 5px;
+	color: #000000;
+	font-size: 0.8em;
+	text-decoration: none;
+}
+#projectSelect ul
+{
+	padding: 0;
+	margin: 0;
+	border-bottom: 1px #CCCCCC solid;
+	border-left: 1px #CCCCCC solid;
+	border-right: 1px #CCCCCC solid;
+}
+#projectSelect li
+{
+	border-top: 1px solid #336699;
+	list-style: none;
+	margin: 0;
+}
+#projectSelect a.item
+{
+	text-align: right;
+	font-size: 12px;
+	color: #0060AE;
+	width: 165px;
+	display: table;
+	padding: 6px;
+	margin: 4px;
+	font-weight: bold;
+}
+#projectSelect a:hover.item
+{
+	color: #FFFFFF;
+	background: url(images/projectselect_item.gif) bottom repeat-x;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+}
+a
+{
+	font-size: 0.8em;
+	color: #0060AE;
+	font-weight: bold;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover
+{
+	color: #0080FF;
+}
+div
+{
+	display: block;
+}
+
+p
+{
+	font-size: 0.9em;
+	margin: 0;
+}
+
+.accountinfo
+{
+	float: right;
+	position: relative;
+	width: 200px;
+	margin: 0;
+	top: -20px;
+	right: 15px;
+}
+
+.ProjectManageTextBox
+{
+	background: #FEFECB;
+	width: 180px;
+	border: 1px solid #ECE9D8;
+}
+
+.speratordiv
+{
+	width: 100%;
+	height: 5px;
+	background-color: Red;
+}

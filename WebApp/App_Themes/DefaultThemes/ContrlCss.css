@@ -1,0 +1,63 @@
+﻿#sc_nav
+{
+	position: absolute;
+	width: 304px;
+	height: 30px;
+	margin: 100px 0 0 100px;
+	padding-right: 20px;
+	line-height: 20px;
+	border: 0px solid #ccc;
+	font-size: 0.75em;
+	color: #336699;
+	font-weight: bold;
+	right: 9px;
+	top: -66px;
+	outline: #336699;
+}
+#sc_nav span a:link, #sc_nav span a:visited
+{
+	text-decoration: none;
+	color: #000;
+}
+#sc_nav span
+{
+	position: absolute;
+	top: 0px;
+	left: 55px;
+	width: 250px;
+	height: 30px;
+	line-height: 18px;
+	border: 1px solid #ccc;
+}
+#sc_nav li a:link, #sc_nav li a:visited
+{
+	width: 98px;
+	height: 20px;
+	cursor: pointer;
+	text-decoration: none;
+	color: #fff;
+}
+#sc_nav li a:hover
+{
+	background: #fff;
+	color: #000;
+}
+.tt
+{
+	display: none;
+}
+.displayblock ul
+{
+	display: block;
+	position: absolute;
+	top: 18px;
+	left: 0px;
+	width: 250px;
+	background: #ccc;
+	border: 1px solid #ccc;
+}
+.displaynone ul
+{
+	display: none;
+	width: 250px;
+}

@@ -1,0 +1,28 @@
+
+
+DROP VIEW IF EXISTS enginesperproxyresultview;
+CREATE VIEW enginesperproxyresultview AS 
+                                        select keyworddeepanalysis.Keyword AS
+                                         Keyword,
+                        keyworddeepanalysis.Pages AS Pages,
+                                               proxyserver.City AS ProxyCity,
+                                               country.Name AS ProxyCountry,
+                        searchenginecountry.Url AS SearchEngineUrl,
+                        searchengine.Name AS SearchEngineName,
+                        rankingmonitordeeprun.IdProxy AS IdProxy,
+                        rankingmonitordeeprun.IdSearchEngineCountry AS
+                         IdSearchEngineCountry,
+                        rankingmonitordeeprun.Id AS IdRankingMonitorDeepRun,
+                        rankingmonitordeeprun.IdRankingMonitorRun AS
+                         IdRankingMonitorRun
+                                        from (((((rankingmonitordeeprun
+                       join keyworddeepanalysis on ((rankingmonitordeeprun.Id =
+                        keyworddeepanalysis.IdRankingMonitorDeepRun)))
+                       join searchenginecountry on ((
+                       rankingmonitordeeprun.IdSearchEngineCountry =
+                        searchenginecountry.Id)))
+                       join searchengine on ((
+                       searchenginecountry.IdSearchEngine = searchengine.Id)))
+                       join proxyserver on ((rankingmonitordeeprun.IdProxy =
+                        proxyserver.Id)))
+                       join country on ((proxyserver.IdCountry = country.Id)));

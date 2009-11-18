@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2E263402-DD3D-496C-BBC6-2A267D007BC1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SEOToolSet.Entities</RootNamespace>
+    <AssemblyName>SEOToolSet.Entities</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.hbm.cs" />
+    <Compile Include="AccountType.hbm.cs" />
+    <Compile Include="Competitor.hbm.cs" />
+    <Compile Include="Country.hbm.cs" />
+    <Compile Include="CreditCardType.hbm.cs" />
+    <Compile Include="Frequency.hbm.cs" />
+    <Compile Include="Keyword.hbm.cs" />
+    <Compile Include="KeywordAnalysis.hbm.cs" />
+    <Compile Include="KeywordDeepAnalysis.hbm.cs" />
+    <Compile Include="KeywordList.hbm.cs" />
+    <Compile Include="ModelAccount.cs" />
+    <Compile Include="ModelProject.cs" />
+    <Compile Include="MonitorKeywordList.hbm.cs" />
+    <Compile Include="MonitorProxyServer.hbm.cs" />
+    <Compile Include="MonitorSearchEngineCountry.hbm.cs" />
+    <Compile Include="Permission.hbm.cs" />
+    <Compile Include="PermissionRole.hbm.cs" />
+    <Compile Include="ProfileProperty.cs" />
+    <Compile Include="PromoCode.hbm.cs" />
+    <Compile Include="PromoType.hbm.cs" />
+    <Compile Include="Role.hbm.cs" />
+    <Compile Include="SubscriptionDetail.hbm.cs" />
+    <Compile Include="SubscriptionLevel.hbm.cs" />
+    <Compile Include="SubscriptionProperty.hbm.cs" />
+    <Compile Include="Wrappers\ProfileType.cs" />
+    <Compile Include="Project.hbm.cs" />
+    <Compile Include="ProjectUser.hbm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProxyServer.hbm.cs" />
+    <Compile Include="RankingMonitorConfiguration.cs" />
+    <Compile Include="RankingMonitorDeepRun.hbm.cs" />
+    <Compile Include="RankingMonitorRun.hbm.cs" />
+    <Compile Include="SearchEngine.hbm.cs" />
+    <Compile Include="SearchEngineCountry.hbm.cs" />
+    <Compile Include="SEOProfile.cs" />
+    <Compile Include="SEOToolsetUser.hbm.cs" />
+    <Compile Include="Status.hbm.cs" />
+    <Compile Include="Wrappers\AccountWrapper.cs" />
+    <Compile Include="Wrappers\CountryWrapper.cs" />
+    <Compile Include="Wrappers\DeepRunResumeWrapper.cs" />
+    <Compile Include="Wrappers\FrequencyWrapper.cs" />
+    <Compile Include="Wrappers\KeywordAnalysisWrapper.cs" />
+    <Compile Include="Wrappers\KeywordDeepAnalysisWrapper.cs" />
+    <Compile Include="Wrappers\KeywordListWrapper.cs" />
+    <Compile Include="Wrappers\KeywordWrapper.cs" />
+    <Compile Include="Wrappers\MonitorKeywordListWrapper.cs" />
+    <Compile Include="Wrappers\MonitorProxyServerWrapper.cs" />
+    <Compile Include="Wrappers\MonitorSearchEngineCountryWrapper.cs" />
+    <Compile Include="Wrappers\ProjectWrapper.cs" />
+    <Compile Include="Wrappers\PromoType.cs" />
+    <Compile Include="Wrappers\ProxyServerWrapper.cs" />
+    <Compile Include="Wrappers\RankingMonitorConfigurationWrapper.cs" />
+    <Compile Include="Wrappers\RankingMonitorDeepRunWrapper.cs" />
+    <Compile Include="Wrappers\RankingMonitorDeepRunWrapperForResumeReport.cs" />
+    <Compile Include="Wrappers\RankingMonitorDetailedAnalysis.cs" />
+    <Compile Include="Wrappers\EnginesPerProxyResult.cs" />
+    <Compile Include="Wrappers\RankingMonitorRunWrapper.cs" />
+    <Compile Include="Wrappers\RankingMonitorConfigurationStructure.cs" />
+    <Compile Include="Wrappers\SearchEngineCountryWrapper.cs" />
+    <Compile Include="Wrappers\SearchEngineCountryWrapperForReport.cs" />
+    <Compile Include="Wrappers\SearchEngineWrapper.cs" />
+    <Compile Include="Wrappers\SEOToolSetUserWrapper.cs" />
+    <Compile Include="Wrappers\StatusWrapper.cs" />
+    <Compile Include="Wrappers\SubscriptionDetailWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Account.hbm.xml" />
+    <EmbeddedResource Include="Competitor.hbm.xml" />
+    <EmbeddedResource Include="Country.hbm.xml" />
+    <EmbeddedResource Include="Keyword.hbm.xml" />
+    <EmbeddedResource Include="KeywordList.hbm.xml" />
+    <EmbeddedResource Include="Project.hbm.xml" />
+    <EmbeddedResource Include="ProjectUser.hbm.xml" />
+    <EmbeddedResource Include="SEOToolsetUser.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CreditCardType.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Frequency.hbm.xml" />
+    <EmbeddedResource Include="KeywordAnalysis.hbm.xml" />
+    <EmbeddedResource Include="KeywordDeepAnalysis.hbm.xml" />
+    <EmbeddedResource Include="MonitorKeywordList.hbm.xml" />
+    <EmbeddedResource Include="MonitorProxyServer.hbm.xml" />
+    <EmbeddedResource Include="MonitorSearchEngineCountry.hbm.xml" />
+    <EmbeddedResource Include="ProxyServer.hbm.xml" />
+    <EmbeddedResource Include="RankingMonitorDeepRun.hbm.xml" />
+    <EmbeddedResource Include="RankingMonitorRun.hbm.xml" />
+    <EmbeddedResource Include="SearchEngine.hbm.xml" />
+    <EmbeddedResource Include="SearchEngineCountry.hbm.xml" />
+    <EmbeddedResource Include="Status.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ProfileProperty.hbm.xml" />
+    <EmbeddedResource Include="SEOProfile.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Wrappers\ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ViewEntities\ViewEntities.csproj">
+      <Project>{6E4C5D23-430A-4029-BDFD-B3D292894053}</Project>
+      <Name>ViewEntities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Permission.hbm.xml" />
+    <EmbeddedResource Include="PermissionRole.hbm.xml" />
+    <EmbeddedResource Include="Role.hbm.xml" />
+    <EmbeddedResource Include="SubscriptionDetail.hbm.xml" />
+    <EmbeddedResource Include="SubscriptionLevel.hbm.xml" />
+    <EmbeddedResource Include="SubscriptionProperty.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AccountType.hbm.xml" />
+    <EmbeddedResource Include="PromoCode.hbm.xml" />
+    <EmbeddedResource Include="PromoType.hbm.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

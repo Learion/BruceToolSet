@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="false">
+  <!-- auto-import=false and import element are used because there are 2 class with the name category -->
+
+  <import class="Eucalypto.News.Category, Eucalypto" rename="NewsCategory"/>
+
+  <class name="Eucalypto.News.Category, Eucalypto" table="NewsCategory">
+    <id name="Id" column="Id" type="String" length="32" >
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+
+    <property name="Name" type="String">
+      <column name="Name" unique-key="KeyName" not-null="true" length="100"/>
+    </property>
+
+    <property name="DisplayName" column="DisplayName" type="String" length="100" not-null="true" />
+
+    <property name="Description" column="Description" type="String" length="300" />
+
+    <property name="ReadPermissions" column="ReadPermissions" type="String" length="100" />
+    <property name="EditPermissions" column="EditPermissions" type="String" length="100"  />
+    <property name="InsertPermissions" column="InsertPermissions" type="String" length="100"  />
+    <property name="DeletePermissions" column="DeletePermissions" type="String" length="100"  />
+    
+
+    <!-- The collection is used to automatically add, delete children entities. Note the cascade property set to all. -->
+    <bag name="Items" inverse="true" lazy="true" cascade="all">
+      <key column="IdCategory"/>
+      <one-to-many class="Eucalypto.News.Item, Eucalypto"/>
+    </bag>
+    
+  </class>
+</hibernate-mapping>

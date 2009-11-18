@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- 
+Mail template.
+subject = subject of the email (can contains some place holders that will be replaced by dynamic parameters)
+body = body of the email (can contains some place holders that will be replaced by dynamic parameters)
+body @html = specify if the body contains html or plain text
+
+Notification parameters:
+?title? = title of the message
+?bodyhtml? = complete html of the message
+?bodytext? = short description of the message
+?user? = user name
+?idmessage? = id of the message
+?idforum? = id of the forum
+?idtopic? = id of the topic
+?forum? = name of the forum
+?forumDisplayName? = description of the forum
+-->
+
+<template>
+  <sender>admin@devage.com</sender>
+  <subject>[Eucalypto - Forum ?forumDisplayName?] ?title?</subject>
+  <body html="true">
+    <![CDATA[
+    <p>Forum: ?forumDisplayName?.<br />
+    <strong>?title?</strong><br />
+    You have received a response from ?user?.</p>
+    <div>?bodyhtml?</div>
+    <a href="http://localhost:2133/WebSite/Forum/ViewTopic.aspx?id=?idtopic?">View topic</a>
+    ]]>    
+  </body>
+</template>

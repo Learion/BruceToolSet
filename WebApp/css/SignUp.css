@@ -1,0 +1,28 @@
+#OrderInformationContent p.ChosenSubscription { color: #0070B0; font-weight: bold; }
+
+#OrderInformationContent p { text-align: center; }
+
+#OrderInformationContent p, #OrderInformationContent > div { margin-top: 5px; margin-bottom: 5px; }
+
+#OrderInformationFinalInstructionsSection span { text-align: justify; }
+
+div.ReceiptWrapper { width: 750px !important; }
+div.ReceiptContent { float: left; width: 450px; border-right: solid thin #90E0E0; margin-right: 7px; }
+.SubscriptionSummary > ul > li { margin-bottom: 15px; }
+.SubscriptionSummary > ul li > label { display: block; font-weight: bold; } 
+.SubscriptionSummary > ul > li > label { font-size:medium !important; padding-bottom:8px; } 
+.SubscriptionSummary > ul > li > span, .SubscriptionSummary > ul > li > ul { padding-left: 12px; } 
+.SubscriptionSummary > ul > li > ul > li span { display: block; }
+.SubscriptionSummary > ul > li > ul > li label { color: #0090B0; }
+.ReceiptSummary { margin-top: 20px; padding-left: 5px; }
+li.Item { line-height: 30px; border-top-style: solid; border-top-color: #90E0E0; border-top-width: thin; }
+li.Item.Heading { color: #0090B0; font-weight:bold; }
+li.Item span.Name { display: block; width: 370px; float: left; clear: left; }
+li.Item.Total { font-weight: bold; border-bottom: none; }
+li.Item.Total span.Name { color: #0090B0; margin-right: 20px; text-align: right; width: 350px !important; }
+p.ReceiptFinalInstructions { text-align: justify; margin-bottom: 5px; }
+p.Strong { font-weight: bold; }
+div.ReceiptDetails { margin: 35px 15px 15px; }
+.HeadingAddress { float:left; width: 180px; color:Black; }
+.AddressSummary { height:45px; margin-left:130px; clear:both; }
+.AddressSummary span { color: Black; }

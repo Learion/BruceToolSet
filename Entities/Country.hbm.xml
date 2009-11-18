@@ -1,0 +1,10 @@
+﻿<hibernate-mapping default-cascade="none" xmlns="urn:nhibernate-mapping-2.2">
+    <class name="SEOToolSet.Entities.Country, SEOToolSet.Entities" table="Country">
+        <id name="Id" type="System.Int32" column="Id" unsaved-value="0">
+            <generator class="native" />
+        </id>
+        <property name="Name" type="System.String" column="Name" not-null="false" length="300" />
+        <property name="FlagUrl" type="System.String" column="FlagUrl" not-null="false" length="1000" />
+        <property name="SearchEngineImportance" type="System.Int32" column="SearchEngineImportance" not-null="false" />
+    </class>
+</hibernate-mapping>

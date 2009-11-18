@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="false">
+  <!-- auto-import=false and import element are used because there are 2 class with the name category -->
+
+  <import class="Eucalypto.Wiki.Category, Eucalypto" rename="WikiCategory"/>
+
+  <class name="Eucalypto.Wiki.Category, Eucalypto" table="WikiCategory">
+    <id name="Id" column="Id" type="String" length="32" >
+      <generator class="uuid.hex">
+        <param name="format">N</param>
+      </generator>
+    </id>
+
+    <property name="Name" type="String">
+      <column name="Name" unique-key="KeyName" not-null="true" length="100"/>
+    </property>
+
+    <property name="DisplayName" column="DisplayName" type="String" length="100" not-null="true" />
+
+    <property name="Description" column="Description" type="String" length="300" />
+
+    <property name="AttachEnabled" column="AttachEnabled" type="Boolean" not-null="true" />
+    <property name="AttachExtensions" column="AttachExtensions" type="String" length="200" />
+    <property name="AttachMaxSize" column="AttachMaxSize" type="Int32" not-null="true"  />
+
+    <property name="ReadPermissions" column="ReadPermissions" type="String" length="100" />
+    <property name="EditPermissions" column="EditPermissions" type="String" length="100"  />
+    <property name="InsertPermissions" column="InsertPermissions" type="String" length="100"  />
+    <property name="DeletePermissions" column="DeletePermissions" type="String" length="100"  />
+    <property name="ApprovePermissions" column="ApprovePermissions" type="String" length="100"  />
+
+    <property name="AutoApprove" column="AutoApprove" type="Boolean" not-null="true" />
+
+    <property name="XHtmlMode" column="XHtmlMode" not-null="true" />
+
+    <property name="BackupMode" column="BackupMode" not-null="true" />
+
+    <!-- The collection is used to automatically add, delete children entities. Note the cascade property set to all. -->
+    <bag name="Articles" inverse="true" lazy="true" cascade="all">
+      <key column="IdCategory"/>
+      <one-to-many class="Eucalypto.Wiki.Article, Eucalypto"/>
+    </bag>
+    
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,13 @@
+﻿<hibernate-mapping default-cascade="none" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SEOToolSet.Entities.AccountType, SEOToolSet.Entities" table="AccountType">
+    <id name="Id" type="System.Int32" column="Id" unsaved-value="0">
+    </id>
+    <property name="Description" type="System.String" column="Description" not-null="true" length="50" />
+    <bag name="PromoCode" inverse="true" lazy="true" cascade="none">
+      <key>
+        <column name="AccountType" not-null="true" />
+      </key>
+      <one-to-many class="SEOToolSet.Entities.PromoCode, SEOToolSet.Entities" />
+    </bag>
+  </class>
+</hibernate-mapping>

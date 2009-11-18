@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="R3M.Controls.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="RoundPanelCss" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">~/scripts/Controls/R3M.RoundPanel/round_ctr.css</Value>
+    </Setting>
+    <Setting Name="CollectionPagerCss" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">~/scripts/Controls/R3M.Pager/Pager.css</Value>
+    </Setting>
+    <Setting Name="MonoWebFormJS" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">~/scripts/MonoLibs/WebForm.js</Value>
+    </Setting>
+    <Setting Name="JQueryMaskedInputJs" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">~/scripts/Controls/R3M.MaskedInput/jquery.maskedinput-1.1.4.js</Value>
+    </Setting>
+    <Setting Name="MaskedInitializer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">~/scripts/Controls/R3M.MaskedInput/MaskedInput.js</Value>
+    </Setting>
+    <Setting Name="JqueryPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">~/scripts/jquery.js</Value>
+    </Setting>
+    <Setting Name="DefaultCssIdClass" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">round_ctr</Value>
+    </Setting>
+    <Setting Name="ConfirmMessagePluginJs" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">~/scripts/Controls/R3M.ConfirmMessage/jConfirmMessage.js</Value>
+    </Setting>
+    <Setting Name="RoundButtonCss" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">~/scripts/Controls/R3M.RoundButton/RoundButton.css</Value>
+    </Setting>
+    <Setting Name="DefaultRoundButtonClassName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">button</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,116 @@
+﻿span.BlueDot, span.GreenDot { font-size: 45px; line-height: 25px; float: left; }
+span.BlueDot { color: #4775A3; }
+span.GreenDot { color: #73A437; }
+
+ul.ReportSelector li.Selector { display:block;height:47px;margin-bottom:4px;}
+
+.HideIt { visibility: hidden !important; }
+
+#ctl00_contentArea_RoundPanel1 div.round_ctr.BlackBorders { width: 500px; margin: 0px auto 20px; }
+#ctl00_contentArea_RoundPanel1 label { color: #2779bb; font-weight: bold; display: block; line-height:23px; }
+
+a.button.ViewReport { margin:15px auto; display: block !important; float: none; }
+#SearchEnginesList ul { width: 280px; }
+div.SelectWrapper { width: 230px; }
+div.SelectWrapper.AddEngine { width: 450px; }
+
+div.SelectWrapper.AddEngine a.button { margin-top: 2px; }
+
+#SearchEnginesList ul li { float: left; height: 30px; margin-bottom: 2px; }
+div.SearchEngine { border: 1px solid black; height: 28px; line-height: 28px; width: 300px; margin: 0px; }
+
+div.CbxContainer.AddEngineCbx { height: 28px; float: left; margin-right: 5px; padding: 0px; }
+div.CbxContainer.AddEngineCbx .CbxValueContainer { height: 28px; }
+
+div.CbxContainer.AddEngineCbx li.CbxItem { padding: 0px; margin: 0px; }
+
+div.CbxContainer.AddEngineCbx .CbxDropDownButton { margin: 5px 5px 0px 0px; }
+
+
+div.SearchEngine.Combo { border: none; width: 280px; }
+div.SearchEngine.Combo span.Engine { width: 105px; margin-left: 5px; font-size:10px; white-space:nowrap; }
+
+
+div.SearchEngine img, div.SearchEngine span { float: left; margin-right: 2px; display: block; }
+
+div.SearchEngine img.Logo { width: 24px; height: 24px; margin-top: 2px; margin-left: 2px; }
+
+div.SearchEngine span.Engine { width: 200px; margin-left: 5px; }
+
+div.SearchEngine a.xClose { float: right; color: Red; height: 28px; display: block; width: 15px; text-decoration: none; font-weight: bold; cursor: pointer; }
+div.SearchEngine a.xClose span { float: none; }
+div.SearchEngine span.BlueDot { color: #4775A3; line-height: 28px; }
+div.SearchEngine span.GreenDot { color: #73A437; line-height: 28px; }
+
+div.Line { border-top: 1px solid #e3e3e3; height: 1px; background: #e1e1e1; margin: 10px 0px 3px; font-size: 0px; line-height: 0px; clear: both; }
+
+div.CbxContainer.Reports { float: left; margin-right: 5px; }
+.ReportSummary div.xTable tr { height: 30px;}
+div.xTable tr.selected { background: #7795b3 !important; color:#fff !important;  }
+td .SummaryArrow { display:none; }
+div.xTable tr.selected .SummaryArrow { width: 18px; height: 30px; background:url(Assets/summary-arrow.gif) no-repeat; position:absolute; right:-7px; top:-6px;display:block; }
+div.xTable tr.selected:hover, div.xTable tr.RowItem.selected:hover, div.xTable tr.AlternatingRowItem.selected:hover { background: #99B9DF !important; }
+td.MergeCell { background: #fff; }
+
+.ReportLabels { padding: 10px; width: 300px; margin: 0 auto; }
+
+.ReportLabels ul li { float: left; margin-left: 10px; }
+.ReportLabels ul li .ReportDate { line-height: 25px; }
+
+div.xTable tr.totals { background: #666666; color:#fff; }
+
+div.xTable tr.totals td { font-size: 18px; padding: 5px; font-weight: bold;  }
+div.xTable tr.totals.selected .SummaryArrow { top:-4px;}
+
+.Flag { width: 24px; height: 20px; margin-top: 5px; }
+
+.Proxy.Combo img, .Proxy.Combo span { float: left; margin-left: 5px; display: block; }
+.Proxy.Combo span { width: 230px; background: none !important; float: none; display: inline; }
+
+div.CbxContainer.ProxyFilter { height: 28px; padding: 0px; float: left; }
+div.CbxContainer.ProxyFilter .CbxValueContainer { height: 28px; }
+
+div.CbxContainer.ProxyFilter li.CbxItem { padding: 0px; clear: both; margin: 0px; }
+div.CbxContainer.ProxyFilter li.CbxItem.selected, div.CbxContainer.ProxyFilter li.CbxItem.selected.over { background: #6B99BF none repeat scroll 0 0 !important; color: White; }
+
+div.CbxContainer.ProxyFilter .CbxDropDownButton { margin: 5px 5px 0px 0px; }
+
+.Proxy.Combo span { line-height: 28px; }
+
+.HideAndCollapse { display: none !important; }
+
+div.CbxDiv ul li { float: left; margin-right: 10px; }
+
+div.CbxDiv ul li label { line-height: 32px; color: #2779BB; }
+#DeepAnalisis { padding-top: 10px; }
+
+.PrintButtons { padding: 20px 0px; }
+
+.PrintButtons ul li { float: left; margin-right: 10px; }
+
+.PrintButtons ul li.last { float: right; width: 460px; }
+
+ul.RadioSelectors li { line-height: 25px; margin-left: 5px; height: 30px; margin-right: 0px; }
+
+ul.RadioSelectors li input { height: 28px; }
+
+#bd .wrapper { min-height: 800px; }
+
+div.RankingReportsWrapper { display: none; }
+
+ul.ReportSelector { width: 230px; height:116px; margin-right:5px; float:left;}
+.SearchEnginesSelector { float:left; width: 305px;}
+div.ReportUI { width: 550px;margin:0px auto; }
+.CollapsablePanel .Legend { position:relative; cursor:pointer;}
+.CollapsablePanel .Legend h2{ margin-bottom:0px;}
+.Legend a.CollapseTrigger { background: transparent url(Assets/arrow-report-unCollapsed.gif) no-repeat scroll 0 0; display:block;height:15px;position:absolute;right:5px;top:5px;width:16px;  }
+.CollapsablePanel.Collapsed .Legend a.CollapseTrigger { background: transparent url(Assets/arrow-report-collapsed.png) no-repeat scroll 0 0; display:block;height:15px;position:absolute;right:5px;top:5px;width:16px;  }
+.Legend a.CollapseTrigger span { display:none;}
+.Highlight { background: #eee;}
+
+.UIWrapper .PanelRounded { padding-bottom:5px;}
+
+td.SearchEngineColumn {  text-align:left; }
+td.SearchEngineColumn img { float: left; margin-right:10px;}
+.ArrowContainer { position:relative;}
+.SearchEngineLabel { line-height:24px;}

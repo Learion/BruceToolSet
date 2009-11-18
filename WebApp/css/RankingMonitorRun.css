@@ -1,0 +1,14 @@
+﻿.ProgressSection { height: 40px; margin: 10px auto; padding: 5px; width: 620px; }
+.ProgressSection > div { float: left; margin-right: 15px; }
+.ProgressSection > div.ProgressLabel { padding-top: 3px; font-size: large; color: #247698; }
+#RankingMonitorCompleted { margin-bottom: 5px; }
+#RankingMonitorCompleted a { display: block; text-align: right; margin-top: 15px; }
+#RankingMonitorCompleted p.heading { display: block; font-size: 14px; position: relative; text-align: left; top: -5px; }
+#RankingTotal h3 { background: transparent url(Assets/logo_small.png) no-repeat scroll 0 0; color: #446689; display: block; font-size: 14px; height: 60px; margin-right: 20px; padding: 20px 5px 0 80px; float:left; }
+#RankingTotal > div { float: left; margin-right: 5px; width: 170px; }
+#RankingTotal { margin-top: 40px; padding-left: 30px; }
+span.Big { display: block; font: bold 14px 'Arial Black', Arial !important; text-align: center; }
+span.Blue { color: #0060AE; }
+
+.keywordsCommands { padding-bottom:5px;}
+.LoadingAnimationLogo { background: url(Assets/2901_Loading.gif) no-repeat; width:100px; height:75px; margin-top:-23px; }

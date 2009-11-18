@@ -1,0 +1,66 @@
+﻿<hibernate-mapping default-cascade="none" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SEOToolSet.Entities.Account, SEOToolSet.Entities" table="Account">
+    <id name="Id" type="System.Int32" column="Id" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="Name" type="System.String" column="Name" not-null="false" length="250" />
+    <property name="MaxNumberOfUser" type="System.Int32" column="MaxNumberOfUser" not-null="false" />
+    <property name="MaxNumberOfDomainUser" type="System.Int32" column="MaxNumberOfDomainUser" not-null="false" />
+    <property name="MaxNumberOfProjects" type="System.Int32" column="MaxNumberOfProjects" not-null="false" />
+    <property name="CompanyName" type="System.String" column="CompanyName" not-null="false" length="300" />
+    <property name="CompanyAddress1" type="System.String" column="CompanyAddress1" not-null="false" length="300" />
+    <property name="CompanyAddress2" type="System.String" column="CompanyAddress2" not-null="false" length="300" />
+    <property name="CompanyCity" type="System.String" column="CompanyCity" not-null="false" length="100" />
+    <property name="CompanyState" type="System.String" column="CompanyState" not-null="false" length="255" />
+    <property name="CompanyZip" type="System.String" column="CompanyZip" not-null="false" length="100" />
+    <property name="CreditCardNumber" type="System.String" column="CreditCardNumber" not-null="false" length="20" />
+    <property name="CreditCardCvs" type="System.String" column="CreditCardCVS" not-null="false" length="10" />
+    <property name="CreditCardAddress1" type="System.String" column="CreditCardAddress1" not-null="false" length="300" />
+    <property name="CreditCardAddress2" type="System.String" column="CreditCardAddress2" not-null="false" length="300" />
+    <property name="CreditCardCity" type="System.String" column="CreditCardCity" not-null="false" length="100" />
+    <property name="CreditCardZip" type="System.String" column="CreditCardZip" not-null="false" length="100" />
+    <property name="RecurringBill" type="System.Boolean" column="RecurringBill" not-null="false" />
+    <property name="CreatedDate" type="System.DateTime" column="CreatedDate" not-null="false" />
+    <property name="UpdatedDate" type="System.DateTime" column="UpdatedDate" not-null="false" />
+    <property name="CreatedBy" type="System.String" column="CreatedBy" not-null="false" length="100" />
+    <property name="UpdatedBy" type="System.String" column="UpdatedBy" not-null="false" length="100" />
+    <property name="Enabled" type="System.Boolean" column="Enabled" not-null="false" />
+    <property name="AccountExpirationDate" type="System.DateTime" column="AccountExpirationDate" not-null="false" />
+    <property name="CreditCardExpiration" type="System.DateTime" column="CreditCardExpiration" not-null="false" />
+
+    <property name="CreditCardEmail" type="System.String" column="CreditCardEmail" not-null="false" length="255" />
+    <property name="CreditCardIdCountry" type="System.Int32" column="CreditCardIdCountry" not-null="false" />
+    <property name="CreditCardState" type="System.String" column="CreditCardState" not-null="false" length="255" />
+    <property name="CreditCardCardholder" type="System.String" column="CreditCardCardholder" not-null="false" length="255" />
+    <property name="PromoCode" type="System.String" column="PromoCode" not-null="false" length="255" />
+    <property name="CompanyIdCountry" type="System.Int32" column="CompanyIdCountry" not-null="false" />
+    <property name="CompanyPhone" type="System.String" column="CompanyPhone" not-null="false" length="255" />
+    <property name="CreditCardPhone" type="System.String" column="CreditCardPhone" not-null="false" length="255" />
+    <property name="SubscriptionId" type="System.Int64" column="SubscriptionId" not-null="false" />
+    <property name="LastBillingDate" type="System.DateTime" column="LastBillingDate" not-null="false" />
+    <many-to-one name="CreditCardType" class="SEOToolSet.Entities.CreditCardType, SEOToolSet.Entities" fetch="select">
+      <column name="CreditCardType" not-null="false" />
+    </many-to-one>
+
+    <many-to-one name="SubscriptionLevel" class="SEOToolSet.Entities.SubscriptionLevel, SEOToolSet.Entities" fetch="select">
+      <column name="IdSubscriptionLevel" not-null="false" />
+    </many-to-one>
+
+    <many-to-one name="Owner" class="SEOToolSet.Entities.Account, SEOToolSet.Entities" fetch="select">
+      <column name="IdAccountOwner" not-null="false" />
+    </many-to-one>
+
+    <bag name="Project" inverse="true" lazy="true" cascade="none">
+      <key>
+        <column name="IdAccount" not-null="true" />
+      </key>
+      <one-to-many class="SEOToolSet.Entities.Project, SEOToolSet.Entities" />
+    </bag>
+    <bag name="SEOToolsetUser" inverse="true" lazy="true" cascade="none">
+      <key>
+        <column name="IdAccount" not-null="true" />
+      </key>
+      <one-to-many class="SEOToolSet.Entities.SEOToolsetUser, SEOToolSet.Entities" />
+    </bag>
+  </class>
+</hibernate-mapping>

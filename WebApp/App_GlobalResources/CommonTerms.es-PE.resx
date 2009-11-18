@@ -1,0 +1,741 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>Sobre Nosotros</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>Cuenta</value>
+  </data>
+  <data name="AccountAddress" xml:space="preserve">
+    <value>Dirección de la Cuenta</value>
+  </data>
+  <data name="AccountInformation" xml:space="preserve">
+    <value>Información de la Cuenta</value>
+  </data>
+  <data name="AccountName" xml:space="preserve">
+    <value>Nombre de la Cuenta</value>
+  </data>
+  <data name="AccountProfile" xml:space="preserve">
+    <value>Perfil de la Cuenta</value>
+  </data>
+  <data name="AccountProjects" xml:space="preserve">
+    <value>Proyectos de la Cuenta</value>
+  </data>
+  <data name="AccountUsers" xml:space="preserve">
+    <value>Usuarios de la cuenta</value>
+  </data>
+  <data name="ActionCouldNotBeUndone" xml:space="preserve">
+    <value>Esta acción no se puede deshacer</value>
+  </data>
+  <data name="Activity" xml:space="preserve">
+    <value>Actividad</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Añadir</value>
+  </data>
+  <data name="AddCompetitor" xml:space="preserve">
+    <value>Añadir Competidor</value>
+  </data>
+  <data name="AddKeyword" xml:space="preserve">
+    <value>Añadir Palabras Clave</value>
+  </data>
+  <data name="AddKeywordList" xml:space="preserve">
+    <value>Añadir Lista de Palabras Clave</value>
+  </data>
+  <data name="AddNewProject" xml:space="preserve">
+    <value>Agregar Nuevo Proyecto</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="AddressRequired" xml:space="preserve">
+    <value>La Dirección no puede ser omitida</value>
+  </data>
+  <data name="AdvancedOptions" xml:space="preserve">
+    <value>Avanzado</value>
+  </data>
+  <data name="AliasDomains" xml:space="preserve">
+    <value>Alias de Dominios</value>
+  </data>
+  <data name="AllInTitle" xml:space="preserve">
+    <value>AllInTitle</value>
+  </data>
+  <data name="Analyze" xml:space="preserve">
+    <value>Análisis</value>
+  </data>
+  <data name="AnalyzePage" xml:space="preserve">
+    <value>Analizar Pagina</value>
+  </data>
+  <data name="AndItsKeywords" xml:space="preserve">
+    <value>y todo su contenido</value>
+  </data>
+  <data name="ApplicationName" xml:space="preserve">
+    <value>SEOToolSet</value>
+  </data>
+  <data name="ApplicationVersion" xml:space="preserve">
+    <value>Versión de la Aplicación</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Regresar</value>
+  </data>
+  <data name="BillingInformation" xml:space="preserve">
+    <value>Información de Pago</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="CardholderName" xml:space="preserve">
+    <value>Dueño de la Tarjeta</value>
+  </data>
+  <data name="CardholderNameRequired" xml:space="preserve">
+    <value>El Nombre del Dueño de la Tarjeta no puede ser Omitido</value>
+  </data>
+  <data name="CardType" xml:space="preserve">
+    <value>Tipo de Tarjeta</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Cambiar contraseña</value>
+  </data>
+  <data name="CheckAll" xml:space="preserve">
+    <value>[ Marcar Todos ]</value>
+  </data>
+  <data name="CheckAllWithoutBrackets" xml:space="preserve">
+    <value>Seleccionar todo</value>
+  </data>
+  <data name="CheckNone" xml:space="preserve">
+    <value>[ Desmarcar Todos ]</value>
+  </data>
+  <data name="Choose" xml:space="preserve">
+    <value>Elija</value>
+  </data>
+  <data name="ChooseAnItem" xml:space="preserve">
+    <value>Elija un elemento</value>
+  </data>
+  <data name="ChooseLanguage" xml:space="preserve">
+    <value>Elija lenguaje</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Ciudad</value>
+  </data>
+  <data name="CityRequired" xml:space="preserve">
+    <value>La Ciudad no puede ser omitida</value>
+  </data>
+  <data name="ClientName" xml:space="preserve">
+    <value>Nombre del Cliente</value>
+  </data>
+  <data name="ClientNameRequired" xml:space="preserve">
+    <value>El nombre del cliente es requerido</value>
+  </data>
+  <data name="CollapseAll" xml:space="preserve">
+    <value>[ Ocultar todo ]</value>
+  </data>
+  <data name="Competitor" xml:space="preserve">
+    <value>Competidor</value>
+  </data>
+  <data name="Competitors" xml:space="preserve">
+    <value>Competencia</value>
+  </data>
+  <data name="ContactEmail" xml:space="preserve">
+    <value>Email del Contacto</value>
+  </data>
+  <data name="ContactName" xml:space="preserve">
+    <value>Nombre del Contacto</value>
+  </data>
+  <data name="ContactPhone" xml:space="preserve">
+    <value>Teléfono del Contacto</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>País</value>
+  </data>
+  <data name="CountryRequired" xml:space="preserve">
+    <value>El País no puede ser omitido</value>
+  </data>
+  <data name="CPC" xml:space="preserve">
+    <value>CPC</value>
+  </data>
+  <data name="CreditCardAddressRequired" xml:space="preserve">
+    <value>La Dirección para la Tarjeta de Crédito es requerida</value>
+  </data>
+  <data name="CreditCardCityRequired" xml:space="preserve">
+    <value>La Ciudad de la Tarjeta de Crédito es requerida</value>
+  </data>
+  <data name="CreditCardCountryRequired" xml:space="preserve">
+    <value>El País de la Tarjeta de Crédito no puede ser omitido</value>
+  </data>
+  <data name="CreditCardExpirationDateNotValid" xml:space="preserve">
+    <value>La Fecha de Expiración no es válida</value>
+  </data>
+  <data name="CreditCardExpirationDateRequired" xml:space="preserve">
+    <value>La Fecha de Expiración es requerida</value>
+  </data>
+  <data name="CreditCardNameRequired" xml:space="preserve">
+    <value>El Nombre no puede ser omitido</value>
+  </data>
+  <data name="CreditCardNumber" xml:space="preserve">
+    <value>Número de la Tarjeta de Crédito</value>
+  </data>
+  <data name="CreditCardNumberNotValid" xml:space="preserve">
+    <value>La Tarjeta de Crédito no es válida</value>
+  </data>
+  <data name="CreditCardNumberRequired" xml:space="preserve">
+    <value>El Número de la Tarjeta de Crédito no puede ser omitido</value>
+  </data>
+  <data name="CreditCardStateRequired" xml:space="preserve">
+    <value>El Estado de la Dirección de Tarjeta de Crédito no puede ser omitido</value>
+  </data>
+  <data name="CreditCardTypeRequired" xml:space="preserve">
+    <value>El Tipo de la Tarjeta de Crédito no puede ser omitido</value>
+  </data>
+  <data name="CreditCardZipRequired" xml:space="preserve">
+    <value>La Dirección Postal de la Tarjeta de Crédito no puede ser omitida</value>
+  </data>
+  <data name="CVS" xml:space="preserve">
+    <value>Código de Seguridad</value>
+  </data>
+  <data name="CVSRequired" xml:space="preserve">
+    <value>El código de seguridad de la tarjeta de crédito no puede ser omitido</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Borrar</value>
+  </data>
+  <data name="DeleteItemConfirm" xml:space="preserve">
+    <value>¿Está seguro que desea borrar {0}?</value>
+  </data>
+  <data name="DenyAccess" xml:space="preserve">
+    <value>No tienes los permisos requeridos para acceder a esta funcionalidad</value>
+  </data>
+  <data name="DenyAccessTitle" xml:space="preserve">
+    <value>Acceso restringido</value>
+  </data>
+  <data name="DenyAccessToPage" xml:space="preserve">
+    <value>No tiene permisos para accesar esta página</value>
+  </data>
+  <data name="DisclaimerSpeech" xml:space="preserve">
+    <value>&lt;p&gt;Tecnología y Formatos Registrados Derechos de Reproducción &amp;copy; 2008 Bruce Clay, Inc. Todos los derechos reservados.&lt;/p&gt;&lt;p&gt;Todas las marcas registradas aqui mencionadas son propiedad de sus respectivos due&amp;ntilde;os – Todos los derechos reservados.&lt;/p&gt;</value>
+  </data>
+  <data name="Domain" xml:space="preserve">
+    <value>Dominio</value>
+  </data>
+  <data name="DomainNotValid" xml:space="preserve">
+    <value>El dominio no es válido</value>
+  </data>
+  <data name="DomainRequired" xml:space="preserve">
+    <value>El dominio no puede ser omitido</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="EditAccountInformation" xml:space="preserve">
+    <value>Editar Información de Cuenta</value>
+  </data>
+  <data name="EditURL" xml:space="preserve">
+    <value>Editar URL</value>
+  </data>
+  <data name="EditUserInformation" xml:space="preserve">
+    <value>Editar Información del Usuario</value>
+  </data>
+  <data name="Element" xml:space="preserve">
+    <value>Elemento</value>
+  </data>
+  <data name="Elements" xml:space="preserve">
+    <value>Elementos</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Correo Electrónico</value>
+  </data>
+  <data name="EmailNotValid" xml:space="preserve">
+    <value>El correo electrónico no es válido</value>
+  </data>
+  <data name="EmailRequired" xml:space="preserve">
+    <value>El Correo Electrónico no puede ser omitido</value>
+  </data>
+  <data name="Engines" xml:space="preserve">
+    <value>Buscadores</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>¡Uggs! Error</value>
+  </data>
+  <data name="ExpandAll" xml:space="preserve">
+    <value>[ Expandir todo ]</value>
+  </data>
+  <data name="ExpirationDate" xml:space="preserve">
+    <value>Fecha de Expiración</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>Nombres</value>
+  </data>
+  <data name="FirstNameRequired" xml:space="preserve">
+    <value>Los Nombres no pueden ser omitidos</value>
+  </data>
+  <data name="FontSettings" xml:space="preserve">
+    <value>Tipo de Letra</value>
+  </data>
+  <data name="GoogleResults" xml:space="preserve">
+    <value>Resultados de google</value>
+  </data>
+  <data name="HelpAndDocumentation" xml:space="preserve">
+    <value>Documentación &amp;amp;  Ayuda </value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Principal</value>
+  </data>
+  <data name="InboundLinks" xml:space="preserve">
+    <value>Enlaces entrantes</value>
+  </data>
+  <data name="keyword" xml:space="preserve">
+    <value>palabra clave</value>
+  </data>
+  <data name="KeywordList" xml:space="preserve">
+    <value>Lista de Palabras Clave</value>
+  </data>
+  <data name="KeywordLists" xml:space="preserve">
+    <value>Listas de Palabras Clave</value>
+  </data>
+  <data name="KeywordRankingDistribution" xml:space="preserve">
+    <value>Distribución del Ranking por Keyword</value>
+  </data>
+  <data name="Keywords" xml:space="preserve">
+    <value>Palabras clave</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Lenguaje</value>
+  </data>
+  <data name="LastMonitorRun" xml:space="preserve">
+    <value>Última Ejecución del Monitoreo</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Apellidos</value>
+  </data>
+  <data name="LastNameRequired" xml:space="preserve">
+    <value>Los Apellidos no pueden ser omitidos</value>
+  </data>
+  <data name="Launch" xml:space="preserve">
+    <value>Lanzamiento</value>
+  </data>
+  <data name="Legal" xml:space="preserve">
+    <value>Legal</value>
+  </data>
+  <data name="Links" xml:space="preserve">
+    <value>Vínculos</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Cargando</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="LoginNameRequired" xml:space="preserve">
+    <value>El Usuario no puede ser omitido</value>
+  </data>
+  <data name="ManageKeywords" xml:space="preserve">
+    <value>Gestión de Palabras Claves</value>
+  </data>
+  <data name="ManageUsers" xml:space="preserve">
+    <value>Administrar Usuarios</value>
+  </data>
+  <data name="Monitor" xml:space="preserve">
+    <value>Monitoreo</value>
+  </data>
+  <data name="MultiPageKDA" xml:space="preserve">
+    <value>Análisis Múltiple Página</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="NameRequired" xml:space="preserve">
+    <value>El nombre es requerido</value>
+  </data>
+  <data name="NewAddress" xml:space="preserve">
+    <value>Nueva Dirección</value>
+  </data>
+  <data name="NewProject" xml:space="preserve">
+    <value>Nuevo Proyecto</value>
+  </data>
+  <data name="NewUser" xml:space="preserve">
+    <value>Nuevo Usuario</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Siguiente</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="NoProjectsActive" xml:space="preserve">
+    <value>No hay proyectos activos</value>
+  </data>
+  <data name="NoProjectsFound" xml:space="preserve">
+    <value>No hay proyectos para mostrar</value>
+  </data>
+  <data name="NoUserMatched" xml:space="preserve">
+    <value>No hay usuarios con el ID solicitado</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
+  <data name="OptimizedPages" xml:space="preserve">
+    <value>Páginas Optimizadas</value>
+  </data>
+  <data name="PageComparison" xml:space="preserve">
+    <value>Análisis Comparación de Páginas</value>
+  </data>
+  <data name="PageErrorMessage" xml:space="preserve">
+    <value>Esta aplicación no está disponible en estos momentos. Por favor, intente mas tarde</value>
+  </data>
+  <data name="PageInformationTool" xml:space="preserve">
+    <value>Herramienta Informativa de Páginas</value>
+  </data>
+  <data name="PageNotAllowed" xml:space="preserve">
+    <value>Su usuario no tiene los permisos necesarios para la página. Intente con otro usuario.</value>
+  </data>
+  <data name="PageRank" xml:space="preserve">
+    <value>PageRank</value>
+  </data>
+  <data name="Pages" xml:space="preserve">
+    <value>Páginas</value>
+  </data>
+  <data name="PagesIndexed" xml:space="preserve">
+    <value>Páginas Indexadas</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="PasswordNotCoincide" xml:space="preserve">
+    <value>Las Contraseñas deben coincidir</value>
+  </data>
+  <data name="PasswordNotValid" xml:space="preserve">
+    <value>La Contraseña no es válida</value>
+  </data>
+  <data name="PasswordRequired" xml:space="preserve">
+    <value>La Contraseña no puede ser omitida</value>
+  </data>
+  <data name="Paypal" xml:space="preserve">
+    <value>Paypal</value>
+  </data>
+  <data name="PhoneRegexValidation" xml:space="preserve">
+    <value>\d{1,3}-?\d{7,9}</value>
+  </data>
+  <data name="PostalCodeRegexValidation" xml:space="preserve">
+    <value>([a-zA-ZñÑ]+?\s?){1,3}\d{1,3}</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Imprimir</value>
+  </data>
+  <data name="PrivacyStatement" xml:space="preserve">
+    <value>Privacidad</value>
+  </data>
+  <data name="Processing" xml:space="preserve">
+    <value>Procesando</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Proyecto</value>
+  </data>
+  <data name="ProjectDashboard" xml:space="preserve">
+    <value>Dashboard del Proyecto</value>
+  </data>
+  <data name="ProjectInformation" xml:space="preserve">
+    <value>Información del Proyecto</value>
+  </data>
+  <data name="ProjectNameRequired" xml:space="preserve">
+    <value>El nombre del Proyecto no puede ser omitido</value>
+  </data>
+  <data name="ProjectRole" xml:space="preserve">
+    <value>Rol en el proyecto</value>
+  </data>
+  <data name="ProxyServers" xml:space="preserve">
+    <value>Servidores Proxy</value>
+  </data>
+  <data name="QuickStats" xml:space="preserve">
+    <value>Estadísticas Rápidas</value>
+  </data>
+  <data name="Ranking" xml:space="preserve">
+    <value>Ránking</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Refrescar</value>
+  </data>
+  <data name="RemoveItem" xml:space="preserve">
+    <value>Remover este item de la lista</value>
+  </data>
+  <data name="RemoveUserFromProject" xml:space="preserve">
+    <value>Remover al usuario del proyecto actual?</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>Reportes</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Reiniciar</value>
+  </data>
+  <data name="RestoreDefaults" xml:space="preserve">
+    <value>Restaurar valores por defecto</value>
+  </data>
+  <data name="RetypePassword" xml:space="preserve">
+    <value>Repita su contraseña</value>
+  </data>
+  <data name="RetypePasswordRequired" xml:space="preserve">
+    <value>Debe ingresar su contraseña nuevamente</value>
+  </data>
+  <data name="RoleRequired" xml:space="preserve">
+    <value>El Rol no puede ser omitido</value>
+  </data>
+  <data name="Run" xml:space="preserve">
+    <value>Ejecutar</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="SearchEngine" xml:space="preserve">
+    <value>Motor de Búsqueda</value>
+  </data>
+  <data name="SearchEngines" xml:space="preserve">
+    <value>Motores de Búsqueda</value>
+  </data>
+  <data name="SelectAnElement" xml:space="preserve">
+    <value>Seleccione un elemento</value>
+  </data>
+  <data name="ShortDateRegexValidation" xml:space="preserve">
+    <value>(0|1|2|3)\d/(0|1)\d/\d{2}</value>
+  </data>
+  <data name="ShowAll" xml:space="preserve">
+    <value>Mostrar Todo</value>
+  </data>
+  <data name="ShowReports" xml:space="preserve">
+    <value>Mostrar Reportes</value>
+  </data>
+  <data name="ShowSelected" xml:space="preserve">
+    <value>Mostrar Seleccionado</value>
+  </data>
+  <data name="SignIn" xml:space="preserve">
+    <value>Acceder</value>
+  </data>
+  <data name="SignOut" xml:space="preserve">
+    <value>Cerrar Sesión</value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>Inscripción</value>
+  </data>
+  <data name="SinglePageKDA" xml:space="preserve">
+    <value>Análisis Página Única</value>
+  </data>
+  <data name="SiteChecker" xml:space="preserve">
+    <value>Revisor de Sitio</value>
+  </data>
+  <data name="SiteInformation" xml:space="preserve">
+    <value>Información del Sitio</value>
+  </data>
+  <data name="SiteUnderConstruction" xml:space="preserve">
+    <value>La Página se encuentra en construcción</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="StateRequired" xml:space="preserve">
+    <value>El estado es requerido</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Registrar</value>
+  </data>
+  <data name="Support" xml:space="preserve">
+    <value>Soporte</value>
+  </data>
+  <data name="Telephone" xml:space="preserve">
+    <value>Teléfono</value>
+  </data>
+  <data name="TheCompetitor" xml:space="preserve">
+    <value>el competidor</value>
+  </data>
+  <data name="TheKeyword" xml:space="preserve">
+    <value>la palabra clave</value>
+  </data>
+  <data name="TheKeywordList" xml:space="preserve">
+    <value>la lista de keywords</value>
+  </data>
+  <data name="TheSelectedProjects" xml:space="preserve">
+    <value>los projectos seleccionados</value>
+  </data>
+  <data name="TheSelectedUsers" xml:space="preserve">
+    <value>los usuarios seleccionados</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Útiles</value>
+  </data>
+  <data name="TopTenPercent" xml:space="preserve">
+    <value>10% Superior</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="UncheckAll" xml:space="preserve">
+    <value>[ Desmarcar Todo ]</value>
+  </data>
+  <data name="UncheckAllWithoutBrackets" xml:space="preserve">
+    <value>Desmarcar Todo</value>
+  </data>
+  <data name="UploadFile" xml:space="preserve">
+    <value>Subir Archivo</value>
+  </data>
+  <data name="UrlAndKeywords" xml:space="preserve">
+    <value>Url y Palabras Clave</value>
+  </data>
+  <data name="UrlToAnalyze" xml:space="preserve">
+    <value>Url para analizar</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="UserAddress" xml:space="preserve">
+    <value>Dirección del Usuario</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="UserProfile" xml:space="preserve">
+    <value>Perfil de usuario</value>
+  </data>
+  <data name="UserRole" xml:space="preserve">
+    <value>Rol del Usuario</value>
+  </data>
+  <data name="UserRoleRequired" xml:space="preserve">
+    <value>El rol de usuario no puede ser omitido</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Bienvenido {0}</value>
+  </data>
+  <data name="WelcomeAnonymous" xml:space="preserve">
+    <value>Bienvenido</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Sí</value>
+  </data>
+  <data name="Zip" xml:space="preserve">
+    <value>Código Postal</value>
+  </data>
+  <data name="ZipRequired" xml:space="preserve">
+    <value>El Código Postal no puede ser omitido</value>
+  </data>
+  <data name="ManageProject" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ProjectSettings" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AddDomain" xml:space="preserve">
+    <value />
+  </data>
+</root>

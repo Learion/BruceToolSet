@@ -1,0 +1,48 @@
+﻿<hibernate-mapping default-cascade="none" xmlns="urn:nhibernate-mapping-2.2">
+    <class name="SEOToolSet.Entities.SEOToolsetUser, SEOToolSet.Entities" table="SEOToolsetUser">
+        <id name="Id" type="System.Int32" column="Id" unsaved-value="0">
+            <generator class="native" />
+        </id>
+        <property name="FirstName" type="System.String" column="FirstName" not-null="false" length="250" />
+        <property name="LastName" type="System.String" column="LastName" not-null="false" length="250" />
+        <property name="Email" type="System.String" column="Email" not-null="false" length="300" />
+        <property name="Address1" type="System.String" column="Address1" not-null="false" length="300" />
+        <property name="Address2" type="System.String" column="Address2" not-null="false" length="300" />
+        <property name="CityTown" type="System.String" column="CityTown" not-null="false" length="100" />
+        <property name="State" type="System.String" column="State" not-null="false" length="255" />
+        <property name="Zip" type="System.String" column="Zip" not-null="false" length="100" />
+        <property name="Telephone" type="System.String" column="Telephone" not-null="false" length="255" />
+        <property name="Login" type="System.String" column="Login" not-null="false" length="100" />
+        <property name="Password" type="System.String" column="Password" not-null="false" length="100" />
+        <property name="PasswordQuestion" type="System.String" column="PasswordQuestion" not-null="false" length="300" />
+        <property name="PasswordAnswer" type="System.String" column="PasswordAnswer" not-null="false" length="300" />
+        <property name="LastFailedLoginDate" type="System.DateTime" column="LastFailedLoginDate" not-null="false" />
+        <property name="LastActivityDate" type="System.DateTime" column="LastActivityDate" not-null="false" />
+        <property name="LastPasswordChangedDate" type="System.DateTime" column="LastPasswordChangedDate" not-null="false" />
+        <property name="IsLockedOut" type="System.Boolean" column="IsLockedOut" not-null="false" />
+        <property name="LockedOutDate" type="System.DateTime" column="LockedOutDate" not-null="false" />
+        <property name="FailedPasswordAttemptCount" type="System.Int32" column="FailedPasswordAttemptCount" not-null="false" />
+        <property name="ExpirationDate" type="System.DateTime" column="ExpirationDate" not-null="false" />
+        <property name="CreatedBy" type="System.String" column="CreatedBy" not-null="false" length="100" />
+        <property name="UpdatedBy" type="System.String" column="UpdatedBy" not-null="false" length="100" />
+        <property name="Enabled" type="System.Boolean" column="Enabled" not-null="false" />
+        <property name="CreatedDate" type="System.DateTime" column="CreatedDate" not-null="false" />
+        <property name="UpdatedDate" type="System.DateTime" column="UpdatedDate" not-null="false" />
+        <many-to-one name="Account" class="SEOToolSet.Entities.Account, SEOToolSet.Entities" fetch="select">
+            <column name="IdAccount" not-null="false" />
+        </many-to-one>
+        <many-to-one name="Country" class="SEOToolSet.Entities.Country, SEOToolSet.Entities" fetch="select">
+            <column name="IdCountry" not-null="false" />
+        </many-to-one>
+        <bag name="ProjectUser" inverse="true" lazy="true" cascade="none">
+            <key>
+                <column name="IdUser" not-null="true" />
+            </key>
+            <one-to-many class="SEOToolSet.Entities.ProjectUser, SEOToolSet.Entities" />
+        </bag>
+        <many-to-one name="UserRole" class="SEOToolSet.Entities.Role, SEOToolSet.Entities" fetch="select">
+            <column name="IdUserRole" not-null="false" />
+        </many-to-one>
+        <property name="LastLoginDate" type="System.DateTime" column="LastLoginDate" not-null="false" />
+    </class>
+</hibernate-mapping>

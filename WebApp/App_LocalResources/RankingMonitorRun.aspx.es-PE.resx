@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AliasDomainsHeadingTooltip" xml:space="preserve">
+    <value>Número de Alias de Dominios del proyecto que se rankearon</value>
+  </data>
+  <data name="AllInTitleHeadingTooltip" xml:space="preserve">
+    <value>Número de páginas web que contienen todas las palabras de la frase de palabra clave en su etiqueta de título (por Google)</value>
+  </data>
+  <data name="CPCHeadingTooltip" xml:space="preserve">
+    <value>Promedio del costo por click para palabra clave</value>
+  </data>
+  <data name="DailySearchesHeadingTooltip" xml:space="preserve">
+    <value>Número aproximado de consultas de búsquedas diarias y los resultados de las búsquedas para la palabra clave</value>
+  </data>
+  <data name="EnginesHeadingTooltip" xml:space="preserve">
+    <value>Número de los motores de búsqueda monitoreados que rankearon las páginas del proyecto entre los mejores 50 resultados</value>
+  </data>
+  <data name="KeywordHeadingTooltip" xml:space="preserve">
+    <value>Palabras claves seleccionadas para el proyecto</value>
+  </data>
+  <data name="KeywordRankingPanelTitle.Text" xml:space="preserve">
+    <value>Ranking de palabras claves para [PROJECT_NAME]</value>
+  </data>
+  <data name="KeywordsToMonitor.Text" xml:space="preserve">
+    <value>Listas de Palabras Clave para monitorear</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Ejecución del Monitor de Ranking</value>
+  </data>
+  <data name="PagesHeadingTooltip" xml:space="preserve">
+    <value>Número de páginas web que rankearon en los mejores 50 en las búsquedas para la palabra clave</value>
+  </data>
+  <data name="PageTitle.PageDescription" xml:space="preserve">
+    <value>Monitorea sus ránkings en los motores de búsqueda de sus páginas para sus palabras claves seleccionadas</value>
+  </data>
+  <data name="PageTitle.PageTitleText" xml:space="preserve">
+    <value>Ejecutar Monitor de Ránking</value>
+  </data>
+  <data name="ProgressLabel.Text" xml:space="preserve">
+    <value>Progreso</value>
+  </data>
+  <data name="RunMonitorCommand" xml:space="preserve">
+    <value>Ejecutar el Monitor</value>
+  </data>
+  <data name="MonitoredCompetitors.Text" xml:space="preserve">
+    <value>El Ránking también monitoreó por [COMPETITORS] competidor(es); vea la pestaña de Competidores para los resultados de datos</value>
+  </data>
+  <data name="ViewFullReportCommand.Text" xml:space="preserve">
+    <value>Ver el reporte completo</value>
+  </data>
+  <data name="YourTotals.Text" xml:space="preserve">
+    <value>Sus totales de ranking son:</value>
+  </data>
+  <data name="InboundTooltip" xml:space="preserve">
+    <value>Número total de vínculos reportados para el dominio del proyecto y sus alias de dominio</value>
+  </data>
+  <data name="PageRankTooltip" xml:space="preserve">
+    <value>El valor de PageRank para la página principal del dominio del proyecto (PageRank es un cálculo de Google en una escala del 1 al 10 sobre la importancia relativa de la página en la web, basada en sus vínculos)</value>
+  </data>
+  <data name="TotalpagesIndexedTooltip" xml:space="preserve">
+    <value>Número total de páginas web encontradas en los índices de buscadores seleccionados</value>
+  </data>
+  <data name="RankingMonitorFailed" xml:space="preserve">
+    <value>El Monitor de Ránking no pudo completarse debido a un problema técnico. Usted puede reintentar el reporte ahora o no hacer nada y el reporte será automáticamente ejecutado en el proceso nocturno. {0}</value>
+  </data>
+  <data name="RankingMonitorFailedTitle" xml:space="preserve">
+    <value>El Monitor de Ránking falló</value>
+  </data>
+  <data name="SearchesForResultsField" xml:space="preserve">
+    <value>{DailySearches|numberReadable:','|default:'-'} para {Results|numberReadable:','|default:'-'} resultados</value>
+  </data>
+  <data name="ClientConnectionIssue" xml:space="preserve">
+    <value>Un problema de conexión ha ocurrido en su explorador por lo que el Monitor de Ránking no puede ser visualizado. Como sea, el reporte del Monitor de Ránking está aún procesándose en los servidores de SEOToolSet.&lt;br&gt;Usted puede intentar visualizar el reporte en progreso ahora, o ver el reporte completo luego usando la página "Ver Reportes del Monitor de Ránking".</value>
+  </data>
+  <data name="RedisplayPageCommand" xml:space="preserve">
+    <value>Redisplay Page</value>
+  </data>
+  <data name="ContinueRun" xml:space="preserve">
+    <value>Continuar ejecutando.</value>
+  </data>
+  <data name="MonitorConflict" xml:space="preserve">
+    <value>&lt;p&gt;Un Monitor de Ránking actualmente está en ejecución para este proyecto.&lt;/p&gt;&lt;p&gt;Presione OK para cerrar este mensaje y retornar a la página. Usted puede, alternativamente, elegir observar el progreso del Monitor en progreso (advierta que las actuales listas de keywords probablemente puedan no coincidir con el reporte que está ejecutándose). O puede detener la ejecución actual e iniciar un nuevo Monitor de Ránking con sus parámetros seleccionados.&lt;/p&gt;</value>
+  </data>
+  <data name="MonitorConflictTitle" xml:space="preserve">
+    <value>Conflicto del Monitor</value>
+  </data>
+  <data name="StartNewRun" xml:space="preserve">
+    <value>Iniciar nueva ejecución</value>
+  </data>
+  <data name="SummaryFootNote.Text" xml:space="preserve">
+    <value>Raya = No hay datos. Palabras clave rojas = la búsqueda falló</value>
+  </data>
+</root>

@@ -1,0 +1,13 @@
+﻿<hibernate-mapping default-cascade="none" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SEOToolSet.Entities.MonitorSearchEngineCountry, SEOToolSet.Entities" table="MonitorSearchEngineCountry">
+    <id name="Id" type="System.Int32" column="Id" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <many-to-one name="SearchEngineCountry" class="SEOToolSet.Entities.SearchEngineCountry, SEOToolSet.Entities" fetch="select">
+      <column name="IdSearchEngineCountry" not-null="true" />
+    </many-to-one>
+    <many-to-one name="Project" class="SEOToolSet.Entities.Project, SEOToolSet.Entities" fetch="select">
+      <column name="IdProject" not-null="true" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

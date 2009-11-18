@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Test Suite</title>
+        <link href="../../css/reset-fonts.css" media="screen" rel="stylesheet" type="text/css" />
+        <link href="testSuite.css" media="screen" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="../../scripts/jquery.js">
+        </script>
+        <script type="text/javascript" src="../../scripts/common.js">
+        </script>
+        <script type="text/javascript" src="core.js">
+        </script>
+        <script type="text/javascript" src="../../scripts/jquery.dimensions.js">
+        </script>
+        <script type="text/javascript" src="../../scripts/dimmer.js">
+        </script>        
+        
+        <script type="text/javascript" src="../../scripts/Controls/R3M.JPopUp/JPopUp.js">
+        </script>
+        <script type="text/javascript" src="../../scripts/Controls/R3M.BrTip/brTip.src.js">
+        </script>
+        <script type="text/javascript" src="../../scripts/Controls/SwfUpload/swfupload.js">
+        </script>
+        <script type="text/javascript" src="../../scripts/Controllers/ArrayRenderers.js">
+        </script>
+        <script type="text/javascript" src="../../scripts/Controllers/Reports.js">
+        </script>
+        <script type="text/javascript" src="TestSuite.js">
+        </script>
+        <script type="text/javascript" src="ReportManagerTest.js">
+        </script>
+        <script type="text/javascript">
+            
+            function DisplayTestRunning(arr){
+                if (arr && arr.length) {
+                    for (var ix = 0; ix < arr.length; ix++) {
+                        var key = arr[ix];
+                        $('div.TestsRunning ul').append('<li>' + key + '</li>');
+                    }
+                }
+                else {
+                    $('div.TestsRunning ul').append('<li>No Tests found</li>');
+                }
+            }
+            
+            function DisplayBrowserInfo(){
+                jQuery.each(jQuery.browser, function(i, val){
+                    if (val) 
+                        $("<div>" + i + " : <span>" + val + "</span>").appendTo($("#browserInfo"));
+                });
+                
+            }
+            
+            $(document).ready(function(){
+            
+            
+                var tSuite = new TestSuite();
+                
+                tSuite.findTestInPage();
+                
+                DisplayTestRunning(tSuite.geTestsNames());
+                DisplayBrowserInfo();
+                
+                $.byId('LnkRun').click(function(){
+                    tSuite.run();
+                });
+                
+                
+            });
+        </script>
+    </head>
+    <body>
+     
+        <div id='mc'>
+            <div id='hd'>
+                <div class="spacer">
+                    <h1>Javascript Unit Testing</h1>
+                </div>
+            </div>
+            <div id='ct'>
+                <div id='testSuiteSection'>
+                    <div class="spacer">
+                        <div class="GroupPanel">
+                            <div class="GHeader">
+                                <h2>Tests</h2>
+                            </div>
+                            <div class="GBody">
+                                <div class="spacer">
+                                    <div class="TestsRunning">
+                                        <ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id='TestHeader'>
+                            <div class="GroupPanel">
+                                <div class="GHeader">
+                                    <h2>Browser Info</h2>
+                                </div>
+                                <div class="GBody">
+                                    <div class="spacer">
+                                        <div id='browserInfo'>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button id='LnkRun'>
+                                Run Tests
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id='RunSection'>
+                    <div class="spacer">
+                        <div class="GroupPanel">
+                            <div class="GHeader MainHD">
+                                <h2></h2>
+                            </div>
+                            <div class="GBody MainHD">
+                                <div class="spacer">
+                                    <div id="testResume">
+                                    </div>
+                                    <div class="Log">
+                                        <div id="logDiv">
+                                            <ul>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Clear">
+                </div>
+            </div>
+            <div id='ft'>
+            </div>
+        </div>
+        <div class="Tests">
+            <div id='report01' class="Test" test_name='ReportManagerTest' test_class='ReportManagerTest'>
+            </div>
+            <div id='report02' class="Test" test_name='FileSelectorManagerTest' test_class='FileSelectorManagerTest'>
+            </div>
+            <div id='report03' class="Test" test_name='PageSelectionToolTest' test_class='PageSelectionToolTest'>
+            </div>
+        </div>
+    </body>
+</html>

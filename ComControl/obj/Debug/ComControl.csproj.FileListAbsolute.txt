@@ -1,0 +1,10 @@
+D:\SEOToolSet\code\ComControl\bin\Debug\SEOToolSet.ComControl.dll
+D:\SEOToolSet\code\ComControl\bin\Debug\SEOToolSet.ComControl.pdb
+D:\SEOToolSet\code\ComControl\bin\Debug\DBUtility.dll
+D:\SEOToolSet\code\ComControl\bin\Debug\SEOToolSet.Model.dll
+D:\SEOToolSet\code\ComControl\bin\Debug\MySql.Data.dll
+D:\SEOToolSet\code\ComControl\bin\Debug\DBUtility.pdb
+D:\SEOToolSet\code\ComControl\bin\Debug\SEOToolSet.Model.pdb
+D:\SEOToolSet\code\ComControl\obj\Debug\ResolveAssemblyReference.cache
+D:\SEOToolSet\code\ComControl\obj\Debug\SEOToolSet.ComControl.dll
+D:\SEOToolSet\code\ComControl\obj\Debug\SEOToolSet.ComControl.pdb

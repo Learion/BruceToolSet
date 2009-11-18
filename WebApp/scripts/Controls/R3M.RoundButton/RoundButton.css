@@ -1,0 +1,33 @@
+﻿a.button { font-size: 0.85em; font-weight: bold; text-decoration: none; float: left; cursor: pointer; }
+a.button span { display: block; }
+
+a.button .Left { background: url("common/active_left.gif") no-repeat; background-position: left top; padding-left: 15px; }
+a.button:hover .Left { background: url("common/over_left.gif") no-repeat;background-position: left top; padding-left: 15px; }
+a.button .Right { background: url("common/active_right.gif") no-repeat; background-position: right top; padding-right: 15px; }
+a.button:hover .Right { background: url("common/over_right.gif") no-repeat; background-position: right top; padding-right: 15px; }
+a.button .Center { background: #0060AE; height: 25px; text-align: center; line-height:25px; color: #FFFFFF;  min-width: 20px }
+a.button:hover .Center { background: #004B88; height: 25px; text-align: center; line-height:25px; color: #FFFFFF; }
+a.button.disabled { cursor:auto;}
+a.button.disabled .Left, a.button.disabled:hover .Left { background: url("common/disabled_left.gif") no-repeat; background-position: left top; padding-left: 15px; }
+a.button.disabled .Right, a.button.disabled:hover .Right { background: url("common/disabled_right.gif") no-repeat; background-position: right top; padding-right: 15px; }
+a.button.disabled .Center, a.button.disabled:hover .Center { background: #CCCCCC; line-height:25px; height: 25px; text-align: center; color: #FFFFFF; }
+
+
+a.button.short { min-width:20px;  }
+
+/*\*/ * html a.button { width: 200px; } /**//* IE6 */
+
+/*\*/ * html a.button.short { width: 80px; } /**//* IE6 */
+
+a.button.MenuItem  { font-size: 1em; margin:0px !important; }
+a.button.MenuItem .Left { background: url("ColoredButtons/active_left.gif") no-repeat; background-position: left top; padding-left: 15px; }
+a.button.MenuItem:hover .Left { background: url("ColoredButtons/over_left.gif") no-repeat;background-position: left top; padding-left: 15px; }
+a.button.MenuItem .Right { background: url("ColoredButtons/active_right.gif") no-repeat; background-position: right top; padding-right: 15px; }
+a.button.MenuItem:hover .Right { background: url("ColoredButtons/over_right.gif") no-repeat; background-position: right top; padding-right: 15px; }
+a.button.MenuItem .Center { background: url("ColoredButtons/active_middle.gif") repeat-x ; height: 33px; text-align: center; line-height:33px; color: #FFFFFF;  min-width: 60px }
+a.button.MenuItem:hover .Center { background: url("ColoredButtons/over_middle.gif") repeat-x ; height: 33px; text-align: center; line-height:33px; color: #FFFFFF; }
+
+a.button.MenuItem.selected .Left { background: url("ColoredButtons/selected_left.gif") no-repeat; background-position: left top; padding-left: 15px; }
+a.button.MenuItem.selected .Right { background: url("ColoredButtons/selected_right.gif") no-repeat; background-position: right top; padding-right: 15px; }
+a.button.MenuItem.selected .Center { background: url("ColoredButtons/selected_middle.gif") repeat-x ; height: 33px; text-align: center; line-height:33px; color: #FFFFFF;  min-width: 60px }
+

@@ -1,0 +1,51 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="UnitTests" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="WebAppPortApplication" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">8080</Value>
+    </Setting>
+    <Setting Name="ReportServicesPortApplication" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">8080</Value>
+    </Setting>
+    <Setting Name="WebAppUriApplication" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://pe-rriojas</Value>
+    </Setting>
+    <Setting Name="ReportServicesUriApplication" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://pe-rriojas</Value>
+    </Setting>
+    <Setting Name="UploadHandlerUri" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/SEOToolSet/Handler/Upload.ashx</Value>
+    </Setting>
+    <Setting Name="UriToGetReport" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/SEOToolSet.ReportServices/Handler/RetrieveReport.ashx</Value>
+    </Setting>
+    <Setting Name="BadUriParameter" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">www.google.com</Value>
+    </Setting>
+    <Setting Name="CorrectUriParameter" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.google.com</Value>
+    </Setting>
+    <Setting Name="FileToUpload" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">upload_me_file.txt</Value>
+    </Setting>
+    <Setting Name="RetrieveResourceHandlerUri" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/SEOToolSet/Handler/RetrieveResource.ashx</Value>
+    </Setting>
+    <Setting Name="WebAppGetVersionHandlerUri" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/SEOToolSet/Handler/GetVersion.ashx</Value>
+    </Setting>
+    <Setting Name="ReportServicesGetVersionHandlerUri" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/SEOToolSet.ReportServices/Handler/GetVersion.ashx</Value>
+    </Setting>
+    <Setting Name="SpecificCulture" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">es-PE</Value>
+    </Setting>
+    <Setting Name="NonExistentCulture" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">az-Latn-AZ</Value>
+    </Setting>
+    <Setting Name="NonExistentPage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/SEOToolSet/NonExistingPage.aspx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

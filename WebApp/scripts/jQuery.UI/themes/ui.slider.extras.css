@@ -1,0 +1,81 @@
+.ui-slider {
+	TEXT-DECORATION: none! important; FONT-SIZE: 73%; 
+}
+.ui-slider-handle {
+	OVERFLOW: visible! important
+}
+.ui-slider-tooltip {
+	DISPLAY: none
+}
+.ui-slider .ui-state-active .ui-slider-tooltip {
+	PADDING-RIGHT: 0.2em; DISPLAY: block; PADDING-LEFT: 0.2em; FONT-SIZE: 1em; PADDING-BOTTOM: 0.2em; MARGIN-LEFT: -4em; WIDTH: 8em; PADDING-TOP: 0.2em; POSITION: absolute; TOP: -25px; TEXT-ALIGN: center
+}
+.ui-slider .ui-state-focus .ui-slider-tooltip {
+	PADDING-RIGHT: 0.2em; DISPLAY: block; PADDING-LEFT: 0.2em; FONT-SIZE: 1em; PADDING-BOTTOM: 0.2em; MARGIN-LEFT: -4em; WIDTH: 8em; PADDING-TOP: 0.2em; POSITION: absolute; TOP: -25px; TEXT-ALIGN: center
+}
+.ui-slider .ui-state-hover .ui-slider-tooltip {
+	PADDING-RIGHT: 0.2em; DISPLAY: block; PADDING-LEFT: 0.2em; FONT-SIZE: 1em; PADDING-BOTTOM: 0.2em; MARGIN-LEFT: -4em; WIDTH: 8em; PADDING-TOP: 0.2em; POSITION: absolute; TOP: -25px; TEXT-ALIGN: center
+}
+.ui-slider A {
+	TEXT-DECORATION: none
+}
+.ui-slider OL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.ui-slider LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.ui-slider DL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.ui-slider DD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.ui-slider DT {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.ui-slider OL {
+	WIDTH: 100%; POSITION: relative; TOP: 1.3em
+}
+.ui-slider DL {
+	WIDTH: 100%; POSITION: relative; TOP: 1.3em
+}
+.ui-slider DT {
+	COLOR: #999; PADDING-TOP: 0.2em; BORDER-BOTTOM: #ddd 1px dotted; POSITION: absolute; TOP: 1.5em; HEIGHT: 0.7em; TEXT-ALIGN: center
+}
+.ui-slider DT SPAN {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; BACKGROUND: #fff; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.ui-slider LI {
+	OVERFLOW: visible; COLOR: #666; POSITION: absolute
+}
+.ui-slider DD {
+	OVERFLOW: visible; COLOR: #666; POSITION: absolute
+}
+.ui-slider LI SPAN.ui-slider-label {
+	DISPLAY: none
+}
+.ui-slider DD SPAN.ui-slider-label {
+	DISPLAY: none
+}
+.ui-slider LI SPAN.ui-slider-label-show {
+	DISPLAY: block
+}
+.ui-slider DD SPAN.ui-slider-label-show {
+	DISPLAY: block
+}
+.ui-slider SPAN.ui-slider-tic {
+	LEFT: 0px; POSITION: absolute; TOP: -1.3em; HEIGHT: 0.8em
+}
+.ui-slider LI SPAN.ui-widget-content {
+	BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT: 1px solid; BORDER-RIGHT-WIDTH: 0px
+}
+.ui-slider DD SPAN.ui-widget-content {
+	BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT: 1px solid; BORDER-RIGHT-WIDTH: 0px
+}
+.ui-slider .first .ui-slider-tic {
+	DISPLAY: none
+}
+.ui-slider .last .ui-slider-tic {
+	DISPLAY: none
+}

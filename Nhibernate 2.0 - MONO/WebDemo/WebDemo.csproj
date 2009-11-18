@@ -1,0 +1,659 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B054CF9D-653E-4625-A241-4B051D93D13E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebDemo</RootNamespace>
+    <AssemblyName>WebDemo</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CSSFriendly, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\CSSFriendly.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=5.2.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=2.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Core, Version=1.0.0.82, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Ninject-1.0-debug-net-2.0\Ninject.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Framework.Web, Version=1.0.0.82, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Ninject-1.0-debug-net-2.0\Ninject.Framework.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangeLog.txt" />
+    <Content Include="CreateUser.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Error.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="PasswordRecovery.aspx" />
+    <Content Include="Setup.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="code\ApplicationSettings.cs" />
+    <Compile Include="Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ForumDetails.aspx.cs">
+      <DependentUpon>ForumDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ForumDetails.aspx.designer.cs">
+      <DependentUpon>ForumDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ForumList.aspx.cs">
+      <DependentUpon>ForumList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ForumList.aspx.designer.cs">
+      <DependentUpon>ForumList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageProfiles.aspx.cs">
+      <DependentUpon>ManageProfiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageProfiles.aspx.designer.cs">
+      <DependentUpon>ManageProfiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewsDetails.aspx.cs">
+      <DependentUpon>NewsDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewsDetails.aspx.designer.cs">
+      <DependentUpon>NewsDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewsList.aspx.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewsList.aspx.designer.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RoleList.aspx.cs">
+      <DependentUpon>RoleList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RoleList.aspx.designer.cs">
+      <DependentUpon>RoleList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserDetails.aspx.cs">
+      <DependentUpon>UserDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserDetails.aspx.designer.cs">
+      <DependentUpon>UserDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserList.aspx.designer.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\WikiDetails.aspx.cs">
+      <DependentUpon>WikiDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\WikiDetails.aspx.designer.cs">
+      <DependentUpon>WikiDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\WikiList.aspx.cs">
+      <DependentUpon>WikiList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\WikiList.aspx.designer.cs">
+      <DependentUpon>WikiList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="code\Utilities.cs" />
+    <Compile Include="code\Navigation.cs" />
+    <Compile Include="code\IErrorMessage.cs" />
+    <Compile Include="Controls\ArticleList.ascx.cs">
+      <DependentUpon>ArticleList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ArticleList.ascx.designer.cs">
+      <DependentUpon>ArticleList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ArticleVersionList.ascx.cs">
+      <DependentUpon>ArticleVersionList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ArticleVersionList.ascx.designer.cs">
+      <DependentUpon>ArticleVersionList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewMessage.ascx.cs">
+      <DependentUpon>NewMessage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\NewMessage.ascx.designer.cs">
+      <DependentUpon>NewMessage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewsList.ascx.cs">
+      <DependentUpon>NewsList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\NewsList.ascx.designer.cs">
+      <DependentUpon>NewsList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewsListBox.ascx.cs">
+      <DependentUpon>NewsListBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\NewsListBox.ascx.designer.cs">
+      <DependentUpon>NewsListBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SearchResult.ascx.cs">
+      <DependentUpon>SearchResult.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SearchResult.ascx.designer.cs">
+      <DependentUpon>SearchResult.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TopicList.ascx.cs">
+      <DependentUpon>TopicList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\TopicList.ascx.designer.cs">
+      <DependentUpon>TopicList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ViewArticle.ascx.cs">
+      <DependentUpon>ViewArticle.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ViewArticle.ascx.designer.cs">
+      <DependentUpon>ViewArticle.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ViewMessage.ascx.cs">
+      <DependentUpon>ViewMessage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ViewMessage.ascx.designer.cs">
+      <DependentUpon>ViewMessage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ViewNewsItem.ascx.cs">
+      <DependentUpon>ViewNewsItem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ViewNewsItem.ascx.designer.cs">
+      <DependentUpon>ViewNewsItem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ViewTopic.ascx.cs">
+      <DependentUpon>ViewTopic.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ViewTopic.ascx.designer.cs">
+      <DependentUpon>ViewTopic.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUser.aspx.cs">
+      <DependentUpon>CreateUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateUser.aspx.designer.cs">
+      <DependentUpon>CreateUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomEntities\AddressBook.aspx.cs">
+      <DependentUpon>AddressBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomEntities\AddressBook.aspx.designer.cs">
+      <DependentUpon>AddressBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomEntities\AddressBookUsingODS.aspx.cs">
+      <DependentUpon>AddressBookUsingODS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomEntities\AddressBookUsingODS.aspx.designer.cs">
+      <DependentUpon>AddressBookUsingODS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomEntities\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomEntities\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forum\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forum\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forum\ForumRss.aspx.cs">
+      <DependentUpon>ForumRss.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forum\ForumRss.aspx.designer.cs">
+      <DependentUpon>ForumRss.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forum\NewMessage.aspx.cs">
+      <DependentUpon>NewMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forum\NewMessage.aspx.designer.cs">
+      <DependentUpon>NewMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forum\NewTopic.aspx.cs">
+      <DependentUpon>NewTopic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forum\NewTopic.aspx.designer.cs">
+      <DependentUpon>NewTopic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forum\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forum\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forum\ViewForum.aspx.cs">
+      <DependentUpon>ViewForum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forum\ViewForum.aspx.designer.cs">
+      <DependentUpon>ViewForum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forum\ViewTopic.aspx.cs">
+      <DependentUpon>ViewTopic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forum\ViewTopic.aspx.designer.cs">
+      <DependentUpon>ViewTopic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News\CategoryRSS.aspx.cs">
+      <DependentUpon>CategoryRSS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News\CategoryRSS.aspx.designer.cs">
+      <DependentUpon>CategoryRSS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News\EditItem.aspx.cs">
+      <DependentUpon>EditItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News\EditItem.aspx.designer.cs">
+      <DependentUpon>EditItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News\ViewCategory.aspx.cs">
+      <DependentUpon>ViewCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News\ViewCategory.aspx.designer.cs">
+      <DependentUpon>ViewCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News\ViewItem.aspx.cs">
+      <DependentUpon>ViewItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News\ViewItem.aspx.designer.cs">
+      <DependentUpon>ViewItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordRecovery.aspx.cs">
+      <DependentUpon>PasswordRecovery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PasswordRecovery.aspx.designer.cs">
+      <DependentUpon>PasswordRecovery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setup.aspx.cs">
+      <DependentUpon>Setup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup.aspx.designer.cs">
+      <DependentUpon>Setup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="site.Master.cs">
+      <DependentUpon>site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="site.Master.designer.cs">
+      <DependentUpon>site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ChangeUserInfo.aspx.cs">
+      <DependentUpon>ChangeUserInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ChangeUserInfo.aspx.designer.cs">
+      <DependentUpon>ChangeUserInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wiki\CategoryRSS.aspx.cs">
+      <DependentUpon>CategoryRSS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wiki\CategoryRSS.aspx.designer.cs">
+      <DependentUpon>CategoryRSS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wiki\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wiki\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wiki\EditArticle.aspx.cs">
+      <DependentUpon>EditArticle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wiki\EditArticle.aspx.designer.cs">
+      <DependentUpon>EditArticle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wiki\NewArticle.aspx.cs">
+      <DependentUpon>NewArticle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wiki\NewArticle.aspx.designer.cs">
+      <DependentUpon>NewArticle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wiki\PrintArticle.aspx.cs">
+      <DependentUpon>PrintArticle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wiki\PrintArticle.aspx.designer.cs">
+      <DependentUpon>PrintArticle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wiki\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wiki\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wiki\ViewArticle.aspx.cs">
+      <DependentUpon>ViewArticle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wiki\ViewArticle.aspx.designer.cs">
+      <DependentUpon>ViewArticle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wiki\ViewArticleVersions.aspx.cs">
+      <DependentUpon>ViewArticleVersions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wiki\ViewArticleVersions.aspx.designer.cs">
+      <DependentUpon>ViewArticleVersions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Wiki\ViewCategory.aspx.cs">
+      <DependentUpon>ViewCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Wiki\ViewCategory.aspx.designer.cs">
+      <DependentUpon>ViewCategory.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Wiki\CategoryRSS.aspx" />
+    <Content Include="Wiki\Default.aspx" />
+    <Content Include="Wiki\EditArticle.aspx" />
+    <Content Include="Wiki\NewArticle.aspx" />
+    <Content Include="Wiki\PrintArticle.aspx" />
+    <Content Include="Wiki\Search.aspx" />
+    <Content Include="Wiki\ViewArticle.aspx" />
+    <Content Include="Wiki\ViewArticleVersions.aspx" />
+    <Content Include="Wiki\ViewCategory.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="User\ChangePassword.aspx" />
+    <Content Include="User\ChangeUserInfo.aspx" />
+    <Content Include="User\Default.aspx" />
+    <Content Include="Wiki\Attach.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Forum\Default.aspx" />
+    <Content Include="Forum\ForumRss.aspx" />
+    <Content Include="Forum\NewMessage.aspx" />
+    <Content Include="Forum\NewTopic.aspx" />
+    <Content Include="Forum\Search.aspx" />
+    <Content Include="Forum\ViewForum.aspx" />
+    <Content Include="Forum\ViewTopic.aspx" />
+    <Content Include="News\CategoryRSS.aspx" />
+    <Content Include="News\Default.aspx" />
+    <Content Include="News\EditItem.aspx" />
+    <Content Include="News\ViewCategory.aspx" />
+    <Content Include="News\ViewItem.aspx" />
+    <Content Include="User\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\ForumDetails.aspx" />
+    <Content Include="Admin\ForumList.aspx" />
+    <Content Include="Admin\ManageProfiles.aspx" />
+    <Content Include="Admin\NewsDetails.aspx" />
+    <Content Include="Admin\NewsList.aspx" />
+    <Content Include="Admin\RoleList.aspx" />
+    <Content Include="Admin\UserDetails.aspx" />
+    <Content Include="Admin\UserList.aspx" />
+    <Content Include="Admin\WikiDetails.aspx" />
+    <Content Include="Admin\WikiList.aspx" />
+    <Content Include="App_Data\MailTemplate_Forum.xml" />
+    <Content Include="App_Themes\Default\res\arrow_left.png" />
+    <Content Include="App_Themes\Default\res\arrow_right.png" />
+    <Content Include="App_Themes\Default\res\arrow_up.png" />
+    <Content Include="App_Themes\Default\res\attachment.png" />
+    <Content Include="App_Themes\Default\res\audio.png" />
+    <Content Include="App_Themes\Default\res\book_closed.png" />
+    <Content Include="App_Themes\Default\res\book_open.png" />
+    <Content Include="App_Themes\Default\res\calendar.png" />
+    <Content Include="App_Themes\Default\res\card.png" />
+    <Content Include="App_Themes\Default\res\cd.png" />
+    <Content Include="App_Themes\Default\res\certificate.png" />
+    <Content Include="App_Themes\Default\res\clock.png" />
+    <Content Include="App_Themes\Default\res\colors.png" />
+    <Content Include="App_Themes\Default\res\database.png" />
+    <Content Include="App_Themes\Default\res\delete.png" />
+    <Content Include="App_Themes\Default\res\document.png" />
+    <Content Include="App_Themes\Default\res\document_new.png" />
+    <Content Include="App_Themes\Default\res\document_restricted.png" />
+    <Content Include="App_Themes\Default\res\edit.png" />
+    <Content Include="App_Themes\Default\res\email.png" />
+    <Content Include="App_Themes\Default\res\error.png" />
+    <Content Include="App_Themes\Default\res\feed.png" />
+    <Content Include="App_Themes\Default\res\filter.png" />
+    <Content Include="App_Themes\Default\res\find.png" />
+    <Content Include="App_Themes\Default\res\flag_blue.png" />
+    <Content Include="App_Themes\Default\res\flag_green.png" />
+    <Content Include="App_Themes\Default\res\flag_red.png" />
+    <Content Include="App_Themes\Default\res\folder.png" />
+    <Content Include="App_Themes\Default\res\folder_new.png" />
+    <Content Include="App_Themes\Default\res\folder_open.png" />
+    <Content Include="App_Themes\Default\res\gear.png" />
+    <Content Include="App_Themes\Default\res\go.png" />
+    <Content Include="App_Themes\Default\res\graph.png" />
+    <Content Include="App_Themes\Default\res\hand.png" />
+    <Content Include="App_Themes\Default\res\help.png" />
+    <Content Include="App_Themes\Default\res\help2.png" />
+    <Content Include="App_Themes\Default\res\home.png" />
+    <Content Include="App_Themes\Default\res\info.png" />
+    <Content Include="App_Themes\Default\res\key.png" />
+    <Content Include="App_Themes\Default\res\license.txt" />
+    <Content Include="App_Themes\Default\res\logo.png" />
+    <Content Include="App_Themes\Default\res\mail_new.png" />
+    <Content Include="App_Themes\Default\res\mail_reply.png" />
+    <Content Include="App_Themes\Default\res\move_first.png" />
+    <Content Include="App_Themes\Default\res\move_last.png" />
+    <Content Include="App_Themes\Default\res\move_next.png" />
+    <Content Include="App_Themes\Default\res\move_previous.png" />
+    <Content Include="App_Themes\Default\res\navigation_back.png" />
+    <Content Include="App_Themes\Default\res\navigation_forward.png" />
+    <Content Include="App_Themes\Default\res\ok.png" />
+    <Content Include="App_Themes\Default\res\pause.png" />
+    <Content Include="App_Themes\Default\res\play.png" />
+    <Content Include="App_Themes\Default\res\print.png" />
+    <Content Include="App_Themes\Default\res\print_preview.png" />
+    <Content Include="App_Themes\Default\res\protect.png" />
+    <Content Include="App_Themes\Default\res\report.png" />
+    <Content Include="App_Themes\Default\res\save.png" />
+    <Content Include="App_Themes\Default\res\search.png" />
+    <Content Include="App_Themes\Default\res\stop.png" />
+    <Content Include="App_Themes\Default\res\time.png" />
+    <Content Include="App_Themes\Default\res\user.png" />
+    <Content Include="App_Themes\Default\res\warning.png" />
+    <Content Include="App_Themes\Default\res\world.png" />
+    <Content Include="App_Themes\Default\res\zoom.png" />
+    <Content Include="Controls\ArticleList.ascx" />
+    <Content Include="Controls\ArticleVersionList.ascx" />
+    <Content Include="Controls\NewMessage.ascx" />
+    <Content Include="Controls\NewsList.ascx" />
+    <Content Include="Controls\NewsListBox.ascx" />
+    <Content Include="Controls\SearchResult.ascx" />
+    <Content Include="Controls\TopicList.ascx" />
+    <Content Include="Controls\ViewArticle.ascx" />
+    <Content Include="Controls\ViewMessage.ascx" />
+    <Content Include="Controls\ViewNewsItem.ascx" />
+    <Content Include="Controls\ViewTopic.ascx" />
+    <Content Include="CustomEntities\AddressBook.aspx" />
+    <Content Include="CustomEntities\Default.aspx" />
+    <Content Include="Forum\Attach.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Web.config" />
+    <Content Include="App_Browsers\CSSFriendlyAdapters.browser" />
+    <None Include="App_Data\ArticleTemplate.rss" />
+    <None Include="App_Data\ForumTemplate.rss" />
+    <None Include="App_Data\NewsTemplate.rss" />
+    <Content Include="App_Themes\Default\01.reset-fonts.css" />
+    <Content Include="App_Themes\Default\02.PageLayout.css" />
+    <Content Include="App_Themes\Default\03.Styles.css" />
+    <Content Include="CustomEntities\AddressBookUsingODS.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Eucalypto\Eucalypto.csproj">
+      <Project>{762A5424-0516-42D2-B2B2-4625B0786783}</Project>
+      <Name>Eucalypto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NHibernateDataStore\NHibernateDataStore.csproj">
+      <Project>{3342C92B-E60F-440F-93DC-B6915FDA1739}</Project>
+      <Name>NHibernateDataStore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\R3M.Integration.NInject\R3M.Integration.Ninject.csproj">
+      <Project>{76678C65-7909-426E-A1B5-56AF0CF3D380}</Project>
+      <Name>R3M.Integration.Ninject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\R3M.ObjectDataSource\R3M.Controls.csproj">
+      <Project>{C319BFD5-48B4-4AFB-A748-E66EF4E79974}</Project>
+      <Name>R3M.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebSite.CustomEntities\WebSite.CustomEntities.csproj">
+      <Project>{31213C2D-2EAC-4FEB-A3C9-994DA558AACF}</Project>
+      <Name>WebSite.CustomEntities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4509</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

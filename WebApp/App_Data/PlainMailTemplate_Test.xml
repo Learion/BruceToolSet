@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<template>
+  <subject>[SEOToolSet] [REASON]</subject>
+  <body>
+    <![CDATA[
+    Plain text
+    ==========
+    [BODYTEXT]
+    - [ITEM1]
+    - [ITEM2]
+    This text was generated using the multipart. This is the plain text part.
+    ]]>    
+  </body>
+</template>

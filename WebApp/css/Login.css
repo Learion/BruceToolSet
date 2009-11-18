@@ -1,0 +1,12 @@
+﻿div.PromotionalMessage {   width:45%;float:left; padding:10px 20px 20px 10px; text-align:right;border-right: 1px solid #EDF4F5; }
+
+div.PromotionalMessage p { font-size: 123.1% !important; font-style:italic; }
+h2.sIFR { font-size: 197%; color: #990000; font-weight:bold; }
+
+div.LoginBlock { width:35%;float:left; padding: 40px 20px 20px 20px; border-left: 1px solid #E6F0F1; margin-bottom:20px; }
+
+div.LoginBlock div.FormCSS { width:225px; }
+div.LoginBlock div.FormCSS .ToolBarItem { padding-left: 0px; }
+
+div.LoginBlock div.FormCSS  #divBtnLogin { padding-top:10px; }
+div.LoginBlock div.ToolbarCenter { width: 350px;}

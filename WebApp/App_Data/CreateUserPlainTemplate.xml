@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<template>
+  <subject>Welcome to the SEOToolSet (c)</subject>
+  <body><![CDATA[
+Dear User
+
+You have now an account for the SEOToolSet Application you have been invited by the administrator of the Account [ACCOUNTNAME]
+
+Login to the SEOToolSet application using the following data:
+
+    * Login Page : [LOGINPAGEURL]
+    * UserName : [USERNAME]
+    * Password : [PASSWORD]
+	
+    ]]>    
+  </body>
+</template>

@@ -1,0 +1,29 @@
+﻿<hibernate-mapping default-cascade="none" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SEOToolSet.Entities.RankingMonitorDeepRun, SEOToolSet.Entities" table="RankingMonitorDeepRun">
+    <id name="Id" type="System.Int32" column="Id" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="StatusReason" type="System.String" column="StatusReason" not-null="false" length="1000" />
+    <property name="PageRank" type="System.Int32" column="PageRank" not-null="false" />
+    <property name="InboundLinks" type="System.Int32" column="InboundLinks" not-null="false" />
+    <property name="PagesIndexed" type="System.Int32" column="PagesIndexed" not-null="false" />
+    <bag name="KeywordDeepAnalysis" inverse="true" lazy="true" cascade="none">
+      <key>
+        <column name="IdRankingMonitorDeepRun" not-null="true" />
+      </key>
+      <one-to-many class="SEOToolSet.Entities.KeywordDeepAnalysis, SEOToolSet.Entities" />
+    </bag>
+    <many-to-one name="ProxyServer" class="SEOToolSet.Entities.ProxyServer, SEOToolSet.Entities" fetch="select">
+      <column name="IdProxy" not-null="true" />
+    </many-to-one>
+    <many-to-one name="RankingMonitorRun" class="SEOToolSet.Entities.RankingMonitorRun, SEOToolSet.Entities" fetch="select">
+      <column name="IdRankingMonitorRun" not-null="true" />
+    </many-to-one>
+    <many-to-one name="SearchEngineCountry" class="SEOToolSet.Entities.SearchEngineCountry, SEOToolSet.Entities" fetch="select">
+      <column name="IdSearchEngineCountry" not-null="true" />
+    </many-to-one>
+    <many-to-one name="Status" class="SEOToolSet.Entities.Status, SEOToolSet.Entities" fetch="select">
+      <column name="Status" not-null="true" />
+    </many-to-one>
+  </class>
+</hibernate-mapping>

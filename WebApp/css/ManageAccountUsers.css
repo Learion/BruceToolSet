@@ -1,0 +1,30 @@
+﻿#ctl00_contentArea_AccountUsersRoundPanel .Legend a.AddNewUser{ position:absolute;right:7px;top:0;color:#0060AE; }
+#ctl00_contentArea_AccountUsersRoundPanel .Legend h2 { margin-bottom: 0px;}
+#ctl00_contentArea_AccountUsersRoundPanel .Legend { margin-bottom: 10px }
+.xTable a { color:#0060AE;}
+.ResaltedBlue { color:#0060AE; font-weight:bold;}
+a.Email { text-decoration:none;}
+.TotalUsersSection { padding:10px 6px; text-align:right; }
+.TotalUsersSection ul li { float:right; margin-right:10px; display:block; }
+
+.xTable tr.Selected a.Email { color:#fff;}
+
+.RowHeader a { text-decoration:none; color:#000; }
+tr.RowHeader th { cursor:pointer;}
+
+.SortIndicator.ASC { display:block; background-position: 0 -60px;  }
+.SortIndicator.DESC { display:block; background-position: 0 -75px;  }
+a.SelectButton { display:none;}
+
+.AddUserToolBar { padding-top:20px;  }
+.AddUserToolBar ul li { float: left; margin-right:5px; }
+.ColumnUsersDetail { width: 235px; float:right; min-height: 400px;}
+.ColumnUsers { width:inherit; margin-right: 242px;  }
+
+.ColumnUsersDetail div.FormCSS .Field label { margin-left:0px; }
+.ColumnUsersDetail div.FormCSS span.Validator { margin:0px;}
+
+p.RequiedNotice { margin-top:10px; }
+
+.CheckWrapper input { float:left; margin-right:5px; }
+.Control-Pager table { width: 230px;}

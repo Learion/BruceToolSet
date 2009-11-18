@@ -1,0 +1,15 @@
+﻿<hibernate-mapping default-cascade="none" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="SEOToolSet.Entities.SubscriptionProperty, SEOToolSet.Entities" table="SubscriptionProperty">
+    <id name="Id" type="System.Int32" column="Id" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="Name" type="System.String" column="Name" not-null="true" length="33" />
+    <property name="Enabled" type="System.Boolean" column="Enabled" not-null="false" />
+    <bag name="SubscriptionDetail" inverse="false" lazy="true" cascade="none">
+      <key>
+        <column name="IdSubscriptionProperty" not-null="false" />
+      </key>
+      <one-to-many class="SEOToolSet.Entities.SubscriptionDetail, SEOToolSet.Entities" />
+    </bag>
+  </class>
+</hibernate-mapping>
